@@ -17,7 +17,7 @@ Prerequisite: NVIDIA OptiX 6.5+, cmake 3.12+, gcc 5+
    line 32: `opticks-prepend-prefix ${workdir}/opticks.build_externals/xercesc`  
    line 33: `opticks-prepend-prefix ${workdir}/opticks.build_externals/g4_1042`  
    line 34: `opticks-prepend-prefix ${workdir}/opticks.build_externals/boost`  
-   > If you want to install Opticks with geant4.10.07.p01, please refer to g4_1071.md file.  
+   > If you want to install Opticks with geant4.10.07.p01, please refer to geant4.md file.  
 4. `echo "source ${workdir}/.opticks_config" >> ~/.bashrc`  
    start a new bash session  
 5. `opticks-info`  
@@ -28,7 +28,7 @@ Prerequisite: NVIDIA OptiX 6.5+, cmake 3.12+, gcc 5+
 7. `source ${workdir}/.opticks_config`  
    `opticks-externals-install`  
    `opticks-full`  
-   > If you meet a problem related to libXinerama, you can refer to libXinerama.md and install this library by hand.  
+   > If you meet a problem related to libXinerama, you can refer to complier.md and install this library by hand.  
 8. `source $OPTICKS_PREFIX/bin/opticks-setup.sh`  
    `source ${workdir}/opticks.build_externals/g4_1042/bin/geant4.sh`  
 9. You can add these three lines to your ~/.bashrc file, so that every time you log into the sever, the environment will be set up automatically.  
