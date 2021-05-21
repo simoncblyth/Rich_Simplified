@@ -24,3 +24,7 @@
    make
    make install
    cp -r ${workdir}/opticks.build/externals/lib64/* ${workdir}/opticks.build/externals/lib/
+
+3. Something wrong with gcc or g++ complier.
+  Set it up by adding this line to ~/.bashrc:
+  `source /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/setup.sh`
