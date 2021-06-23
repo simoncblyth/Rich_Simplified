@@ -12,17 +12,10 @@
   `#if (NOT X11_Xinerama_INCLUDE_PATH)`  
   `#    message("${X11_Xinerama_INCLUDE_PATH}")`  
   `#    message(FATAL_ERROR "Xinerama headers not found; install libxinerama development package")`  
-  add these lines:  
-  `set(X11_Xinerama_INCLUDE_PATH "${workdir}/usr/include")`  
-  `list(APPEND glfw_INCLUDE_DIRS "${X11_Xrandr_INCLUDE_PATH}"`  
-  `                                "${X11_Xinerama_INCLUDE_PATH}"`  
-  `                                "${X11_Xkb_INCLUDE_PATH}"`  
-  `                                "${X11_Xcursor_INCLUDE_PATH}"`  
-  `                                "${X11_Xi_INCLUDE_PATH}")`  
-  `set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_INSTALL_LIBDIR}")`  
-   cmake -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=${workdir}/opticks.build/externals .
-   make
-   make install
+  add this option:  
+  `-DX11_Xinerama_INCLUDE_PATH=${workdir}/usr/include`
+  to opticks/externals/glfw.bash, then
+  opticks-externals-install
    cp -r ${workdir}/opticks.build/externals/lib64/* ${workdir}/opticks.build/externals/lib/
 
 3. Something wrong with gcc or g++ complier.  
