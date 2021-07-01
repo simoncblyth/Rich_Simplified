@@ -153,4 +153,51 @@ int OpticksMode::getInteractivityLevel() const
     return 1  ; // always do the visualization 
 }
 
+//npy/NCSG.cpp
+NCSG::NCSG(nnode* root )
+    :
+    m_treedir(NULL),
+    m_index(0),
+    m_surface_epsilon(SURFACE_EPSILON),
+    m_verbosity(root->verbosity),
+    m_usedglobally(true),   // changed to true : June 2018, see notes/issues/subtree_instances_missing_transform.rst
+    m_root(root),
+    m_points(NULL),
+    m_uncoincide(make_uncoincide()),
+    //m_nudger(make_nudger("Adopt root ctor")),
+    m_csgdata(new NCSGData),
+    m_meta(new NPYMeta),
+    m_adopted(true),
+    m_boundary(NULL),
+    m_config(NULL),
+    m_gpuoffset(0,0,0),
+    m_proxylv(-1),
+    m_container(0),
+    m_containerscale(2.f),
+    m_containerautosize(-1),
+    m_tris(NULL),
+    m_soIdx(0),
+    m_lvIdx(0),
+    m_nudger(make_nudger("Adopt root ctor")),
+    m_other(NULL)
+{
+    setBoundary( root->boundary );  // boundary spec
+    LOG(debug) << "[" ;
+    m_csgdata->init_buffers(root->maxdepth()) ;
+    LOG(debug) << "]" ;
+}
+
+//npy/NCSG.cpp
+NNodeNudger* NCSG::make_nudger(const char* msg) const
+{
+    // when test running from nnode there is no metadata or treedir
+    LOG(LEVEL)
+        <<  " lvIdx " << m_lvIdx
+        //<<  " soname " << get_soname() 
+        << " treeNameIdx " << getTreeNameIdx()
+         ;
+
+    NNodeNudger* nudger = new NNodeNudger(m_root, m_surface_epsilon, m_root->verbosity);
+    return nudger ;
+}
 
