@@ -247,4 +247,61 @@ unsigned GBndLib::getMaterialLine(const char* shortname_)
     }
     ...
 }
+NPY<float>* GBndLib::createBufferForTex2d()
+{
+    ...
+        for(unsigned int i=0 ; i < ni ; i++)      // over bnd
+    {
+        const guint4& bnd = m_bnd[i] ;
+        for(unsigned j=0 ; j < nj ; j++)     // over imat/omat/isur/osur species
+        {
+            unsigned wof = nj*nk*nl*nm*i + nk*nl*nm*j ;
+
+            if(j == IMAT || j == OMAT)
+            {
+                unsigned midx = bnd[j] ;
+                if(midx != UNSET)
+                {
+                    unsigned mof = nk*nl*nm*midx ;
+                    memcpy( wdat+wof, mdat+mof, sizeof(float)*nk*nl*nm );
+                }
+                else
+                {
+                    LOG(fatal) << "GBndLib::createBufferForTex2d"
+                                 << " ERROR IMAT/OMAT with UNSET MATERIAL "
+                                 << " i " << i
+                                 << " j " << j
+                                 ;
+                    //assert(0);
+                }
+            }
+    ...
+        }
+    }
+}
+NPY<unsigned>* GBndLib::createOpticalBuffer()
+{
+    ...
+    for(unsigned i=0 ; i < ni ; i++)      // over bnd
+    {
+        const guint4& bnd = m_bnd[i] ;
+
+        for(unsigned j=0 ; j < nj ; j++)  // over imat/omat/isur/osur
+        {
+            unsigned offset = nj*nk*i+nk*j ;
+            if(j == IMAT || j == OMAT)
+            {
+                unsigned midx = bnd[j] ;
+                //assert(midx != UNSET);
+
+                odat[offset+0] = one_based ? midx + 1 : midx  ;
+                odat[offset+1] = 0u ;
+                odat[offset+2] = 0u ;
+                odat[offset+3] = 0u ;
+
+            }
+        ...
+        }
+    }
+}
 
