@@ -154,40 +154,6 @@ int OpticksMode::getInteractivityLevel() const
 }
 
 //npy/NCSG.cpp
-NCSG::NCSG(nnode* root )
-    :
-    m_treedir(NULL),
-    m_index(0),
-    m_surface_epsilon(SURFACE_EPSILON),
-    m_verbosity(root->verbosity),
-    m_usedglobally(true),   // changed to true : June 2018, see notes/issues/subtree_instances_missing_transform.rst
-    m_root(root),
-    m_points(NULL),
-    m_uncoincide(make_uncoincide()),
-    //m_nudger(make_nudger("Adopt root ctor")),
-    m_csgdata(new NCSGData),
-    m_meta(new NPYMeta),
-    m_adopted(true),
-    m_boundary(NULL),
-    m_config(NULL),
-    m_gpuoffset(0,0,0),
-    m_proxylv(-1),
-    m_container(0),
-    m_containerscale(2.f),
-    m_containerautosize(-1),
-    m_tris(NULL),
-    m_soIdx(0),
-    m_lvIdx(0),
-    m_nudger(make_nudger("Adopt root ctor")),
-    m_other(NULL)
-{
-    setBoundary( root->boundary );  // boundary spec
-    LOG(debug) << "[" ;
-    m_csgdata->init_buffers(root->maxdepth()) ;
-    LOG(debug) << "]" ;
-}
-
-//npy/NCSG.cpp
 NNodeNudger* NCSG::make_nudger(const char* msg) const
 {
     // when test running from nnode there is no metadata or treedir
@@ -199,5 +165,86 @@ NNodeNudger* NCSG::make_nudger(const char* msg) const
 
     NNodeNudger* nudger = new NNodeNudger(m_root, m_surface_epsilon, m_root->verbosity);
     return nudger ;
+}
+
+
+//npy/NNodeNudger.cpp
+void NNodeNudger::update_prim_bb()
+{
+    LOG(info) << "NNodeNudger::update_prim_bb nprim " << prim.size() ;
+    zorder.clear();
+    bb.clear();
+    for(unsigned i=0 ; i < prim.size() ; i++)
+    {
+        const nnode* p = prim[i] ;
+        LOG(debug) << "nnode p " << p->type;
+        if( p->type!=0 ){ //exclude a node type 0 at here:867 soname Rich1MasterWithSubtract0x157230a0 lvname _dd_Geometry_BeforeMagnetRegion_Rich1_lvRich1Master0x15723290
+        p->dump();
+        nbbox pbb = p->bbox();
+        bb.push_back(pbb);
+        zorder.push_back(i);
+        }
+    ...
+    }
+    ...
+}
+
+
+//npy/NNode.cpp
+float nnode::operator()(float , float , float ) const
+{
+    //assert(0 && "nnode::operator() needs override ");
+    return 0.f ;
+}
+...
+unsigned nnode::par_nsurf() const
+{
+    //assert(0 && "this need to be overridden");
+    return 0 ;
+}
+
+//ggeo/GBndLib.cc
+void GBndLib::fillMaterialLineMap( std::map<std::string, unsigned>& msu)
+{
+    // first occurence of a material within the boundaries
+    // has its material line recorded in the MaterialLineMap
+
+    for(unsigned int i=0 ; i < getNumBnd() ; i++)
+    {
+        const guint4& bnd = m_bnd[i] ;
+        const char* omat = m_mlib->getName(bnd[OMAT]);
+        const char* imat = m_mlib->getName(bnd[IMAT]);
+        //assert(imat && omat);
+        if(imat&&omat){
+        if(msu.count(imat) == 0) msu[imat] = getLine(i, IMAT) ;
+        if(msu.count(omat) == 0) msu[omat] = getLine(i, OMAT) ;
+        }
+    }
+    ...
+}
+unsigned GBndLib::getMaterialLine(const char* shortname_)
+{
+    // used by App::loadGenstep for setting material line in TorchStep
+    unsigned ni = getNumBnd();
+    unsigned line = 0 ; 
+    for(unsigned i=0 ; i < ni ; i++)    
+    {
+        const guint4& bnd = m_bnd[i] ;
+        const char* omat = m_mlib->getName(bnd[OMAT]);
+        const char* imat = m_mlib->getName(bnd[IMAT]);
+        if(omat&&imat){
+        if(strncmp(imat, shortname_, strlen(shortname_))==0)
+        { 
+            line = getLine(i, IMAT);  
+            break ;
+        }
+        if(strncmp(omat, shortname_, strlen(shortname_))==0) 
+        { 
+            line=getLine(i, OMAT); 
+            break ;
+        } 
+        }
+    }
+    ...
 }
 
