@@ -109,87 +109,33 @@ NNodeNudger* NCSG::make_nudger(const char* msg) const
     return nudger ;
 }
 
+//npy/NTreeProcess.cpp
+template <typename T>
+unsigned NTreeProcess<T>::MaxHeight0 = 4 ;   // was discrepantly 4 previously  
 
-//ok/OKMgr.cc
-OKMgr::OKMgr(int argc, char** argv, const char* argforced ) 
-    : 
-    m_log(new SLog("OKMgr::OKMgr","", debug)), 
-    m_ok(Opticks::HasInstance() ? Opticks::GetInstance() : new Opticks(argc, argv, argforced)), 
-    m_hub(new OpticksHub(m_ok)),            // immediate configure and loadGeometry  
-    m_idx(new OpticksIdx(m_hub)), 
-    m_num_event(m_ok->getMultiEvent()),     // after hub instanciation, as that configures Opticks 
-    m_gen(m_hub->getGen()), 
-    m_run(m_ok->getRun()), 
-    //m_viz(m_ok->isCompute() ? NULL : new OpticksViz(m_hub, m_idx, true)), 
-    m_viz(new OpticksViz(m_hub, m_idx, true)), //always do the visualization
-    m_propagator(new OKPropagator(m_hub, m_idx, m_viz)), 
-    m_count(0) 
-{ 
-    init(); 
-    (*m_log)("DONE"); 
-} 
-
-//optixrap/OContext.cc
-void OContext::CheckDevices(Opticks* ok)
+//npy/GGeo.cc
+void GGeo::postDirectTranslation()
 {
-    VisibleDevices vdev ;
-    LOG(info) << std::endl << vdev.desc();
+    LOG(LEVEL) << "[" ;
 
-    BMeta* parameters = ok->getParameters();
-    parameters->add<int>("NumDevices", vdev.num_devices );
-    parameters->add<std::string>("VisibleDevices", vdev.brief() );
+    prepare();     // instances are formed here     
 
-    const char* frame_renderer = Opticks::Instance()->getFrameRenderer();
-    if( frame_renderer != NULL)
-    {
-        if(vdev.num_devices != 1) LOG(fatal) << "vdev.num_devices " << vdev.num_devices ;
-        assert( vdev.num_devices == 1 && "expecting only a single visible device, the one driving the display, in interop mode") ;
-        const char* optix_device = vdev.devices[0].name ;
-        LOG(LEVEL) << " frame_renderer " << frame_renderer ;
-        LOG(LEVEL) << " optix_device " << optix_device  ;
-        bool interop_device_match = SStr::Contains( frame_renderer, optix_device )  ;
-        //assert( interop_device_match && "OpenGL and OptiX must be talking to the same single device in interop mode"  ); 
+    LOG(LEVEL) << "( GBndLib::fillMaterialLineMap " ;
+    //GBndLib* blib = getBndLib();
+    //blib->fillMaterialLineMap();
+    LOG(LEVEL) << ") GBndLib::fillMaterialLineMap " ;
 
-        parameters->add<std::string>("FrameRenderer", frame_renderer ); 
-    }
-    else 
-    { 
-        LOG(LEVEL) << " NULL frame_renderer : compute mode ? " ; 
-    } 
+    LOG(LEVEL) << "( GGeo::save " ;
+    save();
+    LOG(LEVEL) << ") GGeo::save " ;
+
+
+    deferred();
+
+    postDirectTranslationDump();
+
+    LOG(LEVEL) << "]" ;
 }
-
-//optickscore/OpticksMode.cc 
-int OpticksMode::getInteractivityLevel() const 
-{ 
-    int interactivity = SSys::GetInteractivityLevel() ; 
-    if(m_noviz) interactivity = 0 ; 
-    if(isCompute()) interactivity = 0 ;  
-    //return interactivity  ; 
-    return 1  ; // always do the visualization 
-}
-
-
-//npy/NNodeNudger.cpp
-void NNodeNudger::update_prim_bb()
-{
-    LOG(info) << "NNodeNudger::update_prim_bb nprim " << prim.size() ;
-    zorder.clear();
-    bb.clear();
-    for(unsigned i=0 ; i < prim.size() ; i++)
-    {
-        const nnode* p = prim[i] ;
-        LOG(debug) << "nnode p " << p->type;
-        if( p->type!=0 ){ //exclude a node type 0 at here:867 soname Rich1MasterWithSubtract0x157230a0 lvname _dd_Geometry_BeforeMagnetRegion_Rich1_lvRich1Master0x15723290
-        p->dump();
-        nbbox pbb = p->bbox();
-        bb.push_back(pbb);
-        zorder.push_back(i);
-        }
-    ...
-    }
-    ...
-}
-
 
 //npy/NNode.cpp
 float nnode::operator()(float , float , float ) const
