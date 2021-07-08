@@ -95,6 +95,21 @@ void X4Solid::convertPolycone()
     ...
 }
 
+//npy/NCSG.cpp
+NNodeNudger* NCSG::make_nudger(const char* msg) const
+{
+    // when test running from nnode there is no metadata or treedir
+    LOG(LEVEL)
+        <<  " lvIdx " << m_lvIdx
+        //<<  " soname " << get_soname() 
+        << " treeNameIdx " << getTreeNameIdx()
+         ;
+
+    NNodeNudger* nudger = new NNodeNudger(m_root, m_surface_epsilon, m_root->verbosity);
+    return nudger ;
+}
+
+
 //ok/OKMgr.cc
 OKMgr::OKMgr(int argc, char** argv, const char* argforced ) 
     : 
@@ -151,20 +166,6 @@ int OpticksMode::getInteractivityLevel() const
     if(isCompute()) interactivity = 0 ;  
     //return interactivity  ; 
     return 1  ; // always do the visualization 
-}
-
-//npy/NCSG.cpp
-NNodeNudger* NCSG::make_nudger(const char* msg) const
-{
-    // when test running from nnode there is no metadata or treedir
-    LOG(LEVEL)
-        <<  " lvIdx " << m_lvIdx
-        //<<  " soname " << get_soname() 
-        << " treeNameIdx " << getTreeNameIdx()
-         ;
-
-    NNodeNudger* nudger = new NNodeNudger(m_root, m_surface_epsilon, m_root->verbosity);
-    return nudger ;
 }
 
 
