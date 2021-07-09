@@ -113,142 +113,93 @@ NNodeNudger* NCSG::make_nudger(const char* msg) const
 template <typename T>
 unsigned NTreeProcess<T>::MaxHeight0 = 4 ;   // was discrepantly 4 previously  
 
-//npy/GGeo.cc
-void GGeo::postDirectTranslation()
+//extg4/X4PhysicalVolume.cc
+unsigned X4PhysicalVolume::addBoundary(const G4VPhysicalVolume* const pv, const G4VPhysicalVolume* const pv_p )
 {
-    LOG(LEVEL) << "[" ;
+    const G4LogicalVolume* const lv   = pv->GetLogicalVolume() ;
+    const G4LogicalVolume* const lv_p = pv_p ? pv_p->GetLogicalVolume() : NULL ;
 
-    prepare();     // instances are formed here     
+    // GDMLName adds pointer suffix to the object name, returns null when object is null : eg parent of world 
 
-    LOG(LEVEL) << "( GBndLib::fillMaterialLineMap " ;
-    //GBndLib* blib = getBndLib();
-    //blib->fillMaterialLineMap();
-    LOG(LEVEL) << ") GBndLib::fillMaterialLineMap " ;
-
-    LOG(LEVEL) << "( GGeo::save " ;
-    save();
-    LOG(LEVEL) << ") GGeo::save " ;
+    const char* _pv = X4::GDMLName(pv) ;
+    const char* _pv_p = X4::GDMLName(pv_p) ;
 
 
-    deferred();
+    const G4Material* const imat_ = lv->GetMaterial() ;
+    const G4Material* const omat_ = lv_p ? lv_p->GetMaterial() : imat_ ;  // top omat -> imat 
 
-    postDirectTranslationDump();
+    std::string omat_name = X4::BaseName(omat_);
+    boost::replace_all(omat_name,"_dd_Materials_","");
+    boost::replace_all(omat_name,"RichMaterials_","");
+    boost::replace_all(omat_name,"Pipe_","");
+    boost::replace_all(omat_name,"Velo_","");
+    std::string imat_name = X4::BaseName(imat_);
+    boost::replace_all(imat_name,"_dd_Materials_","");
+    boost::replace_all(imat_name,"RichMaterials_","");
+    boost::replace_all(imat_name,"Pipe_","");
+    boost::replace_all(imat_name,"Velo_","");
 
-    LOG(LEVEL) << "]" ;
+    const char* omat = strdup( omat_name.c_str() ) ;
+    const char* imat = strdup( imat_name.c_str() ) ;
+    ...
 }
 
-//npy/NNode.cpp
-float nnode::operator()(float , float , float ) const
-{
-    //assert(0 && "nnode::operator() needs override ");
-    return 0.f ;
-}
-...
-unsigned nnode::par_nsurf() const
-{
-    //assert(0 && "this need to be overridden");
-    return 0 ;
-}
+//ok/OKMgr.cc
+OKMgr::OKMgr(int argc, char** argv, const char* argforced ) 
+    : 
+    m_log(new SLog("OKMgr::OKMgr","", debug)), 
+    m_ok(Opticks::HasInstance() ? Opticks::GetInstance() : new Opticks(argc, argv, argforced)), 
+    m_hub(new OpticksHub(m_ok)),            // immediate configure and loadGeometry  
+    m_idx(new OpticksIdx(m_hub)), 
+    m_num_event(m_ok->getMultiEvent()),     // after hub instanciation, as that configures Opticks 
+    m_gen(m_hub->getGen()), 
+    m_run(m_ok->getRun()), 
+    //m_viz(m_ok->isCompute() ? NULL : new OpticksViz(m_hub, m_idx, true)), 
+    m_viz(new OpticksViz(m_hub, m_idx, true)), //always do the visualization
+    m_propagator(new OKPropagator(m_hub, m_idx, m_viz)), 
+    m_count(0) 
+{ 
+    init(); 
+    (*m_log)("DONE"); 
+} 
 
-//ggeo/GBndLib.cc
-void GBndLib::fillMaterialLineMap( std::map<std::string, unsigned>& msu)
+//optixrap/OContext.cc
+void OContext::CheckDevices(Opticks* ok)
 {
-    // first occurence of a material within the boundaries
-    // has its material line recorded in the MaterialLineMap
+    VisibleDevices vdev ;
+    LOG(info) << std::endl << vdev.desc();
 
-    for(unsigned int i=0 ; i < getNumBnd() ; i++)
+    BMeta* parameters = ok->getParameters();
+    parameters->add<int>("NumDevices", vdev.num_devices );
+    parameters->add<std::string>("VisibleDevices", vdev.brief() );
+
+    const char* frame_renderer = Opticks::Instance()->getFrameRenderer();
+    if( frame_renderer != NULL)
     {
-        const guint4& bnd = m_bnd[i] ;
-        const char* omat = m_mlib->getName(bnd[OMAT]);
-        const char* imat = m_mlib->getName(bnd[IMAT]);
-        //assert(imat && omat);
-        if(imat&&omat){
-        if(msu.count(imat) == 0) msu[imat] = getLine(i, IMAT) ;
-        if(msu.count(omat) == 0) msu[omat] = getLine(i, OMAT) ;
-        }
-    }
-    ...
-}
-unsigned GBndLib::getMaterialLine(const char* shortname_)
-{
-    // used by App::loadGenstep for setting material line in TorchStep
-    unsigned ni = getNumBnd();
-    unsigned line = 0 ; 
-    for(unsigned i=0 ; i < ni ; i++)    
-    {
-        const guint4& bnd = m_bnd[i] ;
-        const char* omat = m_mlib->getName(bnd[OMAT]);
-        const char* imat = m_mlib->getName(bnd[IMAT]);
-        if(omat&&imat){
-        if(strncmp(imat, shortname_, strlen(shortname_))==0)
-        { 
-            line = getLine(i, IMAT);  
-            break ;
-        }
-        if(strncmp(omat, shortname_, strlen(shortname_))==0) 
-        { 
-            line=getLine(i, OMAT); 
-            break ;
-        } 
-        }
-    }
-    ...
-}
-NPY<float>* GBndLib::createBufferForTex2d()
-{
-    ...
-        for(unsigned int i=0 ; i < ni ; i++)      // over bnd
-    {
-        const guint4& bnd = m_bnd[i] ;
-        for(unsigned j=0 ; j < nj ; j++)     // over imat/omat/isur/osur species
-        {
-            unsigned wof = nj*nk*nl*nm*i + nk*nl*nm*j ;
+        if(vdev.num_devices != 1) LOG(fatal) << "vdev.num_devices " << vdev.num_devices ;
+        assert( vdev.num_devices == 1 && "expecting only a single visible device, the one driving the display, in interop mode") ;
+        const char* optix_device = vdev.devices[0].name ;
+        LOG(LEVEL) << " frame_renderer " << frame_renderer ;
+        LOG(LEVEL) << " optix_device " << optix_device  ;
+        bool interop_device_match = SStr::Contains( frame_renderer, optix_device )  ;
+        //assert( interop_device_match && "OpenGL and OptiX must be talking to the same single device in interop mode"  ); 
 
-            if(j == IMAT || j == OMAT)
-            {
-                unsigned midx = bnd[j] ;
-                if(midx != UNSET)
-                {
-                    unsigned mof = nk*nl*nm*midx ;
-                    memcpy( wdat+wof, mdat+mof, sizeof(float)*nk*nl*nm );
-                }
-                else
-                {
-                    LOG(fatal) << "GBndLib::createBufferForTex2d"
-                                 << " ERROR IMAT/OMAT with UNSET MATERIAL "
-                                 << " i " << i
-                                 << " j " << j
-                                 ;
-                    //assert(0);
-                }
-            }
-    ...
-        }
+        parameters->add<std::string>("FrameRenderer", frame_renderer ); 
     }
+    else 
+    { 
+        LOG(LEVEL) << " NULL frame_renderer : compute mode ? " ; 
+    } 
 }
-NPY<unsigned>* GBndLib::createOpticalBuffer()
-{
-    ...
-    for(unsigned i=0 ; i < ni ; i++)      // over bnd
-    {
-        const guint4& bnd = m_bnd[i] ;
 
-        for(unsigned j=0 ; j < nj ; j++)  // over imat/omat/isur/osur
-        {
-            unsigned offset = nj*nk*i+nk*j ;
-            if(j == IMAT || j == OMAT)
-            {
-                unsigned midx = bnd[j] ;
-                //assert(midx != UNSET);
-
-                odat[offset+0] = one_based ? midx + 1 : midx  ;
-                odat[offset+1] = 0u ;
-                odat[offset+2] = 0u ;
-                odat[offset+3] = 0u ;
-
-            }
-        ...
-        }
-    }
+//optickscore/OpticksMode.cc 
+int OpticksMode::getInteractivityLevel() const 
+{ 
+    int interactivity = SSys::GetInteractivityLevel() ; 
+    if(m_noviz) interactivity = 0 ; 
+    if(isCompute()) interactivity = 0 ;  
+    //return interactivity  ; 
+    return 1  ; // always do the visualization 
 }
+
 
