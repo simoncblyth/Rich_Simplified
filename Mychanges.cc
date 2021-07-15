@@ -114,6 +114,8 @@ template <typename T>
 unsigned NTreeProcess<T>::MaxHeight0 = 4 ;   // was discrepantly 4 previously  
 
 //extg4/X4PhysicalVolume.cc
+#include <boost/algorithm/string/replace.hpp>
+...
 unsigned X4PhysicalVolume::addBoundary(const G4VPhysicalVolume* const pv, const G4VPhysicalVolume* const pv_p )
 {
     const G4LogicalVolume* const lv   = pv->GetLogicalVolume() ;
@@ -252,4 +254,81 @@ GParts* GParts::Create(const Opticks* ok, const GPts* pts, const std::vector<con
         assert( csg );
         ...
     }
+}
+
+//extg4/X4MaterialLib.cc
+#include "BFile.hh"
+#include <boost/algorithm/string/replace.hpp>
+...
+void X4MaterialLib::init()
+{
+    ...
+    for(unsigned i=0 ; i < num_materials ; i++)
+    {
+        GMaterial*  pmap = m_mlib->getMaterial(i);
+        G4Material* m4 = (*m_mtab)[i] ;
+        assert( pmap && m4 );
+
+        const char* pmap_name = pmap->getName();
+        const char* name = m4->GetName();
+        std::string m4_name = BFile::Name(name);
+        boost::replace_all(m4_name,"_dd_Materials_","");
+        boost::replace_all(m4_name,"RichMaterials_","");
+        boost::replace_all(m4_name,"Pipe_","");
+        boost::replace_all(m4_name,"Velo_","");
+        bool has_prefix = strncmp( m4_name.c_str(), DD_MATERIALS_PREFIX, strlen(DD_MATERIALS_PREFIX) ) == 0 ;
+        ...
+    }
+    ...
+}
+
+//cfg4/CGDMLDetector.cc
+#include <boost/algorithm/string/replace.hpp>
+...
+void CGDMLDetector::addMPTLegacyGDML()
+{
+    ...
+    for(unsigned int i=0 ; i < nmat_without_mpt ; i++)
+    {
+        G4Material* g4mat = m_traverser->getMaterialWithoutMPT(i) ;
+        const char* name = g4mat->GetName() ;
+
+        std::string base = BFile::Name(name);
+        //const char* shortname = base.c_str();
+
+        boost::replace_all(base,"_dd_Materials_","");
+        boost::replace_all(base,"RichMaterials_","");
+        boost::replace_all(base,"Pipe_","");
+        boost::replace_all(base,"Velo_","");
+        const char* shortname = base.c_str();
+        const GMaterial* ggmat = m_mlib->getMaterial(shortname);
+        ...
+    }
+}
+
+//cfg4/CMaterialBridge.cc
+#include <boost/algorithm/string/replace.hpp>
+...
+void CMaterialBridge::initMap()
+{
+    ...
+    for(unsigned i=0 ; i < nmat ; i++)
+    {
+        const G4Material* material = (*mtab)[i];
+
+        std::string name = material->GetName() ;
+
+        boost::replace_all(name,"_dd_Materials_","");
+        boost::replace_all(name,"RichMaterials_","");
+        boost::replace_all(name,"Pipe_","");
+        boost::replace_all(name,"Velo_","");
+        const char* shortname = BStr::afterLastOrAll( name.c_str(), '/' );
+
+        std::string abbr = shortname ; //  
+
+        unsigned index =  m_mlib->getIndex( shortname );
+        bool mlib_unset = GMaterialLib::IsUnset(index) ;
+        ...
+    }
+    ...
 }
