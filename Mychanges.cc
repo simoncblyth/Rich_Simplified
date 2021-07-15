@@ -202,4 +202,54 @@ int OpticksMode::getInteractivityLevel() const
     return 1  ; // always do the visualization 
 }
 
+//ggeo/GMeshLib.cc
+void GMeshLib::loadAltReferences() 
+{
+    for(unsigned i=0 ; i < m_meshes.size() ; i++ )
+    {
+        const GMesh* mesh = m_meshes[i] ; 
+        const NCSG* solid = i < m_solids.size() ? m_solids[i] : NULL ;  
+        assert( mesh->getCSG() == solid ); 
+        if(solid == NULL) continue ;  
+        if( mesh->getAlt()==NULL ) continue ; // To be consistent with GMeshLib::saveAltReferences() 
+        int altindex = solid->get_altindex();  
+        if(altindex == -1) continue ; 
+     
+        assert( unsigned(altindex) < m_meshes.size() ); 
+        const GMesh* alt = m_meshes[altindex] ; 
+        const_cast<GMesh*>(mesh)->setAlt(alt) ;            
+        LOG(LEVEL) 
+            << " mesh.i " << i 
+            << " altindex " << altindex ; 
+            ;
+    }
+}
 
+//ggeo/GParts.cc
+GParts* GParts::Create(const Opticks* ok, const GPts* pts, const std::vector<const NCSG*>& solids, unsigned* num_mismatch_pt, std::vector<glm::mat4>* mismatch_placements ) // static
+{
+    ...
+    for(unsigned i=0 ; i < num_pt ; i++)
+    {
+        const GPt* pt = pts->getPt(i);
+        int   lvIdx = pt->lvIdx ;
+        int   ndIdx = pt->ndIdx ;
+        const std::string& spec = pt->getSpec() ;
+        const glm::mat4& placement = pt->getPlacement() ;
+
+        LOG(level)
+            << " pt " << std::setw(4)
+            << " lv " << std::setw(4) << lvIdx
+            << " nd " << std::setw(6) << ndIdx
+            << " pl " << GLMFormat::Format(placement)
+            << " bn " << spec
+            ;
+
+        assert( lvIdx > -1 );
+
+        //const NCSG* csg = unsigned(lvIdx) < solids.size() ? solids[lvIdx] : NULL ; 
+        const NCSG* csg = unsigned(lvIdx) < solids.size() ? solids[lvIdx] : solids[solids.size()-1] ; // lvIdx can be 868, but solids.size==300
+        assert( csg );
+        ...
+    }
+}
