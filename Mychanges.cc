@@ -293,6 +293,7 @@ void CGDMLDetector::addMPTLegacyGDML()
         G4Material* g4mat = m_traverser->getMaterialWithoutMPT(i) ;
         const char* name = g4mat->GetName() ;
 
+        //const std::string base = BFile::Name(name);
         std::string base = BFile::Name(name);
         //const char* shortname = base.c_str();
 
