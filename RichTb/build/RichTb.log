@@ -1,0 +1,218 @@
+﻿2021-08-05 21:26:21.202 FATAL [6808] [G4Opticks::initSkipGencode@351] OPTICKS_SKIP_GENCODE m_skip_gencode_count 0
+2021-08-05 21:26:21.203 INFO  [6808] [G4Opticks::G4Opticks@345] ctor : DISABLE FPE detection : as it breaks OptiX launches
+2021-08-05 21:26:21.208 INFO  [6808] [BOpticksKey::SetKey@90]  spec RichTb.X4PhysicalVolume.World.ee001ee1213a39247388335089e03415
+2021-08-05 21:26:21.210 INFO  [6808] [BOpticksResource::initViaKey@785] 
+             BOpticksKey  : KEYSOURCE
+      spec (OPTICKS_KEY)  : RichTb.X4PhysicalVolume.World.ee001ee1213a39247388335089e03415
+                 exename  : RichTb
+         current_exename  : RichTb
+                   class  : X4PhysicalVolume
+                 volname  : World
+                  digest  : ee001ee1213a39247388335089e03415
+                  idname  : RichTb_World_g4live
+                  idfile  : g4ok.gltf
+                  idgdml  : g4ok.gdml
+                  layout  : 1
+
+2021-08-05 21:26:21.211 INFO  [6808] [G4Opticks::InitOpticks@211] 
+# BOpticksKey::export_ 
+export OPTICKS_KEY=RichTb.X4PhysicalVolume.World.ee001ee1213a39247388335089e03415
+
+2021-08-05 21:26:21.211 INFO  [6808] [G4Opticks::EmbeddedCommandLine@130] Using ecl :[ --compute --embedded --xanalytic --production --nosave] OPTICKS_EMBEDDED_COMMANDLINE
+2021-08-05 21:26:21.211 INFO  [6808] [G4Opticks::EmbeddedCommandLine@131]  mode(Pro/Dev/Asis) P using "pro" (production) commandline without event saving 
+2021-08-05 21:26:21.211 INFO  [6808] [G4Opticks::EmbeddedCommandLine@136] Using extra1 argument :[--skipaheadstep 1000]
+2021-08-05 21:26:21.211 INFO  [6808] [G4Opticks::EmbeddedCommandLine@146] Using eclx envvar :[] OPTICKS_EMBEDDED_COMMANDLINE_EXTRA
+2021-08-05 21:26:21.211 INFO  [6808] [G4Opticks::InitOpticks@231] instanciate Opticks using embedded commandline only 
+2021-08-05 21:26:21.214 INFO  [6808] [Opticks::init@439] COMPUTE_MODE compute_requested  forced_compute  hostname hepgpu6.blackett.manchester.ac.uk
+2021-08-05 21:26:21.214 INFO  [6808] [Opticks::init@448]  mandatory keyed access to geometry, opticksaux 
+2021-08-05 21:26:21.214 INFO  [6808] [Opticks::init@467] OpticksSwitches:WITH_SEED_BUFFER WITH_RECORD WITH_SOURCE WITH_ALIGN_DEV WITH_LOGDOUBLE WITH_KLUDGE_FLAT_ZERO_NOPEEK WITH_SENSORLIB 
+2021-08-05 21:26:21.222 INFO  [6808] [G4Opticks::translateGeometry@931] ( CGDML /hepgpu6-data1/liyu/.opticks/geocache/RichTb_World_g4live/g4ok_gltf/ee001ee1213a39247388335089e03415/1/origin.gdml
+2021-08-05 21:26:21.228 INFO  [6808] [BFile::preparePath@842] created directory /hepgpu6-data1/liyu/.opticks/geocache/RichTb_World_g4live/g4ok_gltf/ee001ee1213a39247388335089e03415/1
+2021-08-05 21:26:21.228 INFO  [6808] [CGDML::write@372] write to /hepgpu6-data1/liyu/.opticks/geocache/RichTb_World_g4live/g4ok_gltf/ee001ee1213a39247388335089e03415/1/origin.gdml
+2021-08-05 21:26:21.252 INFO  [6808] [G4Opticks::translateGeometry@933] ) CGDML 
+2021-08-05 21:26:21.252 INFO  [6808] [G4Opticks::translateGeometry@935] ( GGeo instanciate
+2021-08-05 21:26:21.257 INFO  [6808] [G4Opticks::translateGeometry@938] ) GGeo instanciate 
+2021-08-05 21:26:21.257 INFO  [6808] [G4Opticks::translateGeometry@940] ( GGeo populate
+2021-08-05 21:26:21.258 ERROR [6808] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt Air
+2021-08-05 21:26:21.260 ERROR [6808] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt GasWinQuartz
+2021-08-05 21:26:21.261 ERROR [6808] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt CarbonMaterial
+2021-08-05 21:26:21.261 ERROR [6808] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt Kovar
+2021-08-05 21:26:21.261 ERROR [6808] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt PMTAnode
+2021-08-05 21:26:21.261 ERROR [6808] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt HpdAnode
+2021-08-05 21:29:08.686 FATAL [7208] [G4Opticks::initSkipGencode@351] OPTICKS_SKIP_GENCODE m_skip_gencode_count 0
+2021-08-05 21:29:08.687 INFO  [7208] [G4Opticks::G4Opticks@345] ctor : DISABLE FPE detection : as it breaks OptiX launches
+2021-08-05 21:29:08.692 INFO  [7208] [BOpticksKey::SetKey@90]  spec RichTb.X4PhysicalVolume.World.70e09c6d7ed82ba3bd2f6cbbd7c57f5a
+2021-08-05 21:29:08.695 INFO  [7208] [BOpticksResource::initViaKey@785] 
+             BOpticksKey  : KEYSOURCE
+      spec (OPTICKS_KEY)  : RichTb.X4PhysicalVolume.World.70e09c6d7ed82ba3bd2f6cbbd7c57f5a
+                 exename  : RichTb
+         current_exename  : RichTb
+                   class  : X4PhysicalVolume
+                 volname  : World
+                  digest  : 70e09c6d7ed82ba3bd2f6cbbd7c57f5a
+                  idname  : RichTb_World_g4live
+                  idfile  : g4ok.gltf
+                  idgdml  : g4ok.gdml
+                  layout  : 1
+
+2021-08-05 21:29:08.695 INFO  [7208] [G4Opticks::InitOpticks@211] 
+# BOpticksKey::export_ 
+export OPTICKS_KEY=RichTb.X4PhysicalVolume.World.70e09c6d7ed82ba3bd2f6cbbd7c57f5a
+
+2021-08-05 21:29:08.695 INFO  [7208] [G4Opticks::EmbeddedCommandLine@130] Using ecl :[ --compute --embedded --xanalytic --production --nosave] OPTICKS_EMBEDDED_COMMANDLINE
+2021-08-05 21:29:08.695 INFO  [7208] [G4Opticks::EmbeddedCommandLine@131]  mode(Pro/Dev/Asis) P using "pro" (production) commandline without event saving 
+2021-08-05 21:29:08.695 INFO  [7208] [G4Opticks::EmbeddedCommandLine@136] Using extra1 argument :[--skipaheadstep 1000]
+2021-08-05 21:29:08.695 INFO  [7208] [G4Opticks::EmbeddedCommandLine@146] Using eclx envvar :[] OPTICKS_EMBEDDED_COMMANDLINE_EXTRA
+2021-08-05 21:29:08.695 INFO  [7208] [G4Opticks::InitOpticks@231] instanciate Opticks using embedded commandline only 
+2021-08-05 21:29:08.698 INFO  [7208] [Opticks::init@439] COMPUTE_MODE compute_requested  forced_compute  hostname hepgpu6.blackett.manchester.ac.uk
+2021-08-05 21:29:08.698 INFO  [7208] [Opticks::init@448]  mandatory keyed access to geometry, opticksaux 
+2021-08-05 21:29:08.699 INFO  [7208] [Opticks::init@467] OpticksSwitches:WITH_SEED_BUFFER WITH_RECORD WITH_SOURCE WITH_ALIGN_DEV WITH_LOGDOUBLE WITH_KLUDGE_FLAT_ZERO_NOPEEK WITH_SENSORLIB 
+2021-08-05 21:29:08.707 INFO  [7208] [G4Opticks::translateGeometry@931] ( CGDML /hepgpu6-data1/liyu/.opticks/geocache/RichTb_World_g4live/g4ok_gltf/70e09c6d7ed82ba3bd2f6cbbd7c57f5a/1/origin.gdml
+2021-08-05 21:29:08.713 INFO  [7208] [BFile::preparePath@842] created directory /hepgpu6-data1/liyu/.opticks/geocache/RichTb_World_g4live/g4ok_gltf/70e09c6d7ed82ba3bd2f6cbbd7c57f5a/1
+2021-08-05 21:29:08.713 INFO  [7208] [CGDML::write@372] write to /hepgpu6-data1/liyu/.opticks/geocache/RichTb_World_g4live/g4ok_gltf/70e09c6d7ed82ba3bd2f6cbbd7c57f5a/1/origin.gdml
+2021-08-05 21:29:08.737 INFO  [7208] [G4Opticks::translateGeometry@933] ) CGDML 
+2021-08-05 21:29:08.737 INFO  [7208] [G4Opticks::translateGeometry@935] ( GGeo instanciate
+2021-08-05 21:29:08.742 INFO  [7208] [G4Opticks::translateGeometry@938] ) GGeo instanciate 
+2021-08-05 21:29:08.742 INFO  [7208] [G4Opticks::translateGeometry@940] ( GGeo populate
+2021-08-05 21:29:08.743 ERROR [7208] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt Air
+2021-08-05 21:29:08.745 ERROR [7208] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt GasWinQuartz
+2021-08-05 21:29:08.746 ERROR [7208] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt CarbonMaterial
+2021-08-05 21:29:08.746 ERROR [7208] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt Kovar
+2021-08-05 21:29:08.746 ERROR [7208] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt PMTAnode
+2021-08-05 21:29:08.746 ERROR [7208] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt HpdAnode
+2021-08-05 21:29:08.751 INFO  [7208] [X4PhysicalVolume::convertMaterials@257]  num_materials 26 num_material_with_efficiency 0
+2021-08-05 21:29:08.751 INFO  [7208] [GMaterialLib::dumpSensitiveMaterials@1230] X4PhysicalVolume::convertMaterials num_sensitive_materials 0
+2021-08-05 21:29:08.754 INFO  [7208] [GSurfaceLib::dumpSurfaces@758] X4PhysicalVolume::convertSurfaces num_surfaces 7
+2021-08-05 21:29:08.754 INFO  [7208] [GPropertyLib::dumpSensorIndices@933] X4PhysicalVolume::convertSurfaces  NumSensorIndices 1 ( 3  ) 
+2021-08-05 21:29:09.336 INFO  [7208] [X4PhysicalVolume::dumpLV@691]  m_lvidx.size() 66 m_lvlist.size() 66
+2021-08-05 21:29:09.337 INFO  [7208] [X4PhysicalVolume::convertStructure@796] [ creating large tree of GVolume instances
+2021-08-05 21:29:09.347 INFO  [7208] [X4PhysicalVolume::postConvert@201]  GGeo::getNumVolumes() 0 GGeo::getNumSensorVolumes() 0
+ GGeo::getSensorBoundaryReport() 
+                      sensor_total      0
+
+2021-08-05 21:29:09.347 INFO  [7208] [G4Opticks::translateGeometry@942] ) GGeo populate
+2021-08-05 21:29:09.347 INFO  [7208] [G4Opticks::translateGeometry@944] ( GGeo::postDirectTranslation 
+2021-08-05 21:29:09.348 INFO  [7208] [GGeo::prepare@630] [
+2021-08-05 21:29:09.349 INFO  [7208] [GGeo::prepareVolumes@1246] [ creating merged meshes from the volume tree 
+2021-08-05 21:29:09.355 INFO  [7208] [GInstancer::findRepeatCandidates@345]  nall 66 repeat_min 400 vertex_min 0 num_repcan 0
+2021-08-05 21:29:09.358 ERROR [7208] [GGeoLib::makeMergedMesh@324] mm index   0 geocode   T                  numVolumes        129 numFaces        3460 numITransforms           0 numITransforms*numVolumes           0 GParts N GPts Y
+2021-08-05 21:29:09.359 INFO  [7208] [GInstancer::makeMergedMeshAndInstancedBuffers@787]  numRepeats 0 numRidx 1
+2021-08-05 21:29:09.361 INFO  [7208] [GInstancer::dump@890] GGeo::prepareVolumes
+2021-08-05 21:29:09.361 INFO  [7208] [GInstancer::dumpMeshset@834]  numRepeats 0 numRidx 1 (slot 0 for global non-instanced) 
+2021-08-05 21:29:09.362 INFO  [7208] [GInstancer::dumpCSGSkips@866] 
+2021-08-05 21:29:09.362 INFO  [7208] [GGeo::prepareVolumes@1278] ]
+2021-08-05 21:29:09.386 INFO  [7208] [GGeo::prepare@650] ]
+2021-08-05 21:29:09.387 INFO  [7208] [GGeoLib::dump@385] GGeo::save GGeoLib numMergedMesh 1 ptr 0x1c17880
+2021-08-05 21:29:09.390 INFO  [7208] [GMeshLib::addAltMeshes@116]  num_indices_with_alt 0
+2021-08-05 21:29:09.390 INFO  [7208] [GMeshLib::dump@227] addAltMeshes meshnames 66 meshes 66
+2021-08-05 21:29:09.391 INFO  [7208] [BFile::preparePath@842] created directory /hepgpu6-data1/liyu/.opticks/geocache/RichTb_World_g4live/g4ok_gltf/70e09c6d7ed82ba3bd2f6cbbd7c57f5a/1/GItemList
+2021-08-05 21:29:09.424 INFO  [7208] [BFile::preparePath@842] created directory /hepgpu6-data1/liyu/.opticks/geocache/RichTb_World_g4live/g4ok_gltf/70e09c6d7ed82ba3bd2f6cbbd7c57f5a/1/GNodeLib
+2021-08-05 21:29:09.426 INFO  [7208] [BMeta::dump@199] GGeo::saveCacheMeta
+2021-08-05 21:29:09.435 INFO  [7208] [GGeo::postDirectTranslationDump@605] GGeo::postDirectTranslationDump NOT --dumpsensor numSensorVolumes 0
+2021-08-05 21:29:09.435 INFO  [7208] [G4Opticks::translateGeometry@946] ) GGeo::postDirectTranslation 
+2021-08-05 21:29:09.435 INFO  [7208] [G4Opticks::setGeometry@639]  GGeo: LIVE TRANSLATED  num_sensor 0
+2021-08-05 21:29:09.439 INFO  [7208] [GNodeLib::getFirstNodeIndexForGDMLAuxTargetLVName@289]  target_lvname (null) nidxs.size() 0 nidx -1
+2021-08-05 21:29:09.441 ERROR [7208] [OpticksGen::initFromLegacyGensteps@191] SKIP as isNoInputGensteps OR isEmbedded  
+2021-08-05 21:29:09.465 INFO  [7208] [OContext::InitRTX@335]  --rtx 0 setting  OFF
+2021-08-05 21:29:09.531 INFO  [7208] [OContext::CheckDevices@219] 
+Device 0                       Tesla T4 ordinal 0 Compute Support: 7 5 Total Memory: 15843721216
+
+2021-08-05 21:29:09.578 ERROR [7208] [CDevice::Load@306]  failed read from /hepgpu6-data1/liyu/.opticks/runcache/CDevice.bin
+2021-08-05 21:29:09.579 ERROR [7208] [CDevice::Load@306]  failed read from /hepgpu6-data1/liyu/.opticks/runcache/CDevice.bin
+2021-08-05 21:29:09.579 INFO  [7208] [CDevice::Dump@245] Visible devices[-1:Tesla_T4]
+2021-08-05 21:29:09.579 INFO  [7208] [CDevice::Dump@249] CDevice index 0 ordinal -1 name Tesla T4 major 7 minor 5 compute_capability 75 multiProcessorCount 40 totalGlobalMem 15843721216
+2021-08-05 21:29:09.579 INFO  [7208] [CDevice::Dump@245] All devices[]
+2021-08-05 21:29:09.766 INFO  [7208] [OGeo::init@240] OGeo  top Sbvh ggg Sbvh assembly Sbvh instance Sbvh
+2021-08-05 21:29:09.766 INFO  [7208] [GGeoLib::dump@385] OGeo::convert GGeoLib numMergedMesh 1 ptr 0x1c17880
+2021-08-05 21:29:09.766 INFO  [7208] [OGeo::convert@301] [ nmm 1
+2021-08-05 21:29:09.818 INFO  [7208] [OGeo::convert@314] ] nmm 1
+2021-08-05 21:29:09.821 ERROR [7208] [cuRANDWrapper::setItems@154] CAUTION : are resizing the launch sequence 
+2021-08-05 21:29:10.818 FATAL [7208] [ORng::setSkipAhead@160]  skip as as WITH_SKIPAHEAD not enabled 
+2021-08-05 21:29:10.826 FATAL [7208] [G4Opticks::propagateOpticalPhotons@1090] SKIP as no gensteps have been collected 
+2021-08-05 21:33:27.852 FATAL [20360] [G4Opticks::initSkipGencode@351] OPTICKS_SKIP_GENCODE m_skip_gencode_count 0
+2021-08-05 21:33:27.853 INFO  [20360] [G4Opticks::G4Opticks@345] ctor : DISABLE FPE detection : as it breaks OptiX launches
+2021-08-05 21:33:27.858 INFO  [20360] [BOpticksKey::SetKey@90]  spec RichTb.X4PhysicalVolume.World.70e09c6d7ed82ba3bd2f6cbbd7c57f5a
+2021-08-05 21:33:27.861 INFO  [20360] [BOpticksResource::initViaKey@785] 
+             BOpticksKey  : KEYSOURCE
+      spec (OPTICKS_KEY)  : RichTb.X4PhysicalVolume.World.70e09c6d7ed82ba3bd2f6cbbd7c57f5a
+                 exename  : RichTb
+         current_exename  : RichTb
+                   class  : X4PhysicalVolume
+                 volname  : World
+                  digest  : 70e09c6d7ed82ba3bd2f6cbbd7c57f5a
+                  idname  : RichTb_World_g4live
+                  idfile  : g4ok.gltf
+                  idgdml  : g4ok.gdml
+                  layout  : 1
+
+2021-08-05 21:33:27.861 INFO  [20360] [G4Opticks::InitOpticks@211] 
+# BOpticksKey::export_ 
+export OPTICKS_KEY=RichTb.X4PhysicalVolume.World.70e09c6d7ed82ba3bd2f6cbbd7c57f5a
+
+2021-08-05 21:33:27.861 INFO  [20360] [G4Opticks::EmbeddedCommandLine@130] Using ecl :[ --compute --embedded --xanalytic --production --nosave] OPTICKS_EMBEDDED_COMMANDLINE
+2021-08-05 21:33:27.861 INFO  [20360] [G4Opticks::EmbeddedCommandLine@131]  mode(Pro/Dev/Asis) P using "pro" (production) commandline without event saving 
+2021-08-05 21:33:27.861 INFO  [20360] [G4Opticks::EmbeddedCommandLine@136] Using extra1 argument :[--skipaheadstep 1000]
+2021-08-05 21:33:27.861 INFO  [20360] [G4Opticks::EmbeddedCommandLine@146] Using eclx envvar :[] OPTICKS_EMBEDDED_COMMANDLINE_EXTRA
+2021-08-05 21:33:27.861 INFO  [20360] [G4Opticks::InitOpticks@231] instanciate Opticks using embedded commandline only 
+2021-08-05 21:33:27.865 INFO  [20360] [Opticks::init@439] COMPUTE_MODE compute_requested  forced_compute  hostname hepgpu6.blackett.manchester.ac.uk
+2021-08-05 21:33:27.865 INFO  [20360] [Opticks::init@448]  mandatory keyed access to geometry, opticksaux 
+2021-08-05 21:33:27.865 INFO  [20360] [Opticks::init@467] OpticksSwitches:WITH_SEED_BUFFER WITH_RECORD WITH_SOURCE WITH_ALIGN_DEV WITH_LOGDOUBLE WITH_KLUDGE_FLAT_ZERO_NOPEEK WITH_SENSORLIB 
+2021-08-05 21:33:27.873 INFO  [20360] [G4Opticks::translateGeometry@931] ( CGDML /hepgpu6-data1/liyu/.opticks/geocache/RichTb_World_g4live/g4ok_gltf/70e09c6d7ed82ba3bd2f6cbbd7c57f5a/1/origin.gdml
+2021-08-05 21:33:27.880 INFO  [20360] [CGDML::write@372] write to /hepgpu6-data1/liyu/.opticks/geocache/RichTb_World_g4live/g4ok_gltf/70e09c6d7ed82ba3bd2f6cbbd7c57f5a/1/origin.gdml
+2021-08-05 21:33:27.904 INFO  [20360] [G4Opticks::translateGeometry@933] ) CGDML 
+2021-08-05 21:33:27.904 INFO  [20360] [G4Opticks::translateGeometry@935] ( GGeo instanciate
+2021-08-05 21:33:27.909 INFO  [20360] [G4Opticks::translateGeometry@938] ) GGeo instanciate 
+2021-08-05 21:33:27.909 INFO  [20360] [G4Opticks::translateGeometry@940] ( GGeo populate
+2021-08-05 21:33:27.909 ERROR [20360] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt Air
+2021-08-05 21:33:27.912 ERROR [20360] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt GasWinQuartz
+2021-08-05 21:33:27.912 ERROR [20360] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt CarbonMaterial
+2021-08-05 21:33:27.912 ERROR [20360] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt Kovar
+2021-08-05 21:33:27.912 ERROR [20360] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt PMTAnode
+2021-08-05 21:33:27.913 ERROR [20360] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt HpdAnode
+2021-08-05 21:33:27.917 INFO  [20360] [X4PhysicalVolume::convertMaterials@257]  num_materials 26 num_material_with_efficiency 0
+2021-08-05 21:33:27.917 INFO  [20360] [GMaterialLib::dumpSensitiveMaterials@1230] X4PhysicalVolume::convertMaterials num_sensitive_materials 0
+2021-08-05 21:33:27.919 INFO  [20360] [GSurfaceLib::dumpSurfaces@758] X4PhysicalVolume::convertSurfaces num_surfaces 7
+2021-08-05 21:33:27.919 INFO  [20360] [GPropertyLib::dumpSensorIndices@933] X4PhysicalVolume::convertSurfaces  NumSensorIndices 1 ( 3  ) 
+2021-08-05 21:33:28.411 INFO  [20360] [X4PhysicalVolume::dumpLV@691]  m_lvidx.size() 66 m_lvlist.size() 66
+2021-08-05 21:33:28.412 INFO  [20360] [X4PhysicalVolume::convertStructure@796] [ creating large tree of GVolume instances
+2021-08-05 21:33:28.422 INFO  [20360] [X4PhysicalVolume::postConvert@201]  GGeo::getNumVolumes() 0 GGeo::getNumSensorVolumes() 0
+ GGeo::getSensorBoundaryReport() 
+                      sensor_total      0
+
+2021-08-05 21:33:28.422 INFO  [20360] [G4Opticks::translateGeometry@942] ) GGeo populate
+2021-08-05 21:33:28.422 INFO  [20360] [G4Opticks::translateGeometry@944] ( GGeo::postDirectTranslation 
+2021-08-05 21:33:28.422 INFO  [20360] [GGeo::prepare@630] [
+2021-08-05 21:33:28.423 INFO  [20360] [GGeo::prepareVolumes@1246] [ creating merged meshes from the volume tree 
+2021-08-05 21:33:28.429 INFO  [20360] [GInstancer::findRepeatCandidates@345]  nall 66 repeat_min 400 vertex_min 0 num_repcan 0
+2021-08-05 21:33:28.433 ERROR [20360] [GGeoLib::makeMergedMesh@324] mm index   0 geocode   T                  numVolumes        129 numFaces        3460 numITransforms           0 numITransforms*numVolumes           0 GParts N GPts Y
+2021-08-05 21:33:28.433 INFO  [20360] [GInstancer::makeMergedMeshAndInstancedBuffers@787]  numRepeats 0 numRidx 1
+2021-08-05 21:33:28.436 INFO  [20360] [GInstancer::dump@890] GGeo::prepareVolumes
+2021-08-05 21:33:28.436 INFO  [20360] [GInstancer::dumpMeshset@834]  numRepeats 0 numRidx 1 (slot 0 for global non-instanced) 
+2021-08-05 21:33:28.436 INFO  [20360] [GInstancer::dumpCSGSkips@866] 
+2021-08-05 21:33:28.436 INFO  [20360] [GGeo::prepareVolumes@1278] ]
+2021-08-05 21:33:28.461 INFO  [20360] [GGeo::prepare@650] ]
+2021-08-05 21:33:28.461 INFO  [20360] [GGeoLib::dump@385] GGeo::save GGeoLib numMergedMesh 1 ptr 0x1ac9880
+2021-08-05 21:33:28.464 INFO  [20360] [GMeshLib::addAltMeshes@116]  num_indices_with_alt 0
+2021-08-05 21:33:28.464 INFO  [20360] [GMeshLib::dump@227] addAltMeshes meshnames 66 meshes 66
+2021-08-05 21:33:28.571 INFO  [20360] [BMeta::dump@199] GGeo::saveCacheMeta
+2021-08-05 21:33:28.587 INFO  [20360] [GGeo::postDirectTranslationDump@605] GGeo::postDirectTranslationDump NOT --dumpsensor numSensorVolumes 0
+2021-08-05 21:33:28.587 INFO  [20360] [G4Opticks::translateGeometry@946] ) GGeo::postDirectTranslation 
+2021-08-05 21:33:28.587 INFO  [20360] [G4Opticks::setGeometry@639]  GGeo: LIVE TRANSLATED  num_sensor 0
+2021-08-05 21:33:28.596 INFO  [20360] [GNodeLib::getFirstNodeIndexForGDMLAuxTargetLVName@289]  target_lvname (null) nidxs.size() 0 nidx -1
+2021-08-05 21:33:28.599 ERROR [20360] [OpticksGen::initFromLegacyGensteps@191] SKIP as isNoInputGensteps OR isEmbedded  
+2021-08-05 21:33:28.629 INFO  [20360] [OContext::InitRTX@335]  --rtx 0 setting  OFF
+2021-08-05 21:33:28.705 INFO  [20360] [OContext::CheckDevices@219] 
+Device 0                       Tesla T4 ordinal 0 Compute Support: 7 5 Total Memory: 15843721216
+
+2021-08-05 21:33:28.745 ERROR [20360] [CDevice::Load@306]  failed read from /hepgpu6-data1/liyu/.opticks/runcache/CDevice.bin
+2021-08-05 21:33:28.745 ERROR [20360] [CDevice::Load@306]  failed read from /hepgpu6-data1/liyu/.opticks/runcache/CDevice.bin
+2021-08-05 21:33:28.745 INFO  [20360] [CDevice::Dump@245] Visible devices[-1:Tesla_T4]
+2021-08-05 21:33:28.745 INFO  [20360] [CDevice::Dump@249] CDevice index 0 ordinal -1 name Tesla T4 major 7 minor 5 compute_capability 75 multiProcessorCount 40 totalGlobalMem 15843721216
+2021-08-05 21:33:28.745 INFO  [20360] [CDevice::Dump@245] All devices[]
+2021-08-05 21:33:28.879 INFO  [20360] [OGeo::init@240] OGeo  top Sbvh ggg Sbvh assembly Sbvh instance Sbvh
+2021-08-05 21:33:28.879 INFO  [20360] [GGeoLib::dump@385] OGeo::convert GGeoLib numMergedMesh 1 ptr 0x1ac9880
+2021-08-05 21:33:28.879 INFO  [20360] [OGeo::convert@301] [ nmm 1
+2021-08-05 21:33:28.927 INFO  [20360] [OGeo::convert@314] ] nmm 1
+2021-08-05 21:33:28.930 ERROR [20360] [cuRANDWrapper::setItems@154] CAUTION : are resizing the launch sequence 
+2021-08-05 21:33:29.880 FATAL [20360] [ORng::setSkipAhead@160]  skip as as WITH_SKIPAHEAD not enabled 
+2021-08-05 21:33:29.889 FATAL [20360] [G4Opticks::propagateOpticalPhotons@1090] SKIP as no gensteps have been collected 

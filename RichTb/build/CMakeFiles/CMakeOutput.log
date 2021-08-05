@@ -1,0 +1,580 @@
+The system is: Linux - 3.10.0-1160.36.2.el7.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/3.19.4/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/3.19.4/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_f4c49/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f4c49.dir/build.make CMakeFiles/cmTC_f4c49.dir/build
+gmake[1]: Entering directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f4c49.dir/CMakeCCompilerABI.c.o
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc   -v -o CMakeFiles/cmTC_f4c49.dir/CMakeCCompilerABI.c.o -c /cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/share/cmake-3.19/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc
+Target: x86_64-unknown-linux-gnu
+Configured with: ../gcc-4.9.3/configure --prefix=/build/pmendez-sftnight/install-493/ --with-system-zlib --disable-multilib --enable-languages=all
+Thread model: posix
+gcc version 4.9.3 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4c49.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/cc1 -quiet -v -iprefix /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/ -isystem /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include -isystem /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed /cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/share/cmake-3.19/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_f4c49.dir/CMakeCCompilerABI.c.o -version -o /tmp/liyu/opticks/ccRt2HkK.s
+GNU C (GCC) version 4.9.3 (x86_64-unknown-linux-gnu)
+	compiled by GNU C version 4.9.3, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include"
+ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed"
+ignoring nonexistent directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../x86_64-unknown-linux-gnu/include"
+ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include"
+ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed"
+ignoring nonexistent directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../x86_64-unknown-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed
+ /usr/local/include
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../include
+ /usr/include
+End of search list.
+GNU C (GCC) version 4.9.3 (x86_64-unknown-linux-gnu)
+	compiled by GNU C version 4.9.3, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 737ebec5747a6c8d259557aeca8d4600
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4c49.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_f4c49.dir/CMakeCCompilerABI.c.o /tmp/liyu/opticks/ccRt2HkK.s
+GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+COMPILER_PATH=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/
+LIBRARY_PATH=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4c49.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_f4c49
+/cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4c49.dir/link.txt --verbose=1
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc  -v CMakeFiles/cmTC_f4c49.dir/CMakeCCompilerABI.c.o -o cmTC_f4c49 
+Using built-in specs.
+COLLECT_GCC=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc
+COLLECT_LTO_WRAPPER=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: ../gcc-4.9.3/configure --prefix=/build/pmendez-sftnight/install-493/ --with-system-zlib --disable-multilib --enable-languages=all
+Thread model: posix
+gcc version 4.9.3 (GCC) 
+COMPILER_PATH=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/
+LIBRARY_PATH=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4c49' '-mtune=generic' '-march=x86-64'
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/collect2 -plugin /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/liblto_plugin.so -plugin-opt=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/lto-wrapper -plugin-opt=-fresolution=/tmp/liyu/opticks/cc6aHzNW.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f4c49 /lib/../lib64/crt1.o /lib/../lib64/crti.o /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/crtbegin.o -L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3 -L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc -L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../.. CMakeFiles/cmTC_f4c49.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/crtend.o /lib/../lib64/crtn.o
+gmake[1]: Leaving directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include]
+    add: [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed]
+    add: [/usr/local/include]
+    add: [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include] ==> [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include]
+  collapse include dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed] ==> [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../include] ==> [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include;/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed;/usr/local/include;/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/include;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_f4c49/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f4c49.dir/build.make CMakeFiles/cmTC_f4c49.dir/build]
+  ignore line: [gmake[1]: Entering directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_f4c49.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc   -v -o CMakeFiles/cmTC_f4c49.dir/CMakeCCompilerABI.c.o -c /cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/share/cmake-3.19/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: ../gcc-4.9.3/configure --prefix=/build/pmendez-sftnight/install-493/ --with-system-zlib --disable-multilib --enable-languages=all]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.9.3 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4c49.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/cc1 -quiet -v -iprefix /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/ -isystem /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include -isystem /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed /cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/share/cmake-3.19/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_f4c49.dir/CMakeCCompilerABI.c.o -version -o /tmp/liyu/opticks/ccRt2HkK.s]
+  ignore line: [GNU C (GCC) version 4.9.3 (x86_64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 4.9.3  GMP version 4.3.2  MPFR version 2.4.2  MPC version 0.8.1]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include"]
+  ignore line: [ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../x86_64-unknown-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include"]
+  ignore line: [ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../x86_64-unknown-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include]
+  ignore line: [ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C (GCC) version 4.9.3 (x86_64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 4.9.3  GMP version 4.3.2  MPFR version 2.4.2  MPC version 0.8.1]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 737ebec5747a6c8d259557aeca8d4600]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4c49.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_f4c49.dir/CMakeCCompilerABI.c.o /tmp/liyu/opticks/ccRt2HkK.s]
+  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7]
+  ignore line: [COMPILER_PATH=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/]
+  ignore line: [LIBRARY_PATH=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4c49.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_f4c49]
+  ignore line: [/cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4c49.dir/link.txt --verbose=1]
+  ignore line: [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc  -v CMakeFiles/cmTC_f4c49.dir/CMakeCCompilerABI.c.o -o cmTC_f4c49 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/lto-wrapper]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: ../gcc-4.9.3/configure --prefix=/build/pmendez-sftnight/install-493/ --with-system-zlib --disable-multilib --enable-languages=all]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.9.3 (GCC) ]
+  ignore line: [COMPILER_PATH=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/]
+  ignore line: [LIBRARY_PATH=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4c49' '-mtune=generic' '-march=x86-64']
+  link line: [ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/collect2 -plugin /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/liblto_plugin.so -plugin-opt=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/lto-wrapper -plugin-opt=-fresolution=/tmp/liyu/opticks/cc6aHzNW.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f4c49 /lib/../lib64/crt1.o /lib/../lib64/crti.o /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/crtbegin.o -L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3 -L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc -L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../.. CMakeFiles/cmTC_f4c49.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/crtend.o /lib/../lib64/crtn.o]
+    arg [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/liyu/opticks/cc6aHzNW.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_f4c49] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> ignore
+    arg [/lib/../lib64/crti.o] ==> ignore
+    arg [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/crtbegin.o] ==> ignore
+    arg [-L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3] ==> dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3]
+    arg [-L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc] ==> dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc]
+    arg [-L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64] ==> dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../..] ==> dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../..]
+    arg [CMakeFiles/cmTC_f4c49.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/crtend.o] ==> ignore
+    arg [/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3] ==> [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3]
+  collapse library dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc] ==> [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc]
+  collapse library dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64] ==> [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../..] ==> [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3;/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc;/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib64;/lib64;/usr/lib64;/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_395fe/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_395fe.dir/build.make CMakeFiles/cmTC_395fe.dir/build
+gmake[1]: Entering directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_395fe.dir/CMakeCXXCompilerABI.cpp.o
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++   -v -o CMakeFiles/cmTC_395fe.dir/CMakeCXXCompilerABI.cpp.o -c /cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++
+Target: x86_64-unknown-linux-gnu
+Configured with: ../gcc-4.9.3/configure --prefix=/build/pmendez-sftnight/install-493/ --with-system-zlib --disable-multilib --enable-languages=all
+Thread model: posix
+gcc version 4.9.3 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_395fe.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/cc1plus -quiet -v -iprefix /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/ -isystem /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include -isystem /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed -D_GNU_SOURCE /cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_395fe.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/liyu/opticks/ccq9rsof.s
+GNU C++ (GCC) version 4.9.3 (x86_64-unknown-linux-gnu)
+	compiled by GNU C version 4.9.3, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include"
+ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed"
+ignoring nonexistent directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../x86_64-unknown-linux-gnu/include"
+ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3"
+ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/x86_64-unknown-linux-gnu"
+ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/backward"
+ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include"
+ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed"
+ignoring nonexistent directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../x86_64-unknown-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/x86_64-unknown-linux-gnu
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/backward
+ /usr/local/include
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../include
+ /usr/include
+End of search list.
+GNU C++ (GCC) version 4.9.3 (x86_64-unknown-linux-gnu)
+	compiled by GNU C version 4.9.3, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: daf4815c4344d67fad07171b120c6942
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_395fe.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_395fe.dir/CMakeCXXCompilerABI.cpp.o /tmp/liyu/opticks/ccq9rsof.s
+GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+COMPILER_PATH=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/
+LIBRARY_PATH=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_395fe.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_395fe
+/cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_395fe.dir/link.txt --verbose=1
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++  -v CMakeFiles/cmTC_395fe.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_395fe 
+Using built-in specs.
+COLLECT_GCC=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++
+COLLECT_LTO_WRAPPER=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: ../gcc-4.9.3/configure --prefix=/build/pmendez-sftnight/install-493/ --with-system-zlib --disable-multilib --enable-languages=all
+Thread model: posix
+gcc version 4.9.3 (GCC) 
+COMPILER_PATH=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/
+LIBRARY_PATH=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_395fe' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/collect2 -plugin /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/liblto_plugin.so -plugin-opt=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/lto-wrapper -plugin-opt=-fresolution=/tmp/liyu/opticks/ccybMXEp.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_395fe /lib/../lib64/crt1.o /lib/../lib64/crti.o /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/crtbegin.o -L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3 -L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc -L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../.. CMakeFiles/cmTC_395fe.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/crtend.o /lib/../lib64/crtn.o
+gmake[1]: Leaving directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include]
+    add: [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed]
+    add: [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3]
+    add: [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/x86_64-unknown-linux-gnu]
+    add: [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/backward]
+    add: [/usr/local/include]
+    add: [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include] ==> [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include]
+  collapse include dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed] ==> [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed]
+  collapse include dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3] ==> [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/include/c++/4.9.3]
+  collapse include dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/x86_64-unknown-linux-gnu] ==> [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/include/c++/4.9.3/x86_64-unknown-linux-gnu]
+  collapse include dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/backward] ==> [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/include/c++/4.9.3/backward]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../include] ==> [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include;/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed;/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/include/c++/4.9.3;/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/include/c++/4.9.3/x86_64-unknown-linux-gnu;/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/include/c++/4.9.3/backward;/usr/local/include;/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/include;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_395fe/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_395fe.dir/build.make CMakeFiles/cmTC_395fe.dir/build]
+  ignore line: [gmake[1]: Entering directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_395fe.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++   -v -o CMakeFiles/cmTC_395fe.dir/CMakeCXXCompilerABI.cpp.o -c /cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: ../gcc-4.9.3/configure --prefix=/build/pmendez-sftnight/install-493/ --with-system-zlib --disable-multilib --enable-languages=all]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.9.3 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_395fe.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/cc1plus -quiet -v -iprefix /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/ -isystem /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include -isystem /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed -D_GNU_SOURCE /cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_395fe.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/liyu/opticks/ccq9rsof.s]
+  ignore line: [GNU C++ (GCC) version 4.9.3 (x86_64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 4.9.3  GMP version 4.3.2  MPFR version 2.4.2  MPC version 0.8.1]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include"]
+  ignore line: [ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../x86_64-unknown-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3"]
+  ignore line: [ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/x86_64-unknown-linux-gnu"]
+  ignore line: [ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/backward"]
+  ignore line: [ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include"]
+  ignore line: [ignoring duplicate directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../x86_64-unknown-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include]
+  ignore line: [ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed]
+  ignore line: [ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3]
+  ignore line: [ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/x86_64-unknown-linux-gnu]
+  ignore line: [ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../include/c++/4.9.3/backward]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/../../include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++ (GCC) version 4.9.3 (x86_64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 4.9.3  GMP version 4.3.2  MPFR version 2.4.2  MPC version 0.8.1]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: daf4815c4344d67fad07171b120c6942]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_395fe.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_395fe.dir/CMakeCXXCompilerABI.cpp.o /tmp/liyu/opticks/ccq9rsof.s]
+  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7]
+  ignore line: [COMPILER_PATH=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/]
+  ignore line: [LIBRARY_PATH=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_395fe.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_395fe]
+  ignore line: [/cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_395fe.dir/link.txt --verbose=1]
+  ignore line: [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++  -v CMakeFiles/cmTC_395fe.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_395fe ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/lto-wrapper]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: ../gcc-4.9.3/configure --prefix=/build/pmendez-sftnight/install-493/ --with-system-zlib --disable-multilib --enable-languages=all]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.9.3 (GCC) ]
+  ignore line: [COMPILER_PATH=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/]
+  ignore line: [LIBRARY_PATH=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_395fe' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/collect2 -plugin /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/liblto_plugin.so -plugin-opt=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/lto-wrapper -plugin-opt=-fresolution=/tmp/liyu/opticks/ccybMXEp.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_395fe /lib/../lib64/crt1.o /lib/../lib64/crti.o /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/crtbegin.o -L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3 -L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc -L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../.. CMakeFiles/cmTC_395fe.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/crtend.o /lib/../lib64/crtn.o]
+    arg [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../libexec/gcc/x86_64-unknown-linux-gnu/4.9.3/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/liyu/opticks/ccybMXEp.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_395fe] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> ignore
+    arg [/lib/../lib64/crti.o] ==> ignore
+    arg [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/crtbegin.o] ==> ignore
+    arg [-L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3] ==> dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3]
+    arg [-L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc] ==> dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc]
+    arg [-L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64] ==> dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../..] ==> dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../..]
+    arg [CMakeFiles/cmTC_395fe.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/crtend.o] ==> ignore
+    arg [/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3] ==> [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3]
+  collapse library dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc] ==> [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc]
+  collapse library dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../../../lib64] ==> [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.9.3/../../..] ==> [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc/x86_64-unknown-linux-gnu/4.9.3;/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib/gcc;/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib64;/lib64;/usr/lib64;/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_f44a8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f44a8.dir/build.make CMakeFiles/cmTC_f44a8.dir/build
+gmake[1]: Entering directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f44a8.dir/feature_tests.cxx.o
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++   -std=c++14 -o CMakeFiles/cmTC_f44a8.dir/feature_tests.cxx.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_f44a8
+/cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f44a8.dir/link.txt --verbose=1
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ CMakeFiles/cmTC_f44a8.dir/feature_tests.cxx.o -o cmTC_f44a8 
+gmake[1]: Leaving directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+
+
+
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_3cb88/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3cb88.dir/build.make CMakeFiles/cmTC_3cb88.dir/build
+gmake[1]: Entering directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3cb88.dir/CheckIncludeFile.c.o
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc    -o CMakeFiles/cmTC_3cb88.dir/CheckIncludeFile.c.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_3cb88
+/cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3cb88.dir/link.txt --verbose=1
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc CMakeFiles/cmTC_3cb88.dir/CheckIncludeFile.c.o -o cmTC_3cb88 
+gmake[1]: Leaving directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function XOpenDisplay exists in the /usr/lib64/libX11.so;/usr/lib64/libXext.so passed with the following output:
+Change Dir: /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_0e9d1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0e9d1.dir/build.make CMakeFiles/cmTC_0e9d1.dir/build
+gmake[1]: Entering directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0e9d1.dir/CheckFunctionExists.c.o
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_0e9d1.dir/CheckFunctionExists.c.o -c /cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0e9d1
+/cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e9d1.dir/link.txt --verbose=1
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_0e9d1.dir/CheckFunctionExists.c.o -o cmTC_0e9d1  /usr/lib64/libX11.so /usr/lib64/libXext.so 
+gmake[1]: Leaving directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_88f20/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_88f20.dir/build.make CMakeFiles/cmTC_88f20.dir/build
+gmake[1]: Entering directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_88f20.dir/CheckFunctionExists.c.o
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_88f20.dir/CheckFunctionExists.c.o -c /cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_88f20
+/cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88f20.dir/link.txt --verbose=1
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_88f20.dir/CheckFunctionExists.c.o -o cmTC_88f20 
+gmake[1]: Leaving directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_b311d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b311d.dir/build.make CMakeFiles/cmTC_b311d.dir/build
+gmake[1]: Entering directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b311d.dir/CheckFunctionExists.c.o
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_b311d.dir/CheckFunctionExists.c.o -c /cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b311d
+/cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b311d.dir/link.txt --verbose=1
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_b311d.dir/CheckFunctionExists.c.o -o cmTC_b311d 
+gmake[1]: Leaving directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_74088/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_74088.dir/build.make CMakeFiles/cmTC_74088.dir/build
+gmake[1]: Entering directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_74088.dir/CheckFunctionExists.c.o
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_74088.dir/CheckFunctionExists.c.o -c /cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_74088
+/cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74088.dir/link.txt --verbose=1
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_74088.dir/CheckFunctionExists.c.o -o cmTC_74088 
+gmake[1]: Leaving directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_7a3f1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7a3f1.dir/build.make CMakeFiles/cmTC_7a3f1.dir/build
+gmake[1]: Entering directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7a3f1.dir/CheckFunctionExists.c.o
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_7a3f1.dir/CheckFunctionExists.c.o -c /cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7a3f1
+/cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a3f1.dir/link.txt --verbose=1
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_7a3f1.dir/CheckFunctionExists.c.o -o cmTC_7a3f1 
+gmake[1]: Leaving directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_c6cff/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c6cff.dir/build.make CMakeFiles/cmTC_c6cff.dir/build
+gmake[1]: Entering directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c6cff.dir/CheckFunctionExists.c.o
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_c6cff.dir/CheckFunctionExists.c.o -c /cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/share/cmake-3.19/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c6cff
+/cvmfs/lhcb.cern.ch/lib/var/lib/LbEnv/2129/stable/linux-64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6cff.dir/link.txt --verbose=1
+/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/gcc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_c6cff.dir/CheckFunctionExists.c.o -o cmTC_c6cff  -lICE 
+gmake[1]: Leaving directory `/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles/CMakeTmp'
+
+
+

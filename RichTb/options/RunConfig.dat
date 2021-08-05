@@ -1,0 +1,27 @@
+0 0 2 2 2 2 2 2 2 2 2 2 1 1 1 2 2 2 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0.975 288.45 0.976 283.65 5 0.0 0.0
+1 0.737 0.1 30058941
+1 2 2 3 0 180.0 0.4 0.0 0.0 0.005 0.005 0.0 0.0 0.0 0.0 -800.0 4.0 400.0 195. 850. 20.0 1 0 -5.0
+../InputData/Mirror_D200mm_240906.txt
+../Output/tbMCdataOutput_set2_test.file 
+../Output/tbMCdataHisto_set2.root
+../Output/tbMCdataNtup_set2.root
+1 30 1 2 0 1
+0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+0.0 0.0 0.0 0.0 0.0
+0 0.0 0.0
+1 0.0 0.0
+7 0 0 0 1 1 1 0
+0.91 0
+../InputData/EffJuraOpt.txt
+../InputData/EffJuraThr7.txt
+../InputData/EffSaleveOpt.txt
+../InputData/EffSaleveThr7.txt
+../InputData/EffJuraOpt_upgradeDummy.txt
+../InputData/EffSaleveOpt_upgradeDummy.txt
+../InputData/EffJuraTop100.txt
+../InputData/EffSaleveTop100.txt
+../InputData/EffJuraBottom100.txt
+../InputData/EffSaleveBottom100.txt
+
