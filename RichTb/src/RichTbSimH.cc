@@ -3,10 +3,10 @@
 
 #include "RichTbSimH.hh"
 
-#include "SensitiveDetector.hh"
 #include "RichTbUpgradeDetectorConstruction.hh"
-#include "L4Cerenkov.hh"
+//#include "RichTbPhysicsList.hh"
 #include "PhysicsList.hh"
+#include "L4Cerenkov.hh"
 #include "PrimaryGeneratorAction.hh"
 
 
@@ -24,8 +24,6 @@ RichTbSimH::RichTbSimH()
     :
     ctx(new Ctx),
     rm(new G4RunManager),
-    sdn("SD0"),
-    sd(new SensitiveDetector(sdn)),
     dc(new RichTbDetectorConstruction()),
     pl(new PhysicsList<L4Cerenkov>()),
     ga(nullptr),

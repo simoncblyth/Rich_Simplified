@@ -23,6 +23,11 @@
 #include "RichTbMiscNames.hh"
 #include "RichTbPmtPixelEfficiency.hh"
 
+#include "OpHit.hh"
+#include "CLHEP/Units/PhysicalConstants.h"
+#ifdef WITH_OPTICKS
+#include "G4Opticks.hh"
+#endif
 //=============================================================================
 // Standard constructor, initializes variables
 //=============================================================================
@@ -50,10 +55,11 @@ RichTbUpgradeSD::~RichTbUpgradeSD() {}
 void RichTbUpgradeSD::Initialize(G4HCofThisEvent*  HCE )
 {
 
-  //	  G4cout<<" Now init  RichTbUpgradeSD "<<collectionName[0]<<  G4endl;
+        G4cout<<" Now init  RichTbUpgradeSD "<< " HCE " << HCE << " HCE.Capacity  " << HCE->GetCapacity() << " SensitiveDetectorName " << RichTbSensDetName << " collectionName " << collectionName[0]<<  G4endl;
 
 
-	RichTbHitCollection = new RichTbHitsCollection(SensitiveDetectorName,collectionName[0]);
+	//RichTbHitCollection = new RichTbHitsCollection(SensitiveDetectorName,collectionName[0]);
+	RichTbHitCollection = new OpHitCollection(SensitiveDetectorName,collectionName[0]);
 
 	// RichTbHitCollection = new RichTbHitsCollection(RichTbSensDetName,collectionName[0]);
 
@@ -79,7 +85,7 @@ void RichTbUpgradeSD::Initialize(G4HCofThisEvent*  HCE )
 	// CurrentPmtPixelGap = aRunConfig-> getMapmtPixelGap();
 	CurrentPmtPixelGap = RichTbPmtPixelGap;
 
-	//    G4cout<<" Now end init  RichTbUpgradeSD "<<G4endl;
+	G4cout<<" Now end init  RichTbUpgradeSD "<<G4endl;
 
 }
 void  RichTbUpgradeSD::EndOfEvent(G4HCofThisEvent* /* HCE  */){
@@ -92,7 +98,7 @@ void  RichTbUpgradeSD::EndOfEvent(G4HCofThisEvent* /* HCE  */){
 G4bool RichTbUpgradeSD::ProcessHits(G4Step*aStep,G4TouchableHistory*ROhist)
 {
 
-  //	 G4cout<<" Now in Process Hits Pmt SD "<<G4endl;
+        G4cout<<" Now in Process Hits Pmt SD "<<G4endl;
 
 	if(!ROhist) return false;
 
@@ -106,8 +112,10 @@ G4bool RichTbUpgradeSD::ProcessHits(G4Step*aStep,G4TouchableHistory*ROhist)
 	CurTT -> MoveUpHistory(2);
 	G4String curnameVol =  CurTT -> GetVolume()->GetName();
 	G4int CurrentPmtNumber= CurTT -> GetVolume() -> GetCopyNo();
-	//	 G4cout<< " RichTbUpgradeSD: PMT Number name "<<  CurrentPmtNumber <<"  "<<curnameVol<<G4endl;
-	G4VPhysicalVolume* ROphysVol = ROhist->GetVolume();
+	
+        G4cout<< " RichTbUpgradeSD: PMT Number name "<<  CurrentPmtNumber <<"  "<<curnameVol<<G4endl;
+	
+        G4VPhysicalVolume* ROphysVol = ROhist->GetVolume();
 	G4int CurrentPixelNumber = ROphysVol->GetCopyNo();
 	G4int CopyId = CurrentPixelNumber + CurrentPmtNumber * NumPixelTotInPmt;
 
@@ -233,17 +241,6 @@ G4bool RichTbUpgradeSD::ProcessHits(G4Step*aStep,G4TouchableHistory*ROhist)
 		}
 
 
-
-
-
-
-
-
-
-
-
-
-
 		/*
     G4cout<<" Upgrade SD PeOrgin aPeOrginInPhSup CkvTh  aPhOrigin phener "<<  aPeOrigin <<"   "
           << aPeOrginInPhSup <<"   "<<aCkvCosTh<<"  "<< aPhOrigin<<"  "<<  aPhEner<<G4endl;
@@ -251,7 +248,7 @@ G4bool RichTbUpgradeSD::ProcessHits(G4Step*aStep,G4TouchableHistory*ROhist)
 		//G4cout<<" RichTbSD : Mulrefl flag "<< aMultReflFlag <<G4endl;
 
 
-		RichTbHit* newHit = new RichTbHit();
+		/* RichTbHit* newHit = new RichTbHit();
 		newHit->SetEdep( edep );
 		newHit->SetPos(CurGlobalPos  );
 		newHit->SetCurPMTNum ( CurrentPmtNumber );
@@ -279,18 +276,64 @@ G4bool RichTbUpgradeSD::ProcessHits(G4Step*aStep,G4TouchableHistory*ROhist)
 		G4int NumHits = RichTbHitCollection->insert( newHit );
 
 		PmtSDID[CopyId]= NumHits -1 ;
-		//int verboseLevel=0;
+		*/
+                //int verboseLevel=0;
 		//	if( verboseLevel > 0 ) G4cout << "NumHits from pmt stored in this event "<<NumHits<<G4endl;
 		//	if( verboseLevel = 0 ) G4cout << "NumHits from pmt stored in this event "<<NumHits<<G4endl;
 	}
 
+#ifdef WITH_OPTICKS
+    {
+        G4double time = pPreStepPoint->GetGlobalTime();
+        const G4ThreeVector& pos = pPreStepPoint->GetPosition();
+        const G4ThreeVector& dir = pPreStepPoint->GetMomentumDirection();
+        const G4ThreeVector& pol = pPreStepPoint->GetPolarization();
+
+        G4double energy = pPreStepPoint->GetKineticEnergy();
+        G4double wavelength = CLHEP::h_Planck*CLHEP::c_light/energy;
+        G4double weight = 1.0 ;
+        G4int flags_x = 0 ;
+        G4int flags_y = 0 ;
+        G4int flags_z = 0 ;
+        G4int flags_w = 0 ;
+
+        G4Opticks::Get()->collectHit(
+             pos.x()/CLHEP::mm,
+             pos.y()/CLHEP::mm,
+             pos.z()/CLHEP::mm,
+             time/CLHEP::ns,
+
+             dir.x(),
+             dir.y(),
+             dir.z(),
+             weight,
+
+             pol.x(),
+             pol.y(),
+             pol.z(),
+             wavelength/CLHEP::nm,
+
+             flags_x,
+             flags_y,
+             flags_z,
+             flags_w
+        );
+    
+    OpHit* hit = new OpHit ;
+    hit->ene = edep ;
+    hit->tim = time ;
+    hit->pos = pos ;
+    hit->dir = dir ;
+    hit->pol = pol ;
+
+    OpHitCollection* hc = RichTbHitCollection ;
+    hc->insert(hit);
+    G4cout << " edep " << edep << " time " << time << " pos " << pos << G4endl;
+    }
+#endif
 
 
-
-
-
-
-	return true;
+    return true;
 }
 
 

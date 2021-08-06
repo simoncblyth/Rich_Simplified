@@ -56,7 +56,7 @@ RichTbUpgradeHpdSD::~RichTbUpgradeHpdSD() {}
 
 //=============================================================================
 void RichTbUpgradeHpdSD::Initialize(G4HCofThisEvent*  HCE   ) {
-  //   G4cout<<" Now init  RichTbUpgradeSD Hpd "<<G4endl;
+     G4cout<<" Now init  RichTbUpgradeSD Hpd "<<G4endl;
 
      RichTbHitCollectionHpd = new RichTbHitsCollection(SensitiveDetectorName,collectionName[RichTbHitCollIndex]); 
 
@@ -76,7 +76,7 @@ void RichTbUpgradeHpdSD::Initialize(G4HCofThisEvent*  HCE   ) {
   RichTbRunConfig* aRunConfig =  RichTbRunConfig::getRunConfigInstance();
   CurrentHitCreationOption= aRunConfig->getHitCreationOption();
 
-  //   G4cout<<" Now end init  RichTbUpgradeSD Hpd "<<G4endl;
+  G4cout<<" Now end init  RichTbUpgradeSD Hpd "<<G4endl;
 
 
 }

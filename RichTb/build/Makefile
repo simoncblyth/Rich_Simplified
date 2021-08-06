@@ -644,6 +644,33 @@ src/EventAction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/EventAction.cc.s
 .PHONY : src/EventAction.cc.s
 
+src/HpdSiEnergyLoss.o: src/HpdSiEnergyLoss.cc.o
+
+.PHONY : src/HpdSiEnergyLoss.o
+
+# target to build an object file
+src/HpdSiEnergyLoss.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/HpdSiEnergyLoss.cc.o
+.PHONY : src/HpdSiEnergyLoss.cc.o
+
+src/HpdSiEnergyLoss.i: src/HpdSiEnergyLoss.cc.i
+
+.PHONY : src/HpdSiEnergyLoss.i
+
+# target to preprocess a source file
+src/HpdSiEnergyLoss.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/HpdSiEnergyLoss.cc.i
+.PHONY : src/HpdSiEnergyLoss.cc.i
+
+src/HpdSiEnergyLoss.s: src/HpdSiEnergyLoss.cc.s
+
+.PHONY : src/HpdSiEnergyLoss.s
+
+# target to generate assembly for a file
+src/HpdSiEnergyLoss.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/HpdSiEnergyLoss.cc.s
+.PHONY : src/HpdSiEnergyLoss.cc.s
+
 src/L4Cerenkov.o: src/L4Cerenkov.cc.o
 
 .PHONY : src/L4Cerenkov.o
@@ -725,6 +752,87 @@ src/PhysicsList.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/PhysicsList.cc.s
 .PHONY : src/PhysicsList.cc.s
 
+src/PixelHpdPhotoElectricEffect.o: src/PixelHpdPhotoElectricEffect.cc.o
+
+.PHONY : src/PixelHpdPhotoElectricEffect.o
+
+# target to build an object file
+src/PixelHpdPhotoElectricEffect.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/PixelHpdPhotoElectricEffect.cc.o
+.PHONY : src/PixelHpdPhotoElectricEffect.cc.o
+
+src/PixelHpdPhotoElectricEffect.i: src/PixelHpdPhotoElectricEffect.cc.i
+
+.PHONY : src/PixelHpdPhotoElectricEffect.i
+
+# target to preprocess a source file
+src/PixelHpdPhotoElectricEffect.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/PixelHpdPhotoElectricEffect.cc.i
+.PHONY : src/PixelHpdPhotoElectricEffect.cc.i
+
+src/PixelHpdPhotoElectricEffect.s: src/PixelHpdPhotoElectricEffect.cc.s
+
+.PHONY : src/PixelHpdPhotoElectricEffect.s
+
+# target to generate assembly for a file
+src/PixelHpdPhotoElectricEffect.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/PixelHpdPhotoElectricEffect.cc.s
+.PHONY : src/PixelHpdPhotoElectricEffect.cc.s
+
+src/PmtAnodeEnergyLoss.o: src/PmtAnodeEnergyLoss.cc.o
+
+.PHONY : src/PmtAnodeEnergyLoss.o
+
+# target to build an object file
+src/PmtAnodeEnergyLoss.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/PmtAnodeEnergyLoss.cc.o
+.PHONY : src/PmtAnodeEnergyLoss.cc.o
+
+src/PmtAnodeEnergyLoss.i: src/PmtAnodeEnergyLoss.cc.i
+
+.PHONY : src/PmtAnodeEnergyLoss.i
+
+# target to preprocess a source file
+src/PmtAnodeEnergyLoss.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/PmtAnodeEnergyLoss.cc.i
+.PHONY : src/PmtAnodeEnergyLoss.cc.i
+
+src/PmtAnodeEnergyLoss.s: src/PmtAnodeEnergyLoss.cc.s
+
+.PHONY : src/PmtAnodeEnergyLoss.s
+
+# target to generate assembly for a file
+src/PmtAnodeEnergyLoss.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/PmtAnodeEnergyLoss.cc.s
+.PHONY : src/PmtAnodeEnergyLoss.cc.s
+
+src/PmtPhotoElectricEffect.o: src/PmtPhotoElectricEffect.cc.o
+
+.PHONY : src/PmtPhotoElectricEffect.o
+
+# target to build an object file
+src/PmtPhotoElectricEffect.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/PmtPhotoElectricEffect.cc.o
+.PHONY : src/PmtPhotoElectricEffect.cc.o
+
+src/PmtPhotoElectricEffect.i: src/PmtPhotoElectricEffect.cc.i
+
+.PHONY : src/PmtPhotoElectricEffect.i
+
+# target to preprocess a source file
+src/PmtPhotoElectricEffect.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/PmtPhotoElectricEffect.cc.i
+.PHONY : src/PmtPhotoElectricEffect.cc.i
+
+src/PmtPhotoElectricEffect.s: src/PmtPhotoElectricEffect.cc.s
+
+.PHONY : src/PmtPhotoElectricEffect.s
+
+# target to generate assembly for a file
+src/PmtPhotoElectricEffect.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/PmtPhotoElectricEffect.cc.s
+.PHONY : src/PmtPhotoElectricEffect.cc.s
+
 src/PrimaryGeneratorAction.o: src/PrimaryGeneratorAction.cc.o
 
 .PHONY : src/PrimaryGeneratorAction.o
@@ -778,6 +886,141 @@ src/RichTbContainerVesselBox.s: src/RichTbContainerVesselBox.cc.s
 src/RichTbContainerVesselBox.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbContainerVesselBox.cc.s
 .PHONY : src/RichTbContainerVesselBox.cc.s
+
+src/RichTbCounter.o: src/RichTbCounter.cc.o
+
+.PHONY : src/RichTbCounter.o
+
+# target to build an object file
+src/RichTbCounter.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbCounter.cc.o
+.PHONY : src/RichTbCounter.cc.o
+
+src/RichTbCounter.i: src/RichTbCounter.cc.i
+
+.PHONY : src/RichTbCounter.i
+
+# target to preprocess a source file
+src/RichTbCounter.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbCounter.cc.i
+.PHONY : src/RichTbCounter.cc.i
+
+src/RichTbCounter.s: src/RichTbCounter.cc.s
+
+.PHONY : src/RichTbCounter.s
+
+# target to generate assembly for a file
+src/RichTbCounter.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbCounter.cc.s
+.PHONY : src/RichTbCounter.cc.s
+
+src/RichTbG4Cerenkov.o: src/RichTbG4Cerenkov.cc.o
+
+.PHONY : src/RichTbG4Cerenkov.o
+
+# target to build an object file
+src/RichTbG4Cerenkov.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbG4Cerenkov.cc.o
+.PHONY : src/RichTbG4Cerenkov.cc.o
+
+src/RichTbG4Cerenkov.i: src/RichTbG4Cerenkov.cc.i
+
+.PHONY : src/RichTbG4Cerenkov.i
+
+# target to preprocess a source file
+src/RichTbG4Cerenkov.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbG4Cerenkov.cc.i
+.PHONY : src/RichTbG4Cerenkov.cc.i
+
+src/RichTbG4Cerenkov.s: src/RichTbG4Cerenkov.cc.s
+
+.PHONY : src/RichTbG4Cerenkov.s
+
+# target to generate assembly for a file
+src/RichTbG4Cerenkov.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbG4Cerenkov.cc.s
+.PHONY : src/RichTbG4Cerenkov.cc.s
+
+src/RichTbG4OpAbsorption.o: src/RichTbG4OpAbsorption.cc.o
+
+.PHONY : src/RichTbG4OpAbsorption.o
+
+# target to build an object file
+src/RichTbG4OpAbsorption.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbG4OpAbsorption.cc.o
+.PHONY : src/RichTbG4OpAbsorption.cc.o
+
+src/RichTbG4OpAbsorption.i: src/RichTbG4OpAbsorption.cc.i
+
+.PHONY : src/RichTbG4OpAbsorption.i
+
+# target to preprocess a source file
+src/RichTbG4OpAbsorption.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbG4OpAbsorption.cc.i
+.PHONY : src/RichTbG4OpAbsorption.cc.i
+
+src/RichTbG4OpAbsorption.s: src/RichTbG4OpAbsorption.cc.s
+
+.PHONY : src/RichTbG4OpAbsorption.s
+
+# target to generate assembly for a file
+src/RichTbG4OpAbsorption.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbG4OpAbsorption.cc.s
+.PHONY : src/RichTbG4OpAbsorption.cc.s
+
+src/RichTbG4OpBoundaryProcess.o: src/RichTbG4OpBoundaryProcess.cc.o
+
+.PHONY : src/RichTbG4OpBoundaryProcess.o
+
+# target to build an object file
+src/RichTbG4OpBoundaryProcess.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbG4OpBoundaryProcess.cc.o
+.PHONY : src/RichTbG4OpBoundaryProcess.cc.o
+
+src/RichTbG4OpBoundaryProcess.i: src/RichTbG4OpBoundaryProcess.cc.i
+
+.PHONY : src/RichTbG4OpBoundaryProcess.i
+
+# target to preprocess a source file
+src/RichTbG4OpBoundaryProcess.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbG4OpBoundaryProcess.cc.i
+.PHONY : src/RichTbG4OpBoundaryProcess.cc.i
+
+src/RichTbG4OpBoundaryProcess.s: src/RichTbG4OpBoundaryProcess.cc.s
+
+.PHONY : src/RichTbG4OpBoundaryProcess.s
+
+# target to generate assembly for a file
+src/RichTbG4OpBoundaryProcess.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbG4OpBoundaryProcess.cc.s
+.PHONY : src/RichTbG4OpBoundaryProcess.cc.s
+
+src/RichTbG4OpRayleigh.o: src/RichTbG4OpRayleigh.cc.o
+
+.PHONY : src/RichTbG4OpRayleigh.o
+
+# target to build an object file
+src/RichTbG4OpRayleigh.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbG4OpRayleigh.cc.o
+.PHONY : src/RichTbG4OpRayleigh.cc.o
+
+src/RichTbG4OpRayleigh.i: src/RichTbG4OpRayleigh.cc.i
+
+.PHONY : src/RichTbG4OpRayleigh.i
+
+# target to preprocess a source file
+src/RichTbG4OpRayleigh.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbG4OpRayleigh.cc.i
+.PHONY : src/RichTbG4OpRayleigh.cc.i
+
+src/RichTbG4OpRayleigh.s: src/RichTbG4OpRayleigh.cc.s
+
+.PHONY : src/RichTbG4OpRayleigh.s
+
+# target to generate assembly for a file
+src/RichTbG4OpRayleigh.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbG4OpRayleigh.cc.s
+.PHONY : src/RichTbG4OpRayleigh.cc.s
 
 src/RichTbGeometryParameters.o: src/RichTbGeometryParameters.cc.o
 
@@ -1130,6 +1373,33 @@ src/RichTbPMT.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbPMT.cc.s
 .PHONY : src/RichTbPMT.cc.s
 
+src/RichTbPeUserInfoAttach.o: src/RichTbPeUserInfoAttach.cc.o
+
+.PHONY : src/RichTbPeUserInfoAttach.o
+
+# target to build an object file
+src/RichTbPeUserInfoAttach.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbPeUserInfoAttach.cc.o
+.PHONY : src/RichTbPeUserInfoAttach.cc.o
+
+src/RichTbPeUserInfoAttach.i: src/RichTbPeUserInfoAttach.cc.i
+
+.PHONY : src/RichTbPeUserInfoAttach.i
+
+# target to preprocess a source file
+src/RichTbPeUserInfoAttach.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbPeUserInfoAttach.cc.i
+.PHONY : src/RichTbPeUserInfoAttach.cc.i
+
+src/RichTbPeUserInfoAttach.s: src/RichTbPeUserInfoAttach.cc.s
+
+.PHONY : src/RichTbPeUserInfoAttach.s
+
+# target to generate assembly for a file
+src/RichTbPeUserInfoAttach.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbPeUserInfoAttach.cc.s
+.PHONY : src/RichTbPeUserInfoAttach.cc.s
+
 src/RichTbPhCPhotDetSupFrame.o: src/RichTbPhCPhotDetSupFrame.cc.o
 
 .PHONY : src/RichTbPhCPhotDetSupFrame.o
@@ -1210,6 +1480,87 @@ src/RichTbPhotonInfo.s: src/RichTbPhotonInfo.cc.s
 src/RichTbPhotonInfo.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbPhotonInfo.cc.s
 .PHONY : src/RichTbPhotonInfo.cc.s
+
+src/RichTbPhotonProdHisto.o: src/RichTbPhotonProdHisto.cc.o
+
+.PHONY : src/RichTbPhotonProdHisto.o
+
+# target to build an object file
+src/RichTbPhotonProdHisto.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbPhotonProdHisto.cc.o
+.PHONY : src/RichTbPhotonProdHisto.cc.o
+
+src/RichTbPhotonProdHisto.i: src/RichTbPhotonProdHisto.cc.i
+
+.PHONY : src/RichTbPhotonProdHisto.i
+
+# target to preprocess a source file
+src/RichTbPhotonProdHisto.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbPhotonProdHisto.cc.i
+.PHONY : src/RichTbPhotonProdHisto.cc.i
+
+src/RichTbPhotonProdHisto.s: src/RichTbPhotonProdHisto.cc.s
+
+.PHONY : src/RichTbPhotonProdHisto.s
+
+# target to generate assembly for a file
+src/RichTbPhotonProdHisto.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbPhotonProdHisto.cc.s
+.PHONY : src/RichTbPhotonProdHisto.cc.s
+
+src/RichTbPhotonUserInfoAttach.o: src/RichTbPhotonUserInfoAttach.cc.o
+
+.PHONY : src/RichTbPhotonUserInfoAttach.o
+
+# target to build an object file
+src/RichTbPhotonUserInfoAttach.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbPhotonUserInfoAttach.cc.o
+.PHONY : src/RichTbPhotonUserInfoAttach.cc.o
+
+src/RichTbPhotonUserInfoAttach.i: src/RichTbPhotonUserInfoAttach.cc.i
+
+.PHONY : src/RichTbPhotonUserInfoAttach.i
+
+# target to preprocess a source file
+src/RichTbPhotonUserInfoAttach.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbPhotonUserInfoAttach.cc.i
+.PHONY : src/RichTbPhotonUserInfoAttach.cc.i
+
+src/RichTbPhotonUserInfoAttach.s: src/RichTbPhotonUserInfoAttach.cc.s
+
+.PHONY : src/RichTbPhotonUserInfoAttach.s
+
+# target to generate assembly for a file
+src/RichTbPhotonUserInfoAttach.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbPhotonUserInfoAttach.cc.s
+.PHONY : src/RichTbPhotonUserInfoAttach.cc.s
+
+src/RichTbPhysicsList.o: src/RichTbPhysicsList.cc.o
+
+.PHONY : src/RichTbPhysicsList.o
+
+# target to build an object file
+src/RichTbPhysicsList.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbPhysicsList.cc.o
+.PHONY : src/RichTbPhysicsList.cc.o
+
+src/RichTbPhysicsList.i: src/RichTbPhysicsList.cc.i
+
+.PHONY : src/RichTbPhysicsList.i
+
+# target to preprocess a source file
+src/RichTbPhysicsList.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbPhysicsList.cc.i
+.PHONY : src/RichTbPhysicsList.cc.i
+
+src/RichTbPhysicsList.s: src/RichTbPhysicsList.cc.s
+
+.PHONY : src/RichTbPhysicsList.s
+
+# target to generate assembly for a file
+src/RichTbPhysicsList.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RichTb.dir/build.make CMakeFiles/RichTb.dir/src/RichTbPhysicsList.cc.s
+.PHONY : src/RichTbPhysicsList.cc.s
 
 src/RichTbPmtPixelEfficiency.o: src/RichTbPmtPixelEfficiency.cc.o
 
@@ -2126,6 +2477,9 @@ help:
 	@echo "... src/EventAction.o"
 	@echo "... src/EventAction.i"
 	@echo "... src/EventAction.s"
+	@echo "... src/HpdSiEnergyLoss.o"
+	@echo "... src/HpdSiEnergyLoss.i"
+	@echo "... src/HpdSiEnergyLoss.s"
 	@echo "... src/L4Cerenkov.o"
 	@echo "... src/L4Cerenkov.i"
 	@echo "... src/L4Cerenkov.s"
@@ -2135,12 +2489,36 @@ help:
 	@echo "... src/PhysicsList.o"
 	@echo "... src/PhysicsList.i"
 	@echo "... src/PhysicsList.s"
+	@echo "... src/PixelHpdPhotoElectricEffect.o"
+	@echo "... src/PixelHpdPhotoElectricEffect.i"
+	@echo "... src/PixelHpdPhotoElectricEffect.s"
+	@echo "... src/PmtAnodeEnergyLoss.o"
+	@echo "... src/PmtAnodeEnergyLoss.i"
+	@echo "... src/PmtAnodeEnergyLoss.s"
+	@echo "... src/PmtPhotoElectricEffect.o"
+	@echo "... src/PmtPhotoElectricEffect.i"
+	@echo "... src/PmtPhotoElectricEffect.s"
 	@echo "... src/PrimaryGeneratorAction.o"
 	@echo "... src/PrimaryGeneratorAction.i"
 	@echo "... src/PrimaryGeneratorAction.s"
 	@echo "... src/RichTbContainerVesselBox.o"
 	@echo "... src/RichTbContainerVesselBox.i"
 	@echo "... src/RichTbContainerVesselBox.s"
+	@echo "... src/RichTbCounter.o"
+	@echo "... src/RichTbCounter.i"
+	@echo "... src/RichTbCounter.s"
+	@echo "... src/RichTbG4Cerenkov.o"
+	@echo "... src/RichTbG4Cerenkov.i"
+	@echo "... src/RichTbG4Cerenkov.s"
+	@echo "... src/RichTbG4OpAbsorption.o"
+	@echo "... src/RichTbG4OpAbsorption.i"
+	@echo "... src/RichTbG4OpAbsorption.s"
+	@echo "... src/RichTbG4OpBoundaryProcess.o"
+	@echo "... src/RichTbG4OpBoundaryProcess.i"
+	@echo "... src/RichTbG4OpBoundaryProcess.s"
+	@echo "... src/RichTbG4OpRayleigh.o"
+	@echo "... src/RichTbG4OpRayleigh.i"
+	@echo "... src/RichTbG4OpRayleigh.s"
 	@echo "... src/RichTbGeometryParameters.o"
 	@echo "... src/RichTbGeometryParameters.i"
 	@echo "... src/RichTbGeometryParameters.s"
@@ -2180,6 +2558,9 @@ help:
 	@echo "... src/RichTbPMT.o"
 	@echo "... src/RichTbPMT.i"
 	@echo "... src/RichTbPMT.s"
+	@echo "... src/RichTbPeUserInfoAttach.o"
+	@echo "... src/RichTbPeUserInfoAttach.i"
+	@echo "... src/RichTbPeUserInfoAttach.s"
 	@echo "... src/RichTbPhCPhotDetSupFrame.o"
 	@echo "... src/RichTbPhCPhotDetSupFrame.i"
 	@echo "... src/RichTbPhCPhotDetSupFrame.s"
@@ -2189,6 +2570,15 @@ help:
 	@echo "... src/RichTbPhotonInfo.o"
 	@echo "... src/RichTbPhotonInfo.i"
 	@echo "... src/RichTbPhotonInfo.s"
+	@echo "... src/RichTbPhotonProdHisto.o"
+	@echo "... src/RichTbPhotonProdHisto.i"
+	@echo "... src/RichTbPhotonProdHisto.s"
+	@echo "... src/RichTbPhotonUserInfoAttach.o"
+	@echo "... src/RichTbPhotonUserInfoAttach.i"
+	@echo "... src/RichTbPhotonUserInfoAttach.s"
+	@echo "... src/RichTbPhysicsList.o"
+	@echo "... src/RichTbPhysicsList.i"
+	@echo "... src/RichTbPhysicsList.s"
 	@echo "... src/RichTbPmtPixelEfficiency.o"
 	@echo "... src/RichTbPmtPixelEfficiency.i"
 	@echo "... src/RichTbPmtPixelEfficiency.s"

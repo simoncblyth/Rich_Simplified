@@ -239,7 +239,7 @@ L4Cerenkov::PostStepDoIt(const G4Track& aTrack, const G4Step& aStep)
 
 	G4int NumPhotons = (G4int) G4Poisson(MeanNumberOfPhotons);
 
-#ifdef L4LOG
+#ifdef WITH_OPTICKS
     G4cout 
          << "L4Cerenkov::PostStepDoIt"
          << " t0 " << t0

@@ -8,6 +8,8 @@
 #include "G4ThreeVector.hh"
 #include "RichTbHit.hh"
 #include "RichTbGeometryParameters.hh"
+
+#include "OpHit.hh"
 class G4Step;
 class G4HCofThisEvent;
 
@@ -43,7 +45,8 @@ public:
 protected:
 
 private:
-      RichTbHitsCollection * RichTbHitCollection;
+      //RichTbHitsCollection * RichTbHitCollection;
+      OpHitCollection * RichTbHitCollection;
       std::vector<G4int> PmtSDID;
       G4int HCID;
   G4int  CurrentHitCreationOption;

@@ -1,0 +1,451 @@
+
+**************************************************************
+ Geant4 version Name: geant4-10-07-patch-01    (5-February-2021)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+ Run Configuration Input is from ../options/RunConfig.dat
+Now reading the Run Configuration 
+End of reading the Run Configuration 
+Now reading the Run Configuration 
+End of reading the Run Configuration 
+Current Run Configuration  is as follows 
+ Graphics Visibility : Hall Vessel Crystal 0   0   2      
+ LT visib subs PHC Filter LTCover 0  0   0    0
+  Graphics Visibility : PhDetSupFrame EC PMTMaster PMTSMaster  PMTEnvelope  PMTEndCap PMTQuartzW PMTPhCathode   2   2   2   2   2   1651335532   2   2   
+Visibility  Mirr Parabola 0
+Visibility Det plane 0
+Visibility QW radiator and its cover 0  0
+Nitrogen Pressure Temp  0.975    288.45
+c4f10 Pressure Temp  0.976    283.65
+ Mirror Orientation code Additional Tilt wrt XAxis YAxis  5   0  0
+ NonOptimal PMT Condition  NonOptimal PMT absolute Efficiency  1   0.737
+ ParticleGun  Generation: Num of Particles generated per event   1
+ ParticleGun : Code for ParticleType StartPos Direction  Energy  and   Value for MomValue PosBeamFraction:   2    2   3    0   180    0.4
+ ParticleGun : BeamDirXY  BeamDivXY BeamPosShift XY   0   0   0.005   0.005   0  0
+ Special studies Beam XYZ BeamXRange phot wlen wlenmin wlenmax 0  0  -800  4   400   195   850
+Activate beamshiftntuple 1851858987
+  PMTPEMomInit  20
+Flag to WriteOut  HitCreationOption   1    0     
+ Radiator and  LTSample config 7    0
+ Mirror refl file name ../InputData/Mirror_D200mm_240906.txt
+ Event Output FileName ../Output/tbMCdataOutput_set2_test.file
+Histo Output file Name  ../Output/tbMCdataHisto_set2.root
+Ntuple Output file Name  ../Output/tbMCdataNtup_set2.root
+BatchMode NumEvInBatchMode  VerboseInfo   VerboseOutput studyvesselRot   1   30    1   2   0
+Pmt pixel efficiency flag  0
+ Mirror geometry flag 0
+ PhDet Frame Additional Shift XYZ   0    0    0    
+ PhDet Frame Additional VertTilt Zrot 0    0
+ RadiatorConfig LtSampletype RadiatorActivate 7   0   0
+ quartz radiator install flag  GasCgerenkov switchoff Flag1   1
+ MirrorReflectivity being read from   ../InputData/Mirror_D200mm_240906.txt
+End of reading Mirror reflectivity
+ RichTb Surface definitions created 
+
+Now Define Elements ..
+
+
+Now Define Materials ..
+
+ Now Nitrogen activate flags 0   1
+Coordinate of the frame of Mapmts :  (54.3,0,69.897)
+Coordinate of the of EC0 :  (0,83.1,-7.3)
+creating mirror surface
+Radiator config in Surface 7
+ Mirror Surface created 
+Vessel surfaces created
+ Now for readout geometry in Pmt 
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : DIGIHIT1001
+      issued by : G4VReadOutGeometry
+The concept and the functionality of Readout Geometry has been merged
+into Parallel World. This G4VReadOutGeometry is kept for the sake of
+not breaking the commonly-used interface in the sensitive detector class.
+But this functionality of G4VReadOutGeometry class is no longer tested
+and thus may not be working well. We strongly recommend our customers to
+migrate to Parallel World scheme.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+Coordinate of the frame of Mapmts :  (54.3,0,69.897)
+Coordinate of the of EC0 :  (0,83.1,-7.3)
+created pmt ro geometry 
+ Now associate sensdet to  readout geometry in Pmt 
+ Now associate sensdet to  readout geometry in Pmt 0
+associate pmtsd to sensdet PMTAN0Log  0
+associate pmtsd to sensdet PMTAN1Log  1
+associate pmtsd to sensdet PMTAN2Log  2
+associate pmtsd to sensdet PMTAN3Log  3
+associate pmtsd to sensdet PMTAN4Log  4
+associate pmtsd to sensdet PMTAN5Log  5
+associate pmtsd to sensdet PMTAN6Log  6
+associate pmtsd to sensdet PMTAN7Log  7
+associate pmtsd to sensdet PMTAN8Log  8
+associate pmtsd to sensdet PMTAN9Log  9
+associate pmtsd to sensdet PMTAN10Log  10
+associate pmtsd to sensdet PMTAN11Log  11
+associate pmtsd to sensdet PMTAN12Log  12
+associate pmtsd to sensdet PMTAN13Log  13
+associate pmtsd to sensdet PMTAN14Log  14
+associate pmtsd to sensdet PMTAN15Log  15
+ Graphics definitions created 
+PhysicsList<T>::ConstructOp AddDiscreteProcess to OpticalPhoton 
+
+
+###[ RunAction::BeginOfRunAction G4Opticks.setGeometry
+
+
+2021-08-06 13:22:25.233 FATAL [21563] [G4Opticks::initSkipGencode@351] OPTICKS_SKIP_GENCODE m_skip_gencode_count 0
+2021-08-06 13:22:25.234 INFO  [21563] [G4Opticks::G4Opticks@345] ctor : DISABLE FPE detection : as it breaks OptiX launches
+2021-08-06 13:22:25.238 INFO  [21563] [BOpticksKey::SetKey@90]  spec RichTb.X4PhysicalVolume.World.70e09c6d7ed82ba3bd2f6cbbd7c57f5a
+2021-08-06 13:22:25.241 INFO  [21563] [BOpticksResource::initViaKey@785] 
+             BOpticksKey  : KEYSOURCE
+      spec (OPTICKS_KEY)  : RichTb.X4PhysicalVolume.World.70e09c6d7ed82ba3bd2f6cbbd7c57f5a
+                 exename  : RichTb
+         current_exename  : RichTb
+                   class  : X4PhysicalVolume
+                 volname  : World
+                  digest  : 70e09c6d7ed82ba3bd2f6cbbd7c57f5a
+                  idname  : RichTb_World_g4live
+                  idfile  : g4ok.gltf
+                  idgdml  : g4ok.gdml
+                  layout  : 1
+
+2021-08-06 13:22:25.241 INFO  [21563] [G4Opticks::InitOpticks@211] 
+# BOpticksKey::export_ 
+export OPTICKS_KEY=RichTb.X4PhysicalVolume.World.70e09c6d7ed82ba3bd2f6cbbd7c57f5a
+
+2021-08-06 13:22:25.241 INFO  [21563] [G4Opticks::EmbeddedCommandLine@130] Using ecl :[ --compute --embedded --xanalytic --production --nosave] OPTICKS_EMBEDDED_COMMANDLINE
+2021-08-06 13:22:25.241 INFO  [21563] [G4Opticks::EmbeddedCommandLine@131]  mode(Pro/Dev/Asis) P using "pro" (production) commandline without event saving 
+2021-08-06 13:22:25.241 INFO  [21563] [G4Opticks::EmbeddedCommandLine@136] Using extra1 argument :[--skipaheadstep 1000]
+2021-08-06 13:22:25.241 INFO  [21563] [G4Opticks::EmbeddedCommandLine@146] Using eclx envvar :[] OPTICKS_EMBEDDED_COMMANDLINE_EXTRA
+2021-08-06 13:22:25.241 INFO  [21563] [G4Opticks::InitOpticks@231] instanciate Opticks using embedded commandline only 
+ --compute --embedded --xanalytic --production --nosave  --skipaheadstep 1000 
+2021-08-06 13:22:25.244 INFO  [21563] [Opticks::init@439] COMPUTE_MODE compute_requested  forced_compute  hostname hepgpu6.blackett.manchester.ac.uk
+2021-08-06 13:22:25.245 INFO  [21563] [Opticks::init@448]  mandatory keyed access to geometry, opticksaux 
+2021-08-06 13:22:25.245 INFO  [21563] [Opticks::init@467] OpticksSwitches:WITH_SEED_BUFFER WITH_RECORD WITH_SOURCE WITH_ALIGN_DEV WITH_LOGDOUBLE WITH_KLUDGE_FLAT_ZERO_NOPEEK WITH_SENSORLIB 
+2021-08-06 13:22:25.252 INFO  [21563] [G4Opticks::translateGeometry@931] ( CGDML /hepgpu6-data1/liyu/.opticks/geocache/RichTb_World_g4live/g4ok_gltf/70e09c6d7ed82ba3bd2f6cbbd7c57f5a/1/origin.gdml
+2021-08-06 13:22:25.259 INFO  [21563] [CGDML::write@372] write to /hepgpu6-data1/liyu/.opticks/geocache/RichTb_World_g4live/g4ok_gltf/70e09c6d7ed82ba3bd2f6cbbd7c57f5a/1/origin.gdml
+G4GDML: Writing '/hepgpu6-data1/liyu/.opticks/geocache/RichTb_World_g4live/g4ok_gltf/70e09c6d7ed82ba3bd2f6cbbd7c57f5a/1/origin.gdml'...
+G4GDML: Writing definitions...
+G4GDML: Writing materials...
+G4GDML: Writing solids...
+G4GDML: Writing structure...
+G4GDML: Writing setup...
+G4GDML: Writing surfaces...
+G4GDML: Writing '/hepgpu6-data1/liyu/.opticks/geocache/RichTb_World_g4live/g4ok_gltf/70e09c6d7ed82ba3bd2f6cbbd7c57f5a/1/origin.gdml' done !
+2021-08-06 13:22:25.282 INFO  [21563] [G4Opticks::translateGeometry@933] ) CGDML 
+2021-08-06 13:22:25.282 INFO  [21563] [G4Opticks::translateGeometry@935] ( GGeo instanciate
+2021-08-06 13:22:25.287 INFO  [21563] [G4Opticks::translateGeometry@938] ) GGeo instanciate 
+2021-08-06 13:22:25.287 INFO  [21563] [G4Opticks::translateGeometry@940] ( GGeo populate
+2021-08-06 13:22:25.287 ERROR [21563] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt Air
+2021-08-06 13:22:25.290 ERROR [21563] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt GasWinQuartz
+2021-08-06 13:22:25.290 ERROR [21563] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt CarbonMaterial
+2021-08-06 13:22:25.290 ERROR [21563] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt Kovar
+2021-08-06 13:22:25.290 ERROR [21563] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt PMTAnode
+2021-08-06 13:22:25.290 ERROR [21563] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt HpdAnode
+2021-08-06 13:22:25.295 INFO  [21563] [X4PhysicalVolume::convertMaterials@257]  num_materials 26 num_material_with_efficiency 0
+2021-08-06 13:22:25.295 INFO  [21563] [GMaterialLib::dumpSensitiveMaterials@1230] X4PhysicalVolume::convertMaterials num_sensitive_materials 0
+X4LogicalBorderSurfaceTable::PrepareVector after sort
+   0 :                                                              RichTbMirrorSurface :                                                              RichTbMirrorSurface
+   1 :                                                           VesselOuterBackSurface :                                                           VesselOuterBackSurface
+   2 :                                                               VesselOuterSurface :                                                               VesselOuterSurface
+X4LogicalBorderSurfaceTable::PrepareVector after sort
+   0 :                                                              RichTbMirrorSurface :                                                              RichTbMirrorSurface
+   1 :                                                           VesselOuterBackSurface :                                                           VesselOuterBackSurface
+   2 :                                                               VesselOuterSurface :                                                               VesselOuterSurface
+X4LogicalBorderSurfaceTable::PrepareVector after sort
+   0 :                                                              RichTbMirrorSurface :                                                              RichTbMirrorSurface
+   1 :                                                           VesselOuterBackSurface :                                                           VesselOuterBackSurface
+   2 :                                                               VesselOuterSurface :                                                               VesselOuterSurface
+X4LogicalBorderSurfaceTable::PrepareVector after sort
+   0 :                                                              RichTbMirrorSurface :                                                              RichTbMirrorSurface
+   1 :                                                           VesselOuterBackSurface :                                                           VesselOuterBackSurface
+   2 :                                                               VesselOuterSurface :                                                               VesselOuterSurface
+2021-08-06 13:22:25.297 INFO  [21563] [GSurfaceLib::dumpSurfaces@758] X4PhysicalVolume::convertSurfaces num_surfaces 7
+ index :  0 is_sensor : N type :        bordersurface name :                                RichTbMirrorSurface bpv1 RadiatorPhys bpv2 MirrorPhys .
+ index :  1 is_sensor : N type :        bordersurface name :                             VesselOuterBackSurface bpv1 VesselPhys bpv2 World .
+ index :  2 is_sensor : N type :        bordersurface name :                                 VesselOuterSurface bpv1 World bpv2 VesselPhys .
+ index :  3 is_sensor : Y type :          testsurface name :                               perfectDetectSurface .
+ index :  4 is_sensor : N type :          testsurface name :                               perfectAbsorbSurface .
+ index :  5 is_sensor : N type :          testsurface name :                             perfectSpecularSurface .
+ index :  6 is_sensor : N type :          testsurface name :                              perfectDiffuseSurface .
+2021-08-06 13:22:25.297 INFO  [21563] [GPropertyLib::dumpSensorIndices@933] X4PhysicalVolume::convertSurfaces  NumSensorIndices 1 ( 3  ) 
+2021-08-06 13:22:25.800 INFO  [21563] [X4PhysicalVolume::dumpLV@691]  m_lvidx.size() 66 m_lvlist.size() 66
+ i     0 idx     0 lvname                                        MirrSpheLog soname                                         MirrorFull
+ i     1 idx     1 lvname                                       DarkCoverLog soname                          RichTbUpgradeDarkCoverCyl
+ i     2 idx     2 lvname                                        RadiatorLog soname                                           Radiator
+ i     3 idx     3 lvname                                     UpsDarkSpheLog soname                                         MirrorFull
+ i     4 idx     4 lvname                                        SideDarkLog soname                                            DarkBox
+ i     5 idx     5 lvname                                          PMTAN0Log soname                                          PMTAN0Box
+ i     6 idx     6 lvname                                     PMTEnvelopeLog soname                                        PMTEnvelope
+ i     7 idx     7 lvname                                    PMTFrontRingLog soname                                       PMTFrontRing
+ i     8 idx     8 lvname                                      PMTQuartzWLog soname                                    PMTQuartzWindow
+ i     9 idx     9 lvname                                    PMTPhCathodeLog soname                                       PMTPhCathode
+ i    10 idx    10 lvname                                          PMTSM0Log soname                                          PMTSM0Box
+ i    11 idx    11 lvname                                            PMT0Log soname                                            PMT0Box
+ i    12 idx    12 lvname                                          PMTAN1Log soname                                          PMTAN1Box
+ i    13 idx    13 lvname                                          PMTSM1Log soname                                          PMTSM1Box
+ i    14 idx    14 lvname                                            PMT1Log soname                                            PMT1Box
+ i    15 idx    15 lvname                                          PMTAN2Log soname                                          PMTAN2Box
+ i    16 idx    16 lvname                                          PMTSM2Log soname                                          PMTSM2Box
+ i    17 idx    17 lvname                                            PMT2Log soname                                            PMT2Box
+ i    18 idx    18 lvname                                          PMTAN3Log soname                                          PMTAN3Box
+ i    19 idx    19 lvname                                          PMTSM3Log soname                                          PMTSM3Box
+ i    20 idx    20 lvname                                            PMT3Log soname                                            PMT3Box
+ i    21 idx    21 lvname                                        ECBottomLog soname                                              ECBox
+ i    22 idx    22 lvname                                          PMTAN4Log soname                                          PMTAN4Box
+ i    23 idx    23 lvname                                          PMTSM4Log soname                                          PMTSM4Box
+ i    24 idx    24 lvname                                            PMT4Log soname                                            PMT4Box
+ i    25 idx    25 lvname                                          PMTAN5Log soname                                          PMTAN5Box
+ i    26 idx    26 lvname                                          PMTSM5Log soname                                          PMTSM5Box
+ i    27 idx    27 lvname                                            PMT5Log soname                                            PMT5Box
+ i    28 idx    28 lvname                                          PMTAN6Log soname                                          PMTAN6Box
+ i    29 idx    29 lvname                                          PMTSM6Log soname                                          PMTSM6Box
+ i    30 idx    30 lvname                                            PMT6Log soname                                            PMT6Box
+ i    31 idx    31 lvname                                          PMTAN7Log soname                                          PMTAN7Box
+ i    32 idx    32 lvname                                          PMTSM7Log soname                                          PMTSM7Box
+ i    33 idx    33 lvname                                            PMT7Log soname                                            PMT7Box
+ i    34 idx    34 lvname                                  ECBottomMediumLog soname                                              ECBox
+ i    35 idx    35 lvname                                          PMTAN8Log soname                                          PMTAN8Box
+ i    36 idx    36 lvname                                          PMTSM8Log soname                                          PMTSM8Box
+ i    37 idx    37 lvname                                            PMT8Log soname                                            PMT8Box
+ i    38 idx    38 lvname                                          PMTAN9Log soname                                          PMTAN9Box
+ i    39 idx    39 lvname                                          PMTSM9Log soname                                          PMTSM9Box
+ i    40 idx    40 lvname                                            PMT9Log soname                                            PMT9Box
+ i    41 idx    41 lvname                                         PMTAN10Log soname                                         PMTAN10Box
+ i    42 idx    42 lvname                                         PMTSM10Log soname                                         PMTSM10Box
+ i    43 idx    43 lvname                                           PMT10Log soname                                           PMT10Box
+ i    44 idx    44 lvname                                         PMTAN11Log soname                                         PMTAN11Box
+ i    45 idx    45 lvname                                         PMTSM11Log soname                                         PMTSM11Box
+ i    46 idx    46 lvname                                           PMT11Log soname                                           PMT11Box
+ i    47 idx    47 lvname                                   ECHightMediumLog soname                                              ECBox
+ i    48 idx    48 lvname                                         PMTAN12Log soname                                         PMTAN12Box
+ i    49 idx    49 lvname                                         PMTSM12Log soname                                         PMTSM12Box
+ i    50 idx    50 lvname                                           PMT12Log soname                                           PMT12Box
+ i    51 idx    51 lvname                                         PMTAN13Log soname                                         PMTAN13Box
+ i    52 idx    52 lvname                                         PMTSM13Log soname                                         PMTSM13Box
+ i    53 idx    53 lvname                                           PMT13Log soname                                           PMT13Box
+ i    54 idx    54 lvname                                         PMTAN14Log soname                                         PMTAN14Box
+ i    55 idx    55 lvname                                         PMTSM14Log soname                                         PMTSM14Box
+ i    56 idx    56 lvname                                           PMT14Log soname                                           PMT14Box
+ i    57 idx    57 lvname                                         PMTAN15Log soname                                         PMTAN15Box
+ i    58 idx    58 lvname                                         PMTSM15Log soname                                         PMTSM15Box
+ i    59 idx    59 lvname                                           PMT15Log soname                                           PMT15Box
+ i    60 idx    60 lvname                                         ECHightLog soname                                              ECBox
+ i    61 idx    61 lvname                                           ECSupLog soname                                              ECBox
+ i    62 idx    62 lvname                               PhDetSupFrameLeftLog soname                                   PhDetSupFrameBox
+ i    63 idx    63 lvname                                   CrystalMasterLog soname                             RichTbCrystalMasterBox
+ i    64 idx    64 lvname                                          VesselLog soname                                    RichTbVesselBox
+ i    65 idx    65 lvname                                              World soname                                              World
+2021-08-06 13:22:25.800 INFO  [21563] [X4PhysicalVolume::convertStructure@796] [ creating large tree of GVolume instances
+2021-08-06 13:22:25.809 INFO  [21563] [X4PhysicalVolume::postConvert@201]  GGeo::getNumVolumes() 0 GGeo::getNumSensorVolumes() 0
+ GGeo::getSensorBoundaryReport() 
+                      sensor_total      0
+
+2021-08-06 13:22:25.809 INFO  [21563] [G4Opticks::translateGeometry@942] ) GGeo populate
+2021-08-06 13:22:25.809 INFO  [21563] [G4Opticks::translateGeometry@944] ( GGeo::postDirectTranslation 
+2021-08-06 13:22:25.810 INFO  [21563] [GGeo::prepare@630] [
+2021-08-06 13:22:25.810 INFO  [21563] [GGeo::prepareVolumes@1246] [ creating merged meshes from the volume tree 
+2021-08-06 13:22:25.816 INFO  [21563] [GInstancer::findRepeatCandidates@345]  nall 66 repeat_min 400 vertex_min 0 num_repcan 0
+2021-08-06 13:22:25.819 ERROR [21563] [GGeoLib::makeMergedMesh@324] mm index   0 geocode   T                  numVolumes        129 numFaces        3460 numITransforms           0 numITransforms*numVolumes           0 GParts N GPts Y
+2021-08-06 13:22:25.820 INFO  [21563] [GInstancer::makeMergedMeshAndInstancedBuffers@787]  numRepeats 0 numRidx 1
+2021-08-06 13:22:25.822 INFO  [21563] [GInstancer::dump@890] GGeo::prepareVolumes
+2021-08-06 13:22:25.822 INFO  [21563] [GInstancer::dumpMeshset@834]  numRepeats 0 numRidx 1 (slot 0 for global non-instanced) 
+ ridx 0 ms 66 ( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65  ) 
+2021-08-06 13:22:25.823 INFO  [21563] [GInstancer::dumpCSGSkips@866] 
+2021-08-06 13:22:25.823 INFO  [21563] [GGeo::prepareVolumes@1278] ]
+2021-08-06 13:22:25.847 INFO  [21563] [GGeo::prepare@650] ]
+2021-08-06 13:22:25.847 INFO  [21563] [GGeoLib::dump@385] GGeo::save GGeoLib numMergedMesh 1 ptr 0x200f710
+mm index   0 geocode   T                  numVolumes        129 numFaces        3460 numITransforms           1 numITransforms*numVolumes         129 GParts N GPts Y
+ num_remainder_volumes 129 num_instanced_volumes 0 num_remainder_volumes + num_instanced_volumes 129 num_total_faces 3460 num_total_faces_woi 3460 (woi:without instancing) 
+   0 pts Y  GPts.NumPt   129 lvIdx ( 65 64 63 2 0 1 3 4 62 21 ... 57 6 7 8 9 61 61 61 61)
+2021-08-06 13:22:25.850 INFO  [21563] [GMeshLib::addAltMeshes@116]  num_indices_with_alt 0
+2021-08-06 13:22:25.850 INFO  [21563] [GMeshLib::dump@227] addAltMeshes meshnames 66 meshes 66
+ i   0 aidx   0 midx   0 name                                         MirrorFull mesh  nv     96 nf    192
+ i   1 aidx   1 midx   1 name                          RichTbUpgradeDarkCoverCyl mesh  nv     50 nf     96
+ i   2 aidx   2 midx   2 name                                           Radiator mesh  nv    412 nf    820
+ i   3 aidx   0 midx   3 name                                         MirrorFull mesh  nv     98 nf    192
+ i   4 aidx   4 midx   4 name                                            DarkBox mesh  nv     16 nf     32
+ i   5 aidx   5 midx   5 name                                          PMTAN0Box mesh  nv      8 nf     12
+ i   6 aidx   6 midx   6 name                                        PMTEnvelope mesh  nv     16 nf     32
+ i   7 aidx   7 midx   7 name                                       PMTFrontRing mesh  nv     16 nf     32
+ i   8 aidx   8 midx   8 name                                    PMTQuartzWindow mesh  nv      8 nf     12
+ i   9 aidx   9 midx   9 name                                       PMTPhCathode mesh  nv      8 nf     12
+ i  10 aidx  10 midx  10 name                                          PMTSM0Box mesh  nv      8 nf     12
+ i  11 aidx  11 midx  11 name                                            PMT0Box mesh  nv      8 nf     12
+ i  12 aidx  12 midx  12 name                                          PMTAN1Box mesh  nv      8 nf     12
+ i  13 aidx  13 midx  13 name                                          PMTSM1Box mesh  nv      8 nf     12
+ i  14 aidx  14 midx  14 name                                            PMT1Box mesh  nv      8 nf     12
+ i  15 aidx  15 midx  15 name                                          PMTAN2Box mesh  nv      8 nf     12
+ i  16 aidx  16 midx  16 name                                          PMTSM2Box mesh  nv      8 nf     12
+ i  17 aidx  17 midx  17 name                                            PMT2Box mesh  nv      8 nf     12
+ i  18 aidx  18 midx  18 name                                          PMTAN3Box mesh  nv      8 nf     12
+ i  19 aidx  19 midx  19 name                                          PMTSM3Box mesh  nv      8 nf     12
+ i  20 aidx  20 midx  20 name                                            PMT3Box mesh  nv      8 nf     12
+ i  21 aidx  21 midx  21 name                                              ECBox mesh  nv      8 nf     12
+ i  22 aidx  22 midx  22 name                                          PMTAN4Box mesh  nv      8 nf     12
+ i  23 aidx  23 midx  23 name                                          PMTSM4Box mesh  nv      8 nf     12
+ i  24 aidx  24 midx  24 name                                            PMT4Box mesh  nv      8 nf     12
+ i  25 aidx  25 midx  25 name                                          PMTAN5Box mesh  nv      8 nf     12
+ i  26 aidx  26 midx  26 name                                          PMTSM5Box mesh  nv      8 nf     12
+ i  27 aidx  27 midx  27 name                                            PMT5Box mesh  nv      8 nf     12
+ i  28 aidx  28 midx  28 name                                          PMTAN6Box mesh  nv      8 nf     12
+ i  29 aidx  29 midx  29 name                                          PMTSM6Box mesh  nv      8 nf     12
+ i  30 aidx  30 midx  30 name                                            PMT6Box mesh  nv      8 nf     12
+ i  31 aidx  31 midx  31 name                                          PMTAN7Box mesh  nv      8 nf     12
+ i  32 aidx  32 midx  32 name                                          PMTSM7Box mesh  nv      8 nf     12
+ i  33 aidx  33 midx  33 name                                            PMT7Box mesh  nv      8 nf     12
+ i  34 aidx  21 midx  34 name                                              ECBox mesh  nv      8 nf     12
+ i  35 aidx  35 midx  35 name                                          PMTAN8Box mesh  nv      8 nf     12
+ i  36 aidx  36 midx  36 name                                          PMTSM8Box mesh  nv      8 nf     12
+ i  37 aidx  37 midx  37 name                                            PMT8Box mesh  nv      8 nf     12
+ i  38 aidx  38 midx  38 name                                          PMTAN9Box mesh  nv      8 nf     12
+ i  39 aidx  39 midx  39 name                                          PMTSM9Box mesh  nv      8 nf     12
+ i  40 aidx  40 midx  40 name                                            PMT9Box mesh  nv      8 nf     12
+ i  41 aidx  41 midx  41 name                                         PMTAN10Box mesh  nv      8 nf     12
+ i  42 aidx  42 midx  42 name                                         PMTSM10Box mesh  nv      8 nf     12
+ i  43 aidx  43 midx  43 name                                           PMT10Box mesh  nv      8 nf     12
+ i  44 aidx  44 midx  44 name                                         PMTAN11Box mesh  nv      8 nf     12
+ i  45 aidx  45 midx  45 name                                         PMTSM11Box mesh  nv      8 nf     12
+ i  46 aidx  46 midx  46 name                                           PMT11Box mesh  nv      8 nf     12
+ i  47 aidx  21 midx  47 name                                              ECBox mesh  nv      8 nf     12
+ i  48 aidx  48 midx  48 name                                         PMTAN12Box mesh  nv      8 nf     12
+ i  49 aidx  49 midx  49 name                                         PMTSM12Box mesh  nv      8 nf     12
+ i  50 aidx  50 midx  50 name                                           PMT12Box mesh  nv      8 nf     12
+ i  51 aidx  51 midx  51 name                                         PMTAN13Box mesh  nv      8 nf     12
+ i  52 aidx  52 midx  52 name                                         PMTSM13Box mesh  nv      8 nf     12
+ i  53 aidx  53 midx  53 name                                           PMT13Box mesh  nv      8 nf     12
+ i  54 aidx  54 midx  54 name                                         PMTAN14Box mesh  nv      8 nf     12
+ i  55 aidx  55 midx  55 name                                         PMTSM14Box mesh  nv      8 nf     12
+ i  56 aidx  56 midx  56 name                                           PMT14Box mesh  nv      8 nf     12
+ i  57 aidx  57 midx  57 name                                         PMTAN15Box mesh  nv      8 nf     12
+ i  58 aidx  58 midx  58 name                                         PMTSM15Box mesh  nv      8 nf     12
+ i  59 aidx  59 midx  59 name                                           PMT15Box mesh  nv      8 nf     12
+ i  60 aidx  21 midx  60 name                                              ECBox mesh  nv      8 nf     12
+ i  61 aidx  21 midx  61 name                                              ECBox mesh  nv      8 nf     12
+ i  62 aidx  62 midx  62 name                                   PhDetSupFrameBox mesh  nv      8 nf     12
+ i  63 aidx  63 midx  63 name                             RichTbCrystalMasterBox mesh  nv      8 nf     12
+ i  64 aidx  64 midx  64 name                                    RichTbVesselBox mesh  nv      8 nf     12
+ i  65 aidx  65 midx  65 name                                              World mesh  nv      8 nf     12
+2021-08-06 13:22:25.913 INFO  [21563] [BMeta::dump@199] GGeo::saveCacheMeta
+{
+    "GEOCACHE_CODE_VERSION": 9,
+    "argline": "RichTb ",
+    "cwd": "/hepgpu6-data1/liyu/opticks/examples/Geant4/RichTb/build",
+    "location": "Opticks::updateCacheMeta",
+    "rundate": "20210806_132225",
+    "runfolder": "RichTb",
+    "runlabel": "R0_cvd_1",
+    "runstamp": 1628252545
+}
+GGeo::reportMeshUsage
+ meshIndex, nvert, nface, nodeCount, nodeCount*nvert, nodeCount*nface, meshName 
+     0 ( v   96 f  192 ) :       1 :         96 :        192 : MirrorFull
+     1 ( v   50 f   96 ) :       1 :         50 :         96 : RichTbUpgradeDarkCoverCyl
+     2 ( v  412 f  820 ) :       1 :        412 :        820 : Radiator
+     3 ( v   98 f  192 ) :       1 :         98 :        192 : MirrorFull
+     4 ( v   16 f   32 ) :       1 :         16 :         32 : DarkBox
+     5 ( v    8 f   12 ) :       1 :          8 :         12 : PMTAN0Box
+     6 ( v   16 f   32 ) :      16 :        256 :        512 : PMTEnvelope
+     7 ( v   16 f   32 ) :      16 :        256 :        512 : PMTFrontRing
+     8 ( v    8 f   12 ) :      16 :        128 :        192 : PMTQuartzWindow
+     9 ( v    8 f   12 ) :      16 :        128 :        192 : PMTPhCathode
+    10 ( v    8 f   12 ) :       1 :          8 :         12 : PMTSM0Box
+    11 ( v    8 f   12 ) :       1 :          8 :         12 : PMT0Box
+    12 ( v    8 f   12 ) :       1 :          8 :         12 : PMTAN1Box
+    13 ( v    8 f   12 ) :       1 :          8 :         12 : PMTSM1Box
+    14 ( v    8 f   12 ) :       1 :          8 :         12 : PMT1Box
+    15 ( v    8 f   12 ) :       1 :          8 :         12 : PMTAN2Box
+    16 ( v    8 f   12 ) :       1 :          8 :         12 : PMTSM2Box
+    17 ( v    8 f   12 ) :       1 :          8 :         12 : PMT2Box
+    18 ( v    8 f   12 ) :       1 :          8 :         12 : PMTAN3Box
+    19 ( v    8 f   12 ) :       1 :          8 :         12 : PMTSM3Box
+    20 ( v    8 f   12 ) :       1 :          8 :         12 : PMT3Box
+    21 ( v    8 f   12 ) :       1 :          8 :         12 : ECBox
+    22 ( v    8 f   12 ) :       1 :          8 :         12 : PMTAN4Box
+    23 ( v    8 f   12 ) :       1 :          8 :         12 : PMTSM4Box
+    24 ( v    8 f   12 ) :       1 :          8 :         12 : PMT4Box
+    25 ( v    8 f   12 ) :       1 :          8 :         12 : PMTAN5Box
+    26 ( v    8 f   12 ) :       1 :          8 :         12 : PMTSM5Box
+    27 ( v    8 f   12 ) :       1 :          8 :         12 : PMT5Box
+    28 ( v    8 f   12 ) :       1 :          8 :         12 : PMTAN6Box
+    29 ( v    8 f   12 ) :       1 :          8 :         12 : PMTSM6Box
+    30 ( v    8 f   12 ) :       1 :          8 :         12 : PMT6Box
+    31 ( v    8 f   12 ) :       1 :          8 :         12 : PMTAN7Box
+    32 ( v    8 f   12 ) :       1 :          8 :         12 : PMTSM7Box
+    33 ( v    8 f   12 ) :       1 :          8 :         12 : PMT7Box
+    34 ( v    8 f   12 ) :       1 :          8 :         12 : ECBox
+    35 ( v    8 f   12 ) :       1 :          8 :         12 : PMTAN8Box
+    36 ( v    8 f   12 ) :       1 :          8 :         12 : PMTSM8Box
+    37 ( v    8 f   12 ) :       1 :          8 :         12 : PMT8Box
+    38 ( v    8 f   12 ) :       1 :          8 :         12 : PMTAN9Box
+    39 ( v    8 f   12 ) :       1 :          8 :         12 : PMTSM9Box
+    40 ( v    8 f   12 ) :       1 :          8 :         12 : PMT9Box
+    41 ( v    8 f   12 ) :       1 :          8 :         12 : PMTAN10Box
+    42 ( v    8 f   12 ) :       1 :          8 :         12 : PMTSM10Box
+    43 ( v    8 f   12 ) :       1 :          8 :         12 : PMT10Box
+    44 ( v    8 f   12 ) :       1 :          8 :         12 : PMTAN11Box
+    45 ( v    8 f   12 ) :       1 :          8 :         12 : PMTSM11Box
+    46 ( v    8 f   12 ) :       1 :          8 :         12 : PMT11Box
+    47 ( v    8 f   12 ) :       1 :          8 :         12 : ECBox
+    48 ( v    8 f   12 ) :       1 :          8 :         12 : PMTAN12Box
+    49 ( v    8 f   12 ) :       1 :          8 :         12 : PMTSM12Box
+    50 ( v    8 f   12 ) :       1 :          8 :         12 : PMT12Box
+    51 ( v    8 f   12 ) :       1 :          8 :         12 : PMTAN13Box
+    52 ( v    8 f   12 ) :       1 :          8 :         12 : PMTSM13Box
+    53 ( v    8 f   12 ) :       1 :          8 :         12 : PMT13Box
+    54 ( v    8 f   12 ) :       1 :          8 :         12 : PMTAN14Box
+    55 ( v    8 f   12 ) :       1 :          8 :         12 : PMTSM14Box
+    56 ( v    8 f   12 ) :       1 :          8 :         12 : PMT14Box
+    57 ( v    8 f   12 ) :       1 :          8 :         12 : PMTAN15Box
+    58 ( v    8 f   12 ) :       1 :          8 :         12 : PMTSM15Box
+    59 ( v    8 f   12 ) :       1 :          8 :         12 : PMT15Box
+    60 ( v    8 f   12 ) :       1 :          8 :         12 : ECBox
+    61 ( v    8 f   12 ) :       4 :         32 :         48 : ECBox
+    62 ( v    8 f   12 ) :       1 :          8 :         12 : PhDetSupFrameBox
+    63 ( v    8 f   12 ) :       1 :          8 :         12 : RichTbCrystalMasterBox
+    64 ( v    8 f   12 ) :       1 :          8 :         12 : RichTbVesselBox
+    65 ( v    8 f   12 ) :       1 :          8 :         12 : World
+ tot  node :     129 vert :    1920 face :    3460
+2021-08-06 13:22:25.923 INFO  [21563] [GGeo::postDirectTranslationDump@605] GGeo::postDirectTranslationDump NOT --dumpsensor numSensorVolumes 0
+2021-08-06 13:22:25.923 INFO  [21563] [G4Opticks::translateGeometry@946] ) GGeo::postDirectTranslation 
+2021-08-06 13:22:25.923 INFO  [21563] [G4Opticks::setGeometry@639]  GGeo: LIVE TRANSLATED  num_sensor 0
+2021-08-06 13:22:25.927 INFO  [21563] [GNodeLib::getFirstNodeIndexForGDMLAuxTargetLVName@289]  target_lvname (null) nidxs.size() 0 nidx -1
+2021-08-06 13:22:25.928 ERROR [21563] [OpticksGen::initFromLegacyGensteps@191] SKIP as isNoInputGensteps OR isEmbedded  
+2021-08-06 13:22:25.949 INFO  [21563] [OContext::InitRTX@335]  --rtx 0 setting  OFF
+2021-08-06 13:22:25.998 INFO  [21563] [OContext::CheckDevices@219] 
+Device 0                       Tesla T4 ordinal 0 Compute Support: 7 5 Total Memory: 15843721216
+
+2021-08-06 13:22:26.050 ERROR [21563] [CDevice::Load@306]  failed read from /hepgpu6-data1/liyu/.opticks/runcache/CDevice.bin
+2021-08-06 13:22:26.050 ERROR [21563] [CDevice::Load@306]  failed read from /hepgpu6-data1/liyu/.opticks/runcache/CDevice.bin
+2021-08-06 13:22:26.050 INFO  [21563] [CDevice::Dump@245] Visible devices[-1:Tesla_T4]
+2021-08-06 13:22:26.050 INFO  [21563] [CDevice::Dump@249] CDevice index 0 ordinal -1 name Tesla T4 major 7 minor 5 compute_capability 75 multiProcessorCount 40 totalGlobalMem 15843721216
+2021-08-06 13:22:26.050 INFO  [21563] [CDevice::Dump@245] All devices[]
+2021-08-06 13:22:26.200 INFO  [21563] [OGeo::init@240] OGeo  top Sbvh ggg Sbvh assembly Sbvh instance Sbvh
+2021-08-06 13:22:26.200 INFO  [21563] [GGeoLib::dump@385] OGeo::convert GGeoLib numMergedMesh 1 ptr 0x200f710
+mm index   0 geocode   T                  numVolumes        129 numFaces        3460 numITransforms           1 numITransforms*numVolumes         129 GParts Y GPts Y
+ num_remainder_volumes 129 num_instanced_volumes 0 num_remainder_volumes + num_instanced_volumes 129 num_total_faces 3460 num_total_faces_woi 3460 (woi:without instancing) 
+   0 pts Y  GPts.NumPt   129 lvIdx ( 65 64 63 2 0 1 3 4 62 21 ... 57 6 7 8 9 61 61 61 61)
+2021-08-06 13:22:26.200 INFO  [21563] [OGeo::convert@301] [ nmm 1
+2021-08-06 13:22:26.250 INFO  [21563] [OGeo::convert@314] ] nmm 1
+2021-08-06 13:22:26.253 ERROR [21563] [cuRANDWrapper::setItems@154] CAUTION : are resizing the launch sequence 
+2021-08-06 13:22:27.258 FATAL [21563] [ORng::setSkipAhead@160]  skip as as WITH_SKIPAHEAD not enabled 
+
+
+###] RunAction::BeginOfRunAction G4Opticks.setGeometry
+
+
+ Now init  RichTbUpgradeSD  HCE 0x2ddb8a0 HCE.Capacity  1 SensitiveDetectorName RichTbPMTSD collectionName RichTbHitsCollection
+ Now end init  RichTbUpgradeSD 
+
+###[ EventAction::EndOfEventAction G4Opticks.propagateOpticalPhotons
+
+2021-08-06 13:22:27.269 FATAL [21563] [G4Opticks::propagateOpticalPhotons@1090] SKIP as no gensteps have been collected 
+EventAction::EndOfEventAction eventID 0 num_hits 0

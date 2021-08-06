@@ -115,9 +115,22 @@ CMakeFiles/RichTb.dir/src/EventAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RichTb.dir/src/EventAction.cc.s"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/EventAction.cc -o CMakeFiles/RichTb.dir/src/EventAction.cc.s
 
+CMakeFiles/RichTb.dir/src/HpdSiEnergyLoss.cc.o: CMakeFiles/RichTb.dir/flags.make
+CMakeFiles/RichTb.dir/src/HpdSiEnergyLoss.cc.o: ../src/HpdSiEnergyLoss.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RichTb.dir/src/HpdSiEnergyLoss.cc.o"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/HpdSiEnergyLoss.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/HpdSiEnergyLoss.cc
+
+CMakeFiles/RichTb.dir/src/HpdSiEnergyLoss.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RichTb.dir/src/HpdSiEnergyLoss.cc.i"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/HpdSiEnergyLoss.cc > CMakeFiles/RichTb.dir/src/HpdSiEnergyLoss.cc.i
+
+CMakeFiles/RichTb.dir/src/HpdSiEnergyLoss.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RichTb.dir/src/HpdSiEnergyLoss.cc.s"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/HpdSiEnergyLoss.cc -o CMakeFiles/RichTb.dir/src/HpdSiEnergyLoss.cc.s
+
 CMakeFiles/RichTb.dir/src/L4Cerenkov.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/L4Cerenkov.cc.o: ../src/L4Cerenkov.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RichTb.dir/src/L4Cerenkov.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RichTb.dir/src/L4Cerenkov.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/L4Cerenkov.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/L4Cerenkov.cc
 
 CMakeFiles/RichTb.dir/src/L4Cerenkov.cc.i: cmake_force
@@ -130,7 +143,7 @@ CMakeFiles/RichTb.dir/src/L4Cerenkov.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/OpHit.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/OpHit.cc.o: ../src/OpHit.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RichTb.dir/src/OpHit.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RichTb.dir/src/OpHit.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/OpHit.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/OpHit.cc
 
 CMakeFiles/RichTb.dir/src/OpHit.cc.i: cmake_force
@@ -143,7 +156,7 @@ CMakeFiles/RichTb.dir/src/OpHit.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/PhysicsList.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/PhysicsList.cc.o: ../src/PhysicsList.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RichTb.dir/src/PhysicsList.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RichTb.dir/src/PhysicsList.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/PhysicsList.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/PhysicsList.cc
 
 CMakeFiles/RichTb.dir/src/PhysicsList.cc.i: cmake_force
@@ -154,9 +167,48 @@ CMakeFiles/RichTb.dir/src/PhysicsList.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RichTb.dir/src/PhysicsList.cc.s"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/PhysicsList.cc -o CMakeFiles/RichTb.dir/src/PhysicsList.cc.s
 
+CMakeFiles/RichTb.dir/src/PixelHpdPhotoElectricEffect.cc.o: CMakeFiles/RichTb.dir/flags.make
+CMakeFiles/RichTb.dir/src/PixelHpdPhotoElectricEffect.cc.o: ../src/PixelHpdPhotoElectricEffect.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RichTb.dir/src/PixelHpdPhotoElectricEffect.cc.o"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/PixelHpdPhotoElectricEffect.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/PixelHpdPhotoElectricEffect.cc
+
+CMakeFiles/RichTb.dir/src/PixelHpdPhotoElectricEffect.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RichTb.dir/src/PixelHpdPhotoElectricEffect.cc.i"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/PixelHpdPhotoElectricEffect.cc > CMakeFiles/RichTb.dir/src/PixelHpdPhotoElectricEffect.cc.i
+
+CMakeFiles/RichTb.dir/src/PixelHpdPhotoElectricEffect.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RichTb.dir/src/PixelHpdPhotoElectricEffect.cc.s"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/PixelHpdPhotoElectricEffect.cc -o CMakeFiles/RichTb.dir/src/PixelHpdPhotoElectricEffect.cc.s
+
+CMakeFiles/RichTb.dir/src/PmtAnodeEnergyLoss.cc.o: CMakeFiles/RichTb.dir/flags.make
+CMakeFiles/RichTb.dir/src/PmtAnodeEnergyLoss.cc.o: ../src/PmtAnodeEnergyLoss.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RichTb.dir/src/PmtAnodeEnergyLoss.cc.o"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/PmtAnodeEnergyLoss.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/PmtAnodeEnergyLoss.cc
+
+CMakeFiles/RichTb.dir/src/PmtAnodeEnergyLoss.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RichTb.dir/src/PmtAnodeEnergyLoss.cc.i"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/PmtAnodeEnergyLoss.cc > CMakeFiles/RichTb.dir/src/PmtAnodeEnergyLoss.cc.i
+
+CMakeFiles/RichTb.dir/src/PmtAnodeEnergyLoss.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RichTb.dir/src/PmtAnodeEnergyLoss.cc.s"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/PmtAnodeEnergyLoss.cc -o CMakeFiles/RichTb.dir/src/PmtAnodeEnergyLoss.cc.s
+
+CMakeFiles/RichTb.dir/src/PmtPhotoElectricEffect.cc.o: CMakeFiles/RichTb.dir/flags.make
+CMakeFiles/RichTb.dir/src/PmtPhotoElectricEffect.cc.o: ../src/PmtPhotoElectricEffect.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RichTb.dir/src/PmtPhotoElectricEffect.cc.o"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/PmtPhotoElectricEffect.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/PmtPhotoElectricEffect.cc
+
+CMakeFiles/RichTb.dir/src/PmtPhotoElectricEffect.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RichTb.dir/src/PmtPhotoElectricEffect.cc.i"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/PmtPhotoElectricEffect.cc > CMakeFiles/RichTb.dir/src/PmtPhotoElectricEffect.cc.i
+
+CMakeFiles/RichTb.dir/src/PmtPhotoElectricEffect.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RichTb.dir/src/PmtPhotoElectricEffect.cc.s"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/PmtPhotoElectricEffect.cc -o CMakeFiles/RichTb.dir/src/PmtPhotoElectricEffect.cc.s
+
 CMakeFiles/RichTb.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGeneratorAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RichTb.dir/src/PrimaryGeneratorAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/RichTb.dir/src/PrimaryGeneratorAction.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/PrimaryGeneratorAction.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/PrimaryGeneratorAction.cc
 
 CMakeFiles/RichTb.dir/src/PrimaryGeneratorAction.cc.i: cmake_force
@@ -169,7 +221,7 @@ CMakeFiles/RichTb.dir/src/PrimaryGeneratorAction.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbContainerVesselBox.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbContainerVesselBox.cc.o: ../src/RichTbContainerVesselBox.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbContainerVesselBox.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbContainerVesselBox.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbContainerVesselBox.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbContainerVesselBox.cc
 
 CMakeFiles/RichTb.dir/src/RichTbContainerVesselBox.cc.i: cmake_force
@@ -180,9 +232,74 @@ CMakeFiles/RichTb.dir/src/RichTbContainerVesselBox.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RichTb.dir/src/RichTbContainerVesselBox.cc.s"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbContainerVesselBox.cc -o CMakeFiles/RichTb.dir/src/RichTbContainerVesselBox.cc.s
 
+CMakeFiles/RichTb.dir/src/RichTbCounter.cc.o: CMakeFiles/RichTb.dir/flags.make
+CMakeFiles/RichTb.dir/src/RichTbCounter.cc.o: ../src/RichTbCounter.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbCounter.cc.o"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbCounter.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbCounter.cc
+
+CMakeFiles/RichTb.dir/src/RichTbCounter.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RichTb.dir/src/RichTbCounter.cc.i"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbCounter.cc > CMakeFiles/RichTb.dir/src/RichTbCounter.cc.i
+
+CMakeFiles/RichTb.dir/src/RichTbCounter.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RichTb.dir/src/RichTbCounter.cc.s"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbCounter.cc -o CMakeFiles/RichTb.dir/src/RichTbCounter.cc.s
+
+CMakeFiles/RichTb.dir/src/RichTbG4Cerenkov.cc.o: CMakeFiles/RichTb.dir/flags.make
+CMakeFiles/RichTb.dir/src/RichTbG4Cerenkov.cc.o: ../src/RichTbG4Cerenkov.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbG4Cerenkov.cc.o"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbG4Cerenkov.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbG4Cerenkov.cc
+
+CMakeFiles/RichTb.dir/src/RichTbG4Cerenkov.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RichTb.dir/src/RichTbG4Cerenkov.cc.i"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbG4Cerenkov.cc > CMakeFiles/RichTb.dir/src/RichTbG4Cerenkov.cc.i
+
+CMakeFiles/RichTb.dir/src/RichTbG4Cerenkov.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RichTb.dir/src/RichTbG4Cerenkov.cc.s"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbG4Cerenkov.cc -o CMakeFiles/RichTb.dir/src/RichTbG4Cerenkov.cc.s
+
+CMakeFiles/RichTb.dir/src/RichTbG4OpAbsorption.cc.o: CMakeFiles/RichTb.dir/flags.make
+CMakeFiles/RichTb.dir/src/RichTbG4OpAbsorption.cc.o: ../src/RichTbG4OpAbsorption.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbG4OpAbsorption.cc.o"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbG4OpAbsorption.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbG4OpAbsorption.cc
+
+CMakeFiles/RichTb.dir/src/RichTbG4OpAbsorption.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RichTb.dir/src/RichTbG4OpAbsorption.cc.i"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbG4OpAbsorption.cc > CMakeFiles/RichTb.dir/src/RichTbG4OpAbsorption.cc.i
+
+CMakeFiles/RichTb.dir/src/RichTbG4OpAbsorption.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RichTb.dir/src/RichTbG4OpAbsorption.cc.s"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbG4OpAbsorption.cc -o CMakeFiles/RichTb.dir/src/RichTbG4OpAbsorption.cc.s
+
+CMakeFiles/RichTb.dir/src/RichTbG4OpBoundaryProcess.cc.o: CMakeFiles/RichTb.dir/flags.make
+CMakeFiles/RichTb.dir/src/RichTbG4OpBoundaryProcess.cc.o: ../src/RichTbG4OpBoundaryProcess.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbG4OpBoundaryProcess.cc.o"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbG4OpBoundaryProcess.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbG4OpBoundaryProcess.cc
+
+CMakeFiles/RichTb.dir/src/RichTbG4OpBoundaryProcess.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RichTb.dir/src/RichTbG4OpBoundaryProcess.cc.i"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbG4OpBoundaryProcess.cc > CMakeFiles/RichTb.dir/src/RichTbG4OpBoundaryProcess.cc.i
+
+CMakeFiles/RichTb.dir/src/RichTbG4OpBoundaryProcess.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RichTb.dir/src/RichTbG4OpBoundaryProcess.cc.s"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbG4OpBoundaryProcess.cc -o CMakeFiles/RichTb.dir/src/RichTbG4OpBoundaryProcess.cc.s
+
+CMakeFiles/RichTb.dir/src/RichTbG4OpRayleigh.cc.o: CMakeFiles/RichTb.dir/flags.make
+CMakeFiles/RichTb.dir/src/RichTbG4OpRayleigh.cc.o: ../src/RichTbG4OpRayleigh.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbG4OpRayleigh.cc.o"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbG4OpRayleigh.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbG4OpRayleigh.cc
+
+CMakeFiles/RichTb.dir/src/RichTbG4OpRayleigh.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RichTb.dir/src/RichTbG4OpRayleigh.cc.i"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbG4OpRayleigh.cc > CMakeFiles/RichTb.dir/src/RichTbG4OpRayleigh.cc.i
+
+CMakeFiles/RichTb.dir/src/RichTbG4OpRayleigh.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RichTb.dir/src/RichTbG4OpRayleigh.cc.s"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbG4OpRayleigh.cc -o CMakeFiles/RichTb.dir/src/RichTbG4OpRayleigh.cc.s
+
 CMakeFiles/RichTb.dir/src/RichTbGeometryParameters.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbGeometryParameters.cc.o: ../src/RichTbGeometryParameters.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbGeometryParameters.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbGeometryParameters.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbGeometryParameters.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbGeometryParameters.cc
 
 CMakeFiles/RichTb.dir/src/RichTbGeometryParameters.cc.i: cmake_force
@@ -195,7 +312,7 @@ CMakeFiles/RichTb.dir/src/RichTbGeometryParameters.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbGraphics.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbGraphics.cc.o: ../src/RichTbGraphics.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbGraphics.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbGraphics.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbGraphics.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbGraphics.cc
 
 CMakeFiles/RichTb.dir/src/RichTbGraphics.cc.i: cmake_force
@@ -208,7 +325,7 @@ CMakeFiles/RichTb.dir/src/RichTbGraphics.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbGraphicsAuxA.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbGraphicsAuxA.cc.o: ../src/RichTbGraphicsAuxA.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbGraphicsAuxA.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbGraphicsAuxA.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbGraphicsAuxA.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbGraphicsAuxA.cc
 
 CMakeFiles/RichTb.dir/src/RichTbGraphicsAuxA.cc.i: cmake_force
@@ -221,7 +338,7 @@ CMakeFiles/RichTb.dir/src/RichTbGraphicsAuxA.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbHall.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbHall.cc.o: ../src/RichTbHall.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbHall.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbHall.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbHall.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbHall.cc
 
 CMakeFiles/RichTb.dir/src/RichTbHall.cc.i: cmake_force
@@ -234,7 +351,7 @@ CMakeFiles/RichTb.dir/src/RichTbHall.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbHit.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbHit.cc.o: ../src/RichTbHit.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbHit.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbHit.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbHit.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbHit.cc
 
 CMakeFiles/RichTb.dir/src/RichTbHit.cc.i: cmake_force
@@ -247,7 +364,7 @@ CMakeFiles/RichTb.dir/src/RichTbHit.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbHpd.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbHpd.cc.o: ../src/RichTbHpd.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbHpd.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbHpd.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbHpd.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbHpd.cc
 
 CMakeFiles/RichTb.dir/src/RichTbHpd.cc.i: cmake_force
@@ -260,7 +377,7 @@ CMakeFiles/RichTb.dir/src/RichTbHpd.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbLargeMirrorParabola.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbLargeMirrorParabola.cc.o: ../src/RichTbLargeMirrorParabola.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbLargeMirrorParabola.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbLargeMirrorParabola.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbLargeMirrorParabola.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbLargeMirrorParabola.cc
 
 CMakeFiles/RichTb.dir/src/RichTbLargeMirrorParabola.cc.i: cmake_force
@@ -273,7 +390,7 @@ CMakeFiles/RichTb.dir/src/RichTbLargeMirrorParabola.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbMaterial.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbMaterial.cc.o: ../src/RichTbMaterial.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbMaterial.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbMaterial.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbMaterial.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbMaterial.cc
 
 CMakeFiles/RichTb.dir/src/RichTbMaterial.cc.i: cmake_force
@@ -286,7 +403,7 @@ CMakeFiles/RichTb.dir/src/RichTbMaterial.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbMaterialParameters.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbMaterialParameters.cc.o: ../src/RichTbMaterialParameters.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbMaterialParameters.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbMaterialParameters.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbMaterialParameters.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbMaterialParameters.cc
 
 CMakeFiles/RichTb.dir/src/RichTbMaterialParameters.cc.i: cmake_force
@@ -299,7 +416,7 @@ CMakeFiles/RichTb.dir/src/RichTbMaterialParameters.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbMirrorParabola.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbMirrorParabola.cc.o: ../src/RichTbMirrorParabola.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbMirrorParabola.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbMirrorParabola.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbMirrorParabola.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbMirrorParabola.cc
 
 CMakeFiles/RichTb.dir/src/RichTbMirrorParabola.cc.i: cmake_force
@@ -312,7 +429,7 @@ CMakeFiles/RichTb.dir/src/RichTbMirrorParabola.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbMirrorSph.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbMirrorSph.cc.o: ../src/RichTbMirrorSph.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbMirrorSph.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbMirrorSph.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbMirrorSph.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbMirrorSph.cc
 
 CMakeFiles/RichTb.dir/src/RichTbMirrorSph.cc.i: cmake_force
@@ -325,7 +442,7 @@ CMakeFiles/RichTb.dir/src/RichTbMirrorSph.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbPEInfo.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbPEInfo.cc.o: ../src/RichTbPEInfo.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbPEInfo.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbPEInfo.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbPEInfo.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPEInfo.cc
 
 CMakeFiles/RichTb.dir/src/RichTbPEInfo.cc.i: cmake_force
@@ -338,7 +455,7 @@ CMakeFiles/RichTb.dir/src/RichTbPEInfo.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbPMT.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbPMT.cc.o: ../src/RichTbPMT.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbPMT.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbPMT.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbPMT.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPMT.cc
 
 CMakeFiles/RichTb.dir/src/RichTbPMT.cc.i: cmake_force
@@ -349,9 +466,22 @@ CMakeFiles/RichTb.dir/src/RichTbPMT.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RichTb.dir/src/RichTbPMT.cc.s"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPMT.cc -o CMakeFiles/RichTb.dir/src/RichTbPMT.cc.s
 
+CMakeFiles/RichTb.dir/src/RichTbPeUserInfoAttach.cc.o: CMakeFiles/RichTb.dir/flags.make
+CMakeFiles/RichTb.dir/src/RichTbPeUserInfoAttach.cc.o: ../src/RichTbPeUserInfoAttach.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbPeUserInfoAttach.cc.o"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbPeUserInfoAttach.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPeUserInfoAttach.cc
+
+CMakeFiles/RichTb.dir/src/RichTbPeUserInfoAttach.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RichTb.dir/src/RichTbPeUserInfoAttach.cc.i"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPeUserInfoAttach.cc > CMakeFiles/RichTb.dir/src/RichTbPeUserInfoAttach.cc.i
+
+CMakeFiles/RichTb.dir/src/RichTbPeUserInfoAttach.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RichTb.dir/src/RichTbPeUserInfoAttach.cc.s"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPeUserInfoAttach.cc -o CMakeFiles/RichTb.dir/src/RichTbPeUserInfoAttach.cc.s
+
 CMakeFiles/RichTb.dir/src/RichTbPhCPhotDetSupFrame.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbPhCPhotDetSupFrame.cc.o: ../src/RichTbPhCPhotDetSupFrame.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbPhCPhotDetSupFrame.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbPhCPhotDetSupFrame.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbPhCPhotDetSupFrame.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPhCPhotDetSupFrame.cc
 
 CMakeFiles/RichTb.dir/src/RichTbPhCPhotDetSupFrame.cc.i: cmake_force
@@ -364,7 +494,7 @@ CMakeFiles/RichTb.dir/src/RichTbPhCPhotDetSupFrame.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbPhotoElectron.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbPhotoElectron.cc.o: ../src/RichTbPhotoElectron.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbPhotoElectron.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbPhotoElectron.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbPhotoElectron.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPhotoElectron.cc
 
 CMakeFiles/RichTb.dir/src/RichTbPhotoElectron.cc.i: cmake_force
@@ -377,7 +507,7 @@ CMakeFiles/RichTb.dir/src/RichTbPhotoElectron.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbPhotonInfo.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbPhotonInfo.cc.o: ../src/RichTbPhotonInfo.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbPhotonInfo.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbPhotonInfo.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbPhotonInfo.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPhotonInfo.cc
 
 CMakeFiles/RichTb.dir/src/RichTbPhotonInfo.cc.i: cmake_force
@@ -388,9 +518,48 @@ CMakeFiles/RichTb.dir/src/RichTbPhotonInfo.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RichTb.dir/src/RichTbPhotonInfo.cc.s"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPhotonInfo.cc -o CMakeFiles/RichTb.dir/src/RichTbPhotonInfo.cc.s
 
+CMakeFiles/RichTb.dir/src/RichTbPhotonProdHisto.cc.o: CMakeFiles/RichTb.dir/flags.make
+CMakeFiles/RichTb.dir/src/RichTbPhotonProdHisto.cc.o: ../src/RichTbPhotonProdHisto.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbPhotonProdHisto.cc.o"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbPhotonProdHisto.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPhotonProdHisto.cc
+
+CMakeFiles/RichTb.dir/src/RichTbPhotonProdHisto.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RichTb.dir/src/RichTbPhotonProdHisto.cc.i"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPhotonProdHisto.cc > CMakeFiles/RichTb.dir/src/RichTbPhotonProdHisto.cc.i
+
+CMakeFiles/RichTb.dir/src/RichTbPhotonProdHisto.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RichTb.dir/src/RichTbPhotonProdHisto.cc.s"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPhotonProdHisto.cc -o CMakeFiles/RichTb.dir/src/RichTbPhotonProdHisto.cc.s
+
+CMakeFiles/RichTb.dir/src/RichTbPhotonUserInfoAttach.cc.o: CMakeFiles/RichTb.dir/flags.make
+CMakeFiles/RichTb.dir/src/RichTbPhotonUserInfoAttach.cc.o: ../src/RichTbPhotonUserInfoAttach.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbPhotonUserInfoAttach.cc.o"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbPhotonUserInfoAttach.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPhotonUserInfoAttach.cc
+
+CMakeFiles/RichTb.dir/src/RichTbPhotonUserInfoAttach.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RichTb.dir/src/RichTbPhotonUserInfoAttach.cc.i"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPhotonUserInfoAttach.cc > CMakeFiles/RichTb.dir/src/RichTbPhotonUserInfoAttach.cc.i
+
+CMakeFiles/RichTb.dir/src/RichTbPhotonUserInfoAttach.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RichTb.dir/src/RichTbPhotonUserInfoAttach.cc.s"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPhotonUserInfoAttach.cc -o CMakeFiles/RichTb.dir/src/RichTbPhotonUserInfoAttach.cc.s
+
+CMakeFiles/RichTb.dir/src/RichTbPhysicsList.cc.o: CMakeFiles/RichTb.dir/flags.make
+CMakeFiles/RichTb.dir/src/RichTbPhysicsList.cc.o: ../src/RichTbPhysicsList.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbPhysicsList.cc.o"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbPhysicsList.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPhysicsList.cc
+
+CMakeFiles/RichTb.dir/src/RichTbPhysicsList.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RichTb.dir/src/RichTbPhysicsList.cc.i"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPhysicsList.cc > CMakeFiles/RichTb.dir/src/RichTbPhysicsList.cc.i
+
+CMakeFiles/RichTb.dir/src/RichTbPhysicsList.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RichTb.dir/src/RichTbPhysicsList.cc.s"
+	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPhysicsList.cc -o CMakeFiles/RichTb.dir/src/RichTbPhysicsList.cc.s
+
 CMakeFiles/RichTb.dir/src/RichTbPmtPixelEfficiency.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbPmtPixelEfficiency.cc.o: ../src/RichTbPmtPixelEfficiency.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbPmtPixelEfficiency.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbPmtPixelEfficiency.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbPmtPixelEfficiency.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPmtPixelEfficiency.cc
 
 CMakeFiles/RichTb.dir/src/RichTbPmtPixelEfficiency.cc.i: cmake_force
@@ -403,7 +572,7 @@ CMakeFiles/RichTb.dir/src/RichTbPmtPixelEfficiency.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbPolymerRadiator.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbPolymerRadiator.cc.o: ../src/RichTbPolymerRadiator.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbPolymerRadiator.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbPolymerRadiator.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbPolymerRadiator.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbPolymerRadiator.cc
 
 CMakeFiles/RichTb.dir/src/RichTbPolymerRadiator.cc.i: cmake_force
@@ -416,7 +585,7 @@ CMakeFiles/RichTb.dir/src/RichTbPolymerRadiator.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbQuartzRadiator.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbQuartzRadiator.cc.o: ../src/RichTbQuartzRadiator.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbQuartzRadiator.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbQuartzRadiator.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbQuartzRadiator.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbQuartzRadiator.cc
 
 CMakeFiles/RichTb.dir/src/RichTbQuartzRadiator.cc.i: cmake_force
@@ -429,7 +598,7 @@ CMakeFiles/RichTb.dir/src/RichTbQuartzRadiator.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbROGeometry.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbROGeometry.cc.o: ../src/RichTbROGeometry.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbROGeometry.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbROGeometry.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbROGeometry.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbROGeometry.cc
 
 CMakeFiles/RichTb.dir/src/RichTbROGeometry.cc.i: cmake_force
@@ -442,7 +611,7 @@ CMakeFiles/RichTb.dir/src/RichTbROGeometry.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbROGeometryHpd.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbROGeometryHpd.cc.o: ../src/RichTbROGeometryHpd.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbROGeometryHpd.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbROGeometryHpd.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbROGeometryHpd.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbROGeometryHpd.cc
 
 CMakeFiles/RichTb.dir/src/RichTbROGeometryHpd.cc.i: cmake_force
@@ -455,7 +624,7 @@ CMakeFiles/RichTb.dir/src/RichTbROGeometryHpd.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbRunConfig.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbRunConfig.cc.o: ../src/RichTbRunConfig.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbRunConfig.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbRunConfig.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbRunConfig.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbRunConfig.cc
 
 CMakeFiles/RichTb.dir/src/RichTbRunConfig.cc.i: cmake_force
@@ -468,7 +637,7 @@ CMakeFiles/RichTb.dir/src/RichTbRunConfig.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbSimH.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbSimH.cc.o: ../src/RichTbSimH.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbSimH.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbSimH.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbSimH.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbSimH.cc
 
 CMakeFiles/RichTb.dir/src/RichTbSimH.cc.i: cmake_force
@@ -481,7 +650,7 @@ CMakeFiles/RichTb.dir/src/RichTbSimH.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbSurface.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbSurface.cc.o: ../src/RichTbSurface.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbSurface.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbSurface.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbSurface.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbSurface.cc
 
 CMakeFiles/RichTb.dir/src/RichTbSurface.cc.i: cmake_force
@@ -494,7 +663,7 @@ CMakeFiles/RichTb.dir/src/RichTbSurface.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbSurfaceDefinition.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbSurfaceDefinition.cc.o: ../src/RichTbSurfaceDefinition.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbSurfaceDefinition.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbSurfaceDefinition.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbSurfaceDefinition.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbSurfaceDefinition.cc
 
 CMakeFiles/RichTb.dir/src/RichTbSurfaceDefinition.cc.i: cmake_force
@@ -507,7 +676,7 @@ CMakeFiles/RichTb.dir/src/RichTbSurfaceDefinition.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystal.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystal.cc.o: ../src/RichTbUpgradeCrystal.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystal.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystal.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystal.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbUpgradeCrystal.cc
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystal.cc.i: cmake_force
@@ -520,7 +689,7 @@ CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystal.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystalCover.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystalCover.cc.o: ../src/RichTbUpgradeCrystalCover.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystalCover.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystalCover.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystalCover.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbUpgradeCrystalCover.cc
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystalCover.cc.i: cmake_force
@@ -533,7 +702,7 @@ CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystalCover.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystalMaster.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystalMaster.cc.o: ../src/RichTbUpgradeCrystalMaster.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystalMaster.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystalMaster.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystalMaster.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbUpgradeCrystalMaster.cc
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystalMaster.cc.i: cmake_force
@@ -546,7 +715,7 @@ CMakeFiles/RichTb.dir/src/RichTbUpgradeCrystalMaster.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeDarkCover.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbUpgradeDarkCover.cc.o: ../src/RichTbUpgradeDarkCover.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeDarkCover.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeDarkCover.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbUpgradeDarkCover.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbUpgradeDarkCover.cc
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeDarkCover.cc.i: cmake_force
@@ -559,7 +728,7 @@ CMakeFiles/RichTb.dir/src/RichTbUpgradeDarkCover.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeDetectorConstruction.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbUpgradeDetectorConstruction.cc.o: ../src/RichTbUpgradeDetectorConstruction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeDetectorConstruction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeDetectorConstruction.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbUpgradeDetectorConstruction.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbUpgradeDetectorConstruction.cc
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeDetectorConstruction.cc.i: cmake_force
@@ -572,7 +741,7 @@ CMakeFiles/RichTb.dir/src/RichTbUpgradeDetectorConstruction.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeEC.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbUpgradeEC.cc.o: ../src/RichTbUpgradeEC.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeEC.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeEC.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbUpgradeEC.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbUpgradeEC.cc
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeEC.cc.i: cmake_force
@@ -585,7 +754,7 @@ CMakeFiles/RichTb.dir/src/RichTbUpgradeEC.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeHpdSD.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbUpgradeHpdSD.cc.o: ../src/RichTbUpgradeHpdSD.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeHpdSD.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeHpdSD.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbUpgradeHpdSD.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbUpgradeHpdSD.cc
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeHpdSD.cc.i: cmake_force
@@ -598,7 +767,7 @@ CMakeFiles/RichTb.dir/src/RichTbUpgradeHpdSD.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeLTPhC.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbUpgradeLTPhC.cc.o: ../src/RichTbUpgradeLTPhC.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeLTPhC.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeLTPhC.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbUpgradeLTPhC.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbUpgradeLTPhC.cc
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeLTPhC.cc.i: cmake_force
@@ -611,7 +780,7 @@ CMakeFiles/RichTb.dir/src/RichTbUpgradeLTPhC.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeLens.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbUpgradeLens.cc.o: ../src/RichTbUpgradeLens.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeLens.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeLens.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbUpgradeLens.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbUpgradeLens.cc
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeLens.cc.i: cmake_force
@@ -624,7 +793,7 @@ CMakeFiles/RichTb.dir/src/RichTbUpgradeLens.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeMaster.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbUpgradeMaster.cc.o: ../src/RichTbUpgradeMaster.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeMaster.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeMaster.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbUpgradeMaster.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbUpgradeMaster.cc
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeMaster.cc.i: cmake_force
@@ -637,7 +806,7 @@ CMakeFiles/RichTb.dir/src/RichTbUpgradeMaster.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeMirror.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbUpgradeMirror.cc.o: ../src/RichTbUpgradeMirror.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeMirror.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeMirror.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbUpgradeMirror.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbUpgradeMirror.cc
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeMirror.cc.i: cmake_force
@@ -650,7 +819,7 @@ CMakeFiles/RichTb.dir/src/RichTbUpgradeMirror.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradePhDFrame.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbUpgradePhDFrame.cc.o: ../src/RichTbUpgradePhDFrame.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradePhDFrame.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradePhDFrame.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbUpgradePhDFrame.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbUpgradePhDFrame.cc
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradePhDFrame.cc.i: cmake_force
@@ -663,7 +832,7 @@ CMakeFiles/RichTb.dir/src/RichTbUpgradePhDFrame.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradePhDetSupFrame.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbUpgradePhDetSupFrame.cc.o: ../src/RichTbUpgradePhDetSupFrame.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradePhDetSupFrame.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradePhDetSupFrame.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbUpgradePhDetSupFrame.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbUpgradePhDetSupFrame.cc
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradePhDetSupFrame.cc.i: cmake_force
@@ -676,7 +845,7 @@ CMakeFiles/RichTb.dir/src/RichTbUpgradePhDetSupFrame.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeRadiator.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbUpgradeRadiator.cc.o: ../src/RichTbUpgradeRadiator.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeRadiator.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeRadiator.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbUpgradeRadiator.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbUpgradeRadiator.cc
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeRadiator.cc.i: cmake_force
@@ -689,7 +858,7 @@ CMakeFiles/RichTb.dir/src/RichTbUpgradeRadiator.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeSD.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbUpgradeSD.cc.o: ../src/RichTbUpgradeSD.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeSD.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeSD.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbUpgradeSD.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbUpgradeSD.cc
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeSD.cc.i: cmake_force
@@ -702,7 +871,7 @@ CMakeFiles/RichTb.dir/src/RichTbUpgradeSD.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeVessel.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbUpgradeVessel.cc.o: ../src/RichTbUpgradeVessel.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeVessel.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUpgradeVessel.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbUpgradeVessel.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbUpgradeVessel.cc
 
 CMakeFiles/RichTb.dir/src/RichTbUpgradeVessel.cc.i: cmake_force
@@ -715,7 +884,7 @@ CMakeFiles/RichTb.dir/src/RichTbUpgradeVessel.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbUserTrackInfo.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbUserTrackInfo.cc.o: ../src/RichTbUserTrackInfo.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUserTrackInfo.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbUserTrackInfo.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbUserTrackInfo.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbUserTrackInfo.cc
 
 CMakeFiles/RichTb.dir/src/RichTbUserTrackInfo.cc.i: cmake_force
@@ -728,7 +897,7 @@ CMakeFiles/RichTb.dir/src/RichTbUserTrackInfo.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RichTbVisManager.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RichTbVisManager.cc.o: ../src/RichTbVisManager.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbVisManager.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/RichTb.dir/src/RichTbVisManager.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RichTbVisManager.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RichTbVisManager.cc
 
 CMakeFiles/RichTb.dir/src/RichTbVisManager.cc.i: cmake_force
@@ -741,7 +910,7 @@ CMakeFiles/RichTb.dir/src/RichTbVisManager.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/RunAction.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/RunAction.cc.o: ../src/RunAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/RichTb.dir/src/RunAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/RichTb.dir/src/RunAction.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/RunAction.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/RunAction.cc
 
 CMakeFiles/RichTb.dir/src/RunAction.cc.i: cmake_force
@@ -754,7 +923,7 @@ CMakeFiles/RichTb.dir/src/RunAction.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/SensitiveDetector.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/SensitiveDetector.cc.o: ../src/SensitiveDetector.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/RichTb.dir/src/SensitiveDetector.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/RichTb.dir/src/SensitiveDetector.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/SensitiveDetector.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/SensitiveDetector.cc
 
 CMakeFiles/RichTb.dir/src/SensitiveDetector.cc.i: cmake_force
@@ -767,7 +936,7 @@ CMakeFiles/RichTb.dir/src/SensitiveDetector.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/SteppingAction.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/SteppingAction.cc.o: ../src/SteppingAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/RichTb.dir/src/SteppingAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/RichTb.dir/src/SteppingAction.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/SteppingAction.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/SteppingAction.cc
 
 CMakeFiles/RichTb.dir/src/SteppingAction.cc.i: cmake_force
@@ -780,7 +949,7 @@ CMakeFiles/RichTb.dir/src/SteppingAction.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/TrackInfo.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/TrackInfo.cc.o: ../src/TrackInfo.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/RichTb.dir/src/TrackInfo.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/RichTb.dir/src/TrackInfo.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/TrackInfo.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/TrackInfo.cc
 
 CMakeFiles/RichTb.dir/src/TrackInfo.cc.i: cmake_force
@@ -793,7 +962,7 @@ CMakeFiles/RichTb.dir/src/TrackInfo.cc.s: cmake_force
 
 CMakeFiles/RichTb.dir/src/TrackingAction.cc.o: CMakeFiles/RichTb.dir/flags.make
 CMakeFiles/RichTb.dir/src/TrackingAction.cc.o: ../src/TrackingAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/RichTb.dir/src/TrackingAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/RichTb.dir/src/TrackingAction.cc.o"
 	/cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/4.9.3/x86_64-centos7/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RichTb.dir/src/TrackingAction.cc.o -c /afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/src/TrackingAction.cc
 
 CMakeFiles/RichTb.dir/src/TrackingAction.cc.i: cmake_force
@@ -809,11 +978,20 @@ RichTb_OBJECTS = \
 "CMakeFiles/RichTb.dir/RichTb.cc.o" \
 "CMakeFiles/RichTb.dir/src/Ctx.cc.o" \
 "CMakeFiles/RichTb.dir/src/EventAction.cc.o" \
+"CMakeFiles/RichTb.dir/src/HpdSiEnergyLoss.cc.o" \
 "CMakeFiles/RichTb.dir/src/L4Cerenkov.cc.o" \
 "CMakeFiles/RichTb.dir/src/OpHit.cc.o" \
 "CMakeFiles/RichTb.dir/src/PhysicsList.cc.o" \
+"CMakeFiles/RichTb.dir/src/PixelHpdPhotoElectricEffect.cc.o" \
+"CMakeFiles/RichTb.dir/src/PmtAnodeEnergyLoss.cc.o" \
+"CMakeFiles/RichTb.dir/src/PmtPhotoElectricEffect.cc.o" \
 "CMakeFiles/RichTb.dir/src/PrimaryGeneratorAction.cc.o" \
 "CMakeFiles/RichTb.dir/src/RichTbContainerVesselBox.cc.o" \
+"CMakeFiles/RichTb.dir/src/RichTbCounter.cc.o" \
+"CMakeFiles/RichTb.dir/src/RichTbG4Cerenkov.cc.o" \
+"CMakeFiles/RichTb.dir/src/RichTbG4OpAbsorption.cc.o" \
+"CMakeFiles/RichTb.dir/src/RichTbG4OpBoundaryProcess.cc.o" \
+"CMakeFiles/RichTb.dir/src/RichTbG4OpRayleigh.cc.o" \
 "CMakeFiles/RichTb.dir/src/RichTbGeometryParameters.cc.o" \
 "CMakeFiles/RichTb.dir/src/RichTbGraphics.cc.o" \
 "CMakeFiles/RichTb.dir/src/RichTbGraphicsAuxA.cc.o" \
@@ -827,9 +1005,13 @@ RichTb_OBJECTS = \
 "CMakeFiles/RichTb.dir/src/RichTbMirrorSph.cc.o" \
 "CMakeFiles/RichTb.dir/src/RichTbPEInfo.cc.o" \
 "CMakeFiles/RichTb.dir/src/RichTbPMT.cc.o" \
+"CMakeFiles/RichTb.dir/src/RichTbPeUserInfoAttach.cc.o" \
 "CMakeFiles/RichTb.dir/src/RichTbPhCPhotDetSupFrame.cc.o" \
 "CMakeFiles/RichTb.dir/src/RichTbPhotoElectron.cc.o" \
 "CMakeFiles/RichTb.dir/src/RichTbPhotonInfo.cc.o" \
+"CMakeFiles/RichTb.dir/src/RichTbPhotonProdHisto.cc.o" \
+"CMakeFiles/RichTb.dir/src/RichTbPhotonUserInfoAttach.cc.o" \
+"CMakeFiles/RichTb.dir/src/RichTbPhysicsList.cc.o" \
 "CMakeFiles/RichTb.dir/src/RichTbPmtPixelEfficiency.cc.o" \
 "CMakeFiles/RichTb.dir/src/RichTbPolymerRadiator.cc.o" \
 "CMakeFiles/RichTb.dir/src/RichTbQuartzRadiator.cc.o" \
@@ -869,11 +1051,20 @@ RichTb_EXTERNAL_OBJECTS =
 RichTb: CMakeFiles/RichTb.dir/RichTb.cc.o
 RichTb: CMakeFiles/RichTb.dir/src/Ctx.cc.o
 RichTb: CMakeFiles/RichTb.dir/src/EventAction.cc.o
+RichTb: CMakeFiles/RichTb.dir/src/HpdSiEnergyLoss.cc.o
 RichTb: CMakeFiles/RichTb.dir/src/L4Cerenkov.cc.o
 RichTb: CMakeFiles/RichTb.dir/src/OpHit.cc.o
 RichTb: CMakeFiles/RichTb.dir/src/PhysicsList.cc.o
+RichTb: CMakeFiles/RichTb.dir/src/PixelHpdPhotoElectricEffect.cc.o
+RichTb: CMakeFiles/RichTb.dir/src/PmtAnodeEnergyLoss.cc.o
+RichTb: CMakeFiles/RichTb.dir/src/PmtPhotoElectricEffect.cc.o
 RichTb: CMakeFiles/RichTb.dir/src/PrimaryGeneratorAction.cc.o
 RichTb: CMakeFiles/RichTb.dir/src/RichTbContainerVesselBox.cc.o
+RichTb: CMakeFiles/RichTb.dir/src/RichTbCounter.cc.o
+RichTb: CMakeFiles/RichTb.dir/src/RichTbG4Cerenkov.cc.o
+RichTb: CMakeFiles/RichTb.dir/src/RichTbG4OpAbsorption.cc.o
+RichTb: CMakeFiles/RichTb.dir/src/RichTbG4OpBoundaryProcess.cc.o
+RichTb: CMakeFiles/RichTb.dir/src/RichTbG4OpRayleigh.cc.o
 RichTb: CMakeFiles/RichTb.dir/src/RichTbGeometryParameters.cc.o
 RichTb: CMakeFiles/RichTb.dir/src/RichTbGraphics.cc.o
 RichTb: CMakeFiles/RichTb.dir/src/RichTbGraphicsAuxA.cc.o
@@ -887,9 +1078,13 @@ RichTb: CMakeFiles/RichTb.dir/src/RichTbMirrorParabola.cc.o
 RichTb: CMakeFiles/RichTb.dir/src/RichTbMirrorSph.cc.o
 RichTb: CMakeFiles/RichTb.dir/src/RichTbPEInfo.cc.o
 RichTb: CMakeFiles/RichTb.dir/src/RichTbPMT.cc.o
+RichTb: CMakeFiles/RichTb.dir/src/RichTbPeUserInfoAttach.cc.o
 RichTb: CMakeFiles/RichTb.dir/src/RichTbPhCPhotDetSupFrame.cc.o
 RichTb: CMakeFiles/RichTb.dir/src/RichTbPhotoElectron.cc.o
 RichTb: CMakeFiles/RichTb.dir/src/RichTbPhotonInfo.cc.o
+RichTb: CMakeFiles/RichTb.dir/src/RichTbPhotonProdHisto.cc.o
+RichTb: CMakeFiles/RichTb.dir/src/RichTbPhotonUserInfoAttach.cc.o
+RichTb: CMakeFiles/RichTb.dir/src/RichTbPhysicsList.cc.o
 RichTb: CMakeFiles/RichTb.dir/src/RichTbPmtPixelEfficiency.cc.o
 RichTb: CMakeFiles/RichTb.dir/src/RichTbPolymerRadiator.cc.o
 RichTb: CMakeFiles/RichTb.dir/src/RichTbQuartzRadiator.cc.o
@@ -982,7 +1177,7 @@ RichTb: /usr/lib64/libGLU.so
 RichTb: /afs/hep.man.ac.uk/u/liyu/liyu/NVIDIA-OptiX-SDK-6.5.0-linux64/lib64/liboptixu.so
 RichTb: /afs/hep.man.ac.uk/u/liyu/liyu/NVIDIA-OptiX-SDK-6.5.0-linux64/lib64/liboptix_prime.so
 RichTb: CMakeFiles/RichTb.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Linking CXX executable RichTb"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/afs/hep.man.ac.uk/u/liyu/liyu/opticks/examples/Geant4/RichTb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Linking CXX executable RichTb"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RichTb.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

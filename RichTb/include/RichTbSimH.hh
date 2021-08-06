@@ -10,12 +10,13 @@ struct EventAction;
 struct TrackingAction;
 struct SteppingAction;
 
-struct SensitiveDetector;
 struct RichTbDetectorConstruction;
 class L4Cerenkov;
+template <typename T> struct PhysicsList;
+//struct RichTbPhysicsList;
 class RichScintillation;
 
-template <typename C> struct PhysicsList;
+//struct RichTbPhysicsList;
 struct PrimaryGeneratorAction;
 
 struct RichTbSimH
@@ -28,9 +29,8 @@ struct RichTbSimH
 
     Ctx*	ctx;
     G4RunManager*	rm;
-    const char* 	sdn;
-    SensitiveDetector*	sd;
     RichTbDetectorConstruction*	dc;
+    //RichTbPhysicsList*	pl;
     PhysicsList<L4Cerenkov>*	pl;
     PrimaryGeneratorAction*	ga;
 
