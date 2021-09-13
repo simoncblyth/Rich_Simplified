@@ -1,0 +1,1527 @@
+
+**************************************************************
+ Geant4 version Name: geant4-10-07-patch-01    (5-February-2021)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+ Run Configuration Input is from ../options/RunConfig.dat
+Now reading the Run Configuration 
+End of reading the Run Configuration 
+Now reading the Run Configuration 
+End of reading the Run Configuration 
+Current Run Configuration  is as follows 
+ Graphics Visibility : Hall Vessel Crystal 0   0   2      
+LHCb Simplified Rich1 Graphics visibility 
+LHCb ExptHall R1Master R1SubMaster, R1SphM R1FlatM, R1MagSh R1QW R1PhDetSup  0  0  2    1   1   0    1  0
+LHCb Module EC PmtMaster 2  2  2
+ LT visib subs PHC Filter LTCover 0  0   0    0
+  Graphics Visibility : PhDetSupFrame EC PMTMaster PMTSMaster  PMTEnvelope  PMTEndCap PMTQuartzW PMTPhCathode   2   2   2   2   2   1851859041   2   2   
+Visibility  Mirr Parabola 0
+Visibility Det plane 0
+Visibility QW radiator and its cover 0  0
+Nitrogen Pressure Temp  0.975    288.45
+c4f10 Pressure Temp  0.976    283.65
+ Mirror Orientation code Additional Tilt wrt XAxis YAxis  5   0  0
+ NonOptimal PMT Condition  NonOptimal PMT absolute Efficiency  1   0.737
+ ParticleGun  Generation: Num of Particles generated per event   1
+ ParticleGun : Code for ParticleType StartPos Direction  Energy  and   Value for MomValue PosBeamFraction:   7    2   2    0   80    0.4
+ ParticleGun : BeamDirXY  BeamDivXY BeamPosShift XY   0.1   0.1   0.005   0.005   0  0
+ Special studies Beam XYZ BeamXRange phot wlen wlenmin wlenmax 0  0  0  4   400   195   850
+Activate beamshiftntuple 539845920
+  PMTPEMomInit  20
+Flag to WriteOut  HitCreationOption   1    1     
+ Radiator and  LTSample config 40    0
+ Mirror refl file name ../InputData/Mirror_D200mm_240906.txt
+ Event Output FileName ../Output/tbMCdataOutput_set3_test.file
+Histo Output file Name  ../Output/tbMCdataHisto_set3.root
+Ntuple Output file Name  ../Output/tbMCdataNtup_set3.root
+BatchMode NumEvInBatchMode  VerboseInfo   VerboseOutput studyvesselRot   1   5    1   1   0
+Pmt pixel efficiency flag  0
+ Mirror geometry flag 0
+ PhDet Frame Additional Shift XYZ   0    0    0    
+ PhDet Frame Additional VertTilt Zrot 0    0
+ RadiatorConfig LtSampletype RadiatorActivate 40   0   0
+ quartz radiator install flag  GasCgerenkov switchoff Flag1   1
+
+Now Define Elements ..
+
+
+Now Define Materials ..
+
+ Now Nitrogen activate flags 0   1
+Now define Aluminium 
+Now n bin 46
+ Now for polymer plus material 
+ MirrorReflectivity being read from   ../InputData/Mirror_D200mm_240906.txt
+End of reading Mirror reflectivity
+creating RichTB LHCb mirror surfaces 
+ R1 Sph Mirror surface created 
+ R1 Flat Mirror surface created 
+creating RichTB R1 Submaster surface 
+ R1 SubMaster surface created 
+ RichTb Surfaces are defined 0x169f7c0   0x17112f0
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : DIGIHIT1001
+      issued by : G4VReadOutGeometry
+The concept and the functionality of Readout Geometry has been merged
+into Parallel World. This G4VReadOutGeometry is kept for the sake of
+not breaking the commonly-used interface in the sensitive detector class.
+But this functionality of G4VReadOutGeometry class is no longer tested
+and thus may not be working well. We strongly recommend our customers to
+migrate to Parallel World scheme.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+ End of building ROGeometry 
+ Now associate sensdet to geometry in Pmt 0
+ Graphics definitions created for RicbTb R1 Opticks
+PhysicsList<T>::ConstructOp AddDiscreteProcess to OpticalPhoton 
+ G4RunManager rm initialized successfully 
+
+
+###[ RunAction::BeginOfRunAction G4Opticks.setGeometry
+
+
+2021-09-13 10:44:58.280 FATAL [10973] [G4Opticks::initSkipGencode@351] OPTICKS_SKIP_GENCODE m_skip_gencode_count 0
+2021-09-13 10:44:58.281 INFO  [10973] [G4Opticks::G4Opticks@345] ctor : DISABLE FPE detection : as it breaks OptiX launches
+2021-09-13 10:44:58.302 INFO  [10973] [BOpticksKey::SetKey@90]  spec Rich_Simplified.X4PhysicalVolume.WorldPhys.9cb4ff3ca3617e2abf473bc85cfdef58
+2021-09-13 10:44:58.306 INFO  [10973] [BOpticksResource::initViaKey@785] 
+             BOpticksKey  : KEYSOURCE
+      spec (OPTICKS_KEY)  : Rich_Simplified.X4PhysicalVolume.WorldPhys.9cb4ff3ca3617e2abf473bc85cfdef58
+                 exename  : Rich_Simplified
+         current_exename  : Rich_Simplified
+                   class  : X4PhysicalVolume
+                 volname  : WorldPhys
+                  digest  : 9cb4ff3ca3617e2abf473bc85cfdef58
+                  idname  : Rich_Simplified_WorldPhys_g4live
+                  idfile  : g4ok.gltf
+                  idgdml  : g4ok.gdml
+                  layout  : 1
+
+2021-09-13 10:44:58.306 INFO  [10973] [G4Opticks::InitOpticks@211] 
+# BOpticksKey::export_ 
+export OPTICKS_KEY=Rich_Simplified.X4PhysicalVolume.WorldPhys.9cb4ff3ca3617e2abf473bc85cfdef58
+
+2021-09-13 10:44:58.306 INFO  [10973] [G4Opticks::EmbeddedCommandLine@130] Using ecl :[ --compute --embedded --xanalytic --production --nosave] OPTICKS_EMBEDDED_COMMANDLINE
+2021-09-13 10:44:58.306 INFO  [10973] [G4Opticks::EmbeddedCommandLine@131]  mode(Pro/Dev/Asis) P using "pro" (production) commandline without event saving 
+2021-09-13 10:44:58.306 INFO  [10973] [G4Opticks::EmbeddedCommandLine@136] Using extra1 argument :[--skipaheadstep 1000]
+2021-09-13 10:44:58.306 INFO  [10973] [G4Opticks::EmbeddedCommandLine@146] Using eclx envvar :[] OPTICKS_EMBEDDED_COMMANDLINE_EXTRA
+2021-09-13 10:44:58.306 INFO  [10973] [G4Opticks::InitOpticks@231] instanciate Opticks using embedded commandline only 
+ --compute --embedded --xanalytic --production --nosave  --skipaheadstep 1000 
+2021-09-13 10:44:58.310 INFO  [10973] [Opticks::init@439] COMPUTE_MODE compute_requested  forced_compute  hostname hepgpu6.blackett.manchester.ac.uk
+2021-09-13 10:44:58.311 INFO  [10973] [Opticks::init@448]  mandatory keyed access to geometry, opticksaux 
+2021-09-13 10:44:58.311 INFO  [10973] [Opticks::init@467] OpticksSwitches:WITH_SEED_BUFFER WITH_RECORD WITH_SOURCE WITH_ALIGN_DEV WITH_LOGDOUBLE WITH_KLUDGE_FLAT_ZERO_NOPEEK WITH_SENSORLIB 
+2021-09-13 10:44:58.321 INFO  [10973] [G4Opticks::translateGeometry@931] ( CGDML /hepgpu6-data1/liyu/.opticks/geocache/Rich_Simplified_WorldPhys_g4live/g4ok_gltf/9cb4ff3ca3617e2abf473bc85cfdef58/1/origin.gdml
+2021-09-13 10:44:58.329 INFO  [10973] [CGDML::write@372] write to /hepgpu6-data1/liyu/.opticks/geocache/Rich_Simplified_WorldPhys_g4live/g4ok_gltf/9cb4ff3ca3617e2abf473bc85cfdef58/1/origin.gdml
+G4GDML: Writing '/hepgpu6-data1/liyu/.opticks/geocache/Rich_Simplified_WorldPhys_g4live/g4ok_gltf/9cb4ff3ca3617e2abf473bc85cfdef58/1/origin.gdml'...
+G4GDML: Writing definitions...
+G4GDML: Writing materials...
+G4GDML: Writing solids...
+G4GDML: Writing structure...
+G4GDML: Writing setup...
+G4GDML: Writing surfaces...
+G4GDML: Writing '/hepgpu6-data1/liyu/.opticks/geocache/Rich_Simplified_WorldPhys_g4live/g4ok_gltf/9cb4ff3ca3617e2abf473bc85cfdef58/1/origin.gdml' done !
+2021-09-13 10:44:58.399 INFO  [10973] [G4Opticks::translateGeometry@933] ) CGDML 
+2021-09-13 10:44:58.399 INFO  [10973] [G4Opticks::translateGeometry@935] ( GGeo instanciate
+2021-09-13 10:44:58.406 INFO  [10973] [G4Opticks::translateGeometry@938] ) GGeo instanciate 
+2021-09-13 10:44:58.406 INFO  [10973] [G4Opticks::translateGeometry@940] ( GGeo populate
+2021-09-13 10:44:58.406 ERROR [10973] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt Air
+2021-09-13 10:44:58.409 ERROR [10973] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt CarbonMaterial
+2021-09-13 10:44:58.409 ERROR [10973] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt CarbonFibreResin
+2021-09-13 10:44:58.409 ERROR [10973] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt CarbonFibreMaterial
+2021-09-13 10:44:58.409 ERROR [10973] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt Kovar
+2021-09-13 10:44:58.409 ERROR [10973] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt FrontRingAl
+2021-09-13 10:44:58.409 ERROR [10973] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt ModuleBackPlMatAl
+2021-09-13 10:44:58.409 ERROR [10973] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt PMTAnode
+2021-09-13 10:44:58.409 ERROR [10973] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt HpdAnode
+Air
+TAir
+TAirA
+Water
+NitrogenGas
+c4f10Gas
+MirrorQuartz
+GasWinQuartz
+Galactic
+Aluminium
+CarbonMaterial
+CarbonFibreResin
+CarbonFibreMaterial
+Kovar
+FrontRingAl
+ModuleBackPlMatAl
+PMTAnode
+HpdAnode
+PmtWindowQuartz
+HpdQuartzPhys
+CrystalMat
+LTSubstrateQuartzMaterial
+LTPhCNominalMaterialSampleA
+LTPhCNominalMaterialSampleB
+LTBandPassFilterMaterialSampleA
+LTBandPassFilterMaterialSampleB
+PolymerPlusMaterial
+RichTbQuartzRadiatorMaterial
+S20PhCathode
+HpdPhcathodePhys
+2021-09-13 10:44:58.414 INFO  [10973] [X4PhysicalVolume::convertMaterials@257]  num_materials 30 num_material_with_efficiency 0
+2021-09-13 10:44:58.414 INFO  [10973] [GMaterialLib::dumpSensitiveMaterials@1230] X4PhysicalVolume::convertMaterials num_sensitive_materials 0
+X4LogicalBorderSurfaceTable::PrepareVector after sort
+   0 :                                                     RichTbR1FlatMirrorSphSurface :                                                     RichTbR1FlatMirrorSphSurface
+   1 :                                                      RichTbR1SphMirrorSphSurface :                                                      RichTbR1SphMirrorSphSurface
+   2 :                                                         RichTbR1SubMasterSurface :                                                         RichTbR1SubMasterSurface
+X4LogicalBorderSurfaceTable::PrepareVector after sort
+   0 :                                                     RichTbR1FlatMirrorSphSurface :                                                     RichTbR1FlatMirrorSphSurface
+   1 :                                                      RichTbR1SphMirrorSphSurface :                                                      RichTbR1SphMirrorSphSurface
+   2 :                                                         RichTbR1SubMasterSurface :                                                         RichTbR1SubMasterSurface
+X4LogicalBorderSurfaceTable::PrepareVector after sort
+   0 :                                                     RichTbR1FlatMirrorSphSurface :                                                     RichTbR1FlatMirrorSphSurface
+   1 :                                                      RichTbR1SphMirrorSphSurface :                                                      RichTbR1SphMirrorSphSurface
+   2 :                                                         RichTbR1SubMasterSurface :                                                         RichTbR1SubMasterSurface
+X4LogicalBorderSurfaceTable::PrepareVector after sort
+   0 :                                                     RichTbR1FlatMirrorSphSurface :                                                     RichTbR1FlatMirrorSphSurface
+   1 :                                                      RichTbR1SphMirrorSphSurface :                                                      RichTbR1SphMirrorSphSurface
+   2 :                                                         RichTbR1SubMasterSurface :                                                         RichTbR1SubMasterSurface
+2021-09-13 10:44:58.416 INFO  [10973] [GSurfaceLib::dumpSurfaces@758] X4PhysicalVolume::convertSurfaces num_surfaces 7
+ index :  0 is_sensor : N type :        bordersurface name :                       RichTbR1FlatMirrorSphSurface bpv1 RichTbRich1SubMasterPhys bpv2 RichTbRich1FlatMirrorPhys .
+ index :  1 is_sensor : N type :        bordersurface name :                        RichTbR1SphMirrorSphSurface bpv1 RichTbRich1SubMasterPhys bpv2 RichTbRich1SphMirrorPhys .
+ index :  2 is_sensor : N type :        bordersurface name :                           RichTbR1SubMasterSurface bpv1 RichTbRich1SubMasterPhys bpv2 RichTbRich1MasterPhys .
+ index :  3 is_sensor : Y type :          testsurface name :                               perfectDetectSurface .
+ index :  4 is_sensor : N type :          testsurface name :                               perfectAbsorbSurface .
+ index :  5 is_sensor : N type :          testsurface name :                             perfectSpecularSurface .
+ index :  6 is_sensor : N type :          testsurface name :                              perfectDiffuseSurface .
+2021-09-13 10:44:58.417 INFO  [10973] [GPropertyLib::dumpSensorIndices@933] X4PhysicalVolume::convertSurfaces  NumSensorIndices 1 ( 3  ) 
+2021-09-13 10:44:58.418 ERROR [10973] [X4Solid::convertSphere_@446]  convertSphere_duplicate_py_segment_omission 1 has_deltaPhi 1 startPhi -6.13013 deltaPhi 12.2603 name RichTbR1SphFullSph
+2021-09-13 10:44:58.418 ERROR [10973] [X4Solid::convertSphere_@446]  convertSphere_duplicate_py_segment_omission 1 has_deltaPhi 1 startPhi -6.13013 deltaPhi 12.2603 name RichTbR1SphFullSph
+2021-09-13 10:44:58.907 ERROR [10973] [X4Solid::convertSphere_@446]  convertSphere_duplicate_py_segment_omission 1 has_deltaPhi 1 startPhi -6.13013 deltaPhi 12.2603 name RichTbR1SphFullSph
+2021-09-13 10:44:58.907 ERROR [10973] [X4Solid::convertSphere_@446]  convertSphere_duplicate_py_segment_omission 1 has_deltaPhi 1 startPhi -6.13013 deltaPhi 12.2603 name RichTbR1SphFullSph
+2021-09-13 10:44:59.390 ERROR [10973] [X4Solid::convertSphere_@446]  convertSphere_duplicate_py_segment_omission 1 has_deltaPhi 1 startPhi -0.00504203 deltaPhi 0.0100841 name RichTbR1FlatFull
+2021-09-13 10:44:59.391 ERROR [10973] [X4Solid::convertSphere_@446]  convertSphere_duplicate_py_segment_omission 1 has_deltaPhi 1 startPhi -0.00504203 deltaPhi 0.0100841 name RichTbR1FlatFull
+2021-09-13 10:44:59.740 INFO  [10973] [X4PhysicalVolume::dumpLV@691]  m_lvidx.size() 346 m_lvlist.size() 346
+ i     0 idx     0 lvname                            RichTbRich1SphMirrorLog soname                                 RichTbR1SphRSphBox
+ i     1 idx     1 lvname                           RichTbRich1FlatMirrorLog soname                                   RichTbR1FlatFull
+ i     2 idx     2 lvname                                      RichTbR1QWLog soname                                      RichTbR1QwBox
+ i     3 idx     3 lvname                           RichTbLbModuleBackPlLog_ soname                                  R1ModuleBackPlBox
+ i     4 idx     4 lvname                                RichTbLbPmtAnodeLog soname                                      R1PmtAnodeBox
+ i     5 idx     5 lvname                               RichTbLbPmtQuartzLog soname                                     R1PmtQuartzBox
+ i     6 idx     6 lvname                               RichTbLbPmtPhCathLog soname                                     R1PmtPhCathBox
+ i     7 idx     7 lvname                            RichTbLbPmtFrontRingLog soname                                  R1PmtFrontRingBox
+ i     8 idx     8 lvname                              RichTbLbPmtSideEnvLog soname                                    R1PmtSideEnvBox
+ i     9 idx     9 lvname                                   RichTbLbPmtSmLog soname                                  R1PmtSubMasterBox
+ i    10 idx    10 lvname                        RichTbLbPmtMasterLog_Common soname                                     R1PmtMasterBox
+ i    11 idx    11 lvname                                  RichTbLbECLog_0_0 soname                                            R1ECBox
+ i    12 idx    12 lvname                                  RichTbLbECLog_1_0 soname                                            R1ECBox
+ i    13 idx    13 lvname                                  RichTbLbECLog_2_0 soname                                            R1ECBox
+ i    14 idx    14 lvname                                  RichTbLbECLog_3_0 soname                                            R1ECBox
+ i    15 idx    15 lvname                                RichTbLbModuleLog_0 soname                                        R1ModuleBox
+ i    16 idx    16 lvname                                  RichTbLbECLog_0_1 soname                                            R1ECBox
+ i    17 idx    17 lvname                                  RichTbLbECLog_1_1 soname                                            R1ECBox
+ i    18 idx    18 lvname                                  RichTbLbECLog_2_1 soname                                            R1ECBox
+ i    19 idx    19 lvname                                  RichTbLbECLog_3_1 soname                                            R1ECBox
+ i    20 idx    20 lvname                                RichTbLbModuleLog_1 soname                                        R1ModuleBox
+ i    21 idx    21 lvname                                  RichTbLbECLog_0_2 soname                                            R1ECBox
+ i    22 idx    22 lvname                                  RichTbLbECLog_1_2 soname                                            R1ECBox
+ i    23 idx    23 lvname                                  RichTbLbECLog_2_2 soname                                            R1ECBox
+ i    24 idx    24 lvname                                  RichTbLbECLog_3_2 soname                                            R1ECBox
+ i    25 idx    25 lvname                                RichTbLbModuleLog_2 soname                                        R1ModuleBox
+ i    26 idx    26 lvname                                  RichTbLbECLog_0_3 soname                                            R1ECBox
+ i    27 idx    27 lvname                                  RichTbLbECLog_1_3 soname                                            R1ECBox
+ i    28 idx    28 lvname                                  RichTbLbECLog_2_3 soname                                            R1ECBox
+ i    29 idx    29 lvname                                  RichTbLbECLog_3_3 soname                                            R1ECBox
+ i    30 idx    30 lvname                                RichTbLbModuleLog_3 soname                                        R1ModuleBox
+ i    31 idx    31 lvname                                  RichTbLbECLog_0_4 soname                                            R1ECBox
+ i    32 idx    32 lvname                                  RichTbLbECLog_1_4 soname                                            R1ECBox
+ i    33 idx    33 lvname                                  RichTbLbECLog_2_4 soname                                            R1ECBox
+ i    34 idx    34 lvname                                  RichTbLbECLog_3_4 soname                                            R1ECBox
+ i    35 idx    35 lvname                                RichTbLbModuleLog_4 soname                                        R1ModuleBox
+ i    36 idx    36 lvname                                  RichTbLbECLog_0_5 soname                                            R1ECBox
+ i    37 idx    37 lvname                                  RichTbLbECLog_1_5 soname                                            R1ECBox
+ i    38 idx    38 lvname                                  RichTbLbECLog_2_5 soname                                            R1ECBox
+ i    39 idx    39 lvname                                  RichTbLbECLog_3_5 soname                                            R1ECBox
+ i    40 idx    40 lvname                                RichTbLbModuleLog_5 soname                                        R1ModuleBox
+ i    41 idx    41 lvname                                  RichTbLbECLog_0_6 soname                                            R1ECBox
+ i    42 idx    42 lvname                                  RichTbLbECLog_1_6 soname                                            R1ECBox
+ i    43 idx    43 lvname                                  RichTbLbECLog_2_6 soname                                            R1ECBox
+ i    44 idx    44 lvname                                  RichTbLbECLog_3_6 soname                                            R1ECBox
+ i    45 idx    45 lvname                                RichTbLbModuleLog_6 soname                                        R1ModuleBox
+ i    46 idx    46 lvname                                  RichTbLbECLog_0_7 soname                                            R1ECBox
+ i    47 idx    47 lvname                                  RichTbLbECLog_1_7 soname                                            R1ECBox
+ i    48 idx    48 lvname                                  RichTbLbECLog_2_7 soname                                            R1ECBox
+ i    49 idx    49 lvname                                  RichTbLbECLog_3_7 soname                                            R1ECBox
+ i    50 idx    50 lvname                                RichTbLbModuleLog_7 soname                                        R1ModuleBox
+ i    51 idx    51 lvname                                  RichTbLbECLog_0_8 soname                                            R1ECBox
+ i    52 idx    52 lvname                                  RichTbLbECLog_1_8 soname                                            R1ECBox
+ i    53 idx    53 lvname                                  RichTbLbECLog_2_8 soname                                            R1ECBox
+ i    54 idx    54 lvname                                  RichTbLbECLog_3_8 soname                                            R1ECBox
+ i    55 idx    55 lvname                                RichTbLbModuleLog_8 soname                                        R1ModuleBox
+ i    56 idx    56 lvname                                  RichTbLbECLog_0_9 soname                                            R1ECBox
+ i    57 idx    57 lvname                                  RichTbLbECLog_1_9 soname                                            R1ECBox
+ i    58 idx    58 lvname                                  RichTbLbECLog_2_9 soname                                            R1ECBox
+ i    59 idx    59 lvname                                  RichTbLbECLog_3_9 soname                                            R1ECBox
+ i    60 idx    60 lvname                                RichTbLbModuleLog_9 soname                                        R1ModuleBox
+ i    61 idx    61 lvname                                 RichTbLbECLog_0_10 soname                                            R1ECBox
+ i    62 idx    62 lvname                                 RichTbLbECLog_1_10 soname                                            R1ECBox
+ i    63 idx    63 lvname                                 RichTbLbECLog_2_10 soname                                            R1ECBox
+ i    64 idx    64 lvname                                 RichTbLbECLog_3_10 soname                                            R1ECBox
+ i    65 idx    65 lvname                               RichTbLbModuleLog_10 soname                                        R1ModuleBox
+ i    66 idx    66 lvname                                 RichTbLbECLog_0_11 soname                                            R1ECBox
+ i    67 idx    67 lvname                                 RichTbLbECLog_1_11 soname                                            R1ECBox
+ i    68 idx    68 lvname                                 RichTbLbECLog_2_11 soname                                            R1ECBox
+ i    69 idx    69 lvname                                 RichTbLbECLog_3_11 soname                                            R1ECBox
+ i    70 idx    70 lvname                               RichTbLbModuleLog_11 soname                                        R1ModuleBox
+ i    71 idx    71 lvname                                 RichTbLbECLog_0_12 soname                                            R1ECBox
+ i    72 idx    72 lvname                                 RichTbLbECLog_1_12 soname                                            R1ECBox
+ i    73 idx    73 lvname                                 RichTbLbECLog_2_12 soname                                            R1ECBox
+ i    74 idx    74 lvname                                 RichTbLbECLog_3_12 soname                                            R1ECBox
+ i    75 idx    75 lvname                               RichTbLbModuleLog_12 soname                                        R1ModuleBox
+ i    76 idx    76 lvname                                 RichTbLbECLog_0_13 soname                                            R1ECBox
+ i    77 idx    77 lvname                                 RichTbLbECLog_1_13 soname                                            R1ECBox
+ i    78 idx    78 lvname                                 RichTbLbECLog_2_13 soname                                            R1ECBox
+ i    79 idx    79 lvname                                 RichTbLbECLog_3_13 soname                                            R1ECBox
+ i    80 idx    80 lvname                               RichTbLbModuleLog_13 soname                                        R1ModuleBox
+ i    81 idx    81 lvname                                 RichTbLbECLog_0_14 soname                                            R1ECBox
+ i    82 idx    82 lvname                                 RichTbLbECLog_1_14 soname                                            R1ECBox
+ i    83 idx    83 lvname                                 RichTbLbECLog_2_14 soname                                            R1ECBox
+ i    84 idx    84 lvname                                 RichTbLbECLog_3_14 soname                                            R1ECBox
+ i    85 idx    85 lvname                               RichTbLbModuleLog_14 soname                                        R1ModuleBox
+ i    86 idx    86 lvname                                 RichTbLbECLog_0_15 soname                                            R1ECBox
+ i    87 idx    87 lvname                                 RichTbLbECLog_1_15 soname                                            R1ECBox
+ i    88 idx    88 lvname                                 RichTbLbECLog_2_15 soname                                            R1ECBox
+ i    89 idx    89 lvname                                 RichTbLbECLog_3_15 soname                                            R1ECBox
+ i    90 idx    90 lvname                               RichTbLbModuleLog_15 soname                                        R1ModuleBox
+ i    91 idx    91 lvname                                 RichTbLbECLog_0_16 soname                                            R1ECBox
+ i    92 idx    92 lvname                                 RichTbLbECLog_1_16 soname                                            R1ECBox
+ i    93 idx    93 lvname                                 RichTbLbECLog_2_16 soname                                            R1ECBox
+ i    94 idx    94 lvname                                 RichTbLbECLog_3_16 soname                                            R1ECBox
+ i    95 idx    95 lvname                               RichTbLbModuleLog_16 soname                                        R1ModuleBox
+ i    96 idx    96 lvname                                 RichTbLbECLog_0_17 soname                                            R1ECBox
+ i    97 idx    97 lvname                                 RichTbLbECLog_1_17 soname                                            R1ECBox
+ i    98 idx    98 lvname                                 RichTbLbECLog_2_17 soname                                            R1ECBox
+ i    99 idx    99 lvname                                 RichTbLbECLog_3_17 soname                                            R1ECBox
+ i   100 idx   100 lvname                               RichTbLbModuleLog_17 soname                                        R1ModuleBox
+ i   101 idx   101 lvname                                 RichTbLbECLog_0_18 soname                                            R1ECBox
+ i   102 idx   102 lvname                                 RichTbLbECLog_1_18 soname                                            R1ECBox
+ i   103 idx   103 lvname                                 RichTbLbECLog_2_18 soname                                            R1ECBox
+ i   104 idx   104 lvname                                 RichTbLbECLog_3_18 soname                                            R1ECBox
+ i   105 idx   105 lvname                               RichTbLbModuleLog_18 soname                                        R1ModuleBox
+ i   106 idx   106 lvname                                 RichTbLbECLog_0_19 soname                                            R1ECBox
+ i   107 idx   107 lvname                                 RichTbLbECLog_1_19 soname                                            R1ECBox
+ i   108 idx   108 lvname                                 RichTbLbECLog_2_19 soname                                            R1ECBox
+ i   109 idx   109 lvname                                 RichTbLbECLog_3_19 soname                                            R1ECBox
+ i   110 idx   110 lvname                               RichTbLbModuleLog_19 soname                                        R1ModuleBox
+ i   111 idx   111 lvname                                 RichTbLbECLog_0_20 soname                                            R1ECBox
+ i   112 idx   112 lvname                                 RichTbLbECLog_1_20 soname                                            R1ECBox
+ i   113 idx   113 lvname                                 RichTbLbECLog_2_20 soname                                            R1ECBox
+ i   114 idx   114 lvname                                 RichTbLbECLog_3_20 soname                                            R1ECBox
+ i   115 idx   115 lvname                               RichTbLbModuleLog_20 soname                                        R1ModuleBox
+ i   116 idx   116 lvname                                 RichTbLbECLog_0_21 soname                                            R1ECBox
+ i   117 idx   117 lvname                                 RichTbLbECLog_1_21 soname                                            R1ECBox
+ i   118 idx   118 lvname                                 RichTbLbECLog_2_21 soname                                            R1ECBox
+ i   119 idx   119 lvname                                 RichTbLbECLog_3_21 soname                                            R1ECBox
+ i   120 idx   120 lvname                               RichTbLbModuleLog_21 soname                                        R1ModuleBox
+ i   121 idx   121 lvname                                 RichTbLbECLog_0_22 soname                                            R1ECBox
+ i   122 idx   122 lvname                                 RichTbLbECLog_1_22 soname                                            R1ECBox
+ i   123 idx   123 lvname                                 RichTbLbECLog_2_22 soname                                            R1ECBox
+ i   124 idx   124 lvname                                 RichTbLbECLog_3_22 soname                                            R1ECBox
+ i   125 idx   125 lvname                               RichTbLbModuleLog_22 soname                                        R1ModuleBox
+ i   126 idx   126 lvname                                 RichTbLbECLog_0_23 soname                                            R1ECBox
+ i   127 idx   127 lvname                                 RichTbLbECLog_1_23 soname                                            R1ECBox
+ i   128 idx   128 lvname                                 RichTbLbECLog_2_23 soname                                            R1ECBox
+ i   129 idx   129 lvname                                 RichTbLbECLog_3_23 soname                                            R1ECBox
+ i   130 idx   130 lvname                               RichTbLbModuleLog_23 soname                                        R1ModuleBox
+ i   131 idx   131 lvname                                 RichTbLbECLog_0_24 soname                                            R1ECBox
+ i   132 idx   132 lvname                                 RichTbLbECLog_1_24 soname                                            R1ECBox
+ i   133 idx   133 lvname                                 RichTbLbECLog_2_24 soname                                            R1ECBox
+ i   134 idx   134 lvname                                 RichTbLbECLog_3_24 soname                                            R1ECBox
+ i   135 idx   135 lvname                               RichTbLbModuleLog_24 soname                                        R1ModuleBox
+ i   136 idx   136 lvname                                 RichTbLbECLog_0_25 soname                                            R1ECBox
+ i   137 idx   137 lvname                                 RichTbLbECLog_1_25 soname                                            R1ECBox
+ i   138 idx   138 lvname                                 RichTbLbECLog_2_25 soname                                            R1ECBox
+ i   139 idx   139 lvname                                 RichTbLbECLog_3_25 soname                                            R1ECBox
+ i   140 idx   140 lvname                               RichTbLbModuleLog_25 soname                                        R1ModuleBox
+ i   141 idx   141 lvname                                 RichTbLbECLog_0_26 soname                                            R1ECBox
+ i   142 idx   142 lvname                                 RichTbLbECLog_1_26 soname                                            R1ECBox
+ i   143 idx   143 lvname                                 RichTbLbECLog_2_26 soname                                            R1ECBox
+ i   144 idx   144 lvname                                 RichTbLbECLog_3_26 soname                                            R1ECBox
+ i   145 idx   145 lvname                               RichTbLbModuleLog_26 soname                                        R1ModuleBox
+ i   146 idx   146 lvname                                 RichTbLbECLog_0_27 soname                                            R1ECBox
+ i   147 idx   147 lvname                                 RichTbLbECLog_1_27 soname                                            R1ECBox
+ i   148 idx   148 lvname                                 RichTbLbECLog_2_27 soname                                            R1ECBox
+ i   149 idx   149 lvname                                 RichTbLbECLog_3_27 soname                                            R1ECBox
+ i   150 idx   150 lvname                               RichTbLbModuleLog_27 soname                                        R1ModuleBox
+ i   151 idx   151 lvname                                 RichTbLbECLog_0_28 soname                                            R1ECBox
+ i   152 idx   152 lvname                                 RichTbLbECLog_1_28 soname                                            R1ECBox
+ i   153 idx   153 lvname                                 RichTbLbECLog_2_28 soname                                            R1ECBox
+ i   154 idx   154 lvname                                 RichTbLbECLog_3_28 soname                                            R1ECBox
+ i   155 idx   155 lvname                               RichTbLbModuleLog_28 soname                                        R1ModuleBox
+ i   156 idx   156 lvname                                 RichTbLbECLog_0_29 soname                                            R1ECBox
+ i   157 idx   157 lvname                                 RichTbLbECLog_1_29 soname                                            R1ECBox
+ i   158 idx   158 lvname                                 RichTbLbECLog_2_29 soname                                            R1ECBox
+ i   159 idx   159 lvname                                 RichTbLbECLog_3_29 soname                                            R1ECBox
+ i   160 idx   160 lvname                               RichTbLbModuleLog_29 soname                                        R1ModuleBox
+ i   161 idx   161 lvname                                 RichTbLbECLog_0_30 soname                                            R1ECBox
+ i   162 idx   162 lvname                                 RichTbLbECLog_1_30 soname                                            R1ECBox
+ i   163 idx   163 lvname                                 RichTbLbECLog_2_30 soname                                            R1ECBox
+ i   164 idx   164 lvname                                 RichTbLbECLog_3_30 soname                                            R1ECBox
+ i   165 idx   165 lvname                               RichTbLbModuleLog_30 soname                                        R1ModuleBox
+ i   166 idx   166 lvname                                 RichTbLbECLog_0_31 soname                                            R1ECBox
+ i   167 idx   167 lvname                                 RichTbLbECLog_1_31 soname                                            R1ECBox
+ i   168 idx   168 lvname                                 RichTbLbECLog_2_31 soname                                            R1ECBox
+ i   169 idx   169 lvname                                 RichTbLbECLog_3_31 soname                                            R1ECBox
+ i   170 idx   170 lvname                               RichTbLbModuleLog_31 soname                                        R1ModuleBox
+ i   171 idx   171 lvname                                 RichTbLbECLog_0_32 soname                                            R1ECBox
+ i   172 idx   172 lvname                                 RichTbLbECLog_1_32 soname                                            R1ECBox
+ i   173 idx   173 lvname                                 RichTbLbECLog_2_32 soname                                            R1ECBox
+ i   174 idx   174 lvname                                 RichTbLbECLog_3_32 soname                                            R1ECBox
+ i   175 idx   175 lvname                               RichTbLbModuleLog_32 soname                                        R1ModuleBox
+ i   176 idx   176 lvname                                 RichTbLbECLog_0_33 soname                                            R1ECBox
+ i   177 idx   177 lvname                                 RichTbLbECLog_1_33 soname                                            R1ECBox
+ i   178 idx   178 lvname                                 RichTbLbECLog_2_33 soname                                            R1ECBox
+ i   179 idx   179 lvname                                 RichTbLbECLog_3_33 soname                                            R1ECBox
+ i   180 idx   180 lvname                               RichTbLbModuleLog_33 soname                                        R1ModuleBox
+ i   181 idx   181 lvname                                 RichTbLbECLog_0_34 soname                                            R1ECBox
+ i   182 idx   182 lvname                                 RichTbLbECLog_1_34 soname                                            R1ECBox
+ i   183 idx   183 lvname                                 RichTbLbECLog_2_34 soname                                            R1ECBox
+ i   184 idx   184 lvname                                 RichTbLbECLog_3_34 soname                                            R1ECBox
+ i   185 idx   185 lvname                               RichTbLbModuleLog_34 soname                                        R1ModuleBox
+ i   186 idx   186 lvname                                 RichTbLbECLog_0_35 soname                                            R1ECBox
+ i   187 idx   187 lvname                                 RichTbLbECLog_1_35 soname                                            R1ECBox
+ i   188 idx   188 lvname                                 RichTbLbECLog_2_35 soname                                            R1ECBox
+ i   189 idx   189 lvname                                 RichTbLbECLog_3_35 soname                                            R1ECBox
+ i   190 idx   190 lvname                               RichTbLbModuleLog_35 soname                                        R1ModuleBox
+ i   191 idx   191 lvname                                 RichTbLbECLog_0_36 soname                                            R1ECBox
+ i   192 idx   192 lvname                                 RichTbLbECLog_1_36 soname                                            R1ECBox
+ i   193 idx   193 lvname                                 RichTbLbECLog_2_36 soname                                            R1ECBox
+ i   194 idx   194 lvname                                 RichTbLbECLog_3_36 soname                                            R1ECBox
+ i   195 idx   195 lvname                               RichTbLbModuleLog_36 soname                                        R1ModuleBox
+ i   196 idx   196 lvname                                 RichTbLbECLog_0_37 soname                                            R1ECBox
+ i   197 idx   197 lvname                                 RichTbLbECLog_1_37 soname                                            R1ECBox
+ i   198 idx   198 lvname                                 RichTbLbECLog_2_37 soname                                            R1ECBox
+ i   199 idx   199 lvname                                 RichTbLbECLog_3_37 soname                                            R1ECBox
+ i   200 idx   200 lvname                               RichTbLbModuleLog_37 soname                                        R1ModuleBox
+ i   201 idx   201 lvname                                 RichTbLbECLog_0_38 soname                                            R1ECBox
+ i   202 idx   202 lvname                                 RichTbLbECLog_1_38 soname                                            R1ECBox
+ i   203 idx   203 lvname                                 RichTbLbECLog_2_38 soname                                            R1ECBox
+ i   204 idx   204 lvname                                 RichTbLbECLog_3_38 soname                                            R1ECBox
+ i   205 idx   205 lvname                               RichTbLbModuleLog_38 soname                                        R1ModuleBox
+ i   206 idx   206 lvname                                 RichTbLbECLog_0_39 soname                                            R1ECBox
+ i   207 idx   207 lvname                                 RichTbLbECLog_1_39 soname                                            R1ECBox
+ i   208 idx   208 lvname                                 RichTbLbECLog_2_39 soname                                            R1ECBox
+ i   209 idx   209 lvname                                 RichTbLbECLog_3_39 soname                                            R1ECBox
+ i   210 idx   210 lvname                               RichTbLbModuleLog_39 soname                                        R1ModuleBox
+ i   211 idx   211 lvname                                 RichTbLbECLog_0_40 soname                                            R1ECBox
+ i   212 idx   212 lvname                                 RichTbLbECLog_1_40 soname                                            R1ECBox
+ i   213 idx   213 lvname                                 RichTbLbECLog_2_40 soname                                            R1ECBox
+ i   214 idx   214 lvname                                 RichTbLbECLog_3_40 soname                                            R1ECBox
+ i   215 idx   215 lvname                               RichTbLbModuleLog_40 soname                                        R1ModuleBox
+ i   216 idx   216 lvname                                 RichTbLbECLog_0_41 soname                                            R1ECBox
+ i   217 idx   217 lvname                                 RichTbLbECLog_1_41 soname                                            R1ECBox
+ i   218 idx   218 lvname                                 RichTbLbECLog_2_41 soname                                            R1ECBox
+ i   219 idx   219 lvname                                 RichTbLbECLog_3_41 soname                                            R1ECBox
+ i   220 idx   220 lvname                               RichTbLbModuleLog_41 soname                                        R1ModuleBox
+ i   221 idx   221 lvname                                 RichTbLbECLog_0_42 soname                                            R1ECBox
+ i   222 idx   222 lvname                                 RichTbLbECLog_1_42 soname                                            R1ECBox
+ i   223 idx   223 lvname                                 RichTbLbECLog_2_42 soname                                            R1ECBox
+ i   224 idx   224 lvname                                 RichTbLbECLog_3_42 soname                                            R1ECBox
+ i   225 idx   225 lvname                               RichTbLbModuleLog_42 soname                                        R1ModuleBox
+ i   226 idx   226 lvname                                 RichTbLbECLog_0_43 soname                                            R1ECBox
+ i   227 idx   227 lvname                                 RichTbLbECLog_1_43 soname                                            R1ECBox
+ i   228 idx   228 lvname                                 RichTbLbECLog_2_43 soname                                            R1ECBox
+ i   229 idx   229 lvname                                 RichTbLbECLog_3_43 soname                                            R1ECBox
+ i   230 idx   230 lvname                               RichTbLbModuleLog_43 soname                                        R1ModuleBox
+ i   231 idx   231 lvname                                 RichTbLbECLog_0_44 soname                                            R1ECBox
+ i   232 idx   232 lvname                                 RichTbLbECLog_1_44 soname                                            R1ECBox
+ i   233 idx   233 lvname                                 RichTbLbECLog_2_44 soname                                            R1ECBox
+ i   234 idx   234 lvname                                 RichTbLbECLog_3_44 soname                                            R1ECBox
+ i   235 idx   235 lvname                               RichTbLbModuleLog_44 soname                                        R1ModuleBox
+ i   236 idx   236 lvname                                 RichTbLbECLog_0_45 soname                                            R1ECBox
+ i   237 idx   237 lvname                                 RichTbLbECLog_1_45 soname                                            R1ECBox
+ i   238 idx   238 lvname                                 RichTbLbECLog_2_45 soname                                            R1ECBox
+ i   239 idx   239 lvname                                 RichTbLbECLog_3_45 soname                                            R1ECBox
+ i   240 idx   240 lvname                               RichTbLbModuleLog_45 soname                                        R1ModuleBox
+ i   241 idx   241 lvname                                 RichTbLbECLog_0_46 soname                                            R1ECBox
+ i   242 idx   242 lvname                                 RichTbLbECLog_1_46 soname                                            R1ECBox
+ i   243 idx   243 lvname                                 RichTbLbECLog_2_46 soname                                            R1ECBox
+ i   244 idx   244 lvname                                 RichTbLbECLog_3_46 soname                                            R1ECBox
+ i   245 idx   245 lvname                               RichTbLbModuleLog_46 soname                                        R1ModuleBox
+ i   246 idx   246 lvname                                 RichTbLbECLog_0_47 soname                                            R1ECBox
+ i   247 idx   247 lvname                                 RichTbLbECLog_1_47 soname                                            R1ECBox
+ i   248 idx   248 lvname                                 RichTbLbECLog_2_47 soname                                            R1ECBox
+ i   249 idx   249 lvname                                 RichTbLbECLog_3_47 soname                                            R1ECBox
+ i   250 idx   250 lvname                               RichTbLbModuleLog_47 soname                                        R1ModuleBox
+ i   251 idx   251 lvname                                 RichTbLbECLog_0_48 soname                                            R1ECBox
+ i   252 idx   252 lvname                                 RichTbLbECLog_1_48 soname                                            R1ECBox
+ i   253 idx   253 lvname                                 RichTbLbECLog_2_48 soname                                            R1ECBox
+ i   254 idx   254 lvname                                 RichTbLbECLog_3_48 soname                                            R1ECBox
+ i   255 idx   255 lvname                               RichTbLbModuleLog_48 soname                                        R1ModuleBox
+ i   256 idx   256 lvname                                 RichTbLbECLog_0_49 soname                                            R1ECBox
+ i   257 idx   257 lvname                                 RichTbLbECLog_1_49 soname                                            R1ECBox
+ i   258 idx   258 lvname                                 RichTbLbECLog_2_49 soname                                            R1ECBox
+ i   259 idx   259 lvname                                 RichTbLbECLog_3_49 soname                                            R1ECBox
+ i   260 idx   260 lvname                               RichTbLbModuleLog_49 soname                                        R1ModuleBox
+ i   261 idx   261 lvname                                 RichTbLbECLog_0_50 soname                                            R1ECBox
+ i   262 idx   262 lvname                                 RichTbLbECLog_1_50 soname                                            R1ECBox
+ i   263 idx   263 lvname                                 RichTbLbECLog_2_50 soname                                            R1ECBox
+ i   264 idx   264 lvname                                 RichTbLbECLog_3_50 soname                                            R1ECBox
+ i   265 idx   265 lvname                               RichTbLbModuleLog_50 soname                                        R1ModuleBox
+ i   266 idx   266 lvname                                 RichTbLbECLog_0_51 soname                                            R1ECBox
+ i   267 idx   267 lvname                                 RichTbLbECLog_1_51 soname                                            R1ECBox
+ i   268 idx   268 lvname                                 RichTbLbECLog_2_51 soname                                            R1ECBox
+ i   269 idx   269 lvname                                 RichTbLbECLog_3_51 soname                                            R1ECBox
+ i   270 idx   270 lvname                               RichTbLbModuleLog_51 soname                                        R1ModuleBox
+ i   271 idx   271 lvname                                 RichTbLbECLog_0_52 soname                                            R1ECBox
+ i   272 idx   272 lvname                                 RichTbLbECLog_1_52 soname                                            R1ECBox
+ i   273 idx   273 lvname                                 RichTbLbECLog_2_52 soname                                            R1ECBox
+ i   274 idx   274 lvname                                 RichTbLbECLog_3_52 soname                                            R1ECBox
+ i   275 idx   275 lvname                               RichTbLbModuleLog_52 soname                                        R1ModuleBox
+ i   276 idx   276 lvname                                 RichTbLbECLog_0_53 soname                                            R1ECBox
+ i   277 idx   277 lvname                                 RichTbLbECLog_1_53 soname                                            R1ECBox
+ i   278 idx   278 lvname                                 RichTbLbECLog_2_53 soname                                            R1ECBox
+ i   279 idx   279 lvname                                 RichTbLbECLog_3_53 soname                                            R1ECBox
+ i   280 idx   280 lvname                               RichTbLbModuleLog_53 soname                                        R1ModuleBox
+ i   281 idx   281 lvname                                 RichTbLbECLog_0_54 soname                                            R1ECBox
+ i   282 idx   282 lvname                                 RichTbLbECLog_1_54 soname                                            R1ECBox
+ i   283 idx   283 lvname                                 RichTbLbECLog_2_54 soname                                            R1ECBox
+ i   284 idx   284 lvname                                 RichTbLbECLog_3_54 soname                                            R1ECBox
+ i   285 idx   285 lvname                               RichTbLbModuleLog_54 soname                                        R1ModuleBox
+ i   286 idx   286 lvname                                 RichTbLbECLog_0_55 soname                                            R1ECBox
+ i   287 idx   287 lvname                                 RichTbLbECLog_1_55 soname                                            R1ECBox
+ i   288 idx   288 lvname                                 RichTbLbECLog_2_55 soname                                            R1ECBox
+ i   289 idx   289 lvname                                 RichTbLbECLog_3_55 soname                                            R1ECBox
+ i   290 idx   290 lvname                               RichTbLbModuleLog_55 soname                                        R1ModuleBox
+ i   291 idx   291 lvname                                 RichTbLbECLog_0_56 soname                                            R1ECBox
+ i   292 idx   292 lvname                                 RichTbLbECLog_1_56 soname                                            R1ECBox
+ i   293 idx   293 lvname                                 RichTbLbECLog_2_56 soname                                            R1ECBox
+ i   294 idx   294 lvname                                 RichTbLbECLog_3_56 soname                                            R1ECBox
+ i   295 idx   295 lvname                               RichTbLbModuleLog_56 soname                                        R1ModuleBox
+ i   296 idx   296 lvname                                 RichTbLbECLog_0_57 soname                                            R1ECBox
+ i   297 idx   297 lvname                                 RichTbLbECLog_1_57 soname                                            R1ECBox
+ i   298 idx   298 lvname                                 RichTbLbECLog_2_57 soname                                            R1ECBox
+ i   299 idx   299 lvname                                 RichTbLbECLog_3_57 soname                                            R1ECBox
+ i   300 idx   300 lvname                               RichTbLbModuleLog_57 soname                                        R1ModuleBox
+ i   301 idx   301 lvname                                 RichTbLbECLog_0_58 soname                                            R1ECBox
+ i   302 idx   302 lvname                                 RichTbLbECLog_1_58 soname                                            R1ECBox
+ i   303 idx   303 lvname                                 RichTbLbECLog_2_58 soname                                            R1ECBox
+ i   304 idx   304 lvname                                 RichTbLbECLog_3_58 soname                                            R1ECBox
+ i   305 idx   305 lvname                               RichTbLbModuleLog_58 soname                                        R1ModuleBox
+ i   306 idx   306 lvname                                 RichTbLbECLog_0_59 soname                                            R1ECBox
+ i   307 idx   307 lvname                                 RichTbLbECLog_1_59 soname                                            R1ECBox
+ i   308 idx   308 lvname                                 RichTbLbECLog_2_59 soname                                            R1ECBox
+ i   309 idx   309 lvname                                 RichTbLbECLog_3_59 soname                                            R1ECBox
+ i   310 idx   310 lvname                               RichTbLbModuleLog_59 soname                                        R1ModuleBox
+ i   311 idx   311 lvname                                 RichTbLbECLog_0_60 soname                                            R1ECBox
+ i   312 idx   312 lvname                                 RichTbLbECLog_1_60 soname                                            R1ECBox
+ i   313 idx   313 lvname                                 RichTbLbECLog_2_60 soname                                            R1ECBox
+ i   314 idx   314 lvname                                 RichTbLbECLog_3_60 soname                                            R1ECBox
+ i   315 idx   315 lvname                               RichTbLbModuleLog_60 soname                                        R1ModuleBox
+ i   316 idx   316 lvname                                 RichTbLbECLog_0_61 soname                                            R1ECBox
+ i   317 idx   317 lvname                                 RichTbLbECLog_1_61 soname                                            R1ECBox
+ i   318 idx   318 lvname                                 RichTbLbECLog_2_61 soname                                            R1ECBox
+ i   319 idx   319 lvname                                 RichTbLbECLog_3_61 soname                                            R1ECBox
+ i   320 idx   320 lvname                               RichTbLbModuleLog_61 soname                                        R1ModuleBox
+ i   321 idx   321 lvname                                 RichTbLbECLog_0_62 soname                                            R1ECBox
+ i   322 idx   322 lvname                                 RichTbLbECLog_1_62 soname                                            R1ECBox
+ i   323 idx   323 lvname                                 RichTbLbECLog_2_62 soname                                            R1ECBox
+ i   324 idx   324 lvname                                 RichTbLbECLog_3_62 soname                                            R1ECBox
+ i   325 idx   325 lvname                               RichTbLbModuleLog_62 soname                                        R1ModuleBox
+ i   326 idx   326 lvname                                 RichTbLbECLog_0_63 soname                                            R1ECBox
+ i   327 idx   327 lvname                                 RichTbLbECLog_1_63 soname                                            R1ECBox
+ i   328 idx   328 lvname                                 RichTbLbECLog_2_63 soname                                            R1ECBox
+ i   329 idx   329 lvname                                 RichTbLbECLog_3_63 soname                                            R1ECBox
+ i   330 idx   330 lvname                               RichTbLbModuleLog_63 soname                                        R1ModuleBox
+ i   331 idx   331 lvname                                 RichTbLbECLog_0_64 soname                                            R1ECBox
+ i   332 idx   332 lvname                                 RichTbLbECLog_1_64 soname                                            R1ECBox
+ i   333 idx   333 lvname                                 RichTbLbECLog_2_64 soname                                            R1ECBox
+ i   334 idx   334 lvname                                 RichTbLbECLog_3_64 soname                                            R1ECBox
+ i   335 idx   335 lvname                               RichTbLbModuleLog_64 soname                                        R1ModuleBox
+ i   336 idx   336 lvname                                 RichTbLbECLog_0_65 soname                                            R1ECBox
+ i   337 idx   337 lvname                                 RichTbLbECLog_1_65 soname                                            R1ECBox
+ i   338 idx   338 lvname                                 RichTbLbECLog_2_65 soname                                            R1ECBox
+ i   339 idx   339 lvname                                 RichTbLbECLog_3_65 soname                                            R1ECBox
+ i   340 idx   340 lvname                               RichTbLbModuleLog_65 soname                                        R1ModuleBox
+ i   341 idx   341 lvname                            RichTbR1PhDetSupportLog soname                                 R1PhDetSupFrameBox
+ i   342 idx   342 lvname                             RichTbR1MagShRegionLog soname                                   RichTbR1MagShBox
+ i   343 idx   343 lvname                            RichTbRich1SubMasterLog soname                               RichTbR1SubMasterBox
+ i   344 idx   344 lvname                               RichTbRich1MasterLog soname                                  RichTbR1MasterBox
+ i   345 idx   345 lvname                                           WorldLog soname                                           WorldBox
+2021-09-13 10:44:59.742 INFO  [10973] [X4PhysicalVolume::convertStructure@796] [ creating large tree of GVolume instances
+2021-09-13 10:45:00.148 INFO  [10973] [X4PhysicalVolume::postConvert@201]  GGeo::getNumVolumes() 0 GGeo::getNumSensorVolumes() 0
+ GGeo::getSensorBoundaryReport() 
+                      sensor_total      0
+
+2021-09-13 10:45:00.148 INFO  [10973] [G4Opticks::translateGeometry@942] ) GGeo populate
+2021-09-13 10:45:00.148 INFO  [10973] [G4Opticks::translateGeometry@944] ( GGeo::postDirectTranslation 
+2021-09-13 10:45:00.148 INFO  [10973] [GGeo::prepare@630] [
+2021-09-13 10:45:00.149 INFO  [10973] [GGeo::prepareVolumes@1246] [ creating merged meshes from the volume tree 
+2021-09-13 10:45:00.534 INFO  [10973] [GInstancer::findRepeatCandidates@345]  nall 346 repeat_min 400 vertex_min 0 num_repcan 1
+2021-09-13 10:45:00.534 INFO  [10973] [GInstancer::findRepeatCandidates@355]  num_all 346 num_repcan 1 dmax 30
+ (**) candidates fulfil repeat/vert cuts   
+ (##) selected survive contained-repeat disqualification 
+ **      idx   0 pdig c9f0f895fb98ab9159f51fd0297e236d ndig   1056 nprog      0 nvert     16 n RichTbLbPmtSideEnvPhys
+ **      idx   1 pdig 8f14e45fceea167a5a36dedd4bea2543 ndig   1056 nprog      0 nvert     16 n RichTbLbPmtFrontRingPhys
+ **      idx   2 pdig 1679091c5a880faf6fb5e6087eb1b2dc ndig   1056 nprog      0 nvert      8 n RichTbLbPmtPhCathPhys
+ **      idx   3 pdig e4da3b7fbbce2345d7772b0674a318d5 ndig   1056 nprog      0 nvert      8 n RichTbLbPmtQuartzPhys
+ **      idx   4 pdig a87ff679a2f3e71d9181a67b7542122c ndig   1056 nprog      0 nvert      8 n RichTbLbPmtAnodePhys
+ **      idx   5 pdig 912305bb5eb5e57647ee4fd634c03e23 ndig   1056 nprog      5 nvert     64 n RichTbLbPmtSmPhys_Common
+ **  ##  idx   6 pdig b5f5b4af648b907c61b5692f1430d951 ndig   1056 nprog      6 nvert     72 n RichTbLbPmtMasterPhys_0_0_0
+         idx   7 pdig 862f6f46141586b228960628adf190cb ndig      1 nprog    116 nvert   1192 n RichTbLbModulePhys_43
+         idx   8 pdig 79ec26ec599a522be78cf9353f1380c6 ndig      1 nprog     28 nvert    296 n RichTbLbECPhys_3_42
+         idx   9 pdig 4c94235b201cf3b1758438291d740227 ndig      1 nprog     28 nvert    296 n RichTbLbECPhys_2_44
+         idx  10 pdig 9f6afa0399b3d3f0c3fcc0bf3eec266d ndig      1 nprog     28 nvert    296 n RichTbLbECPhys_0_43
+         idx  11 pdig b194167d56a1ca628aa88ad6bf7a5d77 ndig      1 nprog     28 nvert    296 n RichTbLbECPhys_1_43
+         idx  12 pdig 847ff572dd8003e921d86b954371a18e ndig      1 nprog     28 nvert    296 n RichTbLbECPhys_2_43
+         idx  13 pdig a55aea451204bfbec63837ddf1a35f61 ndig      1 nprog     28 nvert    296 n RichTbLbECPhys_3_43
+         idx  14 pdig 2e93f2e0269708313870989d731ef3cc ndig      1 nprog    116 nvert   1192 n RichTbLbModulePhys_44
+         idx  15 pdig 2aa46131287c99bcb669fdc93a0ee149 ndig      1 nprog     28 nvert    296 n RichTbLbECPhys_0_44
+         idx  16 pdig 8a88417963a073201a13bdbcc003ab34 ndig      1 nprog     28 nvert    296 n RichTbLbECPhys_1_44
+         idx  17 pdig ea2372111808b927f71943cccfd7764a ndig      1 nprog     28 nvert    296 n RichTbLbECPhys_1_45
+         idx  18 pdig 4405eac28213d6bc44dfedd871d3cfd7 ndig      1 nprog     28 nvert    296 n RichTbLbECPhys_2_42
+         idx  19 pdig 17f5de3cd298a11e9fbfae53bcdef3f0 ndig      1 nprog     28 nvert    296 n RichTbLbECPhys_1_42
+         idx  20 pdig 16e475ecaeda75d5b3bb3c24b1f5950b ndig      1 nprog     28 nvert    296 n RichTbLbECPhys_0_42
+         idx  21 pdig b93f49b4c3656aed0bc02b112e229c43 ndig      1 nprog    116 nvert   1192 n RichTbLbModulePhys_42
+         idx  22 pdig a3fdaf2658bb9094cfffdb48270aea3f ndig      1 nprog     28 nvert    296 n RichTbLbECPhys_3_41
+         idx  23 pdig c34cd61b320e97342885a9a7bffb9ef2 ndig      1 nprog     28 nvert    296 n RichTbLbECPhys_2_41
+         idx  24 pdig c996be962034448a6818ad63b7783b6a ndig      1 nprog     28 nvert    296 n RichTbLbECPhys_1_41
+         idx  25 pdig 389d358de4bd88cdd9ef7cbf84928525 ndig      1 nprog     28 nvert    296 n RichTbLbECPhys_0_41
+         idx  26 pdig 007a2e99168278dba27bf910e421fb0b ndig      1 nprog    116 nvert   1192 n RichTbLbModulePhys_41
+         idx  27 pdig f4bae10cd2c7e6c5414a79cbbfe6fd62 ndig      1 nprog     28 nvert    296 n RichTbLbECPhys_3_40
+         idx  28 pdig 8515355c734da38c58417a70d5e939f0 ndig      1 nprog     28 nvert    296 n RichTbLbECPhys_2_40
+         idx  29 pdig 5cfe2a11392fd6cd8c49c384e6de8d65 ndig      1 nprog     28 nvert    296 n RichTbLbECPhys_3_46
+2021-09-13 10:45:00.534 INFO  [10973] [GInstancer::dumpRepeatCandidates@423]  num_repcan 1 dmax 20
+ pdig b5f5b4af648b907c61b5692f1430d951 ndig   1056 nprog      6 placements   1056 n RichTbLbPmtMasterPhys_0_0_0
+2021-09-13 10:45:00.555 ERROR [10973] [GGeoLib::makeMergedMesh@324] mm index   0 geocode   T                  numVolumes        339 numFaces        4116 numITransforms           0 numITransforms*numVolumes           0 GParts N GPts Y
+2021-09-13 10:45:00.556 INFO  [10973] [GInstancer::makeMergedMeshAndInstancedBuffers@787]  numRepeats 1 numRidx 2
+2021-09-13 10:45:00.556 ERROR [10973] [GGeoLib::makeMergedMesh@324] mm index   1 geocode   T                  numVolumes          7 numFaces         120 numITransforms           0 numITransforms*numVolumes           0 GParts N GPts Y
+2021-09-13 10:45:00.644 INFO  [10973] [GInstancer::dump@890] GGeo::prepareVolumes
+2021-09-13 10:45:00.645 INFO  [10973] [GInstancer::dumpMeshset@834]  numRepeats 1 numRidx 2 (slot 0 for global non-instanced) 
+ ridx 0 ms 339 ( 0 1 2 3 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345  ) 
+ ridx 1 ms 7 ( 4 5 6 7 8 9 10  ) 
+2021-09-13 10:45:00.645 INFO  [10973] [GInstancer::dumpCSGSkips@866] 
+2021-09-13 10:45:00.645 INFO  [10973] [GGeo::prepareVolumes@1278] ]
+2021-09-13 10:45:00.673 INFO  [10973] [GGeo::prepare@650] ]
+2021-09-13 10:45:00.673 INFO  [10973] [GGeoLib::dump@385] GGeo::save GGeoLib numMergedMesh 2 ptr 0x20d4440
+mm index   0 geocode   T                  numVolumes        339 numFaces        4116 numITransforms           1 numITransforms*numVolumes         339 GParts N GPts Y
+mm index   1 geocode   T                  numVolumes          7 numFaces         120 numITransforms        1056 numITransforms*numVolumes        7392 GParts N GPts Y
+ num_remainder_volumes 339 num_instanced_volumes 7392 num_remainder_volumes + num_instanced_volumes 7731 num_total_faces 4236 num_total_faces_woi 130836 (woi:without instancing) 
+   0 pts Y  GPts.NumPt   339 lvIdx ( 345 344 343 0 1 342 2 341 3 15 ... 331 332 333 334 340 336 337 338 339)
+   1 pts Y  GPts.NumPt     7 lvIdx ( 10 9 4 5 6 7 8)
+2021-09-13 10:45:00.679 INFO  [10973] [GMeshLib::addAltMeshes@116]  num_indices_with_alt 1
+2021-09-13 10:45:00.679 INFO  [10973] [GMeshLib::addAltMeshes@126]  index with alt 0
+2021-09-13 10:45:00.680 INFO  [10973] [GMeshLib::dump@227] addAltMeshes meshnames 347 meshes 347
+ i   0 aidx   0 midx   0 name                                 RichTbR1SphRSphBox mesh  nv     30 nf     56
+ i   1 aidx   1 midx   1 name                                   RichTbR1FlatFull mesh  nv      8 nf     12
+ i   2 aidx   2 midx   2 name                                      RichTbR1QwBox mesh  nv      8 nf     12
+ i   3 aidx   3 midx   3 name                                  R1ModuleBackPlBox mesh  nv      8 nf     12
+ i   4 aidx   4 midx   4 name                                      R1PmtAnodeBox mesh  nv      8 nf     12
+ i   5 aidx   5 midx   5 name                                     R1PmtQuartzBox mesh  nv      8 nf     12
+ i   6 aidx   6 midx   6 name                                     R1PmtPhCathBox mesh  nv      8 nf     12
+ i   7 aidx   7 midx   7 name                                  R1PmtFrontRingBox mesh  nv     16 nf     32
+ i   8 aidx   8 midx   8 name                                    R1PmtSideEnvBox mesh  nv     16 nf     28
+ i   9 aidx   9 midx   9 name                                  R1PmtSubMasterBox mesh  nv      8 nf     12
+ i  10 aidx  10 midx  10 name                                     R1PmtMasterBox mesh  nv      8 nf     12
+ i  11 aidx  11 midx  11 name                                            R1ECBox mesh  nv      8 nf     12
+ i  12 aidx  11 midx  12 name                                            R1ECBox mesh  nv      8 nf     12
+ i  13 aidx  11 midx  13 name                                            R1ECBox mesh  nv      8 nf     12
+ i  14 aidx  11 midx  14 name                                            R1ECBox mesh  nv      8 nf     12
+ i  15 aidx  15 midx  15 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i  16 aidx  11 midx  16 name                                            R1ECBox mesh  nv      8 nf     12
+ i  17 aidx  11 midx  17 name                                            R1ECBox mesh  nv      8 nf     12
+ i  18 aidx  11 midx  18 name                                            R1ECBox mesh  nv      8 nf     12
+ i  19 aidx  11 midx  19 name                                            R1ECBox mesh  nv      8 nf     12
+ i  20 aidx  15 midx  20 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i  21 aidx  11 midx  21 name                                            R1ECBox mesh  nv      8 nf     12
+ i  22 aidx  11 midx  22 name                                            R1ECBox mesh  nv      8 nf     12
+ i  23 aidx  11 midx  23 name                                            R1ECBox mesh  nv      8 nf     12
+ i  24 aidx  11 midx  24 name                                            R1ECBox mesh  nv      8 nf     12
+ i  25 aidx  15 midx  25 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i  26 aidx  11 midx  26 name                                            R1ECBox mesh  nv      8 nf     12
+ i  27 aidx  11 midx  27 name                                            R1ECBox mesh  nv      8 nf     12
+ i  28 aidx  11 midx  28 name                                            R1ECBox mesh  nv      8 nf     12
+ i  29 aidx  11 midx  29 name                                            R1ECBox mesh  nv      8 nf     12
+ i  30 aidx  15 midx  30 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i  31 aidx  11 midx  31 name                                            R1ECBox mesh  nv      8 nf     12
+ i  32 aidx  11 midx  32 name                                            R1ECBox mesh  nv      8 nf     12
+ i  33 aidx  11 midx  33 name                                            R1ECBox mesh  nv      8 nf     12
+ i  34 aidx  11 midx  34 name                                            R1ECBox mesh  nv      8 nf     12
+ i  35 aidx  15 midx  35 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i  36 aidx  11 midx  36 name                                            R1ECBox mesh  nv      8 nf     12
+ i  37 aidx  11 midx  37 name                                            R1ECBox mesh  nv      8 nf     12
+ i  38 aidx  11 midx  38 name                                            R1ECBox mesh  nv      8 nf     12
+ i  39 aidx  11 midx  39 name                                            R1ECBox mesh  nv      8 nf     12
+ i  40 aidx  15 midx  40 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i  41 aidx  11 midx  41 name                                            R1ECBox mesh  nv      8 nf     12
+ i  42 aidx  11 midx  42 name                                            R1ECBox mesh  nv      8 nf     12
+ i  43 aidx  11 midx  43 name                                            R1ECBox mesh  nv      8 nf     12
+ i  44 aidx  11 midx  44 name                                            R1ECBox mesh  nv      8 nf     12
+ i  45 aidx  15 midx  45 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i  46 aidx  11 midx  46 name                                            R1ECBox mesh  nv      8 nf     12
+ i  47 aidx  11 midx  47 name                                            R1ECBox mesh  nv      8 nf     12
+ i  48 aidx  11 midx  48 name                                            R1ECBox mesh  nv      8 nf     12
+ i  49 aidx  11 midx  49 name                                            R1ECBox mesh  nv      8 nf     12
+ i  50 aidx  15 midx  50 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i  51 aidx  11 midx  51 name                                            R1ECBox mesh  nv      8 nf     12
+ i  52 aidx  11 midx  52 name                                            R1ECBox mesh  nv      8 nf     12
+ i  53 aidx  11 midx  53 name                                            R1ECBox mesh  nv      8 nf     12
+ i  54 aidx  11 midx  54 name                                            R1ECBox mesh  nv      8 nf     12
+ i  55 aidx  15 midx  55 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i  56 aidx  11 midx  56 name                                            R1ECBox mesh  nv      8 nf     12
+ i  57 aidx  11 midx  57 name                                            R1ECBox mesh  nv      8 nf     12
+ i  58 aidx  11 midx  58 name                                            R1ECBox mesh  nv      8 nf     12
+ i  59 aidx  11 midx  59 name                                            R1ECBox mesh  nv      8 nf     12
+ i  60 aidx  15 midx  60 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i  61 aidx  11 midx  61 name                                            R1ECBox mesh  nv      8 nf     12
+ i  62 aidx  11 midx  62 name                                            R1ECBox mesh  nv      8 nf     12
+ i  63 aidx  11 midx  63 name                                            R1ECBox mesh  nv      8 nf     12
+ i  64 aidx  11 midx  64 name                                            R1ECBox mesh  nv      8 nf     12
+ i  65 aidx  15 midx  65 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i  66 aidx  11 midx  66 name                                            R1ECBox mesh  nv      8 nf     12
+ i  67 aidx  11 midx  67 name                                            R1ECBox mesh  nv      8 nf     12
+ i  68 aidx  11 midx  68 name                                            R1ECBox mesh  nv      8 nf     12
+ i  69 aidx  11 midx  69 name                                            R1ECBox mesh  nv      8 nf     12
+ i  70 aidx  15 midx  70 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i  71 aidx  11 midx  71 name                                            R1ECBox mesh  nv      8 nf     12
+ i  72 aidx  11 midx  72 name                                            R1ECBox mesh  nv      8 nf     12
+ i  73 aidx  11 midx  73 name                                            R1ECBox mesh  nv      8 nf     12
+ i  74 aidx  11 midx  74 name                                            R1ECBox mesh  nv      8 nf     12
+ i  75 aidx  15 midx  75 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i  76 aidx  11 midx  76 name                                            R1ECBox mesh  nv      8 nf     12
+ i  77 aidx  11 midx  77 name                                            R1ECBox mesh  nv      8 nf     12
+ i  78 aidx  11 midx  78 name                                            R1ECBox mesh  nv      8 nf     12
+ i  79 aidx  11 midx  79 name                                            R1ECBox mesh  nv      8 nf     12
+ i  80 aidx  15 midx  80 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i  81 aidx  11 midx  81 name                                            R1ECBox mesh  nv      8 nf     12
+ i  82 aidx  11 midx  82 name                                            R1ECBox mesh  nv      8 nf     12
+ i  83 aidx  11 midx  83 name                                            R1ECBox mesh  nv      8 nf     12
+ i  84 aidx  11 midx  84 name                                            R1ECBox mesh  nv      8 nf     12
+ i  85 aidx  15 midx  85 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i  86 aidx  11 midx  86 name                                            R1ECBox mesh  nv      8 nf     12
+ i  87 aidx  11 midx  87 name                                            R1ECBox mesh  nv      8 nf     12
+ i  88 aidx  11 midx  88 name                                            R1ECBox mesh  nv      8 nf     12
+ i  89 aidx  11 midx  89 name                                            R1ECBox mesh  nv      8 nf     12
+ i  90 aidx  15 midx  90 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i  91 aidx  11 midx  91 name                                            R1ECBox mesh  nv      8 nf     12
+ i  92 aidx  11 midx  92 name                                            R1ECBox mesh  nv      8 nf     12
+ i  93 aidx  11 midx  93 name                                            R1ECBox mesh  nv      8 nf     12
+ i  94 aidx  11 midx  94 name                                            R1ECBox mesh  nv      8 nf     12
+ i  95 aidx  15 midx  95 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i  96 aidx  11 midx  96 name                                            R1ECBox mesh  nv      8 nf     12
+ i  97 aidx  11 midx  97 name                                            R1ECBox mesh  nv      8 nf     12
+ i  98 aidx  11 midx  98 name                                            R1ECBox mesh  nv      8 nf     12
+ i  99 aidx  11 midx  99 name                                            R1ECBox mesh  nv      8 nf     12
+ i 100 aidx  15 midx 100 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 101 aidx  11 midx 101 name                                            R1ECBox mesh  nv      8 nf     12
+ i 102 aidx  11 midx 102 name                                            R1ECBox mesh  nv      8 nf     12
+ i 103 aidx  11 midx 103 name                                            R1ECBox mesh  nv      8 nf     12
+ i 104 aidx  11 midx 104 name                                            R1ECBox mesh  nv      8 nf     12
+ i 105 aidx  15 midx 105 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 106 aidx  11 midx 106 name                                            R1ECBox mesh  nv      8 nf     12
+ i 107 aidx  11 midx 107 name                                            R1ECBox mesh  nv      8 nf     12
+ i 108 aidx  11 midx 108 name                                            R1ECBox mesh  nv      8 nf     12
+ i 109 aidx  11 midx 109 name                                            R1ECBox mesh  nv      8 nf     12
+ i 110 aidx  15 midx 110 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 111 aidx  11 midx 111 name                                            R1ECBox mesh  nv      8 nf     12
+ i 112 aidx  11 midx 112 name                                            R1ECBox mesh  nv      8 nf     12
+ i 113 aidx  11 midx 113 name                                            R1ECBox mesh  nv      8 nf     12
+ i 114 aidx  11 midx 114 name                                            R1ECBox mesh  nv      8 nf     12
+ i 115 aidx  15 midx 115 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 116 aidx  11 midx 116 name                                            R1ECBox mesh  nv      8 nf     12
+ i 117 aidx  11 midx 117 name                                            R1ECBox mesh  nv      8 nf     12
+ i 118 aidx  11 midx 118 name                                            R1ECBox mesh  nv      8 nf     12
+ i 119 aidx  11 midx 119 name                                            R1ECBox mesh  nv      8 nf     12
+ i 120 aidx  15 midx 120 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 121 aidx  11 midx 121 name                                            R1ECBox mesh  nv      8 nf     12
+ i 122 aidx  11 midx 122 name                                            R1ECBox mesh  nv      8 nf     12
+ i 123 aidx  11 midx 123 name                                            R1ECBox mesh  nv      8 nf     12
+ i 124 aidx  11 midx 124 name                                            R1ECBox mesh  nv      8 nf     12
+ i 125 aidx  15 midx 125 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 126 aidx  11 midx 126 name                                            R1ECBox mesh  nv      8 nf     12
+ i 127 aidx  11 midx 127 name                                            R1ECBox mesh  nv      8 nf     12
+ i 128 aidx  11 midx 128 name                                            R1ECBox mesh  nv      8 nf     12
+ i 129 aidx  11 midx 129 name                                            R1ECBox mesh  nv      8 nf     12
+ i 130 aidx  15 midx 130 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 131 aidx  11 midx 131 name                                            R1ECBox mesh  nv      8 nf     12
+ i 132 aidx  11 midx 132 name                                            R1ECBox mesh  nv      8 nf     12
+ i 133 aidx  11 midx 133 name                                            R1ECBox mesh  nv      8 nf     12
+ i 134 aidx  11 midx 134 name                                            R1ECBox mesh  nv      8 nf     12
+ i 135 aidx  15 midx 135 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 136 aidx  11 midx 136 name                                            R1ECBox mesh  nv      8 nf     12
+ i 137 aidx  11 midx 137 name                                            R1ECBox mesh  nv      8 nf     12
+ i 138 aidx  11 midx 138 name                                            R1ECBox mesh  nv      8 nf     12
+ i 139 aidx  11 midx 139 name                                            R1ECBox mesh  nv      8 nf     12
+ i 140 aidx  15 midx 140 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 141 aidx  11 midx 141 name                                            R1ECBox mesh  nv      8 nf     12
+ i 142 aidx  11 midx 142 name                                            R1ECBox mesh  nv      8 nf     12
+ i 143 aidx  11 midx 143 name                                            R1ECBox mesh  nv      8 nf     12
+ i 144 aidx  11 midx 144 name                                            R1ECBox mesh  nv      8 nf     12
+ i 145 aidx  15 midx 145 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 146 aidx  11 midx 146 name                                            R1ECBox mesh  nv      8 nf     12
+ i 147 aidx  11 midx 147 name                                            R1ECBox mesh  nv      8 nf     12
+ i 148 aidx  11 midx 148 name                                            R1ECBox mesh  nv      8 nf     12
+ i 149 aidx  11 midx 149 name                                            R1ECBox mesh  nv      8 nf     12
+ i 150 aidx  15 midx 150 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 151 aidx  11 midx 151 name                                            R1ECBox mesh  nv      8 nf     12
+ i 152 aidx  11 midx 152 name                                            R1ECBox mesh  nv      8 nf     12
+ i 153 aidx  11 midx 153 name                                            R1ECBox mesh  nv      8 nf     12
+ i 154 aidx  11 midx 154 name                                            R1ECBox mesh  nv      8 nf     12
+ i 155 aidx  15 midx 155 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 156 aidx  11 midx 156 name                                            R1ECBox mesh  nv      8 nf     12
+ i 157 aidx  11 midx 157 name                                            R1ECBox mesh  nv      8 nf     12
+ i 158 aidx  11 midx 158 name                                            R1ECBox mesh  nv      8 nf     12
+ i 159 aidx  11 midx 159 name                                            R1ECBox mesh  nv      8 nf     12
+ i 160 aidx  15 midx 160 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 161 aidx  11 midx 161 name                                            R1ECBox mesh  nv      8 nf     12
+ i 162 aidx  11 midx 162 name                                            R1ECBox mesh  nv      8 nf     12
+ i 163 aidx  11 midx 163 name                                            R1ECBox mesh  nv      8 nf     12
+ i 164 aidx  11 midx 164 name                                            R1ECBox mesh  nv      8 nf     12
+ i 165 aidx  15 midx 165 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 166 aidx  11 midx 166 name                                            R1ECBox mesh  nv      8 nf     12
+ i 167 aidx  11 midx 167 name                                            R1ECBox mesh  nv      8 nf     12
+ i 168 aidx  11 midx 168 name                                            R1ECBox mesh  nv      8 nf     12
+ i 169 aidx  11 midx 169 name                                            R1ECBox mesh  nv      8 nf     12
+ i 170 aidx  15 midx 170 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 171 aidx  11 midx 171 name                                            R1ECBox mesh  nv      8 nf     12
+ i 172 aidx  11 midx 172 name                                            R1ECBox mesh  nv      8 nf     12
+ i 173 aidx  11 midx 173 name                                            R1ECBox mesh  nv      8 nf     12
+ i 174 aidx  11 midx 174 name                                            R1ECBox mesh  nv      8 nf     12
+ i 175 aidx  15 midx 175 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 176 aidx  11 midx 176 name                                            R1ECBox mesh  nv      8 nf     12
+ i 177 aidx  11 midx 177 name                                            R1ECBox mesh  nv      8 nf     12
+ i 178 aidx  11 midx 178 name                                            R1ECBox mesh  nv      8 nf     12
+ i 179 aidx  11 midx 179 name                                            R1ECBox mesh  nv      8 nf     12
+ i 180 aidx  15 midx 180 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 181 aidx  11 midx 181 name                                            R1ECBox mesh  nv      8 nf     12
+ i 182 aidx  11 midx 182 name                                            R1ECBox mesh  nv      8 nf     12
+ i 183 aidx  11 midx 183 name                                            R1ECBox mesh  nv      8 nf     12
+ i 184 aidx  11 midx 184 name                                            R1ECBox mesh  nv      8 nf     12
+ i 185 aidx  15 midx 185 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 186 aidx  11 midx 186 name                                            R1ECBox mesh  nv      8 nf     12
+ i 187 aidx  11 midx 187 name                                            R1ECBox mesh  nv      8 nf     12
+ i 188 aidx  11 midx 188 name                                            R1ECBox mesh  nv      8 nf     12
+ i 189 aidx  11 midx 189 name                                            R1ECBox mesh  nv      8 nf     12
+ i 190 aidx  15 midx 190 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 191 aidx  11 midx 191 name                                            R1ECBox mesh  nv      8 nf     12
+ i 192 aidx  11 midx 192 name                                            R1ECBox mesh  nv      8 nf     12
+ i 193 aidx  11 midx 193 name                                            R1ECBox mesh  nv      8 nf     12
+ i 194 aidx  11 midx 194 name                                            R1ECBox mesh  nv      8 nf     12
+ i 195 aidx  15 midx 195 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 196 aidx  11 midx 196 name                                            R1ECBox mesh  nv      8 nf     12
+ i 197 aidx  11 midx 197 name                                            R1ECBox mesh  nv      8 nf     12
+ i 198 aidx  11 midx 198 name                                            R1ECBox mesh  nv      8 nf     12
+ i 199 aidx  11 midx 199 name                                            R1ECBox mesh  nv      8 nf     12
+ i 200 aidx  15 midx 200 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 201 aidx  11 midx 201 name                                            R1ECBox mesh  nv      8 nf     12
+ i 202 aidx  11 midx 202 name                                            R1ECBox mesh  nv      8 nf     12
+ i 203 aidx  11 midx 203 name                                            R1ECBox mesh  nv      8 nf     12
+ i 204 aidx  11 midx 204 name                                            R1ECBox mesh  nv      8 nf     12
+ i 205 aidx  15 midx 205 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 206 aidx  11 midx 206 name                                            R1ECBox mesh  nv      8 nf     12
+ i 207 aidx  11 midx 207 name                                            R1ECBox mesh  nv      8 nf     12
+ i 208 aidx  11 midx 208 name                                            R1ECBox mesh  nv      8 nf     12
+ i 209 aidx  11 midx 209 name                                            R1ECBox mesh  nv      8 nf     12
+ i 210 aidx  15 midx 210 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 211 aidx  11 midx 211 name                                            R1ECBox mesh  nv      8 nf     12
+ i 212 aidx  11 midx 212 name                                            R1ECBox mesh  nv      8 nf     12
+ i 213 aidx  11 midx 213 name                                            R1ECBox mesh  nv      8 nf     12
+ i 214 aidx  11 midx 214 name                                            R1ECBox mesh  nv      8 nf     12
+ i 215 aidx  15 midx 215 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 216 aidx  11 midx 216 name                                            R1ECBox mesh  nv      8 nf     12
+ i 217 aidx  11 midx 217 name                                            R1ECBox mesh  nv      8 nf     12
+ i 218 aidx  11 midx 218 name                                            R1ECBox mesh  nv      8 nf     12
+ i 219 aidx  11 midx 219 name                                            R1ECBox mesh  nv      8 nf     12
+ i 220 aidx  15 midx 220 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 221 aidx  11 midx 221 name                                            R1ECBox mesh  nv      8 nf     12
+ i 222 aidx  11 midx 222 name                                            R1ECBox mesh  nv      8 nf     12
+ i 223 aidx  11 midx 223 name                                            R1ECBox mesh  nv      8 nf     12
+ i 224 aidx  11 midx 224 name                                            R1ECBox mesh  nv      8 nf     12
+ i 225 aidx  15 midx 225 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 226 aidx  11 midx 226 name                                            R1ECBox mesh  nv      8 nf     12
+ i 227 aidx  11 midx 227 name                                            R1ECBox mesh  nv      8 nf     12
+ i 228 aidx  11 midx 228 name                                            R1ECBox mesh  nv      8 nf     12
+ i 229 aidx  11 midx 229 name                                            R1ECBox mesh  nv      8 nf     12
+ i 230 aidx  15 midx 230 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 231 aidx  11 midx 231 name                                            R1ECBox mesh  nv      8 nf     12
+ i 232 aidx  11 midx 232 name                                            R1ECBox mesh  nv      8 nf     12
+ i 233 aidx  11 midx 233 name                                            R1ECBox mesh  nv      8 nf     12
+ i 234 aidx  11 midx 234 name                                            R1ECBox mesh  nv      8 nf     12
+ i 235 aidx  15 midx 235 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 236 aidx  11 midx 236 name                                            R1ECBox mesh  nv      8 nf     12
+ i 237 aidx  11 midx 237 name                                            R1ECBox mesh  nv      8 nf     12
+ i 238 aidx  11 midx 238 name                                            R1ECBox mesh  nv      8 nf     12
+ i 239 aidx  11 midx 239 name                                            R1ECBox mesh  nv      8 nf     12
+ i 240 aidx  15 midx 240 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 241 aidx  11 midx 241 name                                            R1ECBox mesh  nv      8 nf     12
+ i 242 aidx  11 midx 242 name                                            R1ECBox mesh  nv      8 nf     12
+ i 243 aidx  11 midx 243 name                                            R1ECBox mesh  nv      8 nf     12
+ i 244 aidx  11 midx 244 name                                            R1ECBox mesh  nv      8 nf     12
+ i 245 aidx  15 midx 245 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 246 aidx  11 midx 246 name                                            R1ECBox mesh  nv      8 nf     12
+ i 247 aidx  11 midx 247 name                                            R1ECBox mesh  nv      8 nf     12
+ i 248 aidx  11 midx 248 name                                            R1ECBox mesh  nv      8 nf     12
+ i 249 aidx  11 midx 249 name                                            R1ECBox mesh  nv      8 nf     12
+ i 250 aidx  15 midx 250 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 251 aidx  11 midx 251 name                                            R1ECBox mesh  nv      8 nf     12
+ i 252 aidx  11 midx 252 name                                            R1ECBox mesh  nv      8 nf     12
+ i 253 aidx  11 midx 253 name                                            R1ECBox mesh  nv      8 nf     12
+ i 254 aidx  11 midx 254 name                                            R1ECBox mesh  nv      8 nf     12
+ i 255 aidx  15 midx 255 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 256 aidx  11 midx 256 name                                            R1ECBox mesh  nv      8 nf     12
+ i 257 aidx  11 midx 257 name                                            R1ECBox mesh  nv      8 nf     12
+ i 258 aidx  11 midx 258 name                                            R1ECBox mesh  nv      8 nf     12
+ i 259 aidx  11 midx 259 name                                            R1ECBox mesh  nv      8 nf     12
+ i 260 aidx  15 midx 260 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 261 aidx  11 midx 261 name                                            R1ECBox mesh  nv      8 nf     12
+ i 262 aidx  11 midx 262 name                                            R1ECBox mesh  nv      8 nf     12
+ i 263 aidx  11 midx 263 name                                            R1ECBox mesh  nv      8 nf     12
+ i 264 aidx  11 midx 264 name                                            R1ECBox mesh  nv      8 nf     12
+ i 265 aidx  15 midx 265 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 266 aidx  11 midx 266 name                                            R1ECBox mesh  nv      8 nf     12
+ i 267 aidx  11 midx 267 name                                            R1ECBox mesh  nv      8 nf     12
+ i 268 aidx  11 midx 268 name                                            R1ECBox mesh  nv      8 nf     12
+ i 269 aidx  11 midx 269 name                                            R1ECBox mesh  nv      8 nf     12
+ i 270 aidx  15 midx 270 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 271 aidx  11 midx 271 name                                            R1ECBox mesh  nv      8 nf     12
+ i 272 aidx  11 midx 272 name                                            R1ECBox mesh  nv      8 nf     12
+ i 273 aidx  11 midx 273 name                                            R1ECBox mesh  nv      8 nf     12
+ i 274 aidx  11 midx 274 name                                            R1ECBox mesh  nv      8 nf     12
+ i 275 aidx  15 midx 275 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 276 aidx  11 midx 276 name                                            R1ECBox mesh  nv      8 nf     12
+ i 277 aidx  11 midx 277 name                                            R1ECBox mesh  nv      8 nf     12
+ i 278 aidx  11 midx 278 name                                            R1ECBox mesh  nv      8 nf     12
+ i 279 aidx  11 midx 279 name                                            R1ECBox mesh  nv      8 nf     12
+ i 280 aidx  15 midx 280 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 281 aidx  11 midx 281 name                                            R1ECBox mesh  nv      8 nf     12
+ i 282 aidx  11 midx 282 name                                            R1ECBox mesh  nv      8 nf     12
+ i 283 aidx  11 midx 283 name                                            R1ECBox mesh  nv      8 nf     12
+ i 284 aidx  11 midx 284 name                                            R1ECBox mesh  nv      8 nf     12
+ i 285 aidx  15 midx 285 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 286 aidx  11 midx 286 name                                            R1ECBox mesh  nv      8 nf     12
+ i 287 aidx  11 midx 287 name                                            R1ECBox mesh  nv      8 nf     12
+ i 288 aidx  11 midx 288 name                                            R1ECBox mesh  nv      8 nf     12
+ i 289 aidx  11 midx 289 name                                            R1ECBox mesh  nv      8 nf     12
+ i 290 aidx  15 midx 290 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 291 aidx  11 midx 291 name                                            R1ECBox mesh  nv      8 nf     12
+ i 292 aidx  11 midx 292 name                                            R1ECBox mesh  nv      8 nf     12
+ i 293 aidx  11 midx 293 name                                            R1ECBox mesh  nv      8 nf     12
+ i 294 aidx  11 midx 294 name                                            R1ECBox mesh  nv      8 nf     12
+ i 295 aidx  15 midx 295 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 296 aidx  11 midx 296 name                                            R1ECBox mesh  nv      8 nf     12
+ i 297 aidx  11 midx 297 name                                            R1ECBox mesh  nv      8 nf     12
+ i 298 aidx  11 midx 298 name                                            R1ECBox mesh  nv      8 nf     12
+ i 299 aidx  11 midx 299 name                                            R1ECBox mesh  nv      8 nf     12
+ i 300 aidx  15 midx 300 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 301 aidx  11 midx 301 name                                            R1ECBox mesh  nv      8 nf     12
+ i 302 aidx  11 midx 302 name                                            R1ECBox mesh  nv      8 nf     12
+ i 303 aidx  11 midx 303 name                                            R1ECBox mesh  nv      8 nf     12
+ i 304 aidx  11 midx 304 name                                            R1ECBox mesh  nv      8 nf     12
+ i 305 aidx  15 midx 305 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 306 aidx  11 midx 306 name                                            R1ECBox mesh  nv      8 nf     12
+ i 307 aidx  11 midx 307 name                                            R1ECBox mesh  nv      8 nf     12
+ i 308 aidx  11 midx 308 name                                            R1ECBox mesh  nv      8 nf     12
+ i 309 aidx  11 midx 309 name                                            R1ECBox mesh  nv      8 nf     12
+ i 310 aidx  15 midx 310 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 311 aidx  11 midx 311 name                                            R1ECBox mesh  nv      8 nf     12
+ i 312 aidx  11 midx 312 name                                            R1ECBox mesh  nv      8 nf     12
+ i 313 aidx  11 midx 313 name                                            R1ECBox mesh  nv      8 nf     12
+ i 314 aidx  11 midx 314 name                                            R1ECBox mesh  nv      8 nf     12
+ i 315 aidx  15 midx 315 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 316 aidx  11 midx 316 name                                            R1ECBox mesh  nv      8 nf     12
+ i 317 aidx  11 midx 317 name                                            R1ECBox mesh  nv      8 nf     12
+ i 318 aidx  11 midx 318 name                                            R1ECBox mesh  nv      8 nf     12
+ i 319 aidx  11 midx 319 name                                            R1ECBox mesh  nv      8 nf     12
+ i 320 aidx  15 midx 320 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 321 aidx  11 midx 321 name                                            R1ECBox mesh  nv      8 nf     12
+ i 322 aidx  11 midx 322 name                                            R1ECBox mesh  nv      8 nf     12
+ i 323 aidx  11 midx 323 name                                            R1ECBox mesh  nv      8 nf     12
+ i 324 aidx  11 midx 324 name                                            R1ECBox mesh  nv      8 nf     12
+ i 325 aidx  15 midx 325 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 326 aidx  11 midx 326 name                                            R1ECBox mesh  nv      8 nf     12
+ i 327 aidx  11 midx 327 name                                            R1ECBox mesh  nv      8 nf     12
+ i 328 aidx  11 midx 328 name                                            R1ECBox mesh  nv      8 nf     12
+ i 329 aidx  11 midx 329 name                                            R1ECBox mesh  nv      8 nf     12
+ i 330 aidx  15 midx 330 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 331 aidx  11 midx 331 name                                            R1ECBox mesh  nv      8 nf     12
+ i 332 aidx  11 midx 332 name                                            R1ECBox mesh  nv      8 nf     12
+ i 333 aidx  11 midx 333 name                                            R1ECBox mesh  nv      8 nf     12
+ i 334 aidx  11 midx 334 name                                            R1ECBox mesh  nv      8 nf     12
+ i 335 aidx  15 midx 335 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 336 aidx  11 midx 336 name                                            R1ECBox mesh  nv      8 nf     12
+ i 337 aidx  11 midx 337 name                                            R1ECBox mesh  nv      8 nf     12
+ i 338 aidx  11 midx 338 name                                            R1ECBox mesh  nv      8 nf     12
+ i 339 aidx  11 midx 339 name                                            R1ECBox mesh  nv      8 nf     12
+ i 340 aidx  15 midx 340 name                                        R1ModuleBox mesh  nv      8 nf     12
+ i 341 aidx 341 midx 341 name                                 R1PhDetSupFrameBox mesh  nv      8 nf     12
+ i 342 aidx 342 midx 342 name                                   RichTbR1MagShBox mesh  nv     10 nf     16
+ i 343 aidx 343 midx 343 name                               RichTbR1SubMasterBox mesh  nv      8 nf     12
+ i 344 aidx 344 midx 344 name                                  RichTbR1MasterBox mesh  nv      8 nf     12
+ i 345 aidx 345 midx 345 name                                           WorldBox mesh  nv      8 nf     12
+2021-09-13 10:45:00.681 ERROR [10973] [GMeshLib::getMeshSimple@321]  mesh indices do not match  m_meshes index 346 mesh.index 0
+ i 346 aidx   0 midx   0 name                                 RichTbR1SphRSphBox mesh  nv     30 nf     56
+2021-09-13 10:45:01.032 INFO  [10973] [BMeta::dump@199] GGeo::saveCacheMeta
+{
+    "GEOCACHE_CODE_VERSION": 9,
+    "argline": "./Rich_Simplified ",
+    "cwd": "/hepgpu6-data1/liyu/opticks/examples/Geant4/Rich_Simplified/build",
+    "location": "Opticks::updateCacheMeta",
+    "rundate": "20210913_104458",
+    "runfolder": "Rich_Simplified",
+    "runlabel": "R0_cvd_1",
+    "runstamp": 1631526298
+}
+GGeo::reportMeshUsage
+ meshIndex, nvert, nface, nodeCount, nodeCount*nvert, nodeCount*nface, meshName 
+     0 ( v   30 f   56 ) :       1 :         30 :         56 : RichTbR1SphRSphBox
+     1 ( v    8 f   12 ) :       1 :          8 :         12 : RichTbR1FlatFull
+     2 ( v    8 f   12 ) :       1 :          8 :         12 : RichTbR1QwBox
+     3 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBackPlBox
+     4 ( v    8 f   12 ) :    1056 :       8448 :      12672 : R1PmtAnodeBox
+     5 ( v    8 f   12 ) :    1056 :       8448 :      12672 : R1PmtQuartzBox
+     6 ( v    8 f   12 ) :    1056 :       8448 :      12672 : R1PmtPhCathBox
+     7 ( v   16 f   32 ) :    1056 :      16896 :      33792 : R1PmtFrontRingBox
+     8 ( v   16 f   28 ) :    1056 :      16896 :      29568 : R1PmtSideEnvBox
+     9 ( v    8 f   12 ) :    1056 :       8448 :      12672 : R1PmtSubMasterBox
+    10 ( v    8 f   12 ) :    1056 :       8448 :      12672 : R1PmtMasterBox
+    11 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    12 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    13 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    14 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    15 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+    16 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    17 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    18 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    19 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    20 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+    21 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    22 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    23 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    24 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    25 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+    26 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    27 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    28 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    29 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    30 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+    31 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    32 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    33 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    34 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    35 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+    36 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    37 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    38 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    39 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    40 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+    41 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    42 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    43 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    44 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    45 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+    46 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    47 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    48 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    49 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    50 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+    51 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    52 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    53 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    54 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    55 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+    56 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    57 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    58 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    59 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    60 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+    61 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    62 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    63 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    64 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    65 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+    66 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    67 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    68 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    69 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    70 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+    71 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    72 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    73 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    74 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    75 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+    76 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    77 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    78 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    79 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    80 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+    81 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    82 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    83 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    84 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    85 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+    86 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    87 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    88 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    89 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    90 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+    91 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    92 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    93 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    94 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    95 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+    96 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    97 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    98 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+    99 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   100 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   101 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   102 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   103 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   104 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   105 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   106 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   107 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   108 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   109 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   110 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   111 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   112 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   113 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   114 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   115 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   116 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   117 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   118 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   119 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   120 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   121 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   122 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   123 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   124 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   125 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   126 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   127 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   128 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   129 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   130 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   131 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   132 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   133 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   134 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   135 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   136 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   137 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   138 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   139 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   140 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   141 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   142 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   143 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   144 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   145 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   146 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   147 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   148 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   149 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   150 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   151 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   152 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   153 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   154 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   155 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   156 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   157 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   158 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   159 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   160 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   161 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   162 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   163 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   164 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   165 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   166 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   167 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   168 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   169 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   170 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   171 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   172 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   173 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   174 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   175 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   176 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   177 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   178 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   179 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   180 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   181 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   182 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   183 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   184 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   185 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   186 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   187 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   188 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   189 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   190 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   191 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   192 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   193 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   194 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   195 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   196 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   197 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   198 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   199 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   200 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   201 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   202 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   203 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   204 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   205 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   206 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   207 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   208 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   209 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   210 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   211 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   212 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   213 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   214 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   215 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   216 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   217 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   218 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   219 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   220 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   221 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   222 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   223 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   224 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   225 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   226 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   227 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   228 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   229 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   230 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   231 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   232 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   233 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   234 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   235 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   236 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   237 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   238 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   239 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   240 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   241 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   242 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   243 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   244 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   245 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   246 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   247 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   248 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   249 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   250 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   251 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   252 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   253 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   254 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   255 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   256 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   257 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   258 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   259 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   260 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   261 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   262 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   263 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   264 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   265 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   266 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   267 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   268 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   269 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   270 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   271 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   272 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   273 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   274 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   275 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   276 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   277 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   278 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   279 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   280 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   281 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   282 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   283 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   284 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   285 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   286 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   287 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   288 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   289 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   290 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   291 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   292 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   293 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   294 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   295 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   296 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   297 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   298 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   299 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   300 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   301 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   302 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   303 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   304 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   305 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   306 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   307 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   308 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   309 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   310 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   311 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   312 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   313 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   314 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   315 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   316 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   317 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   318 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   319 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   320 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   321 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   322 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   323 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   324 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   325 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   326 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   327 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   328 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   329 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   330 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   331 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   332 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   333 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   334 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   335 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   336 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   337 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   338 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   339 ( v    8 f   12 ) :       1 :          8 :         12 : R1ECBox
+   340 ( v    8 f   12 ) :       1 :          8 :         12 : R1ModuleBox
+   341 ( v    8 f   12 ) :       1 :          8 :         12 : R1PhDetSupFrameBox
+   342 ( v   10 f   16 ) :       1 :         10 :         16 : RichTbR1MagShBox
+   343 ( v    8 f   12 ) :       1 :          8 :         12 : RichTbR1SubMasterBox
+   344 ( v    8 f   12 ) :       1 :          8 :         12 : RichTbR1MasterBox
+   345 ( v    8 f   12 ) :       1 :          8 :         12 : WorldBox
+ tot  node :    7731 vert :   78768 face :  130836
+2021-09-13 10:45:01.070 INFO  [10973] [GGeo::postDirectTranslationDump@605] GGeo::postDirectTranslationDump NOT --dumpsensor numSensorVolumes 0
+2021-09-13 10:45:01.070 INFO  [10973] [G4Opticks::translateGeometry@946] ) GGeo::postDirectTranslation 
+2021-09-13 10:45:01.070 INFO  [10973] [G4Opticks::setGeometry@639]  GGeo: LIVE TRANSLATED  num_sensor 0
+2021-09-13 10:45:01.079 INFO  [10973] [GNodeLib::getFirstNodeIndexForGDMLAuxTargetLVName@289]  target_lvname (null) nidxs.size() 0 nidx -1
+2021-09-13 10:45:01.082 ERROR [10973] [OpticksGen::initFromLegacyGensteps@191] SKIP as isNoInputGensteps OR isEmbedded  
+2021-09-13 10:45:01.115 INFO  [10973] [OContext::InitRTX@335]  --rtx 0 setting  OFF
+2021-09-13 10:45:01.189 INFO  [10973] [OContext::CheckDevices@219] 
+Device 0                       Tesla T4 ordinal 0 Compute Support: 7 5 Total Memory: 15843721216
+
+2021-09-13 10:45:01.237 ERROR [10973] [CDevice::Load@306]  failed read from /hepgpu6-data1/liyu/.opticks/runcache/CDevice.bin
+2021-09-13 10:45:01.237 ERROR [10973] [CDevice::Load@306]  failed read from /hepgpu6-data1/liyu/.opticks/runcache/CDevice.bin
+2021-09-13 10:45:01.237 INFO  [10973] [CDevice::Dump@245] Visible devices[-1:Tesla_T4]
+2021-09-13 10:45:01.237 INFO  [10973] [CDevice::Dump@249] CDevice index 0 ordinal -1 name Tesla T4 major 7 minor 5 compute_capability 75 multiProcessorCount 40 totalGlobalMem 15843721216
+2021-09-13 10:45:01.237 INFO  [10973] [CDevice::Dump@245] All devices[]
+2021-09-13 10:45:01.406 INFO  [10973] [OGeo::init@240] OGeo  top Sbvh ggg Sbvh assembly Sbvh instance Sbvh
+2021-09-13 10:45:01.406 INFO  [10973] [GGeoLib::dump@385] OGeo::convert GGeoLib numMergedMesh 2 ptr 0x20d4440
+mm index   0 geocode   T                  numVolumes        339 numFaces        4116 numITransforms           1 numITransforms*numVolumes         339 GParts Y GPts Y
+mm index   1 geocode   T                  numVolumes          7 numFaces         120 numITransforms        1056 numITransforms*numVolumes        7392 GParts Y GPts Y
+ num_remainder_volumes 339 num_instanced_volumes 7392 num_remainder_volumes + num_instanced_volumes 7731 num_total_faces 4236 num_total_faces_woi 130836 (woi:without instancing) 
+   0 pts Y  GPts.NumPt   339 lvIdx ( 345 344 343 0 1 342 2 341 3 15 ... 331 332 333 334 340 336 337 338 339)
+   1 pts Y  GPts.NumPt     7 lvIdx ( 10 9 4 5 6 7 8)
+2021-09-13 10:45:01.406 INFO  [10973] [OGeo::convert@301] [ nmm 2
+2021-09-13 10:45:01.569 INFO  [10973] [OGeo::convert@314] ] nmm 2
+2021-09-13 10:45:01.573 ERROR [10973] [cuRANDWrapper::setItems@154] CAUTION : are resizing the launch sequence 
+2021-09-13 10:45:02.449 FATAL [10973] [ORng::setSkipAhead@160]  skip as as WITH_SKIPAHEAD not enabled 
+
+
+###] RunAction::BeginOfRunAction G4Opticks.setGeometry
+
+
+Ctx::setTrack _track_particle_name e+ _track_id 0 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::setStep _step_id 1 num_gs 0
+Ctx::setStep _step_id 2 num_gs 0
+Ctx::setStep _step_id 3 num_gs 0
+Ctx::setStep _step_id 4 num_gs 0
+Ctx::setStep _step_id 5 num_gs 0
+Ctx::setStep _step_id 6 num_gs 0
+Ctx::setStep _step_id 7 num_gs 0
+Ctx::setStep _step_id 8 num_gs 0
+Ctx::setStep _step_id 9 num_gs 0
+Ctx::setStep _step_id 10 num_gs 0
+Ctx::setStep _step_id 11 num_gs 0
+Ctx::setStep _step_id 12 num_gs 0
+Ctx::setStep _step_id 13 num_gs 0
+Ctx::setStep _step_id 14 num_gs 0
+Ctx::setStep _step_id 15 num_gs 0
+Ctx::setStep _step_id 16 num_gs 0
+Ctx::setStep _step_id 17 num_gs 0
+Ctx::setStep _step_id 18 num_gs 0
+Ctx::setStep _step_id 19 num_gs 0
+Ctx::setStep _step_id 20 num_gs 0
+Ctx::setStep _step_id 21 num_gs 0
+Ctx::setStep _step_id 22 num_gs 0
+Ctx::setStep _step_id 23 num_gs 0
+Ctx::setStep _step_id 24 num_gs 0
+Ctx::setStep _step_id 25 num_gs 0
+Ctx::setStep _step_id 26 num_gs 0
+Ctx::setStep _step_id 27 num_gs 0
+Ctx::setStep _step_id 28 num_gs 0
+Ctx::setStep _step_id 29 num_gs 0
+Ctx::setStep _step_id 30 num_gs 0
+Ctx::setStep _step_id 31 num_gs 0
+Ctx::setStep _step_id 32 num_gs 0
+Ctx::setStep _step_id 33 num_gs 0
+Ctx::setStep _step_id 34 num_gs 0
+Ctx::setStep _step_id 35 num_gs 0
+Ctx::setStep _step_id 36 num_gs 0
+Ctx::setStep _step_id 37 num_gs 0
+Ctx::setStep _step_id 38 num_gs 0
+Ctx::postTrack _track_particle_name : e+
+Ctx::setTrack _track_particle_name e- _track_id 38 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 37 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::setStep _step_id 1 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 36 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 35 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 34 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 33 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 32 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 31 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 30 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 29 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 28 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 27 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 26 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::setStep _step_id 1 num_gs 0
+Ctx::setStep _step_id 2 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 40 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 39 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 25 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 24 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 23 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 22 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 21 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 20 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 19 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 18 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 17 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 16 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::setStep _step_id 1 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 15 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 14 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 13 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 12 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::setStep _step_id 1 num_gs 0
+Ctx::setStep _step_id 2 num_gs 0
+Ctx::setStep _step_id 3 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 11 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::setStep _step_id 1 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 10 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 9 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 8 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 7 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 6 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 5 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 4 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 3 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 2 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+Ctx::setTrack _track_particle_name e- _track_id 1 _step_id -1 num_gs 0 max_gs 0 kill 0
+Ctx::setStep _step_id 0 num_gs 0
+Ctx::postTrack _track_particle_name : e-
+
+###[ EventAction::EndOfEventAction G4Opticks.propagateOpticalPhotons
+
+2021-09-13 10:45:02.462 FATAL [10973] [G4Opticks::propagateOpticalPhotons@1090] SKIP as no gensteps have been collected 
+EventAction::EndOfEventAction eventID 0 num_hits 0

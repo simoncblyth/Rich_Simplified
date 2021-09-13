@@ -1,0 +1,193 @@
+Info on the RunConfig.dat
+
+Line 1:
+ Visibility:
+ Hall, vessel, crystal, CrystalCcover, PhD_Frame, EC , PMTmaster , PMTSMaster, PmtEnvelope, PmtWindow, PmtCathode, PmtAnode, PMTFrontRing, lens, radiator, mirror, DarkCover , UpsDarkCover, SidedarkCover, DnsdarkCover,
+ hpdqw hpdphcath hpdsidet hpdenv hpdenvcap hpdsmaster hpdmaster hpdSipixel LTSubstrate LTPhC LTFilter LTCover
+
+ ( visibility 0 1 2: invisible, solid, wireframe )
+ (for hpdsipixel visibility 0 10 11 12 : graphicsinactive (default), invisible, solid, wireframe )
+
+Line 2 :  
+  Visibility of simplified LHCb Rich configuration
+  ExptHall , Rich1Master, Rich1SubMaster, Rich1SPhMirror, Rich1FlatMirror, Rich1MagshRegion, Rich1QW, Rich1PhotDetSupFrame, Rich1PmtModule, Rich1PmtEC, Rich1PmtMaster, Rich1PmtSubMaster, Rich1PmtAnode,  Rich1PmtQuartz, Rich1PmtPhCath, Rich1PmtSideWin, Rich1PmtFrontRing, Rich1PmtModuleBackPlane
+
+Line3
+
+  GasTypecode (0 = nitrogen, 1 = C4F10),
+   NitrogenPressure, NitrogenTemperature,
+  C4F10Pressure, C4F10Temperature,
+  Mirror default orientation code ( -1= C4F10 default
+                                     0->5 N2 defaults.
+                                     0= Towards hpd0
+                                     1= Towards hpd1
+                                     2= Towards hpd2
+                                     3= Towards hpd3
+                                     4= Towards hpd4
+                                     5= Towards hpd5 )
+               default= -3 (or 3)   means oriented towards C1 Hpd.
+
+
+
+   MirrorAdditonalTiltX,
+   MirrorAdditonalTiltY
+
+Line 4
+ HpdNonOptimalFlag, HpdAnodeEff., BackScatterProb., RandomSeed
+
+
+Line 5 :
+  Number of Particles in beam per event (1)
+
+  beam particle type code 0= pi-  (default)
+                          1= optical photon
+                          2= mixture of pi+ and proton
+                          3= mixture of pi- and electron
+                          4= mixture of pi- and kaon-
+                          5= mixture of pi+ and kaon+
+			  6= proton
+                          7=muon
+
+  beam particle  startPos code (0= at 0,0,-200.0
+                                1= beam shifted in X, Y wrt 0,0.
+                                 X shift in Beam Pos X shift
+                                 Y shift in Beam Pos Y shift as indicated
+                                 below.
+
+                                2= X,Y,Z locations of the beam from the
+                                   options file , as indicated below
+                                   as 'Beam XYZ Special studies'
+                                3: X of Beam Pos randomly varied
+                                   with the range specified below
+                                   as Beam Pos X Range.
+
+                                 )
+  beam particle Direction (0=  along 001,
+                           1 = along 0,0,-1
+                           2 = misligned  beamX,Y values. 
+                           3 = misaligned and with divergence. 
+                           4 = with new beam divergence and misalignment )
+                           (For 2, 3,4 the Beam dir is from Beam Dir listed below.
+                            For LHCb config 2 can be used for setting beam dir ).
+
+  beam  Particle energy code (0 = momentum GeV/c for charged particles
+                              1 = const wavelngth in nanometer for Photon ,
+                                   from options file
+                              2 = range of wavelengths in nanometer
+                                    from Min to Max
+                                   for photons. The Min and Max
+                                   wavelength are from this options file.)
+
+  beamParticle momentum (10.0) GeV/c.
+
+  Positive beam fraction (fraction of  proton in pi+ vs protons
+                         or fraction of  electron in pi- vs electrons ) (0.0)
+                         used only when particle type 2 or 3 in above.
+
+  Beam Dir X, Y
+  Beam Divergence X,Y
+  Beam Pos shift X,Y
+  Beam Pos XYZ for special studies. The nominal value is from
+      parameters file (0,0,-200.0) for normal running.
+
+  Beam PosX Range wrt its mean value given by BeamPosShiftX.
+
+   Beam Phot Wlen PhotMinWlen PhotMaxWlen (only for particle type 1
+                          which is optical photon as beam ).
+   Hpd Pe initial Momemtum
+
+   Flag to write output file (0= no write, 1= do write )
+
+   Flag for hit creation option (0)
+
+   Shift of the ECs in x direction. in the 2015-2018 test beam config. To use this parameter the include of "RichTbRunConfig.hh" has to be uncommented as well as
+   the line below which sets the shift to -5.0 mm towards the centre relativ to the position of 70.6 mm for the ECs to the left
+   and right of the centre. When using the reconstruction an include of "RichTbRunConfig.hh" is not working.
+
+Line 6
+
+	Input data mirror
+Line 7
+	Output file name
+Line 8
+	Output histo file name
+Line 9
+	Output ntuple file name
+
+Line 10
+
+  Batch mode flag (0= not batch mode, 1=batch mode)
+
+  Number of events to process in batch mode
+
+  verbose level for hit printout.
+
+  verbose level for outputfile.
+
+  Flag for SpecialStudy of vessel rotation. (0 = default rotation applied
+                                                to vessel wrt global coord
+                                                 system.
+                                             1 = no rotation applied to vessel)
+  flag to activate the SiDet reflection     (0 = no activation,
+                                             1= activated )
+
+Line 11
+    Additional Shift for Hpd Demag X in Hpd 0 1 2   in mm
+    Additional Shift for Hpd Demag Y in Hpd 0 1 2  in mm
+    Additonal Rotation of Hpd 0 1 2 wrt its own Z axis in rad.
+    Additional shiftX for HPD master location in Ph det support frame.
+    Additional shiftY for HPD master location in Ph det support frame.
+Line 12
+	Alignment Shift for PMT 0-5 in X in mm
+	Alignment Shift for PMT 0-5 in Y in mm
+Line 13
+   Additional Shift for PhDetSupFrame XYZ in mm
+   Additional vertical tilt for PhDetSupframe in Rad.
+   Additional ZRotation for PhDetsupframe in Rad.
+
+Line14
+	flag to activate crystal rotation (0 = no rotation
+     		 	 	  1 = rotation)
+	crystal X rotation [rad]
+	crystal Y rotation [rad]
+
+Line15
+	flag to activate master rotation (0 = no rotation
+     		 	 	  1 = rotation)
+	master X rotation [rad]
+	master Y rotation [rad]
+
+line 16
+	Radiator configuration (1 = crystal+lens
+	       			0 = solid  radiator sphere segment
+              		2 = hpd + solid radiator sphere segment
+              		3 = testbeam 2015 setup: 8 ECs and full radiator circle in xy-plane)
+                        6 = testbeam 2016 setup with LayerTec radiator samples.
+                        7 = testbeam 2017 setup  8 ECs and full radiator circle in xy-plane)
+                       40 = LHCb-RICH1 like configuration with a single sph and flat mirror; 
+                            For Opticks studies
+
+         LayerTec radiator sample configuration (0= SampleA= item 101715 from LayerTec,   1 =SampleB= item 100919 from LayerTec)
+
+         Radiator activation flag ( 0= all radiators installed are actiavted to produce Cherenkov photons.
+                    1 = Only the LTPhc and nitrogen creates photons, whereas the LT substrate and LT filter are switched off
+                    2 = Only the LTPhc creates photons, whereas the LT substrate and LT filter and nitrogen are switched off )
+                    3 = all radiators excecpt the LTPhC are activated.
+
+         LtMapCreate ( 0 = no creation of map. this is the standard run.
+                      1= create map, here the filter is made to create lot of photons )
+
+         LTRadiatorGeometryFlag (0= Run1 configuration of radiator positioning in 2016 October-November testbeam run
+                                 1 = Run2 configuration of radiator positioning in 2016 October-November testbeam run).
+
+
+line 17
+	Overall Mapmt detection efficiency , Pixel efficiency activation flag (1 or >1  apply, 0 not apply )
+      When the pixel efficiency is applied, the overall Mapmt detection efficiency is not applied.
+      When the efficiency flag =1, the standard optimized pixel efficiency files used
+      When the efficiency flag =2, the threshold7 pixel efficiency files used.
+line18: File name for  pmt pixel efficiency: Optimized Jura side (pmts on the left of beam line as one looks along the beam)
+line19: File name for  pmt pixel efficiency: Threshold7 Jura side (pmts on the left of beam line as one looks along the beam )
+line20: File name for  pmt pixel efficiency: Optimized Saleve side (pmts on the right of beam line as one looks along the beam )
+line21: File name for  pmt pixel efficiency: Threshold7 Saleve side (pmts on the right beam line as one looks along the beam )
+

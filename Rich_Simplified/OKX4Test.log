@@ -1,0 +1,84 @@
+﻿2021-09-12 23:27:01.373 INFO  [7336] [main@64] 0 OKX4Test
+2021-09-12 23:27:01.374 INFO  [7336] [main@64] 1 --gdmlpath
+2021-09-12 23:27:01.374 INFO  [7336] [main@64] 2 /hepgpu6-data1/liyu/.opticks/geocache/Rich_Simplified_WorldPhys_g4live/g4ok_gltf/bce919876bc5098f7dc913261ea35dc5/1/origin.gdml
+2021-09-12 23:27:01.374 INFO  [7336] [main@69]  csgskiplv NONE
+2021-09-12 23:27:01.374 INFO  [7336] [main@72]  digestextra2 NONE
+2021-09-12 23:27:01.384 INFO  [7336] [CGDML::read@71]  resolved path_ /hepgpu6-data1/liyu/.opticks/geocache/Rich_Simplified_WorldPhys_g4live/g4ok_gltf/bce919876bc5098f7dc913261ea35dc5/1/origin.gdml as path /hepgpu6-data1/liyu/.opticks/geocache/Rich_Simplified_WorldPhys_g4live/g4ok_gltf/bce919876bc5098f7dc913261ea35dc5/1/origin.gdml
+2021-09-12 23:27:01.394 INFO  [7336] [CGDML::getUserMeta@314] auxlist 0x1186968
+2021-09-12 23:27:01.395 INFO  [7336] [BMeta::dump@199] auxmeta
+2021-09-12 23:27:01.395 INFO  [7336] [BOpticksKey::SetKey@90]  spec OKX4Test.X4PhysicalVolume.WorldLog0x1458b40_PV.a59ba2ba4db90247bfbfcc0589bd3940
+2021-09-12 23:27:01.398 INFO  [7336] [Opticks::init@439] COMPUTE_MODE forced_compute  hostname hepgpu6.blackett.manchester.ac.uk
+2021-09-12 23:27:01.398 INFO  [7336] [Opticks::init@448]  mandatory keyed access to geometry, opticksaux 
+2021-09-12 23:27:01.399 INFO  [7336] [Opticks::init@467] OpticksSwitches:WITH_SEED_BUFFER WITH_RECORD WITH_SOURCE WITH_ALIGN_DEV WITH_LOGDOUBLE WITH_KLUDGE_FLAT_ZERO_NOPEEK WITH_SENSORLIB 
+2021-09-12 23:27:01.400 ERROR [7336] [BOpticksKey::SetKey@78] key is already set, ignoring update with spec (null)
+2021-09-12 23:27:01.402 INFO  [7336] [BOpticksResource::initViaKey@785] 
+             BOpticksKey  : KEYSOURCE
+      spec (OPTICKS_KEY)  : OKX4Test.X4PhysicalVolume.WorldLog0x1458b40_PV.a59ba2ba4db90247bfbfcc0589bd3940
+                 exename  : OKX4Test
+         current_exename  : OKX4Test
+                   class  : X4PhysicalVolume
+                 volname  : WorldLog0x1458b40_PV
+                  digest  : a59ba2ba4db90247bfbfcc0589bd3940
+                  idname  : OKX4Test_WorldLog0x1458b40_PV_g4live
+                  idfile  : g4ok.gltf
+                  idgdml  : g4ok.gdml
+                  layout  : 1
+
+2021-09-12 23:27:01.414 ERROR [7336] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt Air
+2021-09-12 23:27:01.416 INFO  [7336] [X4PhysicalVolume::convertMaterials@257]  num_materials 1 num_material_with_efficiency 0
+2021-09-12 23:27:01.416 INFO  [7336] [GMaterialLib::dumpSensitiveMaterials@1230] X4PhysicalVolume::convertMaterials num_sensitive_materials 0
+2021-09-12 23:27:01.417 INFO  [7336] [GSurfaceLib::dumpSurfaces@758] X4PhysicalVolume::convertSurfaces num_surfaces 4
+2021-09-12 23:27:01.417 INFO  [7336] [GPropertyLib::dumpSensorIndices@933] X4PhysicalVolume::convertSurfaces  NumSensorIndices 1 ( 0  ) 
+2021-09-12 23:27:01.428 INFO  [7336] [X4PhysicalVolume::dumpLV@691]  m_lvidx.size() 1 m_lvlist.size() 1
+2021-09-12 23:27:01.428 INFO  [7336] [X4PhysicalVolume::convertStructure@796] [ creating large tree of GVolume instances
+2021-09-12 23:27:01.431 INFO  [7336] [X4PhysicalVolume::postConvert@201]  GGeo::getNumVolumes() 0 GGeo::getNumSensorVolumes() 0
+ GGeo::getSensorBoundaryReport() 
+                      sensor_total      0
+
+2021-09-12 23:27:01.431 INFO  [7336] [GGeo::prepare@630] [
+2021-09-12 23:27:01.432 INFO  [7336] [GGeo::prepareVolumes@1246] [ creating merged meshes from the volume tree 
+2021-09-12 23:27:01.434 INFO  [7336] [GInstancer::findRepeatCandidates@345]  nall 1 repeat_min 400 vertex_min 0 num_repcan 0
+2021-09-12 23:27:01.436 ERROR [7336] [GGeoLib::makeMergedMesh@324] mm index   0 geocode   T                  numVolumes          1 numFaces          12 numITransforms           0 numITransforms*numVolumes           0 GParts N GPts Y
+2021-09-12 23:27:01.436 INFO  [7336] [GInstancer::makeMergedMeshAndInstancedBuffers@787]  numRepeats 0 numRidx 1
+2021-09-12 23:27:01.437 INFO  [7336] [GInstancer::dump@890] GGeo::prepareVolumes
+2021-09-12 23:27:01.437 INFO  [7336] [GInstancer::dumpMeshset@834]  numRepeats 0 numRidx 1 (slot 0 for global non-instanced) 
+2021-09-12 23:27:01.438 INFO  [7336] [GInstancer::dumpCSGSkips@866] 
+2021-09-12 23:27:01.438 INFO  [7336] [GGeo::prepareVolumes@1278] ]
+2021-09-12 23:27:01.458 INFO  [7336] [GGeo::prepare@650] ]
+2021-09-12 23:27:01.459 INFO  [7336] [GGeoLib::dump@385] GGeo::save GGeoLib numMergedMesh 1 ptr 0x1270ed0
+2021-09-12 23:27:01.461 INFO  [7336] [GMeshLib::addAltMeshes@116]  num_indices_with_alt 0
+2021-09-12 23:27:01.461 INFO  [7336] [GMeshLib::dump@227] addAltMeshes meshnames 1 meshes 1
+2021-09-12 23:27:01.461 INFO  [7336] [BFile::preparePath@842] created directory /hepgpu6-data1/liyu/.opticks/geocache/OKX4Test_WorldLog0x1458b40_PV_g4live/g4ok_gltf/a59ba2ba4db90247bfbfcc0589bd3940/1/GItemList
+2021-09-12 23:27:01.464 INFO  [7336] [BFile::preparePath@842] created directory /hepgpu6-data1/liyu/.opticks/geocache/OKX4Test_WorldLog0x1458b40_PV_g4live/g4ok_gltf/a59ba2ba4db90247bfbfcc0589bd3940/1/GNodeLib
+2021-09-12 23:27:01.466 INFO  [7336] [BMeta::dump@199] GGeo::saveCacheMeta
+2021-09-12 23:27:01.468 INFO  [7336] [GGeo::postDirectTranslationDump@605] GGeo::postDirectTranslationDump NOT --dumpsensor numSensorVolumes 0
+2021-09-12 23:27:01.471 ERROR [7336] [OpticksHub::configure@435] FORCED COMPUTE MODE : as remote session detected 
+2021-09-12 23:27:01.472 INFO  [7336] [GNodeLib::getFirstNodeIndexForGDMLAuxTargetLVName@289]  target_lvname (null) nidxs.size() 0 nidx -1
+2021-09-12 23:27:01.473 FATAL [7336] [Opticks::makeSimpleTorchStep@3634]  enable : --torch (the default)  configure : --torchconfig [NULL] dump details : --torchdbg 
+2021-09-12 23:27:01.474 FATAL [7336] [OpticksResource::getDefaultFrame@207]  PLACEHOLDER ZERO 
+2021-09-12 23:27:01.474 INFO  [7336] [GNodeLib::getFirstNodeIndexForGDMLAuxTargetLVName@289]  target_lvname (null) nidxs.size() 0 nidx -1
+2021-09-12 23:27:01.474 ERROR [7336] [OpticksGen::makeTorchstep@441]  as torchstep isDefault replacing placeholder frame  frameIdx : 0 detectorDefaultFrame : 0 cmdline_target [--gensteptarget] : 0 gdmlaux_target : -1 active_target : 0
+2021-09-12 23:27:01.475 ERROR [7336] [OpticksGen::makeTorchstep@468]  generateoverride 0 num_photons0 10000 num_photons 10000
+2021-09-12 23:27:01.498 INFO  [7336] [OContext::InitRTX@335]  --rtx 0 setting  OFF
+2021-09-12 23:27:01.551 INFO  [7336] [OContext::CheckDevices@219] 
+Device 0                       Tesla T4 ordinal 0 Compute Support: 7 5 Total Memory: 15843721216
+
+2021-09-12 23:27:01.603 ERROR [7336] [CDevice::Load@306]  failed read from /hepgpu6-data1/liyu/.opticks/runcache/CDevice.bin
+2021-09-12 23:27:01.604 ERROR [7336] [CDevice::Load@306]  failed read from /hepgpu6-data1/liyu/.opticks/runcache/CDevice.bin
+2021-09-12 23:27:01.604 INFO  [7336] [CDevice::Dump@245] Visible devices[-1:Tesla_T4]
+2021-09-12 23:27:01.604 INFO  [7336] [CDevice::Dump@249] CDevice index 0 ordinal -1 name Tesla T4 major 7 minor 5 compute_capability 75 multiProcessorCount 40 totalGlobalMem 15843721216
+2021-09-12 23:27:01.604 INFO  [7336] [CDevice::Dump@245] All devices[]
+2021-09-12 23:27:01.769 INFO  [7336] [OGeo::init@240] OGeo  top Sbvh ggg Sbvh assembly Sbvh instance Sbvh
+2021-09-12 23:27:01.770 INFO  [7336] [GGeoLib::dump@385] OGeo::convert GGeoLib numMergedMesh 1 ptr 0x1270ed0
+2021-09-12 23:27:01.770 INFO  [7336] [OGeo::convert@301] [ nmm 1
+2021-09-12 23:27:01.825 INFO  [7336] [OGeo::convert@314] ] nmm 1
+2021-09-12 23:27:01.826 INFO  [7336] [BMeta::dump@199] OKMgr::init
+2021-09-12 23:27:01.826 INFO  [7336] [OpticksProfile::dump@495] Opticks::postgeocache dir /tmp/liyu/opticks/source/evt/g4live/torch name OpticksProfile.npy num_stamp 0
+2021-09-12 23:27:01.826 INFO  [7336] [BTimesTable::dump@173] Opticks::postgeocache startswith filter: NONE spacewith - tcut 0 nline 0
+2021-09-12 23:27:01.826 INFO  [7336] [OpticksProfile::dump@501]  npy 0,4 /tmp/liyu/opticks/source/evt/g4live/torch/OpticksProfile.npy
+2021-09-12 23:27:01.826 INFO  [7336] [OpticksProfile::accumulateDump@358] Opticks::postgeocache nacc 0
+2021-09-12 23:27:01.826 INFO  [7336] [Opticks::reportKey@1137] OKX4Test
+2021-09-12 23:27:01.826 FATAL [7336] [Opticks::reportKey@1160] THE LIVE key DOES NOT MATCH THAT OF THE CURRENT ENVVAR 
+2021-09-12 23:27:01.826 INFO  [7336] [Opticks::reportKey@1161]  (envvar) OPTICKS_KEY=OKX4Test.X4PhysicalVolume.World0x4979a70_PV.d8424ca57cc85290289d2676578b4ccf
+2021-09-12 23:27:01.826 INFO  [7336] [Opticks::reportKey@1162]  (live)   OPTICKS_KEY=OKX4Test.X4PhysicalVolume.WorldLog0x1458b40_PV.a59ba2ba4db90247bfbfcc0589bd3940
+2021-09-12 23:27:01.826 INFO  [7336] [Opticks::dumpRC@247]  rc 0 rcmsg : -
