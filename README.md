@@ -38,6 +38,10 @@ Prerequisite: NVIDIA OptiX 6.5+, cmake 3.12+, gcc 5+
 10. `opticks-t` #perform all the tests in Opticks  
    > If some tests fail, you can refer to failed_tests.md to check the potential reasons.  
 
-You can find more details here: https://simoncblyth.bitbucket.io/opticks/docs/install.html
+You can find more details here: https://simoncblyth.bitbucket.io/opticks/docs/install.html  
 
-
+# Todo list
+1. Check the difference between the latest version of Opticks with current commit (7af12e3606f5b76cc27af4b9bbe63a3a3b7d4765) in usage: what cause the num_gs=0 error in the CerenkovMinimal example and CG4Test fail.  
+   opticks/cfg4/CCtx.cc:104: unsigned int CCtx::step_limit() const: Assertion `_ok_event_init' failed.  
+2. Rich1_new.gdml visualization with photon tracks.  
+3. RichTb example: Gensteps not collected correctly: use G4Opticks::Get()->collectGenstep_G4Cerenkov_1042 in L4Cerenkov.cc or *SD.cc?  
