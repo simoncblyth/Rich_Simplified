@@ -44,4 +44,26 @@ You can find more details here: https://simoncblyth.bitbucket.io/opticks/docs/in
 1. Check the difference between the latest version of Opticks with current commit (7af12e3606f5b76cc27af4b9bbe63a3a3b7d4765) in usage: what cause the num_gs=0 error in the CerenkovMinimal example and CG4Test fail.  
    opticks/cfg4/CCtx.cc:104: unsigned int CCtx::step_limit() const: Assertion `_ok_event_init' failed.  
 2. Rich1_new.gdml visualization with photon tracks.  
-3. RichTb example: Gensteps not collected correctly: use G4Opticks::Get()->collectGenstep_G4Cerenkov_1042 in L4Cerenkov.cc or *SD.cc?  
+3. RichTb example: Gensteps not collected correctly: use G4Opticks::Get()->collectGenstep_G4Cerenkov_1042 in L4Cerenkov.cc or *SD.cc?
+4. The place to implement this is in X4Solid::convertPolycone
+using X4Solid::intersectWithPhiSegment as other shapes do already.
+The phi segment shape is a prism described by a set of planes
+to form the convex polyhedron.
+
+My recent commits implement this  but it is currently disabled as
+it needs debugging, and as your geometry seems to have numerous
+other problems with the translation.
+
+Note that the performance and correctness of shapes using
+intersectWithPhiSegment for such phi segmented shapes has not been well tested.
+
+So if it is essential for you, then you will need work on
+validation and comparison with Geant4.
+Also the performance would need to be measured as the segment that
+is intersected with is implemented using a CSG convexpolyhedron
+implemented with a set of planes.
+
+If performance/correctness is poor the next thing I would try
+is to intersect with a segment formed from some other shape
+that does not use the plane defined convex polyhedron.
+5. Simplified_RICH geometry visualization, input particle position
