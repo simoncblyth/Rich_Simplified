@@ -14,6 +14,11 @@
 #include "PLOG.hh"
 #include "SSys.hh"
 
+#include "FTFP_BERT.hh"
+#include "G4EmStandardPhysics_option4.hh"
+#include "G4OpticalParameters.hh"
+#include "G4OpticalPhysics.hh"
+
 #include "RunAction.hh"
 #include "EventAction.hh"
 #include "TrackingAction.hh"
@@ -39,6 +44,25 @@ void RichTbSimH::init()
 {
     rm->SetUserInitialization(dc);
     rm->SetUserInitialization(pl);
+    //G4VModularPhysicsList* physicsList = new FTFP_BERT;
+    //physicsList->ReplacePhysics(new G4EmStandardPhysics_option4());
+
+    //G4OpticalPhysics* opticalPhysics = new G4OpticalPhysics();
+    //auto opticalParams               = G4OpticalParameters::Instance();
+
+    //opticalParams->SetWLSTimeProfile("delta");
+
+    //opticalParams->SetScintYieldFactor(1.0);
+    //opticalParams->SetScintExcitationRatio(0.0);
+    //opticalParams->SetScintTrackSecondariesFirst(true);
+    //opticalParams->SetScintEnhancedTimeConstants(true);
+
+    //opticalParams->SetCerenkovMaxPhotonsPerStep(100);
+    //opticalParams->SetCerenkovMaxBetaChange(10.0);
+    //opticalParams->SetCerenkovTrackSecondariesFirst(true);
+
+    //physicsList->RegisterPhysics(opticalPhysics);
+    //rm->SetUserInitialization(physicsList);
 
     ga = new PrimaryGeneratorAction(ctx);
     ra = new RunAction(ctx) ; 
