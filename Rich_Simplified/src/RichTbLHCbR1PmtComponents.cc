@@ -46,7 +46,21 @@ void RichTbLHCbR1PmtComponents::constructR1PmtSubMaster() {
 	RichTbLbPmtSMPhysBaseName+"Common", 
         mTbR1Pmt-> getRichTbLbR1PmtLogicalVolume(),false,1 ) ;
 
-     
+	/*Add border surface
+        G4OpticalSurface* PmtWrap = new G4OpticalSurface("PmtWrap");
+        new G4LogicalBorderSurface("PmtWrap", rTbR1PmtSubMasterPVol, mTbR1Pmt->getRichTbLbR1PmtQuartzPhysicalVolume(), PmtWrap);
+        PmtWrap->SetType(dielectric_metal);
+        PmtWrap->SetFinish(polished);
+        PmtWrap->SetModel(glisur);
+        G4double pp[] = {2.0*CLHEP::eV, 3.5*CLHEP::eV};
+        const G4int num = sizeof(pp)/sizeof(G4double);
+        G4double reflectivity[] = {0.0, 0.0};
+        G4double efficiency[] = {1.0, 1.0};
+        G4MaterialPropertiesTable* PmtWrapProperty = new G4MaterialPropertiesTable();
+        PmtWrapProperty->AddProperty("REFLECTIVITY", pp, reflectivity, num);
+        PmtWrapProperty->AddProperty("EFFICIENCY", pp, efficiency, num);
+        PmtWrap->SetMaterialPropertiesTable(PmtWrapProperty);
+ 	*/
    
    //rTbR1PmtSubMasterPVol.resize(RichTbLbNumModules,
    // std::vector<std::vector<G4VPhysicalVolume*> >(RichTbLbNumECInModule,

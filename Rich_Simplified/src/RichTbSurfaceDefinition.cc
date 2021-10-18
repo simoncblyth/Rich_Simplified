@@ -149,7 +149,7 @@ void RichTbSurfaceDefinition::createVesselSurface()
                                  NumPhotVesselSurfaceBins);
 
 
- OpVesselSurfaceMPT->AddProperty(" EFFICIENCY",
+ OpVesselSurfaceMPT->AddProperty("EFFICIENCY",
                                  VesselSurfacePhotMom,
                                  VesselSurfaceEfficiency,
                                  NumPhotVesselSurfaceBins);
@@ -365,7 +365,7 @@ void RichTbSurfaceDefinition::createRichTbKovarSurface() {
                                  NumPhotKovarSurfaceBins);
 
 
- OpKovarSurfaceMPT->AddProperty(" EFFICIENCY",
+ OpKovarSurfaceMPT->AddProperty("EFFICIENCY",
                                  KovarSurfacePhotMom,
                                  KovarSurfaceEfficiency,
                                  NumPhotKovarSurfaceBins);
@@ -426,7 +426,7 @@ void   RichTbSurfaceDefinition::createtRichTbSiDetSurface(){
                                  NumPhotSiDetSurfaceBins);
 
 
- OpSiDetSurfaceMPT->AddProperty(" EFFICIENCY",
+ OpSiDetSurfaceMPT->AddProperty("EFFICIENCY",
                                  SiDetSurfacePhotMom,
                                  SiDetSurfaceEfficiency,
                                  NumPhotSiDetSurfaceBins);

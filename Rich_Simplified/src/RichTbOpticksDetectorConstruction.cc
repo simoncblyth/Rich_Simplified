@@ -4,6 +4,8 @@
 #include "G4LogicalVolume.hh"
 #include "G4VPhysicalVolume.hh"
 #include "G4PVPlacement.hh"
+#include "G4LogicalBorderSurface.hh"
+#include "G4SystemOfUnits.hh"
 //#include "Geant4/G4SDManager.hh"
 
 // STL etc
@@ -39,8 +41,8 @@ G4VPhysicalVolume * RichTbOpticksDetectorConstruction::Construct() {
 
 	  // This is for the test beam version of the simplified Rich1 geometry 
           
-	   RichTbSurfaceDefinition* rSurfaceDef=
-			RichTbSurfaceDefinition::getRichTbSurfaceDefinitionInstance();
+	  RichTbSurfaceDefinition* rSurfaceDef=
+	  		RichTbSurfaceDefinition::getRichTbSurfaceDefinitionInstance();
 
            ResetStdVol();
 
@@ -73,14 +75,31 @@ G4VPhysicalVolume * RichTbOpticksDetectorConstruction::Construct() {
            RichTbLHCbUpgradeSD * LbPMTSD = new RichTbLHCbUpgradeSD(PMTLHCbSDname);
 
            //Readout Geometry
-           rTbR1ROGeometry = new RichTbLHCbROGeometry( ROgeometryLbR1Name, this );
-           rTbR1ROGeometry->BuildROGeometry() ;
-	   LbPMTSD -> SetROgeometry(rTbR1ROGeometry);
+           //rTbR1ROGeometry = new RichTbLHCbROGeometry( ROgeometryLbR1Name, this );
+           //rTbR1ROGeometry->BuildROGeometry() ;
+	   //LbPMTSD -> SetROgeometry(rTbR1ROGeometry);
            SDman ->AddNewDetector(LbPMTSD);
+	   
+           //G4LogicalVolume* RichTbLbPmtAnode_LV = rTbR1PmtComponents->getRichTbLbR1PmtAnodeLogicalVolume();
+           //RichTbLbPmtAnode_LV ->SetSensitiveDetector( LbPMTSD );
+           G4LogicalVolume* RichTbLbPmtQuartz_LV = rTbR1PmtComponents->getRichTbLbR1PmtQuartzLogicalVolume();
+           RichTbLbPmtQuartz_LV->SetSensitiveDetector( LbPMTSD );
 
-
-            G4LogicalVolume* RichTbLbPmtAnode_LV = rTbR1PmtComponents ->   getRichTbLbR1PmtAnodeLogicalVolume();
-            RichTbLbPmtAnode_LV ->SetSensitiveDetector( LbPMTSD );
+	   //Add border surface
+	   G4OpticalSurface* PmtWrap = new G4OpticalSurface("PmtWrap");
+	   //new G4LogicalBorderSurface("PmtWrap", rTbR1MagShRegion->getRichTbLHCbR1MagShRegionPhysicalVolume(), rTbR1PhDetSupFrame->getRichTbLHCbR1PhDetSupFramePhysicalVolume(), PmtWrap);
+	   new G4LogicalBorderSurface("PmtWrap", rTbR1MagShRegion->getRichTbLHCbR1MagShRegionPhysicalVolume(), rTbR1PhDetSupFrame->getRichTbLHCbR1PhDetSupFramePhysicalVolume(), PmtWrap);
+	   PmtWrap->SetType(dielectric_metal);
+	   PmtWrap->SetFinish(polished);
+	   PmtWrap->SetModel(glisur);
+	   G4double pp[] = {2.0*CLHEP::eV, 3.5*CLHEP::eV};
+	   const G4int num = sizeof(pp)/sizeof(G4double);
+	   G4double reflectivity[] = {0.0, 0.0};
+	   G4double efficiency[] = {1.0, 1.0};
+	   G4MaterialPropertiesTable* PmtWrapProperty = new G4MaterialPropertiesTable();
+	   PmtWrapProperty->AddProperty("REFLECTIVITY", pp, reflectivity, num);
+	   PmtWrapProperty->AddProperty("EFFICIENCY", pp, efficiency, num);
+	   PmtWrap->SetMaterialPropertiesTable(PmtWrapProperty);
 
            //begin test
             G4int HCID = G4SDManager::GetSDMpointer()->GetCollectionID (RichTbLHCbR1G4HColname);
