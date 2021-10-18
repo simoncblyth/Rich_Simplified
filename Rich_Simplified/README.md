@@ -13,3 +13,5 @@ An example shows the interface of Opticks with Geant4, based on the Simplified R
 3. Opticks sets a border surface as is_sensor if it has non-zero efficiency (See https://bitbucket.org/simoncblyth/opticks/src/c0bb0f9dd93d6f53f0aba4ad98e052d022d9a37c/ggeo/GPropertyMap.cc#lines-289)  
    Before, the Sensitive Detector is attached to the PMT Anode, and the hits recorded by Geant4 are actually electrons?  
    Now, the SD is attached to the window, and make a border surface to the window
+
+4. In Opticks, once a photon reaches a sensor surface and is recorded as a hit, will it be destroyed or continue travelling?
