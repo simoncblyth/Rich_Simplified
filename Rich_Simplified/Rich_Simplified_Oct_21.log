@@ -1,0 +1,1237 @@
+﻿2021-10-21 01:12:11.599 FATAL [17407] [G4Opticks::initSkipGencode@351] OPTICKS_SKIP_GENCODE m_skip_gencode_count 0
+2021-10-21 01:12:11.600 INFO  [17407] [G4Opticks::G4Opticks@345] ctor : DISABLE FPE detection : as it breaks OptiX launches
+2021-10-21 01:12:11.621 INFO  [17407] [BOpticksKey::SetKey@90]  spec Rich_Simplified.X4PhysicalVolume.WorldPhys.9cb4ff3ca3617e2abf473bc85cfdef58
+2021-10-21 01:12:11.624 INFO  [17407] [BOpticksResource::initViaKey@785] 
+             BOpticksKey  : KEYSOURCE
+      spec (OPTICKS_KEY)  : Rich_Simplified.X4PhysicalVolume.WorldPhys.9cb4ff3ca3617e2abf473bc85cfdef58
+                 exename  : Rich_Simplified
+         current_exename  : Rich_Simplified
+                   class  : X4PhysicalVolume
+                 volname  : WorldPhys
+                  digest  : 9cb4ff3ca3617e2abf473bc85cfdef58
+                  idname  : Rich_Simplified_WorldPhys_g4live
+                  idfile  : g4ok.gltf
+                  idgdml  : g4ok.gdml
+                  layout  : 1
+
+2021-10-21 01:12:11.625 INFO  [17407] [G4Opticks::InitOpticks@211] 
+# BOpticksKey::export_ 
+export OPTICKS_KEY=Rich_Simplified.X4PhysicalVolume.WorldPhys.9cb4ff3ca3617e2abf473bc85cfdef58
+
+2021-10-21 01:12:11.625 INFO  [17407] [G4Opticks::EmbeddedCommandLine@130] Using ecl :[ --compute --embedded --xanalytic --production --nosave] OPTICKS_EMBEDDED_COMMANDLINE
+2021-10-21 01:12:11.625 INFO  [17407] [G4Opticks::EmbeddedCommandLine@131]  mode(Pro/Dev/Asis) P using "pro" (production) commandline without event saving 
+2021-10-21 01:12:11.625 INFO  [17407] [G4Opticks::EmbeddedCommandLine@136] Using extra1 argument :[--skipaheadstep 1000]
+2021-10-21 01:12:11.625 INFO  [17407] [G4Opticks::EmbeddedCommandLine@146] Using eclx envvar :[] OPTICKS_EMBEDDED_COMMANDLINE_EXTRA
+2021-10-21 01:12:11.625 INFO  [17407] [G4Opticks::InitOpticks@231] instanciate Opticks using embedded commandline only 
+2021-10-21 01:12:11.628 INFO  [17407] [Opticks::init@439] COMPUTE_MODE compute_requested  forced_compute  hostname hepgpu6.blackett.manchester.ac.uk
+2021-10-21 01:12:11.628 INFO  [17407] [Opticks::init@448]  mandatory keyed access to geometry, opticksaux 
+2021-10-21 01:12:11.629 INFO  [17407] [Opticks::init@467] OpticksSwitches:WITH_SEED_BUFFER WITH_RECORD WITH_SOURCE WITH_ALIGN_DEV WITH_LOGDOUBLE WITH_KLUDGE_FLAT_ZERO_NOPEEK WITH_SENSORLIB 
+2021-10-21 01:12:11.637 INFO  [17407] [G4Opticks::translateGeometry@931] ( CGDML /hepgpu6-data1/liyu/.opticks/geocache/Rich_Simplified_WorldPhys_g4live/g4ok_gltf/9cb4ff3ca3617e2abf473bc85cfdef58/1/origin.gdml
+2021-10-21 01:12:11.644 INFO  [17407] [CGDML::write@372] write to /hepgpu6-data1/liyu/.opticks/geocache/Rich_Simplified_WorldPhys_g4live/g4ok_gltf/9cb4ff3ca3617e2abf473bc85cfdef58/1/origin.gdml
+2021-10-21 01:12:11.824 INFO  [17407] [G4Opticks::translateGeometry@933] ) CGDML 
+2021-10-21 01:12:11.824 INFO  [17407] [G4Opticks::translateGeometry@935] ( GGeo instanciate
+2021-10-21 01:12:11.830 INFO  [17407] [G4Opticks::translateGeometry@938] ) GGeo instanciate 
+2021-10-21 01:12:11.830 INFO  [17407] [G4Opticks::translateGeometry@940] ( GGeo populate
+2021-10-21 01:12:11.831 ERROR [17407] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt Air
+2021-10-21 01:12:11.833 ERROR [17407] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt CarbonMaterial
+2021-10-21 01:12:11.833 ERROR [17407] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt CarbonFibreResin
+2021-10-21 01:12:11.833 ERROR [17407] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt CarbonFibreMaterial
+2021-10-21 01:12:11.833 ERROR [17407] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt Kovar
+2021-10-21 01:12:11.833 ERROR [17407] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt FrontRingAl
+2021-10-21 01:12:11.833 ERROR [17407] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt ModuleBackPlMatAl
+2021-10-21 01:12:11.833 ERROR [17407] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt PMTAnode
+2021-10-21 01:12:11.833 ERROR [17407] [X4MaterialTable::init@88] PROCEEDING TO convert material with no mpt HpdAnode
+2021-10-21 01:12:11.838 INFO  [17407] [X4PhysicalVolume::convertMaterials@257]  num_materials 30 num_material_with_efficiency 0
+2021-10-21 01:12:11.838 INFO  [17407] [GMaterialLib::dumpSensitiveMaterials@1230] X4PhysicalVolume::convertMaterials num_sensitive_materials 0
+2021-10-21 01:14:06.300 INFO  [17407] [GSurfaceLib::dumpSurfaces@758] X4PhysicalVolume::convertSurfaces num_surfaces 1063
+2021-10-21 01:14:06.443 INFO  [17407] [GPropertyLib::dumpSensorIndices@933] X4PhysicalVolume::convertSurfaces  NumSensorIndices 1057 ( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365 366 367 368 369 370 371 372 373 374 375 376 377 378 379 380 381 382 383 384 385 386 387 388 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 405 406 407 408 409 410 411 412 413 414 415 416 417 418 419 420 421 422 423 424 425 426 427 428 429 430 431 432 433 434 435 436 437 438 439 440 441 442 443 444 445 446 447 448 449 450 451 452 453 454 455 456 457 458 459 460 461 462 463 464 465 466 467 468 469 470 471 472 473 474 475 476 477 478 479 480 481 482 483 484 485 486 487 488 489 490 491 492 493 494 495 496 497 498 499 500 501 502 503 504 505 506 507 508 509 510 511 512 513 514 515 516 517 518 519 520 521 522 523 524 525 526 527 528 529 530 531 532 533 534 535 536 537 538 539 540 541 542 543 544 545 546 547 548 549 550 551 552 553 554 555 556 557 558 559 560 561 562 563 564 565 566 567 568 569 570 571 572 573 574 575 576 577 578 579 580 581 582 583 584 585 586 587 588 589 590 591 592 593 594 595 596 597 598 599 600 601 602 603 604 605 606 607 608 609 610 611 612 613 614 615 616 617 618 619 620 621 622 623 624 625 626 627 628 629 630 631 632 633 634 635 636 637 638 639 640 641 642 643 644 645 646 647 648 649 650 651 652 653 654 655 656 657 658 659 660 661 662 663 664 665 666 667 668 669 670 671 672 673 674 675 676 677 678 679 680 681 682 683 684 685 686 687 688 689 690 691 692 693 694 695 696 697 698 699 700 701 702 703 704 705 706 707 708 709 710 711 712 713 714 715 716 717 718 719 720 721 722 723 724 725 726 727 728 729 730 731 732 733 734 735 736 737 738 739 740 741 742 743 744 745 746 747 748 749 750 751 752 753 754 755 756 757 758 759 760 761 762 763 764 765 766 767 768 769 770 771 772 773 774 775 776 777 778 779 780 781 782 783 784 785 786 787 788 789 790 791 792 793 794 795 796 797 798 799 800 801 802 803 804 805 806 807 808 809 810 811 812 813 814 815 816 817 818 819 820 821 822 823 824 825 826 827 828 829 830 831 832 833 834 835 836 837 838 839 840 841 842 843 844 845 846 847 848 849 850 851 852 853 854 855 856 857 858 859 860 861 862 863 864 865 866 867 868 869 870 871 872 873 874 875 876 877 878 879 880 881 882 883 884 885 886 887 888 889 890 891 892 893 894 895 896 897 898 899 900 901 902 903 904 905 906 907 908 909 910 911 912 913 914 915 916 917 918 919 920 921 922 923 924 925 926 927 928 929 930 931 932 933 934 935 936 937 938 939 940 941 942 943 944 945 946 947 948 949 950 951 952 953 954 955 956 957 958 959 960 961 962 963 964 965 966 967 968 969 970 971 972 973 974 975 976 977 978 979 980 981 982 983 984 985 986 987 988 989 990 991 992 993 994 995 996 997 998 999 1000 1001 1002 1003 1004 1005 1006 1007 1008 1009 1010 1011 1012 1013 1014 1015 1016 1017 1018 1019 1020 1021 1022 1023 1024 1025 1026 1027 1028 1029 1030 1031 1032 1033 1034 1035 1036 1037 1038 1039 1040 1041 1042 1043 1044 1045 1046 1047 1048 1049 1050 1051 1052 1053 1054 1055 1059  ) 
+2021-10-21 01:14:06.473 ERROR [17407] [X4Solid::convertSphere_@446]  convertSphere_duplicate_py_segment_omission 1 has_deltaPhi 1 startPhi -6.13013 deltaPhi 12.2603 name RichTbR1SphFullSph
+2021-10-21 01:14:06.473 ERROR [17407] [X4Solid::convertSphere_@446]  convertSphere_duplicate_py_segment_omission 1 has_deltaPhi 1 startPhi -6.13013 deltaPhi 12.2603 name RichTbR1SphFullSph
+2021-10-21 01:14:07.010 ERROR [17407] [X4Solid::convertSphere_@446]  convertSphere_duplicate_py_segment_omission 1 has_deltaPhi 1 startPhi -6.13013 deltaPhi 12.2603 name RichTbR1SphFullSph
+2021-10-21 01:14:07.010 ERROR [17407] [X4Solid::convertSphere_@446]  convertSphere_duplicate_py_segment_omission 1 has_deltaPhi 1 startPhi -6.13013 deltaPhi 12.2603 name RichTbR1SphFullSph
+2021-10-21 01:14:07.490 ERROR [17407] [X4Solid::convertSphere_@446]  convertSphere_duplicate_py_segment_omission 1 has_deltaPhi 1 startPhi -0.00504203 deltaPhi 0.0100841 name RichTbR1FlatFull
+2021-10-21 01:14:07.490 ERROR [17407] [X4Solid::convertSphere_@446]  convertSphere_duplicate_py_segment_omission 1 has_deltaPhi 1 startPhi -0.00504203 deltaPhi 0.0100841 name RichTbR1FlatFull
+2021-10-21 01:14:07.857 INFO  [17407] [X4PhysicalVolume::dumpLV@691]  m_lvidx.size() 346 m_lvlist.size() 346
+2021-10-21 01:14:07.859 INFO  [17407] [X4PhysicalVolume::convertStructure@796] [ creating large tree of GVolume instances
+2021-10-21 01:14:08.423 INFO  [17407] [X4PhysicalVolume::postConvert@201]  GGeo::getNumVolumes() 0 GGeo::getNumSensorVolumes() 0
+ GGeo::getSensorBoundaryReport() 
+ boundary   8 b+1   9 sensor_count      1 NitrogenGas/PmtSurface_0_0_0//NitrogenGas
+ boundary  15 b+1  16 sensor_count      1 NitrogenGas/PmtSurface_0_0_1//NitrogenGas
+ boundary  16 b+1  17 sensor_count      1 NitrogenGas/PmtSurface_0_0_2//NitrogenGas
+ boundary  17 b+1  18 sensor_count      1 NitrogenGas/PmtSurface_0_0_3//NitrogenGas
+ boundary  18 b+1  19 sensor_count      1 NitrogenGas/PmtSurface_0_1_0//NitrogenGas
+ boundary  19 b+1  20 sensor_count      1 NitrogenGas/PmtSurface_0_1_1//NitrogenGas
+ boundary  20 b+1  21 sensor_count      1 NitrogenGas/PmtSurface_0_1_2//NitrogenGas
+ boundary  21 b+1  22 sensor_count      1 NitrogenGas/PmtSurface_0_1_3//NitrogenGas
+ boundary  22 b+1  23 sensor_count      1 NitrogenGas/PmtSurface_0_2_0//NitrogenGas
+ boundary  23 b+1  24 sensor_count      1 NitrogenGas/PmtSurface_0_2_1//NitrogenGas
+ boundary  24 b+1  25 sensor_count      1 NitrogenGas/PmtSurface_0_2_2//NitrogenGas
+ boundary  25 b+1  26 sensor_count      1 NitrogenGas/PmtSurface_0_2_3//NitrogenGas
+ boundary  26 b+1  27 sensor_count      1 NitrogenGas/PmtSurface_0_3_0//NitrogenGas
+ boundary  27 b+1  28 sensor_count      1 NitrogenGas/PmtSurface_0_3_1//NitrogenGas
+ boundary  28 b+1  29 sensor_count      1 NitrogenGas/PmtSurface_0_3_2//NitrogenGas
+ boundary  29 b+1  30 sensor_count      1 NitrogenGas/PmtSurface_0_3_3//NitrogenGas
+ boundary  30 b+1  31 sensor_count      1 NitrogenGas/PmtSurface_1_0_0//NitrogenGas
+ boundary  31 b+1  32 sensor_count      1 NitrogenGas/PmtSurface_1_0_1//NitrogenGas
+ boundary  32 b+1  33 sensor_count      1 NitrogenGas/PmtSurface_1_0_2//NitrogenGas
+ boundary  33 b+1  34 sensor_count      1 NitrogenGas/PmtSurface_1_0_3//NitrogenGas
+ boundary  34 b+1  35 sensor_count      1 NitrogenGas/PmtSurface_1_1_0//NitrogenGas
+ boundary  35 b+1  36 sensor_count      1 NitrogenGas/PmtSurface_1_1_1//NitrogenGas
+ boundary  36 b+1  37 sensor_count      1 NitrogenGas/PmtSurface_1_1_2//NitrogenGas
+ boundary  37 b+1  38 sensor_count      1 NitrogenGas/PmtSurface_1_1_3//NitrogenGas
+ boundary  38 b+1  39 sensor_count      1 NitrogenGas/PmtSurface_1_2_0//NitrogenGas
+ boundary  39 b+1  40 sensor_count      1 NitrogenGas/PmtSurface_1_2_1//NitrogenGas
+ boundary  40 b+1  41 sensor_count      1 NitrogenGas/PmtSurface_1_2_2//NitrogenGas
+ boundary  41 b+1  42 sensor_count      1 NitrogenGas/PmtSurface_1_2_3//NitrogenGas
+ boundary  42 b+1  43 sensor_count      1 NitrogenGas/PmtSurface_1_3_0//NitrogenGas
+ boundary  43 b+1  44 sensor_count      1 NitrogenGas/PmtSurface_1_3_1//NitrogenGas
+ boundary  44 b+1  45 sensor_count      1 NitrogenGas/PmtSurface_1_3_2//NitrogenGas
+ boundary  45 b+1  46 sensor_count      1 NitrogenGas/PmtSurface_1_3_3//NitrogenGas
+ boundary  46 b+1  47 sensor_count      1 NitrogenGas/PmtSurface_2_0_0//NitrogenGas
+ boundary  47 b+1  48 sensor_count      1 NitrogenGas/PmtSurface_2_0_1//NitrogenGas
+ boundary  48 b+1  49 sensor_count      1 NitrogenGas/PmtSurface_2_0_2//NitrogenGas
+ boundary  49 b+1  50 sensor_count      1 NitrogenGas/PmtSurface_2_0_3//NitrogenGas
+ boundary  50 b+1  51 sensor_count      1 NitrogenGas/PmtSurface_2_1_0//NitrogenGas
+ boundary  51 b+1  52 sensor_count      1 NitrogenGas/PmtSurface_2_1_1//NitrogenGas
+ boundary  52 b+1  53 sensor_count      1 NitrogenGas/PmtSurface_2_1_2//NitrogenGas
+ boundary  53 b+1  54 sensor_count      1 NitrogenGas/PmtSurface_2_1_3//NitrogenGas
+ boundary  54 b+1  55 sensor_count      1 NitrogenGas/PmtSurface_2_2_0//NitrogenGas
+ boundary  55 b+1  56 sensor_count      1 NitrogenGas/PmtSurface_2_2_1//NitrogenGas
+ boundary  56 b+1  57 sensor_count      1 NitrogenGas/PmtSurface_2_2_2//NitrogenGas
+ boundary  57 b+1  58 sensor_count      1 NitrogenGas/PmtSurface_2_2_3//NitrogenGas
+ boundary  58 b+1  59 sensor_count      1 NitrogenGas/PmtSurface_2_3_0//NitrogenGas
+ boundary  59 b+1  60 sensor_count      1 NitrogenGas/PmtSurface_2_3_1//NitrogenGas
+ boundary  60 b+1  61 sensor_count      1 NitrogenGas/PmtSurface_2_3_2//NitrogenGas
+ boundary  61 b+1  62 sensor_count      1 NitrogenGas/PmtSurface_2_3_3//NitrogenGas
+ boundary  62 b+1  63 sensor_count      1 NitrogenGas/PmtSurface_3_0_0//NitrogenGas
+ boundary  63 b+1  64 sensor_count      1 NitrogenGas/PmtSurface_3_0_1//NitrogenGas
+ boundary  64 b+1  65 sensor_count      1 NitrogenGas/PmtSurface_3_0_2//NitrogenGas
+ boundary  65 b+1  66 sensor_count      1 NitrogenGas/PmtSurface_3_0_3//NitrogenGas
+ boundary  66 b+1  67 sensor_count      1 NitrogenGas/PmtSurface_3_1_0//NitrogenGas
+ boundary  67 b+1  68 sensor_count      1 NitrogenGas/PmtSurface_3_1_1//NitrogenGas
+ boundary  68 b+1  69 sensor_count      1 NitrogenGas/PmtSurface_3_1_2//NitrogenGas
+ boundary  69 b+1  70 sensor_count      1 NitrogenGas/PmtSurface_3_1_3//NitrogenGas
+ boundary  70 b+1  71 sensor_count      1 NitrogenGas/PmtSurface_3_2_0//NitrogenGas
+ boundary  71 b+1  72 sensor_count      1 NitrogenGas/PmtSurface_3_2_1//NitrogenGas
+ boundary  72 b+1  73 sensor_count      1 NitrogenGas/PmtSurface_3_2_2//NitrogenGas
+ boundary  73 b+1  74 sensor_count      1 NitrogenGas/PmtSurface_3_2_3//NitrogenGas
+ boundary  74 b+1  75 sensor_count      1 NitrogenGas/PmtSurface_3_3_0//NitrogenGas
+ boundary  75 b+1  76 sensor_count      1 NitrogenGas/PmtSurface_3_3_1//NitrogenGas
+ boundary  76 b+1  77 sensor_count      1 NitrogenGas/PmtSurface_3_3_2//NitrogenGas
+ boundary  77 b+1  78 sensor_count      1 NitrogenGas/PmtSurface_3_3_3//NitrogenGas
+ boundary  78 b+1  79 sensor_count      1 NitrogenGas/PmtSurface_4_0_0//NitrogenGas
+ boundary  79 b+1  80 sensor_count      1 NitrogenGas/PmtSurface_4_0_1//NitrogenGas
+ boundary  80 b+1  81 sensor_count      1 NitrogenGas/PmtSurface_4_0_2//NitrogenGas
+ boundary  81 b+1  82 sensor_count      1 NitrogenGas/PmtSurface_4_0_3//NitrogenGas
+ boundary  82 b+1  83 sensor_count      1 NitrogenGas/PmtSurface_4_1_0//NitrogenGas
+ boundary  83 b+1  84 sensor_count      1 NitrogenGas/PmtSurface_4_1_1//NitrogenGas
+ boundary  84 b+1  85 sensor_count      1 NitrogenGas/PmtSurface_4_1_2//NitrogenGas
+ boundary  85 b+1  86 sensor_count      1 NitrogenGas/PmtSurface_4_1_3//NitrogenGas
+ boundary  86 b+1  87 sensor_count      1 NitrogenGas/PmtSurface_4_2_0//NitrogenGas
+ boundary  87 b+1  88 sensor_count      1 NitrogenGas/PmtSurface_4_2_1//NitrogenGas
+ boundary  88 b+1  89 sensor_count      1 NitrogenGas/PmtSurface_4_2_2//NitrogenGas
+ boundary  89 b+1  90 sensor_count      1 NitrogenGas/PmtSurface_4_2_3//NitrogenGas
+ boundary  90 b+1  91 sensor_count      1 NitrogenGas/PmtSurface_4_3_0//NitrogenGas
+ boundary  91 b+1  92 sensor_count      1 NitrogenGas/PmtSurface_4_3_1//NitrogenGas
+ boundary  92 b+1  93 sensor_count      1 NitrogenGas/PmtSurface_4_3_2//NitrogenGas
+ boundary  93 b+1  94 sensor_count      1 NitrogenGas/PmtSurface_4_3_3//NitrogenGas
+ boundary  94 b+1  95 sensor_count      1 NitrogenGas/PmtSurface_5_0_0//NitrogenGas
+ boundary  95 b+1  96 sensor_count      1 NitrogenGas/PmtSurface_5_0_1//NitrogenGas
+ boundary  96 b+1  97 sensor_count      1 NitrogenGas/PmtSurface_5_0_2//NitrogenGas
+ boundary  97 b+1  98 sensor_count      1 NitrogenGas/PmtSurface_5_0_3//NitrogenGas
+ boundary  98 b+1  99 sensor_count      1 NitrogenGas/PmtSurface_5_1_0//NitrogenGas
+ boundary  99 b+1 100 sensor_count      1 NitrogenGas/PmtSurface_5_1_1//NitrogenGas
+ boundary 100 b+1 101 sensor_count      1 NitrogenGas/PmtSurface_5_1_2//NitrogenGas
+ boundary 101 b+1 102 sensor_count      1 NitrogenGas/PmtSurface_5_1_3//NitrogenGas
+ boundary 102 b+1 103 sensor_count      1 NitrogenGas/PmtSurface_5_2_0//NitrogenGas
+ boundary 103 b+1 104 sensor_count      1 NitrogenGas/PmtSurface_5_2_1//NitrogenGas
+ boundary 104 b+1 105 sensor_count      1 NitrogenGas/PmtSurface_5_2_2//NitrogenGas
+ boundary 105 b+1 106 sensor_count      1 NitrogenGas/PmtSurface_5_2_3//NitrogenGas
+ boundary 106 b+1 107 sensor_count      1 NitrogenGas/PmtSurface_5_3_0//NitrogenGas
+ boundary 107 b+1 108 sensor_count      1 NitrogenGas/PmtSurface_5_3_1//NitrogenGas
+ boundary 108 b+1 109 sensor_count      1 NitrogenGas/PmtSurface_5_3_2//NitrogenGas
+ boundary 109 b+1 110 sensor_count      1 NitrogenGas/PmtSurface_5_3_3//NitrogenGas
+ boundary 110 b+1 111 sensor_count      1 NitrogenGas/PmtSurface_6_0_0//NitrogenGas
+ boundary 111 b+1 112 sensor_count      1 NitrogenGas/PmtSurface_6_0_1//NitrogenGas
+ boundary 112 b+1 113 sensor_count      1 NitrogenGas/PmtSurface_6_0_2//NitrogenGas
+ boundary 113 b+1 114 sensor_count      1 NitrogenGas/PmtSurface_6_0_3//NitrogenGas
+ boundary 114 b+1 115 sensor_count      1 NitrogenGas/PmtSurface_6_1_0//NitrogenGas
+ boundary 115 b+1 116 sensor_count      1 NitrogenGas/PmtSurface_6_1_1//NitrogenGas
+ boundary 116 b+1 117 sensor_count      1 NitrogenGas/PmtSurface_6_1_2//NitrogenGas
+ boundary 117 b+1 118 sensor_count      1 NitrogenGas/PmtSurface_6_1_3//NitrogenGas
+ boundary 118 b+1 119 sensor_count      1 NitrogenGas/PmtSurface_6_2_0//NitrogenGas
+ boundary 119 b+1 120 sensor_count      1 NitrogenGas/PmtSurface_6_2_1//NitrogenGas
+ boundary 120 b+1 121 sensor_count      1 NitrogenGas/PmtSurface_6_2_2//NitrogenGas
+ boundary 121 b+1 122 sensor_count      1 NitrogenGas/PmtSurface_6_2_3//NitrogenGas
+ boundary 122 b+1 123 sensor_count      1 NitrogenGas/PmtSurface_6_3_0//NitrogenGas
+ boundary 123 b+1 124 sensor_count      1 NitrogenGas/PmtSurface_6_3_1//NitrogenGas
+ boundary 124 b+1 125 sensor_count      1 NitrogenGas/PmtSurface_6_3_2//NitrogenGas
+ boundary 125 b+1 126 sensor_count      1 NitrogenGas/PmtSurface_6_3_3//NitrogenGas
+ boundary 126 b+1 127 sensor_count      1 NitrogenGas/PmtSurface_7_0_0//NitrogenGas
+ boundary 127 b+1 128 sensor_count      1 NitrogenGas/PmtSurface_7_0_1//NitrogenGas
+ boundary 128 b+1 129 sensor_count      1 NitrogenGas/PmtSurface_7_0_2//NitrogenGas
+ boundary 129 b+1 130 sensor_count      1 NitrogenGas/PmtSurface_7_0_3//NitrogenGas
+ boundary 130 b+1 131 sensor_count      1 NitrogenGas/PmtSurface_7_1_0//NitrogenGas
+ boundary 131 b+1 132 sensor_count      1 NitrogenGas/PmtSurface_7_1_1//NitrogenGas
+ boundary 132 b+1 133 sensor_count      1 NitrogenGas/PmtSurface_7_1_2//NitrogenGas
+ boundary 133 b+1 134 sensor_count      1 NitrogenGas/PmtSurface_7_1_3//NitrogenGas
+ boundary 134 b+1 135 sensor_count      1 NitrogenGas/PmtSurface_7_2_0//NitrogenGas
+ boundary 135 b+1 136 sensor_count      1 NitrogenGas/PmtSurface_7_2_1//NitrogenGas
+ boundary 136 b+1 137 sensor_count      1 NitrogenGas/PmtSurface_7_2_2//NitrogenGas
+ boundary 137 b+1 138 sensor_count      1 NitrogenGas/PmtSurface_7_2_3//NitrogenGas
+ boundary 138 b+1 139 sensor_count      1 NitrogenGas/PmtSurface_7_3_0//NitrogenGas
+ boundary 139 b+1 140 sensor_count      1 NitrogenGas/PmtSurface_7_3_1//NitrogenGas
+ boundary 140 b+1 141 sensor_count      1 NitrogenGas/PmtSurface_7_3_2//NitrogenGas
+ boundary 141 b+1 142 sensor_count      1 NitrogenGas/PmtSurface_7_3_3//NitrogenGas
+ boundary 142 b+1 143 sensor_count      1 NitrogenGas/PmtSurface_8_0_0//NitrogenGas
+ boundary 143 b+1 144 sensor_count      1 NitrogenGas/PmtSurface_8_0_1//NitrogenGas
+ boundary 144 b+1 145 sensor_count      1 NitrogenGas/PmtSurface_8_0_2//NitrogenGas
+ boundary 145 b+1 146 sensor_count      1 NitrogenGas/PmtSurface_8_0_3//NitrogenGas
+ boundary 146 b+1 147 sensor_count      1 NitrogenGas/PmtSurface_8_1_0//NitrogenGas
+ boundary 147 b+1 148 sensor_count      1 NitrogenGas/PmtSurface_8_1_1//NitrogenGas
+ boundary 148 b+1 149 sensor_count      1 NitrogenGas/PmtSurface_8_1_2//NitrogenGas
+ boundary 149 b+1 150 sensor_count      1 NitrogenGas/PmtSurface_8_1_3//NitrogenGas
+ boundary 150 b+1 151 sensor_count      1 NitrogenGas/PmtSurface_8_2_0//NitrogenGas
+ boundary 151 b+1 152 sensor_count      1 NitrogenGas/PmtSurface_8_2_1//NitrogenGas
+ boundary 152 b+1 153 sensor_count      1 NitrogenGas/PmtSurface_8_2_2//NitrogenGas
+ boundary 153 b+1 154 sensor_count      1 NitrogenGas/PmtSurface_8_2_3//NitrogenGas
+ boundary 154 b+1 155 sensor_count      1 NitrogenGas/PmtSurface_8_3_0//NitrogenGas
+ boundary 155 b+1 156 sensor_count      1 NitrogenGas/PmtSurface_8_3_1//NitrogenGas
+ boundary 156 b+1 157 sensor_count      1 NitrogenGas/PmtSurface_8_3_2//NitrogenGas
+ boundary 157 b+1 158 sensor_count      1 NitrogenGas/PmtSurface_8_3_3//NitrogenGas
+ boundary 158 b+1 159 sensor_count      1 NitrogenGas/PmtSurface_9_0_0//NitrogenGas
+ boundary 159 b+1 160 sensor_count      1 NitrogenGas/PmtSurface_9_0_1//NitrogenGas
+ boundary 160 b+1 161 sensor_count      1 NitrogenGas/PmtSurface_9_0_2//NitrogenGas
+ boundary 161 b+1 162 sensor_count      1 NitrogenGas/PmtSurface_9_0_3//NitrogenGas
+ boundary 162 b+1 163 sensor_count      1 NitrogenGas/PmtSurface_9_1_0//NitrogenGas
+ boundary 163 b+1 164 sensor_count      1 NitrogenGas/PmtSurface_9_1_1//NitrogenGas
+ boundary 164 b+1 165 sensor_count      1 NitrogenGas/PmtSurface_9_1_2//NitrogenGas
+ boundary 165 b+1 166 sensor_count      1 NitrogenGas/PmtSurface_9_1_3//NitrogenGas
+ boundary 166 b+1 167 sensor_count      1 NitrogenGas/PmtSurface_9_2_0//NitrogenGas
+ boundary 167 b+1 168 sensor_count      1 NitrogenGas/PmtSurface_9_2_1//NitrogenGas
+ boundary 168 b+1 169 sensor_count      1 NitrogenGas/PmtSurface_9_2_2//NitrogenGas
+ boundary 169 b+1 170 sensor_count      1 NitrogenGas/PmtSurface_9_2_3//NitrogenGas
+ boundary 170 b+1 171 sensor_count      1 NitrogenGas/PmtSurface_9_3_0//NitrogenGas
+ boundary 171 b+1 172 sensor_count      1 NitrogenGas/PmtSurface_9_3_1//NitrogenGas
+ boundary 172 b+1 173 sensor_count      1 NitrogenGas/PmtSurface_9_3_2//NitrogenGas
+ boundary 173 b+1 174 sensor_count      1 NitrogenGas/PmtSurface_9_3_3//NitrogenGas
+ boundary 174 b+1 175 sensor_count      1 NitrogenGas/PmtSurface_10_0_0//NitrogenGas
+ boundary 175 b+1 176 sensor_count      1 NitrogenGas/PmtSurface_10_0_1//NitrogenGas
+ boundary 176 b+1 177 sensor_count      1 NitrogenGas/PmtSurface_10_0_2//NitrogenGas
+ boundary 177 b+1 178 sensor_count      1 NitrogenGas/PmtSurface_10_0_3//NitrogenGas
+ boundary 178 b+1 179 sensor_count      1 NitrogenGas/PmtSurface_10_1_0//NitrogenGas
+ boundary 179 b+1 180 sensor_count      1 NitrogenGas/PmtSurface_10_1_1//NitrogenGas
+ boundary 180 b+1 181 sensor_count      1 NitrogenGas/PmtSurface_10_1_2//NitrogenGas
+ boundary 181 b+1 182 sensor_count      1 NitrogenGas/PmtSurface_10_1_3//NitrogenGas
+ boundary 182 b+1 183 sensor_count      1 NitrogenGas/PmtSurface_10_2_0//NitrogenGas
+ boundary 183 b+1 184 sensor_count      1 NitrogenGas/PmtSurface_10_2_1//NitrogenGas
+ boundary 184 b+1 185 sensor_count      1 NitrogenGas/PmtSurface_10_2_2//NitrogenGas
+ boundary 185 b+1 186 sensor_count      1 NitrogenGas/PmtSurface_10_2_3//NitrogenGas
+ boundary 186 b+1 187 sensor_count      1 NitrogenGas/PmtSurface_10_3_0//NitrogenGas
+ boundary 187 b+1 188 sensor_count      1 NitrogenGas/PmtSurface_10_3_1//NitrogenGas
+ boundary 188 b+1 189 sensor_count      1 NitrogenGas/PmtSurface_10_3_2//NitrogenGas
+ boundary 189 b+1 190 sensor_count      1 NitrogenGas/PmtSurface_10_3_3//NitrogenGas
+ boundary 190 b+1 191 sensor_count      1 NitrogenGas/PmtSurface_11_0_0//NitrogenGas
+ boundary 191 b+1 192 sensor_count      1 NitrogenGas/PmtSurface_11_0_1//NitrogenGas
+ boundary 192 b+1 193 sensor_count      1 NitrogenGas/PmtSurface_11_0_2//NitrogenGas
+ boundary 193 b+1 194 sensor_count      1 NitrogenGas/PmtSurface_11_0_3//NitrogenGas
+ boundary 194 b+1 195 sensor_count      1 NitrogenGas/PmtSurface_11_1_0//NitrogenGas
+ boundary 195 b+1 196 sensor_count      1 NitrogenGas/PmtSurface_11_1_1//NitrogenGas
+ boundary 196 b+1 197 sensor_count      1 NitrogenGas/PmtSurface_11_1_2//NitrogenGas
+ boundary 197 b+1 198 sensor_count      1 NitrogenGas/PmtSurface_11_1_3//NitrogenGas
+ boundary 198 b+1 199 sensor_count      1 NitrogenGas/PmtSurface_11_2_0//NitrogenGas
+ boundary 199 b+1 200 sensor_count      1 NitrogenGas/PmtSurface_11_2_1//NitrogenGas
+ boundary 200 b+1 201 sensor_count      1 NitrogenGas/PmtSurface_11_2_2//NitrogenGas
+ boundary 201 b+1 202 sensor_count      1 NitrogenGas/PmtSurface_11_2_3//NitrogenGas
+ boundary 202 b+1 203 sensor_count      1 NitrogenGas/PmtSurface_11_3_0//NitrogenGas
+ boundary 203 b+1 204 sensor_count      1 NitrogenGas/PmtSurface_11_3_1//NitrogenGas
+ boundary 204 b+1 205 sensor_count      1 NitrogenGas/PmtSurface_11_3_2//NitrogenGas
+ boundary 205 b+1 206 sensor_count      1 NitrogenGas/PmtSurface_11_3_3//NitrogenGas
+ boundary 206 b+1 207 sensor_count      1 NitrogenGas/PmtSurface_12_0_0//NitrogenGas
+ boundary 207 b+1 208 sensor_count      1 NitrogenGas/PmtSurface_12_0_1//NitrogenGas
+ boundary 208 b+1 209 sensor_count      1 NitrogenGas/PmtSurface_12_0_2//NitrogenGas
+ boundary 209 b+1 210 sensor_count      1 NitrogenGas/PmtSurface_12_0_3//NitrogenGas
+ boundary 210 b+1 211 sensor_count      1 NitrogenGas/PmtSurface_12_1_0//NitrogenGas
+ boundary 211 b+1 212 sensor_count      1 NitrogenGas/PmtSurface_12_1_1//NitrogenGas
+ boundary 212 b+1 213 sensor_count      1 NitrogenGas/PmtSurface_12_1_2//NitrogenGas
+ boundary 213 b+1 214 sensor_count      1 NitrogenGas/PmtSurface_12_1_3//NitrogenGas
+ boundary 214 b+1 215 sensor_count      1 NitrogenGas/PmtSurface_12_2_0//NitrogenGas
+ boundary 215 b+1 216 sensor_count      1 NitrogenGas/PmtSurface_12_2_1//NitrogenGas
+ boundary 216 b+1 217 sensor_count      1 NitrogenGas/PmtSurface_12_2_2//NitrogenGas
+ boundary 217 b+1 218 sensor_count      1 NitrogenGas/PmtSurface_12_2_3//NitrogenGas
+ boundary 218 b+1 219 sensor_count      1 NitrogenGas/PmtSurface_12_3_0//NitrogenGas
+ boundary 219 b+1 220 sensor_count      1 NitrogenGas/PmtSurface_12_3_1//NitrogenGas
+ boundary 220 b+1 221 sensor_count      1 NitrogenGas/PmtSurface_12_3_2//NitrogenGas
+ boundary 221 b+1 222 sensor_count      1 NitrogenGas/PmtSurface_12_3_3//NitrogenGas
+ boundary 222 b+1 223 sensor_count      1 NitrogenGas/PmtSurface_13_0_0//NitrogenGas
+ boundary 223 b+1 224 sensor_count      1 NitrogenGas/PmtSurface_13_0_1//NitrogenGas
+ boundary 224 b+1 225 sensor_count      1 NitrogenGas/PmtSurface_13_0_2//NitrogenGas
+ boundary 225 b+1 226 sensor_count      1 NitrogenGas/PmtSurface_13_0_3//NitrogenGas
+ boundary 226 b+1 227 sensor_count      1 NitrogenGas/PmtSurface_13_1_0//NitrogenGas
+ boundary 227 b+1 228 sensor_count      1 NitrogenGas/PmtSurface_13_1_1//NitrogenGas
+ boundary 228 b+1 229 sensor_count      1 NitrogenGas/PmtSurface_13_1_2//NitrogenGas
+ boundary 229 b+1 230 sensor_count      1 NitrogenGas/PmtSurface_13_1_3//NitrogenGas
+ boundary 230 b+1 231 sensor_count      1 NitrogenGas/PmtSurface_13_2_0//NitrogenGas
+ boundary 231 b+1 232 sensor_count      1 NitrogenGas/PmtSurface_13_2_1//NitrogenGas
+ boundary 232 b+1 233 sensor_count      1 NitrogenGas/PmtSurface_13_2_2//NitrogenGas
+ boundary 233 b+1 234 sensor_count      1 NitrogenGas/PmtSurface_13_2_3//NitrogenGas
+ boundary 234 b+1 235 sensor_count      1 NitrogenGas/PmtSurface_13_3_0//NitrogenGas
+ boundary 235 b+1 236 sensor_count      1 NitrogenGas/PmtSurface_13_3_1//NitrogenGas
+ boundary 236 b+1 237 sensor_count      1 NitrogenGas/PmtSurface_13_3_2//NitrogenGas
+ boundary 237 b+1 238 sensor_count      1 NitrogenGas/PmtSurface_13_3_3//NitrogenGas
+ boundary 238 b+1 239 sensor_count      1 NitrogenGas/PmtSurface_14_0_0//NitrogenGas
+ boundary 239 b+1 240 sensor_count      1 NitrogenGas/PmtSurface_14_0_1//NitrogenGas
+ boundary 240 b+1 241 sensor_count      1 NitrogenGas/PmtSurface_14_0_2//NitrogenGas
+ boundary 241 b+1 242 sensor_count      1 NitrogenGas/PmtSurface_14_0_3//NitrogenGas
+ boundary 242 b+1 243 sensor_count      1 NitrogenGas/PmtSurface_14_1_0//NitrogenGas
+ boundary 243 b+1 244 sensor_count      1 NitrogenGas/PmtSurface_14_1_1//NitrogenGas
+ boundary 244 b+1 245 sensor_count      1 NitrogenGas/PmtSurface_14_1_2//NitrogenGas
+ boundary 245 b+1 246 sensor_count      1 NitrogenGas/PmtSurface_14_1_3//NitrogenGas
+ boundary 246 b+1 247 sensor_count      1 NitrogenGas/PmtSurface_14_2_0//NitrogenGas
+ boundary 247 b+1 248 sensor_count      1 NitrogenGas/PmtSurface_14_2_1//NitrogenGas
+ boundary 248 b+1 249 sensor_count      1 NitrogenGas/PmtSurface_14_2_2//NitrogenGas
+ boundary 249 b+1 250 sensor_count      1 NitrogenGas/PmtSurface_14_2_3//NitrogenGas
+ boundary 250 b+1 251 sensor_count      1 NitrogenGas/PmtSurface_14_3_0//NitrogenGas
+ boundary 251 b+1 252 sensor_count      1 NitrogenGas/PmtSurface_14_3_1//NitrogenGas
+ boundary 252 b+1 253 sensor_count      1 NitrogenGas/PmtSurface_14_3_2//NitrogenGas
+ boundary 253 b+1 254 sensor_count      1 NitrogenGas/PmtSurface_14_3_3//NitrogenGas
+ boundary 254 b+1 255 sensor_count      1 NitrogenGas/PmtSurface_15_0_0//NitrogenGas
+ boundary 255 b+1 256 sensor_count      1 NitrogenGas/PmtSurface_15_0_1//NitrogenGas
+ boundary 256 b+1 257 sensor_count      1 NitrogenGas/PmtSurface_15_0_2//NitrogenGas
+ boundary 257 b+1 258 sensor_count      1 NitrogenGas/PmtSurface_15_0_3//NitrogenGas
+ boundary 258 b+1 259 sensor_count      1 NitrogenGas/PmtSurface_15_1_0//NitrogenGas
+ boundary 259 b+1 260 sensor_count      1 NitrogenGas/PmtSurface_15_1_1//NitrogenGas
+ boundary 260 b+1 261 sensor_count      1 NitrogenGas/PmtSurface_15_1_2//NitrogenGas
+ boundary 261 b+1 262 sensor_count      1 NitrogenGas/PmtSurface_15_1_3//NitrogenGas
+ boundary 262 b+1 263 sensor_count      1 NitrogenGas/PmtSurface_15_2_0//NitrogenGas
+ boundary 263 b+1 264 sensor_count      1 NitrogenGas/PmtSurface_15_2_1//NitrogenGas
+ boundary 264 b+1 265 sensor_count      1 NitrogenGas/PmtSurface_15_2_2//NitrogenGas
+ boundary 265 b+1 266 sensor_count      1 NitrogenGas/PmtSurface_15_2_3//NitrogenGas
+ boundary 266 b+1 267 sensor_count      1 NitrogenGas/PmtSurface_15_3_0//NitrogenGas
+ boundary 267 b+1 268 sensor_count      1 NitrogenGas/PmtSurface_15_3_1//NitrogenGas
+ boundary 268 b+1 269 sensor_count      1 NitrogenGas/PmtSurface_15_3_2//NitrogenGas
+ boundary 269 b+1 270 sensor_count      1 NitrogenGas/PmtSurface_15_3_3//NitrogenGas
+ boundary 270 b+1 271 sensor_count      1 NitrogenGas/PmtSurface_16_0_0//NitrogenGas
+ boundary 271 b+1 272 sensor_count      1 NitrogenGas/PmtSurface_16_0_1//NitrogenGas
+ boundary 272 b+1 273 sensor_count      1 NitrogenGas/PmtSurface_16_0_2//NitrogenGas
+ boundary 273 b+1 274 sensor_count      1 NitrogenGas/PmtSurface_16_0_3//NitrogenGas
+ boundary 274 b+1 275 sensor_count      1 NitrogenGas/PmtSurface_16_1_0//NitrogenGas
+ boundary 275 b+1 276 sensor_count      1 NitrogenGas/PmtSurface_16_1_1//NitrogenGas
+ boundary 276 b+1 277 sensor_count      1 NitrogenGas/PmtSurface_16_1_2//NitrogenGas
+ boundary 277 b+1 278 sensor_count      1 NitrogenGas/PmtSurface_16_1_3//NitrogenGas
+ boundary 278 b+1 279 sensor_count      1 NitrogenGas/PmtSurface_16_2_0//NitrogenGas
+ boundary 279 b+1 280 sensor_count      1 NitrogenGas/PmtSurface_16_2_1//NitrogenGas
+ boundary 280 b+1 281 sensor_count      1 NitrogenGas/PmtSurface_16_2_2//NitrogenGas
+ boundary 281 b+1 282 sensor_count      1 NitrogenGas/PmtSurface_16_2_3//NitrogenGas
+ boundary 282 b+1 283 sensor_count      1 NitrogenGas/PmtSurface_16_3_0//NitrogenGas
+ boundary 283 b+1 284 sensor_count      1 NitrogenGas/PmtSurface_16_3_1//NitrogenGas
+ boundary 284 b+1 285 sensor_count      1 NitrogenGas/PmtSurface_16_3_2//NitrogenGas
+ boundary 285 b+1 286 sensor_count      1 NitrogenGas/PmtSurface_16_3_3//NitrogenGas
+ boundary 286 b+1 287 sensor_count      1 NitrogenGas/PmtSurface_17_0_0//NitrogenGas
+ boundary 287 b+1 288 sensor_count      1 NitrogenGas/PmtSurface_17_0_1//NitrogenGas
+ boundary 288 b+1 289 sensor_count      1 NitrogenGas/PmtSurface_17_0_2//NitrogenGas
+ boundary 289 b+1 290 sensor_count      1 NitrogenGas/PmtSurface_17_0_3//NitrogenGas
+ boundary 290 b+1 291 sensor_count      1 NitrogenGas/PmtSurface_17_1_0//NitrogenGas
+ boundary 291 b+1 292 sensor_count      1 NitrogenGas/PmtSurface_17_1_1//NitrogenGas
+ boundary 292 b+1 293 sensor_count      1 NitrogenGas/PmtSurface_17_1_2//NitrogenGas
+ boundary 293 b+1 294 sensor_count      1 NitrogenGas/PmtSurface_17_1_3//NitrogenGas
+ boundary 294 b+1 295 sensor_count      1 NitrogenGas/PmtSurface_17_2_0//NitrogenGas
+ boundary 295 b+1 296 sensor_count      1 NitrogenGas/PmtSurface_17_2_1//NitrogenGas
+ boundary 296 b+1 297 sensor_count      1 NitrogenGas/PmtSurface_17_2_2//NitrogenGas
+ boundary 297 b+1 298 sensor_count      1 NitrogenGas/PmtSurface_17_2_3//NitrogenGas
+ boundary 298 b+1 299 sensor_count      1 NitrogenGas/PmtSurface_17_3_0//NitrogenGas
+ boundary 299 b+1 300 sensor_count      1 NitrogenGas/PmtSurface_17_3_1//NitrogenGas
+ boundary 300 b+1 301 sensor_count      1 NitrogenGas/PmtSurface_17_3_2//NitrogenGas
+ boundary 301 b+1 302 sensor_count      1 NitrogenGas/PmtSurface_17_3_3//NitrogenGas
+ boundary 302 b+1 303 sensor_count      1 NitrogenGas/PmtSurface_18_0_0//NitrogenGas
+ boundary 303 b+1 304 sensor_count      1 NitrogenGas/PmtSurface_18_0_1//NitrogenGas
+ boundary 304 b+1 305 sensor_count      1 NitrogenGas/PmtSurface_18_0_2//NitrogenGas
+ boundary 305 b+1 306 sensor_count      1 NitrogenGas/PmtSurface_18_0_3//NitrogenGas
+ boundary 306 b+1 307 sensor_count      1 NitrogenGas/PmtSurface_18_1_0//NitrogenGas
+ boundary 307 b+1 308 sensor_count      1 NitrogenGas/PmtSurface_18_1_1//NitrogenGas
+ boundary 308 b+1 309 sensor_count      1 NitrogenGas/PmtSurface_18_1_2//NitrogenGas
+ boundary 309 b+1 310 sensor_count      1 NitrogenGas/PmtSurface_18_1_3//NitrogenGas
+ boundary 310 b+1 311 sensor_count      1 NitrogenGas/PmtSurface_18_2_0//NitrogenGas
+ boundary 311 b+1 312 sensor_count      1 NitrogenGas/PmtSurface_18_2_1//NitrogenGas
+ boundary 312 b+1 313 sensor_count      1 NitrogenGas/PmtSurface_18_2_2//NitrogenGas
+ boundary 313 b+1 314 sensor_count      1 NitrogenGas/PmtSurface_18_2_3//NitrogenGas
+ boundary 314 b+1 315 sensor_count      1 NitrogenGas/PmtSurface_18_3_0//NitrogenGas
+ boundary 315 b+1 316 sensor_count      1 NitrogenGas/PmtSurface_18_3_1//NitrogenGas
+ boundary 316 b+1 317 sensor_count      1 NitrogenGas/PmtSurface_18_3_2//NitrogenGas
+ boundary 317 b+1 318 sensor_count      1 NitrogenGas/PmtSurface_18_3_3//NitrogenGas
+ boundary 318 b+1 319 sensor_count      1 NitrogenGas/PmtSurface_19_0_0//NitrogenGas
+ boundary 319 b+1 320 sensor_count      1 NitrogenGas/PmtSurface_19_0_1//NitrogenGas
+ boundary 320 b+1 321 sensor_count      1 NitrogenGas/PmtSurface_19_0_2//NitrogenGas
+ boundary 321 b+1 322 sensor_count      1 NitrogenGas/PmtSurface_19_0_3//NitrogenGas
+ boundary 322 b+1 323 sensor_count      1 NitrogenGas/PmtSurface_19_1_0//NitrogenGas
+ boundary 323 b+1 324 sensor_count      1 NitrogenGas/PmtSurface_19_1_1//NitrogenGas
+ boundary 324 b+1 325 sensor_count      1 NitrogenGas/PmtSurface_19_1_2//NitrogenGas
+ boundary 325 b+1 326 sensor_count      1 NitrogenGas/PmtSurface_19_1_3//NitrogenGas
+ boundary 326 b+1 327 sensor_count      1 NitrogenGas/PmtSurface_19_2_0//NitrogenGas
+ boundary 327 b+1 328 sensor_count      1 NitrogenGas/PmtSurface_19_2_1//NitrogenGas
+ boundary 328 b+1 329 sensor_count      1 NitrogenGas/PmtSurface_19_2_2//NitrogenGas
+ boundary 329 b+1 330 sensor_count      1 NitrogenGas/PmtSurface_19_2_3//NitrogenGas
+ boundary 330 b+1 331 sensor_count      1 NitrogenGas/PmtSurface_19_3_0//NitrogenGas
+ boundary 331 b+1 332 sensor_count      1 NitrogenGas/PmtSurface_19_3_1//NitrogenGas
+ boundary 332 b+1 333 sensor_count      1 NitrogenGas/PmtSurface_19_3_2//NitrogenGas
+ boundary 333 b+1 334 sensor_count      1 NitrogenGas/PmtSurface_19_3_3//NitrogenGas
+ boundary 334 b+1 335 sensor_count      1 NitrogenGas/PmtSurface_20_0_0//NitrogenGas
+ boundary 335 b+1 336 sensor_count      1 NitrogenGas/PmtSurface_20_0_1//NitrogenGas
+ boundary 336 b+1 337 sensor_count      1 NitrogenGas/PmtSurface_20_0_2//NitrogenGas
+ boundary 337 b+1 338 sensor_count      1 NitrogenGas/PmtSurface_20_0_3//NitrogenGas
+ boundary 338 b+1 339 sensor_count      1 NitrogenGas/PmtSurface_20_1_0//NitrogenGas
+ boundary 339 b+1 340 sensor_count      1 NitrogenGas/PmtSurface_20_1_1//NitrogenGas
+ boundary 340 b+1 341 sensor_count      1 NitrogenGas/PmtSurface_20_1_2//NitrogenGas
+ boundary 341 b+1 342 sensor_count      1 NitrogenGas/PmtSurface_20_1_3//NitrogenGas
+ boundary 342 b+1 343 sensor_count      1 NitrogenGas/PmtSurface_20_2_0//NitrogenGas
+ boundary 343 b+1 344 sensor_count      1 NitrogenGas/PmtSurface_20_2_1//NitrogenGas
+ boundary 344 b+1 345 sensor_count      1 NitrogenGas/PmtSurface_20_2_2//NitrogenGas
+ boundary 345 b+1 346 sensor_count      1 NitrogenGas/PmtSurface_20_2_3//NitrogenGas
+ boundary 346 b+1 347 sensor_count      1 NitrogenGas/PmtSurface_20_3_0//NitrogenGas
+ boundary 347 b+1 348 sensor_count      1 NitrogenGas/PmtSurface_20_3_1//NitrogenGas
+ boundary 348 b+1 349 sensor_count      1 NitrogenGas/PmtSurface_20_3_2//NitrogenGas
+ boundary 349 b+1 350 sensor_count      1 NitrogenGas/PmtSurface_20_3_3//NitrogenGas
+ boundary 350 b+1 351 sensor_count      1 NitrogenGas/PmtSurface_21_0_0//NitrogenGas
+ boundary 351 b+1 352 sensor_count      1 NitrogenGas/PmtSurface_21_0_1//NitrogenGas
+ boundary 352 b+1 353 sensor_count      1 NitrogenGas/PmtSurface_21_0_2//NitrogenGas
+ boundary 353 b+1 354 sensor_count      1 NitrogenGas/PmtSurface_21_0_3//NitrogenGas
+ boundary 354 b+1 355 sensor_count      1 NitrogenGas/PmtSurface_21_1_0//NitrogenGas
+ boundary 355 b+1 356 sensor_count      1 NitrogenGas/PmtSurface_21_1_1//NitrogenGas
+ boundary 356 b+1 357 sensor_count      1 NitrogenGas/PmtSurface_21_1_2//NitrogenGas
+ boundary 357 b+1 358 sensor_count      1 NitrogenGas/PmtSurface_21_1_3//NitrogenGas
+ boundary 358 b+1 359 sensor_count      1 NitrogenGas/PmtSurface_21_2_0//NitrogenGas
+ boundary 359 b+1 360 sensor_count      1 NitrogenGas/PmtSurface_21_2_1//NitrogenGas
+ boundary 360 b+1 361 sensor_count      1 NitrogenGas/PmtSurface_21_2_2//NitrogenGas
+ boundary 361 b+1 362 sensor_count      1 NitrogenGas/PmtSurface_21_2_3//NitrogenGas
+ boundary 362 b+1 363 sensor_count      1 NitrogenGas/PmtSurface_21_3_0//NitrogenGas
+ boundary 363 b+1 364 sensor_count      1 NitrogenGas/PmtSurface_21_3_1//NitrogenGas
+ boundary 364 b+1 365 sensor_count      1 NitrogenGas/PmtSurface_21_3_2//NitrogenGas
+ boundary 365 b+1 366 sensor_count      1 NitrogenGas/PmtSurface_21_3_3//NitrogenGas
+ boundary 366 b+1 367 sensor_count      1 NitrogenGas/PmtSurface_22_0_0//NitrogenGas
+ boundary 367 b+1 368 sensor_count      1 NitrogenGas/PmtSurface_22_0_1//NitrogenGas
+ boundary 368 b+1 369 sensor_count      1 NitrogenGas/PmtSurface_22_0_2//NitrogenGas
+ boundary 369 b+1 370 sensor_count      1 NitrogenGas/PmtSurface_22_0_3//NitrogenGas
+ boundary 370 b+1 371 sensor_count      1 NitrogenGas/PmtSurface_22_1_0//NitrogenGas
+ boundary 371 b+1 372 sensor_count      1 NitrogenGas/PmtSurface_22_1_1//NitrogenGas
+ boundary 372 b+1 373 sensor_count      1 NitrogenGas/PmtSurface_22_1_2//NitrogenGas
+ boundary 373 b+1 374 sensor_count      1 NitrogenGas/PmtSurface_22_1_3//NitrogenGas
+ boundary 374 b+1 375 sensor_count      1 NitrogenGas/PmtSurface_22_2_0//NitrogenGas
+ boundary 375 b+1 376 sensor_count      1 NitrogenGas/PmtSurface_22_2_1//NitrogenGas
+ boundary 376 b+1 377 sensor_count      1 NitrogenGas/PmtSurface_22_2_2//NitrogenGas
+ boundary 377 b+1 378 sensor_count      1 NitrogenGas/PmtSurface_22_2_3//NitrogenGas
+ boundary 378 b+1 379 sensor_count      1 NitrogenGas/PmtSurface_22_3_0//NitrogenGas
+ boundary 379 b+1 380 sensor_count      1 NitrogenGas/PmtSurface_22_3_1//NitrogenGas
+ boundary 380 b+1 381 sensor_count      1 NitrogenGas/PmtSurface_22_3_2//NitrogenGas
+ boundary 381 b+1 382 sensor_count      1 NitrogenGas/PmtSurface_22_3_3//NitrogenGas
+ boundary 382 b+1 383 sensor_count      1 NitrogenGas/PmtSurface_23_0_0//NitrogenGas
+ boundary 383 b+1 384 sensor_count      1 NitrogenGas/PmtSurface_23_0_1//NitrogenGas
+ boundary 384 b+1 385 sensor_count      1 NitrogenGas/PmtSurface_23_0_2//NitrogenGas
+ boundary 385 b+1 386 sensor_count      1 NitrogenGas/PmtSurface_23_0_3//NitrogenGas
+ boundary 386 b+1 387 sensor_count      1 NitrogenGas/PmtSurface_23_1_0//NitrogenGas
+ boundary 387 b+1 388 sensor_count      1 NitrogenGas/PmtSurface_23_1_1//NitrogenGas
+ boundary 388 b+1 389 sensor_count      1 NitrogenGas/PmtSurface_23_1_2//NitrogenGas
+ boundary 389 b+1 390 sensor_count      1 NitrogenGas/PmtSurface_23_1_3//NitrogenGas
+ boundary 390 b+1 391 sensor_count      1 NitrogenGas/PmtSurface_23_2_0//NitrogenGas
+ boundary 391 b+1 392 sensor_count      1 NitrogenGas/PmtSurface_23_2_1//NitrogenGas
+ boundary 392 b+1 393 sensor_count      1 NitrogenGas/PmtSurface_23_2_2//NitrogenGas
+ boundary 393 b+1 394 sensor_count      1 NitrogenGas/PmtSurface_23_2_3//NitrogenGas
+ boundary 394 b+1 395 sensor_count      1 NitrogenGas/PmtSurface_23_3_0//NitrogenGas
+ boundary 395 b+1 396 sensor_count      1 NitrogenGas/PmtSurface_23_3_1//NitrogenGas
+ boundary 396 b+1 397 sensor_count      1 NitrogenGas/PmtSurface_23_3_2//NitrogenGas
+ boundary 397 b+1 398 sensor_count      1 NitrogenGas/PmtSurface_23_3_3//NitrogenGas
+ boundary 398 b+1 399 sensor_count      1 NitrogenGas/PmtSurface_24_0_0//NitrogenGas
+ boundary 399 b+1 400 sensor_count      1 NitrogenGas/PmtSurface_24_0_1//NitrogenGas
+ boundary 400 b+1 401 sensor_count      1 NitrogenGas/PmtSurface_24_0_2//NitrogenGas
+ boundary 401 b+1 402 sensor_count      1 NitrogenGas/PmtSurface_24_0_3//NitrogenGas
+ boundary 402 b+1 403 sensor_count      1 NitrogenGas/PmtSurface_24_1_0//NitrogenGas
+ boundary 403 b+1 404 sensor_count      1 NitrogenGas/PmtSurface_24_1_1//NitrogenGas
+ boundary 404 b+1 405 sensor_count      1 NitrogenGas/PmtSurface_24_1_2//NitrogenGas
+ boundary 405 b+1 406 sensor_count      1 NitrogenGas/PmtSurface_24_1_3//NitrogenGas
+ boundary 406 b+1 407 sensor_count      1 NitrogenGas/PmtSurface_24_2_0//NitrogenGas
+ boundary 407 b+1 408 sensor_count      1 NitrogenGas/PmtSurface_24_2_1//NitrogenGas
+ boundary 408 b+1 409 sensor_count      1 NitrogenGas/PmtSurface_24_2_2//NitrogenGas
+ boundary 409 b+1 410 sensor_count      1 NitrogenGas/PmtSurface_24_2_3//NitrogenGas
+ boundary 410 b+1 411 sensor_count      1 NitrogenGas/PmtSurface_24_3_0//NitrogenGas
+ boundary 411 b+1 412 sensor_count      1 NitrogenGas/PmtSurface_24_3_1//NitrogenGas
+ boundary 412 b+1 413 sensor_count      1 NitrogenGas/PmtSurface_24_3_2//NitrogenGas
+ boundary 413 b+1 414 sensor_count      1 NitrogenGas/PmtSurface_24_3_3//NitrogenGas
+ boundary 414 b+1 415 sensor_count      1 NitrogenGas/PmtSurface_25_0_0//NitrogenGas
+ boundary 415 b+1 416 sensor_count      1 NitrogenGas/PmtSurface_25_0_1//NitrogenGas
+ boundary 416 b+1 417 sensor_count      1 NitrogenGas/PmtSurface_25_0_2//NitrogenGas
+ boundary 417 b+1 418 sensor_count      1 NitrogenGas/PmtSurface_25_0_3//NitrogenGas
+ boundary 418 b+1 419 sensor_count      1 NitrogenGas/PmtSurface_25_1_0//NitrogenGas
+ boundary 419 b+1 420 sensor_count      1 NitrogenGas/PmtSurface_25_1_1//NitrogenGas
+ boundary 420 b+1 421 sensor_count      1 NitrogenGas/PmtSurface_25_1_2//NitrogenGas
+ boundary 421 b+1 422 sensor_count      1 NitrogenGas/PmtSurface_25_1_3//NitrogenGas
+ boundary 422 b+1 423 sensor_count      1 NitrogenGas/PmtSurface_25_2_0//NitrogenGas
+ boundary 423 b+1 424 sensor_count      1 NitrogenGas/PmtSurface_25_2_1//NitrogenGas
+ boundary 424 b+1 425 sensor_count      1 NitrogenGas/PmtSurface_25_2_2//NitrogenGas
+ boundary 425 b+1 426 sensor_count      1 NitrogenGas/PmtSurface_25_2_3//NitrogenGas
+ boundary 426 b+1 427 sensor_count      1 NitrogenGas/PmtSurface_25_3_0//NitrogenGas
+ boundary 427 b+1 428 sensor_count      1 NitrogenGas/PmtSurface_25_3_1//NitrogenGas
+ boundary 428 b+1 429 sensor_count      1 NitrogenGas/PmtSurface_25_3_2//NitrogenGas
+ boundary 429 b+1 430 sensor_count      1 NitrogenGas/PmtSurface_25_3_3//NitrogenGas
+ boundary 430 b+1 431 sensor_count      1 NitrogenGas/PmtSurface_26_0_0//NitrogenGas
+ boundary 431 b+1 432 sensor_count      1 NitrogenGas/PmtSurface_26_0_1//NitrogenGas
+ boundary 432 b+1 433 sensor_count      1 NitrogenGas/PmtSurface_26_0_2//NitrogenGas
+ boundary 433 b+1 434 sensor_count      1 NitrogenGas/PmtSurface_26_0_3//NitrogenGas
+ boundary 434 b+1 435 sensor_count      1 NitrogenGas/PmtSurface_26_1_0//NitrogenGas
+ boundary 435 b+1 436 sensor_count      1 NitrogenGas/PmtSurface_26_1_1//NitrogenGas
+ boundary 436 b+1 437 sensor_count      1 NitrogenGas/PmtSurface_26_1_2//NitrogenGas
+ boundary 437 b+1 438 sensor_count      1 NitrogenGas/PmtSurface_26_1_3//NitrogenGas
+ boundary 438 b+1 439 sensor_count      1 NitrogenGas/PmtSurface_26_2_0//NitrogenGas
+ boundary 439 b+1 440 sensor_count      1 NitrogenGas/PmtSurface_26_2_1//NitrogenGas
+ boundary 440 b+1 441 sensor_count      1 NitrogenGas/PmtSurface_26_2_2//NitrogenGas
+ boundary 441 b+1 442 sensor_count      1 NitrogenGas/PmtSurface_26_2_3//NitrogenGas
+ boundary 442 b+1 443 sensor_count      1 NitrogenGas/PmtSurface_26_3_0//NitrogenGas
+ boundary 443 b+1 444 sensor_count      1 NitrogenGas/PmtSurface_26_3_1//NitrogenGas
+ boundary 444 b+1 445 sensor_count      1 NitrogenGas/PmtSurface_26_3_2//NitrogenGas
+ boundary 445 b+1 446 sensor_count      1 NitrogenGas/PmtSurface_26_3_3//NitrogenGas
+ boundary 446 b+1 447 sensor_count      1 NitrogenGas/PmtSurface_27_0_0//NitrogenGas
+ boundary 447 b+1 448 sensor_count      1 NitrogenGas/PmtSurface_27_0_1//NitrogenGas
+ boundary 448 b+1 449 sensor_count      1 NitrogenGas/PmtSurface_27_0_2//NitrogenGas
+ boundary 449 b+1 450 sensor_count      1 NitrogenGas/PmtSurface_27_0_3//NitrogenGas
+ boundary 450 b+1 451 sensor_count      1 NitrogenGas/PmtSurface_27_1_0//NitrogenGas
+ boundary 451 b+1 452 sensor_count      1 NitrogenGas/PmtSurface_27_1_1//NitrogenGas
+ boundary 452 b+1 453 sensor_count      1 NitrogenGas/PmtSurface_27_1_2//NitrogenGas
+ boundary 453 b+1 454 sensor_count      1 NitrogenGas/PmtSurface_27_1_3//NitrogenGas
+ boundary 454 b+1 455 sensor_count      1 NitrogenGas/PmtSurface_27_2_0//NitrogenGas
+ boundary 455 b+1 456 sensor_count      1 NitrogenGas/PmtSurface_27_2_1//NitrogenGas
+ boundary 456 b+1 457 sensor_count      1 NitrogenGas/PmtSurface_27_2_2//NitrogenGas
+ boundary 457 b+1 458 sensor_count      1 NitrogenGas/PmtSurface_27_2_3//NitrogenGas
+ boundary 458 b+1 459 sensor_count      1 NitrogenGas/PmtSurface_27_3_0//NitrogenGas
+ boundary 459 b+1 460 sensor_count      1 NitrogenGas/PmtSurface_27_3_1//NitrogenGas
+ boundary 460 b+1 461 sensor_count      1 NitrogenGas/PmtSurface_27_3_2//NitrogenGas
+ boundary 461 b+1 462 sensor_count      1 NitrogenGas/PmtSurface_27_3_3//NitrogenGas
+ boundary 462 b+1 463 sensor_count      1 NitrogenGas/PmtSurface_28_0_0//NitrogenGas
+ boundary 463 b+1 464 sensor_count      1 NitrogenGas/PmtSurface_28_0_1//NitrogenGas
+ boundary 464 b+1 465 sensor_count      1 NitrogenGas/PmtSurface_28_0_2//NitrogenGas
+ boundary 465 b+1 466 sensor_count      1 NitrogenGas/PmtSurface_28_0_3//NitrogenGas
+ boundary 466 b+1 467 sensor_count      1 NitrogenGas/PmtSurface_28_1_0//NitrogenGas
+ boundary 467 b+1 468 sensor_count      1 NitrogenGas/PmtSurface_28_1_1//NitrogenGas
+ boundary 468 b+1 469 sensor_count      1 NitrogenGas/PmtSurface_28_1_2//NitrogenGas
+ boundary 469 b+1 470 sensor_count      1 NitrogenGas/PmtSurface_28_1_3//NitrogenGas
+ boundary 470 b+1 471 sensor_count      1 NitrogenGas/PmtSurface_28_2_0//NitrogenGas
+ boundary 471 b+1 472 sensor_count      1 NitrogenGas/PmtSurface_28_2_1//NitrogenGas
+ boundary 472 b+1 473 sensor_count      1 NitrogenGas/PmtSurface_28_2_2//NitrogenGas
+ boundary 473 b+1 474 sensor_count      1 NitrogenGas/PmtSurface_28_2_3//NitrogenGas
+ boundary 474 b+1 475 sensor_count      1 NitrogenGas/PmtSurface_28_3_0//NitrogenGas
+ boundary 475 b+1 476 sensor_count      1 NitrogenGas/PmtSurface_28_3_1//NitrogenGas
+ boundary 476 b+1 477 sensor_count      1 NitrogenGas/PmtSurface_28_3_2//NitrogenGas
+ boundary 477 b+1 478 sensor_count      1 NitrogenGas/PmtSurface_28_3_3//NitrogenGas
+ boundary 478 b+1 479 sensor_count      1 NitrogenGas/PmtSurface_29_0_0//NitrogenGas
+ boundary 479 b+1 480 sensor_count      1 NitrogenGas/PmtSurface_29_0_1//NitrogenGas
+ boundary 480 b+1 481 sensor_count      1 NitrogenGas/PmtSurface_29_0_2//NitrogenGas
+ boundary 481 b+1 482 sensor_count      1 NitrogenGas/PmtSurface_29_0_3//NitrogenGas
+ boundary 482 b+1 483 sensor_count      1 NitrogenGas/PmtSurface_29_1_0//NitrogenGas
+ boundary 483 b+1 484 sensor_count      1 NitrogenGas/PmtSurface_29_1_1//NitrogenGas
+ boundary 484 b+1 485 sensor_count      1 NitrogenGas/PmtSurface_29_1_2//NitrogenGas
+ boundary 485 b+1 486 sensor_count      1 NitrogenGas/PmtSurface_29_1_3//NitrogenGas
+ boundary 486 b+1 487 sensor_count      1 NitrogenGas/PmtSurface_29_2_0//NitrogenGas
+ boundary 487 b+1 488 sensor_count      1 NitrogenGas/PmtSurface_29_2_1//NitrogenGas
+ boundary 488 b+1 489 sensor_count      1 NitrogenGas/PmtSurface_29_2_2//NitrogenGas
+ boundary 489 b+1 490 sensor_count      1 NitrogenGas/PmtSurface_29_2_3//NitrogenGas
+ boundary 490 b+1 491 sensor_count      1 NitrogenGas/PmtSurface_29_3_0//NitrogenGas
+ boundary 491 b+1 492 sensor_count      1 NitrogenGas/PmtSurface_29_3_1//NitrogenGas
+ boundary 492 b+1 493 sensor_count      1 NitrogenGas/PmtSurface_29_3_2//NitrogenGas
+ boundary 493 b+1 494 sensor_count      1 NitrogenGas/PmtSurface_29_3_3//NitrogenGas
+ boundary 494 b+1 495 sensor_count      1 NitrogenGas/PmtSurface_30_0_0//NitrogenGas
+ boundary 495 b+1 496 sensor_count      1 NitrogenGas/PmtSurface_30_0_1//NitrogenGas
+ boundary 496 b+1 497 sensor_count      1 NitrogenGas/PmtSurface_30_0_2//NitrogenGas
+ boundary 497 b+1 498 sensor_count      1 NitrogenGas/PmtSurface_30_0_3//NitrogenGas
+ boundary 498 b+1 499 sensor_count      1 NitrogenGas/PmtSurface_30_1_0//NitrogenGas
+ boundary 499 b+1 500 sensor_count      1 NitrogenGas/PmtSurface_30_1_1//NitrogenGas
+ boundary 500 b+1 501 sensor_count      1 NitrogenGas/PmtSurface_30_1_2//NitrogenGas
+ boundary 501 b+1 502 sensor_count      1 NitrogenGas/PmtSurface_30_1_3//NitrogenGas
+ boundary 502 b+1 503 sensor_count      1 NitrogenGas/PmtSurface_30_2_0//NitrogenGas
+ boundary 503 b+1 504 sensor_count      1 NitrogenGas/PmtSurface_30_2_1//NitrogenGas
+ boundary 504 b+1 505 sensor_count      1 NitrogenGas/PmtSurface_30_2_2//NitrogenGas
+ boundary 505 b+1 506 sensor_count      1 NitrogenGas/PmtSurface_30_2_3//NitrogenGas
+ boundary 506 b+1 507 sensor_count      1 NitrogenGas/PmtSurface_30_3_0//NitrogenGas
+ boundary 507 b+1 508 sensor_count      1 NitrogenGas/PmtSurface_30_3_1//NitrogenGas
+ boundary 508 b+1 509 sensor_count      1 NitrogenGas/PmtSurface_30_3_2//NitrogenGas
+ boundary 509 b+1 510 sensor_count      1 NitrogenGas/PmtSurface_30_3_3//NitrogenGas
+ boundary 510 b+1 511 sensor_count      1 NitrogenGas/PmtSurface_31_0_0//NitrogenGas
+ boundary 511 b+1 512 sensor_count      1 NitrogenGas/PmtSurface_31_0_1//NitrogenGas
+ boundary 512 b+1 513 sensor_count      1 NitrogenGas/PmtSurface_31_0_2//NitrogenGas
+ boundary 513 b+1 514 sensor_count      1 NitrogenGas/PmtSurface_31_0_3//NitrogenGas
+ boundary 514 b+1 515 sensor_count      1 NitrogenGas/PmtSurface_31_1_0//NitrogenGas
+ boundary 515 b+1 516 sensor_count      1 NitrogenGas/PmtSurface_31_1_1//NitrogenGas
+ boundary 516 b+1 517 sensor_count      1 NitrogenGas/PmtSurface_31_1_2//NitrogenGas
+ boundary 517 b+1 518 sensor_count      1 NitrogenGas/PmtSurface_31_1_3//NitrogenGas
+ boundary 518 b+1 519 sensor_count      1 NitrogenGas/PmtSurface_31_2_0//NitrogenGas
+ boundary 519 b+1 520 sensor_count      1 NitrogenGas/PmtSurface_31_2_1//NitrogenGas
+ boundary 520 b+1 521 sensor_count      1 NitrogenGas/PmtSurface_31_2_2//NitrogenGas
+ boundary 521 b+1 522 sensor_count      1 NitrogenGas/PmtSurface_31_2_3//NitrogenGas
+ boundary 522 b+1 523 sensor_count      1 NitrogenGas/PmtSurface_31_3_0//NitrogenGas
+ boundary 523 b+1 524 sensor_count      1 NitrogenGas/PmtSurface_31_3_1//NitrogenGas
+ boundary 524 b+1 525 sensor_count      1 NitrogenGas/PmtSurface_31_3_2//NitrogenGas
+ boundary 525 b+1 526 sensor_count      1 NitrogenGas/PmtSurface_31_3_3//NitrogenGas
+ boundary 526 b+1 527 sensor_count      1 NitrogenGas/PmtSurface_32_0_0//NitrogenGas
+ boundary 527 b+1 528 sensor_count      1 NitrogenGas/PmtSurface_32_0_1//NitrogenGas
+ boundary 528 b+1 529 sensor_count      1 NitrogenGas/PmtSurface_32_0_2//NitrogenGas
+ boundary 529 b+1 530 sensor_count      1 NitrogenGas/PmtSurface_32_0_3//NitrogenGas
+ boundary 530 b+1 531 sensor_count      1 NitrogenGas/PmtSurface_32_1_0//NitrogenGas
+ boundary 531 b+1 532 sensor_count      1 NitrogenGas/PmtSurface_32_1_1//NitrogenGas
+ boundary 532 b+1 533 sensor_count      1 NitrogenGas/PmtSurface_32_1_2//NitrogenGas
+ boundary 533 b+1 534 sensor_count      1 NitrogenGas/PmtSurface_32_1_3//NitrogenGas
+ boundary 534 b+1 535 sensor_count      1 NitrogenGas/PmtSurface_32_2_0//NitrogenGas
+ boundary 535 b+1 536 sensor_count      1 NitrogenGas/PmtSurface_32_2_1//NitrogenGas
+ boundary 536 b+1 537 sensor_count      1 NitrogenGas/PmtSurface_32_2_2//NitrogenGas
+ boundary 537 b+1 538 sensor_count      1 NitrogenGas/PmtSurface_32_2_3//NitrogenGas
+ boundary 538 b+1 539 sensor_count      1 NitrogenGas/PmtSurface_32_3_0//NitrogenGas
+ boundary 539 b+1 540 sensor_count      1 NitrogenGas/PmtSurface_32_3_1//NitrogenGas
+ boundary 540 b+1 541 sensor_count      1 NitrogenGas/PmtSurface_32_3_2//NitrogenGas
+ boundary 541 b+1 542 sensor_count      1 NitrogenGas/PmtSurface_32_3_3//NitrogenGas
+ boundary 542 b+1 543 sensor_count      1 NitrogenGas/PmtSurface_33_0_0//NitrogenGas
+ boundary 543 b+1 544 sensor_count      1 NitrogenGas/PmtSurface_33_0_1//NitrogenGas
+ boundary 544 b+1 545 sensor_count      1 NitrogenGas/PmtSurface_33_0_2//NitrogenGas
+ boundary 545 b+1 546 sensor_count      1 NitrogenGas/PmtSurface_33_0_3//NitrogenGas
+ boundary 546 b+1 547 sensor_count      1 NitrogenGas/PmtSurface_33_1_0//NitrogenGas
+ boundary 547 b+1 548 sensor_count      1 NitrogenGas/PmtSurface_33_1_1//NitrogenGas
+ boundary 548 b+1 549 sensor_count      1 NitrogenGas/PmtSurface_33_1_2//NitrogenGas
+ boundary 549 b+1 550 sensor_count      1 NitrogenGas/PmtSurface_33_1_3//NitrogenGas
+ boundary 550 b+1 551 sensor_count      1 NitrogenGas/PmtSurface_33_2_0//NitrogenGas
+ boundary 551 b+1 552 sensor_count      1 NitrogenGas/PmtSurface_33_2_1//NitrogenGas
+ boundary 552 b+1 553 sensor_count      1 NitrogenGas/PmtSurface_33_2_2//NitrogenGas
+ boundary 553 b+1 554 sensor_count      1 NitrogenGas/PmtSurface_33_2_3//NitrogenGas
+ boundary 554 b+1 555 sensor_count      1 NitrogenGas/PmtSurface_33_3_0//NitrogenGas
+ boundary 555 b+1 556 sensor_count      1 NitrogenGas/PmtSurface_33_3_1//NitrogenGas
+ boundary 556 b+1 557 sensor_count      1 NitrogenGas/PmtSurface_33_3_2//NitrogenGas
+ boundary 557 b+1 558 sensor_count      1 NitrogenGas/PmtSurface_33_3_3//NitrogenGas
+ boundary 558 b+1 559 sensor_count      1 NitrogenGas/PmtSurface_34_0_0//NitrogenGas
+ boundary 559 b+1 560 sensor_count      1 NitrogenGas/PmtSurface_34_0_1//NitrogenGas
+ boundary 560 b+1 561 sensor_count      1 NitrogenGas/PmtSurface_34_0_2//NitrogenGas
+ boundary 561 b+1 562 sensor_count      1 NitrogenGas/PmtSurface_34_0_3//NitrogenGas
+ boundary 562 b+1 563 sensor_count      1 NitrogenGas/PmtSurface_34_1_0//NitrogenGas
+ boundary 563 b+1 564 sensor_count      1 NitrogenGas/PmtSurface_34_1_1//NitrogenGas
+ boundary 564 b+1 565 sensor_count      1 NitrogenGas/PmtSurface_34_1_2//NitrogenGas
+ boundary 565 b+1 566 sensor_count      1 NitrogenGas/PmtSurface_34_1_3//NitrogenGas
+ boundary 566 b+1 567 sensor_count      1 NitrogenGas/PmtSurface_34_2_0//NitrogenGas
+ boundary 567 b+1 568 sensor_count      1 NitrogenGas/PmtSurface_34_2_1//NitrogenGas
+ boundary 568 b+1 569 sensor_count      1 NitrogenGas/PmtSurface_34_2_2//NitrogenGas
+ boundary 569 b+1 570 sensor_count      1 NitrogenGas/PmtSurface_34_2_3//NitrogenGas
+ boundary 570 b+1 571 sensor_count      1 NitrogenGas/PmtSurface_34_3_0//NitrogenGas
+ boundary 571 b+1 572 sensor_count      1 NitrogenGas/PmtSurface_34_3_1//NitrogenGas
+ boundary 572 b+1 573 sensor_count      1 NitrogenGas/PmtSurface_34_3_2//NitrogenGas
+ boundary 573 b+1 574 sensor_count      1 NitrogenGas/PmtSurface_34_3_3//NitrogenGas
+ boundary 574 b+1 575 sensor_count      1 NitrogenGas/PmtSurface_35_0_0//NitrogenGas
+ boundary 575 b+1 576 sensor_count      1 NitrogenGas/PmtSurface_35_0_1//NitrogenGas
+ boundary 576 b+1 577 sensor_count      1 NitrogenGas/PmtSurface_35_0_2//NitrogenGas
+ boundary 577 b+1 578 sensor_count      1 NitrogenGas/PmtSurface_35_0_3//NitrogenGas
+ boundary 578 b+1 579 sensor_count      1 NitrogenGas/PmtSurface_35_1_0//NitrogenGas
+ boundary 579 b+1 580 sensor_count      1 NitrogenGas/PmtSurface_35_1_1//NitrogenGas
+ boundary 580 b+1 581 sensor_count      1 NitrogenGas/PmtSurface_35_1_2//NitrogenGas
+ boundary 581 b+1 582 sensor_count      1 NitrogenGas/PmtSurface_35_1_3//NitrogenGas
+ boundary 582 b+1 583 sensor_count      1 NitrogenGas/PmtSurface_35_2_0//NitrogenGas
+ boundary 583 b+1 584 sensor_count      1 NitrogenGas/PmtSurface_35_2_1//NitrogenGas
+ boundary 584 b+1 585 sensor_count      1 NitrogenGas/PmtSurface_35_2_2//NitrogenGas
+ boundary 585 b+1 586 sensor_count      1 NitrogenGas/PmtSurface_35_2_3//NitrogenGas
+ boundary 586 b+1 587 sensor_count      1 NitrogenGas/PmtSurface_35_3_0//NitrogenGas
+ boundary 587 b+1 588 sensor_count      1 NitrogenGas/PmtSurface_35_3_1//NitrogenGas
+ boundary 588 b+1 589 sensor_count      1 NitrogenGas/PmtSurface_35_3_2//NitrogenGas
+ boundary 589 b+1 590 sensor_count      1 NitrogenGas/PmtSurface_35_3_3//NitrogenGas
+ boundary 590 b+1 591 sensor_count      1 NitrogenGas/PmtSurface_36_0_0//NitrogenGas
+ boundary 591 b+1 592 sensor_count      1 NitrogenGas/PmtSurface_36_0_1//NitrogenGas
+ boundary 592 b+1 593 sensor_count      1 NitrogenGas/PmtSurface_36_0_2//NitrogenGas
+ boundary 593 b+1 594 sensor_count      1 NitrogenGas/PmtSurface_36_0_3//NitrogenGas
+ boundary 594 b+1 595 sensor_count      1 NitrogenGas/PmtSurface_36_1_0//NitrogenGas
+ boundary 595 b+1 596 sensor_count      1 NitrogenGas/PmtSurface_36_1_1//NitrogenGas
+ boundary 596 b+1 597 sensor_count      1 NitrogenGas/PmtSurface_36_1_2//NitrogenGas
+ boundary 597 b+1 598 sensor_count      1 NitrogenGas/PmtSurface_36_1_3//NitrogenGas
+ boundary 598 b+1 599 sensor_count      1 NitrogenGas/PmtSurface_36_2_0//NitrogenGas
+ boundary 599 b+1 600 sensor_count      1 NitrogenGas/PmtSurface_36_2_1//NitrogenGas
+ boundary 600 b+1 601 sensor_count      1 NitrogenGas/PmtSurface_36_2_2//NitrogenGas
+ boundary 601 b+1 602 sensor_count      1 NitrogenGas/PmtSurface_36_2_3//NitrogenGas
+ boundary 602 b+1 603 sensor_count      1 NitrogenGas/PmtSurface_36_3_0//NitrogenGas
+ boundary 603 b+1 604 sensor_count      1 NitrogenGas/PmtSurface_36_3_1//NitrogenGas
+ boundary 604 b+1 605 sensor_count      1 NitrogenGas/PmtSurface_36_3_2//NitrogenGas
+ boundary 605 b+1 606 sensor_count      1 NitrogenGas/PmtSurface_36_3_3//NitrogenGas
+ boundary 606 b+1 607 sensor_count      1 NitrogenGas/PmtSurface_37_0_0//NitrogenGas
+ boundary 607 b+1 608 sensor_count      1 NitrogenGas/PmtSurface_37_0_1//NitrogenGas
+ boundary 608 b+1 609 sensor_count      1 NitrogenGas/PmtSurface_37_0_2//NitrogenGas
+ boundary 609 b+1 610 sensor_count      1 NitrogenGas/PmtSurface_37_0_3//NitrogenGas
+ boundary 610 b+1 611 sensor_count      1 NitrogenGas/PmtSurface_37_1_0//NitrogenGas
+ boundary 611 b+1 612 sensor_count      1 NitrogenGas/PmtSurface_37_1_1//NitrogenGas
+ boundary 612 b+1 613 sensor_count      1 NitrogenGas/PmtSurface_37_1_2//NitrogenGas
+ boundary 613 b+1 614 sensor_count      1 NitrogenGas/PmtSurface_37_1_3//NitrogenGas
+ boundary 614 b+1 615 sensor_count      1 NitrogenGas/PmtSurface_37_2_0//NitrogenGas
+ boundary 615 b+1 616 sensor_count      1 NitrogenGas/PmtSurface_37_2_1//NitrogenGas
+ boundary 616 b+1 617 sensor_count      1 NitrogenGas/PmtSurface_37_2_2//NitrogenGas
+ boundary 617 b+1 618 sensor_count      1 NitrogenGas/PmtSurface_37_2_3//NitrogenGas
+ boundary 618 b+1 619 sensor_count      1 NitrogenGas/PmtSurface_37_3_0//NitrogenGas
+ boundary 619 b+1 620 sensor_count      1 NitrogenGas/PmtSurface_37_3_1//NitrogenGas
+ boundary 620 b+1 621 sensor_count      1 NitrogenGas/PmtSurface_37_3_2//NitrogenGas
+ boundary 621 b+1 622 sensor_count      1 NitrogenGas/PmtSurface_37_3_3//NitrogenGas
+ boundary 622 b+1 623 sensor_count      1 NitrogenGas/PmtSurface_38_0_0//NitrogenGas
+ boundary 623 b+1 624 sensor_count      1 NitrogenGas/PmtSurface_38_0_1//NitrogenGas
+ boundary 624 b+1 625 sensor_count      1 NitrogenGas/PmtSurface_38_0_2//NitrogenGas
+ boundary 625 b+1 626 sensor_count      1 NitrogenGas/PmtSurface_38_0_3//NitrogenGas
+ boundary 626 b+1 627 sensor_count      1 NitrogenGas/PmtSurface_38_1_0//NitrogenGas
+ boundary 627 b+1 628 sensor_count      1 NitrogenGas/PmtSurface_38_1_1//NitrogenGas
+ boundary 628 b+1 629 sensor_count      1 NitrogenGas/PmtSurface_38_1_2//NitrogenGas
+ boundary 629 b+1 630 sensor_count      1 NitrogenGas/PmtSurface_38_1_3//NitrogenGas
+ boundary 630 b+1 631 sensor_count      1 NitrogenGas/PmtSurface_38_2_0//NitrogenGas
+ boundary 631 b+1 632 sensor_count      1 NitrogenGas/PmtSurface_38_2_1//NitrogenGas
+ boundary 632 b+1 633 sensor_count      1 NitrogenGas/PmtSurface_38_2_2//NitrogenGas
+ boundary 633 b+1 634 sensor_count      1 NitrogenGas/PmtSurface_38_2_3//NitrogenGas
+ boundary 634 b+1 635 sensor_count      1 NitrogenGas/PmtSurface_38_3_0//NitrogenGas
+ boundary 635 b+1 636 sensor_count      1 NitrogenGas/PmtSurface_38_3_1//NitrogenGas
+ boundary 636 b+1 637 sensor_count      1 NitrogenGas/PmtSurface_38_3_2//NitrogenGas
+ boundary 637 b+1 638 sensor_count      1 NitrogenGas/PmtSurface_38_3_3//NitrogenGas
+ boundary 638 b+1 639 sensor_count      1 NitrogenGas/PmtSurface_39_0_0//NitrogenGas
+ boundary 639 b+1 640 sensor_count      1 NitrogenGas/PmtSurface_39_0_1//NitrogenGas
+ boundary 640 b+1 641 sensor_count      1 NitrogenGas/PmtSurface_39_0_2//NitrogenGas
+ boundary 641 b+1 642 sensor_count      1 NitrogenGas/PmtSurface_39_0_3//NitrogenGas
+ boundary 642 b+1 643 sensor_count      1 NitrogenGas/PmtSurface_39_1_0//NitrogenGas
+ boundary 643 b+1 644 sensor_count      1 NitrogenGas/PmtSurface_39_1_1//NitrogenGas
+ boundary 644 b+1 645 sensor_count      1 NitrogenGas/PmtSurface_39_1_2//NitrogenGas
+ boundary 645 b+1 646 sensor_count      1 NitrogenGas/PmtSurface_39_1_3//NitrogenGas
+ boundary 646 b+1 647 sensor_count      1 NitrogenGas/PmtSurface_39_2_0//NitrogenGas
+ boundary 647 b+1 648 sensor_count      1 NitrogenGas/PmtSurface_39_2_1//NitrogenGas
+ boundary 648 b+1 649 sensor_count      1 NitrogenGas/PmtSurface_39_2_2//NitrogenGas
+ boundary 649 b+1 650 sensor_count      1 NitrogenGas/PmtSurface_39_2_3//NitrogenGas
+ boundary 650 b+1 651 sensor_count      1 NitrogenGas/PmtSurface_39_3_0//NitrogenGas
+ boundary 651 b+1 652 sensor_count      1 NitrogenGas/PmtSurface_39_3_1//NitrogenGas
+ boundary 652 b+1 653 sensor_count      1 NitrogenGas/PmtSurface_39_3_2//NitrogenGas
+ boundary 653 b+1 654 sensor_count      1 NitrogenGas/PmtSurface_39_3_3//NitrogenGas
+ boundary 654 b+1 655 sensor_count      1 NitrogenGas/PmtSurface_40_0_0//NitrogenGas
+ boundary 655 b+1 656 sensor_count      1 NitrogenGas/PmtSurface_40_0_1//NitrogenGas
+ boundary 656 b+1 657 sensor_count      1 NitrogenGas/PmtSurface_40_0_2//NitrogenGas
+ boundary 657 b+1 658 sensor_count      1 NitrogenGas/PmtSurface_40_0_3//NitrogenGas
+ boundary 658 b+1 659 sensor_count      1 NitrogenGas/PmtSurface_40_1_0//NitrogenGas
+ boundary 659 b+1 660 sensor_count      1 NitrogenGas/PmtSurface_40_1_1//NitrogenGas
+ boundary 660 b+1 661 sensor_count      1 NitrogenGas/PmtSurface_40_1_2//NitrogenGas
+ boundary 661 b+1 662 sensor_count      1 NitrogenGas/PmtSurface_40_1_3//NitrogenGas
+ boundary 662 b+1 663 sensor_count      1 NitrogenGas/PmtSurface_40_2_0//NitrogenGas
+ boundary 663 b+1 664 sensor_count      1 NitrogenGas/PmtSurface_40_2_1//NitrogenGas
+ boundary 664 b+1 665 sensor_count      1 NitrogenGas/PmtSurface_40_2_2//NitrogenGas
+ boundary 665 b+1 666 sensor_count      1 NitrogenGas/PmtSurface_40_2_3//NitrogenGas
+ boundary 666 b+1 667 sensor_count      1 NitrogenGas/PmtSurface_40_3_0//NitrogenGas
+ boundary 667 b+1 668 sensor_count      1 NitrogenGas/PmtSurface_40_3_1//NitrogenGas
+ boundary 668 b+1 669 sensor_count      1 NitrogenGas/PmtSurface_40_3_2//NitrogenGas
+ boundary 669 b+1 670 sensor_count      1 NitrogenGas/PmtSurface_40_3_3//NitrogenGas
+ boundary 670 b+1 671 sensor_count      1 NitrogenGas/PmtSurface_41_0_0//NitrogenGas
+ boundary 671 b+1 672 sensor_count      1 NitrogenGas/PmtSurface_41_0_1//NitrogenGas
+ boundary 672 b+1 673 sensor_count      1 NitrogenGas/PmtSurface_41_0_2//NitrogenGas
+ boundary 673 b+1 674 sensor_count      1 NitrogenGas/PmtSurface_41_0_3//NitrogenGas
+ boundary 674 b+1 675 sensor_count      1 NitrogenGas/PmtSurface_41_1_0//NitrogenGas
+ boundary 675 b+1 676 sensor_count      1 NitrogenGas/PmtSurface_41_1_1//NitrogenGas
+ boundary 676 b+1 677 sensor_count      1 NitrogenGas/PmtSurface_41_1_2//NitrogenGas
+ boundary 677 b+1 678 sensor_count      1 NitrogenGas/PmtSurface_41_1_3//NitrogenGas
+ boundary 678 b+1 679 sensor_count      1 NitrogenGas/PmtSurface_41_2_0//NitrogenGas
+ boundary 679 b+1 680 sensor_count      1 NitrogenGas/PmtSurface_41_2_1//NitrogenGas
+ boundary 680 b+1 681 sensor_count      1 NitrogenGas/PmtSurface_41_2_2//NitrogenGas
+ boundary 681 b+1 682 sensor_count      1 NitrogenGas/PmtSurface_41_2_3//NitrogenGas
+ boundary 682 b+1 683 sensor_count      1 NitrogenGas/PmtSurface_41_3_0//NitrogenGas
+ boundary 683 b+1 684 sensor_count      1 NitrogenGas/PmtSurface_41_3_1//NitrogenGas
+ boundary 684 b+1 685 sensor_count      1 NitrogenGas/PmtSurface_41_3_2//NitrogenGas
+ boundary 685 b+1 686 sensor_count      1 NitrogenGas/PmtSurface_41_3_3//NitrogenGas
+ boundary 686 b+1 687 sensor_count      1 NitrogenGas/PmtSurface_42_0_0//NitrogenGas
+ boundary 687 b+1 688 sensor_count      1 NitrogenGas/PmtSurface_42_0_1//NitrogenGas
+ boundary 688 b+1 689 sensor_count      1 NitrogenGas/PmtSurface_42_0_2//NitrogenGas
+ boundary 689 b+1 690 sensor_count      1 NitrogenGas/PmtSurface_42_0_3//NitrogenGas
+ boundary 690 b+1 691 sensor_count      1 NitrogenGas/PmtSurface_42_1_0//NitrogenGas
+ boundary 691 b+1 692 sensor_count      1 NitrogenGas/PmtSurface_42_1_1//NitrogenGas
+ boundary 692 b+1 693 sensor_count      1 NitrogenGas/PmtSurface_42_1_2//NitrogenGas
+ boundary 693 b+1 694 sensor_count      1 NitrogenGas/PmtSurface_42_1_3//NitrogenGas
+ boundary 694 b+1 695 sensor_count      1 NitrogenGas/PmtSurface_42_2_0//NitrogenGas
+ boundary 695 b+1 696 sensor_count      1 NitrogenGas/PmtSurface_42_2_1//NitrogenGas
+ boundary 696 b+1 697 sensor_count      1 NitrogenGas/PmtSurface_42_2_2//NitrogenGas
+ boundary 697 b+1 698 sensor_count      1 NitrogenGas/PmtSurface_42_2_3//NitrogenGas
+ boundary 698 b+1 699 sensor_count      1 NitrogenGas/PmtSurface_42_3_0//NitrogenGas
+ boundary 699 b+1 700 sensor_count      1 NitrogenGas/PmtSurface_42_3_1//NitrogenGas
+ boundary 700 b+1 701 sensor_count      1 NitrogenGas/PmtSurface_42_3_2//NitrogenGas
+ boundary 701 b+1 702 sensor_count      1 NitrogenGas/PmtSurface_42_3_3//NitrogenGas
+ boundary 702 b+1 703 sensor_count      1 NitrogenGas/PmtSurface_43_0_0//NitrogenGas
+ boundary 703 b+1 704 sensor_count      1 NitrogenGas/PmtSurface_43_0_1//NitrogenGas
+ boundary 704 b+1 705 sensor_count      1 NitrogenGas/PmtSurface_43_0_2//NitrogenGas
+ boundary 705 b+1 706 sensor_count      1 NitrogenGas/PmtSurface_43_0_3//NitrogenGas
+ boundary 706 b+1 707 sensor_count      1 NitrogenGas/PmtSurface_43_1_0//NitrogenGas
+ boundary 707 b+1 708 sensor_count      1 NitrogenGas/PmtSurface_43_1_1//NitrogenGas
+ boundary 708 b+1 709 sensor_count      1 NitrogenGas/PmtSurface_43_1_2//NitrogenGas
+ boundary 709 b+1 710 sensor_count      1 NitrogenGas/PmtSurface_43_1_3//NitrogenGas
+ boundary 710 b+1 711 sensor_count      1 NitrogenGas/PmtSurface_43_2_0//NitrogenGas
+ boundary 711 b+1 712 sensor_count      1 NitrogenGas/PmtSurface_43_2_1//NitrogenGas
+ boundary 712 b+1 713 sensor_count      1 NitrogenGas/PmtSurface_43_2_2//NitrogenGas
+ boundary 713 b+1 714 sensor_count      1 NitrogenGas/PmtSurface_43_2_3//NitrogenGas
+ boundary 714 b+1 715 sensor_count      1 NitrogenGas/PmtSurface_43_3_0//NitrogenGas
+ boundary 715 b+1 716 sensor_count      1 NitrogenGas/PmtSurface_43_3_1//NitrogenGas
+ boundary 716 b+1 717 sensor_count      1 NitrogenGas/PmtSurface_43_3_2//NitrogenGas
+ boundary 717 b+1 718 sensor_count      1 NitrogenGas/PmtSurface_43_3_3//NitrogenGas
+ boundary 718 b+1 719 sensor_count      1 NitrogenGas/PmtSurface_44_0_0//NitrogenGas
+ boundary 719 b+1 720 sensor_count      1 NitrogenGas/PmtSurface_44_0_1//NitrogenGas
+ boundary 720 b+1 721 sensor_count      1 NitrogenGas/PmtSurface_44_0_2//NitrogenGas
+ boundary 721 b+1 722 sensor_count      1 NitrogenGas/PmtSurface_44_0_3//NitrogenGas
+ boundary 722 b+1 723 sensor_count      1 NitrogenGas/PmtSurface_44_1_0//NitrogenGas
+ boundary 723 b+1 724 sensor_count      1 NitrogenGas/PmtSurface_44_1_1//NitrogenGas
+ boundary 724 b+1 725 sensor_count      1 NitrogenGas/PmtSurface_44_1_2//NitrogenGas
+ boundary 725 b+1 726 sensor_count      1 NitrogenGas/PmtSurface_44_1_3//NitrogenGas
+ boundary 726 b+1 727 sensor_count      1 NitrogenGas/PmtSurface_44_2_0//NitrogenGas
+ boundary 727 b+1 728 sensor_count      1 NitrogenGas/PmtSurface_44_2_1//NitrogenGas
+ boundary 728 b+1 729 sensor_count      1 NitrogenGas/PmtSurface_44_2_2//NitrogenGas
+ boundary 729 b+1 730 sensor_count      1 NitrogenGas/PmtSurface_44_2_3//NitrogenGas
+ boundary 730 b+1 731 sensor_count      1 NitrogenGas/PmtSurface_44_3_0//NitrogenGas
+ boundary 731 b+1 732 sensor_count      1 NitrogenGas/PmtSurface_44_3_1//NitrogenGas
+ boundary 732 b+1 733 sensor_count      1 NitrogenGas/PmtSurface_44_3_2//NitrogenGas
+ boundary 733 b+1 734 sensor_count      1 NitrogenGas/PmtSurface_44_3_3//NitrogenGas
+ boundary 734 b+1 735 sensor_count      1 NitrogenGas/PmtSurface_45_0_0//NitrogenGas
+ boundary 735 b+1 736 sensor_count      1 NitrogenGas/PmtSurface_45_0_1//NitrogenGas
+ boundary 736 b+1 737 sensor_count      1 NitrogenGas/PmtSurface_45_0_2//NitrogenGas
+ boundary 737 b+1 738 sensor_count      1 NitrogenGas/PmtSurface_45_0_3//NitrogenGas
+ boundary 738 b+1 739 sensor_count      1 NitrogenGas/PmtSurface_45_1_0//NitrogenGas
+ boundary 739 b+1 740 sensor_count      1 NitrogenGas/PmtSurface_45_1_1//NitrogenGas
+ boundary 740 b+1 741 sensor_count      1 NitrogenGas/PmtSurface_45_1_2//NitrogenGas
+ boundary 741 b+1 742 sensor_count      1 NitrogenGas/PmtSurface_45_1_3//NitrogenGas
+ boundary 742 b+1 743 sensor_count      1 NitrogenGas/PmtSurface_45_2_0//NitrogenGas
+ boundary 743 b+1 744 sensor_count      1 NitrogenGas/PmtSurface_45_2_1//NitrogenGas
+ boundary 744 b+1 745 sensor_count      1 NitrogenGas/PmtSurface_45_2_2//NitrogenGas
+ boundary 745 b+1 746 sensor_count      1 NitrogenGas/PmtSurface_45_2_3//NitrogenGas
+ boundary 746 b+1 747 sensor_count      1 NitrogenGas/PmtSurface_45_3_0//NitrogenGas
+ boundary 747 b+1 748 sensor_count      1 NitrogenGas/PmtSurface_45_3_1//NitrogenGas
+ boundary 748 b+1 749 sensor_count      1 NitrogenGas/PmtSurface_45_3_2//NitrogenGas
+ boundary 749 b+1 750 sensor_count      1 NitrogenGas/PmtSurface_45_3_3//NitrogenGas
+ boundary 750 b+1 751 sensor_count      1 NitrogenGas/PmtSurface_46_0_0//NitrogenGas
+ boundary 751 b+1 752 sensor_count      1 NitrogenGas/PmtSurface_46_0_1//NitrogenGas
+ boundary 752 b+1 753 sensor_count      1 NitrogenGas/PmtSurface_46_0_2//NitrogenGas
+ boundary 753 b+1 754 sensor_count      1 NitrogenGas/PmtSurface_46_0_3//NitrogenGas
+ boundary 754 b+1 755 sensor_count      1 NitrogenGas/PmtSurface_46_1_0//NitrogenGas
+ boundary 755 b+1 756 sensor_count      1 NitrogenGas/PmtSurface_46_1_1//NitrogenGas
+ boundary 756 b+1 757 sensor_count      1 NitrogenGas/PmtSurface_46_1_2//NitrogenGas
+ boundary 757 b+1 758 sensor_count      1 NitrogenGas/PmtSurface_46_1_3//NitrogenGas
+ boundary 758 b+1 759 sensor_count      1 NitrogenGas/PmtSurface_46_2_0//NitrogenGas
+ boundary 759 b+1 760 sensor_count      1 NitrogenGas/PmtSurface_46_2_1//NitrogenGas
+ boundary 760 b+1 761 sensor_count      1 NitrogenGas/PmtSurface_46_2_2//NitrogenGas
+ boundary 761 b+1 762 sensor_count      1 NitrogenGas/PmtSurface_46_2_3//NitrogenGas
+ boundary 762 b+1 763 sensor_count      1 NitrogenGas/PmtSurface_46_3_0//NitrogenGas
+ boundary 763 b+1 764 sensor_count      1 NitrogenGas/PmtSurface_46_3_1//NitrogenGas
+ boundary 764 b+1 765 sensor_count      1 NitrogenGas/PmtSurface_46_3_2//NitrogenGas
+ boundary 765 b+1 766 sensor_count      1 NitrogenGas/PmtSurface_46_3_3//NitrogenGas
+ boundary 766 b+1 767 sensor_count      1 NitrogenGas/PmtSurface_47_0_0//NitrogenGas
+ boundary 767 b+1 768 sensor_count      1 NitrogenGas/PmtSurface_47_0_1//NitrogenGas
+ boundary 768 b+1 769 sensor_count      1 NitrogenGas/PmtSurface_47_0_2//NitrogenGas
+ boundary 769 b+1 770 sensor_count      1 NitrogenGas/PmtSurface_47_0_3//NitrogenGas
+ boundary 770 b+1 771 sensor_count      1 NitrogenGas/PmtSurface_47_1_0//NitrogenGas
+ boundary 771 b+1 772 sensor_count      1 NitrogenGas/PmtSurface_47_1_1//NitrogenGas
+ boundary 772 b+1 773 sensor_count      1 NitrogenGas/PmtSurface_47_1_2//NitrogenGas
+ boundary 773 b+1 774 sensor_count      1 NitrogenGas/PmtSurface_47_1_3//NitrogenGas
+ boundary 774 b+1 775 sensor_count      1 NitrogenGas/PmtSurface_47_2_0//NitrogenGas
+ boundary 775 b+1 776 sensor_count      1 NitrogenGas/PmtSurface_47_2_1//NitrogenGas
+ boundary 776 b+1 777 sensor_count      1 NitrogenGas/PmtSurface_47_2_2//NitrogenGas
+ boundary 777 b+1 778 sensor_count      1 NitrogenGas/PmtSurface_47_2_3//NitrogenGas
+ boundary 778 b+1 779 sensor_count      1 NitrogenGas/PmtSurface_47_3_0//NitrogenGas
+ boundary 779 b+1 780 sensor_count      1 NitrogenGas/PmtSurface_47_3_1//NitrogenGas
+ boundary 780 b+1 781 sensor_count      1 NitrogenGas/PmtSurface_47_3_2//NitrogenGas
+ boundary 781 b+1 782 sensor_count      1 NitrogenGas/PmtSurface_47_3_3//NitrogenGas
+ boundary 782 b+1 783 sensor_count      1 NitrogenGas/PmtSurface_48_0_0//NitrogenGas
+ boundary 783 b+1 784 sensor_count      1 NitrogenGas/PmtSurface_48_0_1//NitrogenGas
+ boundary 784 b+1 785 sensor_count      1 NitrogenGas/PmtSurface_48_0_2//NitrogenGas
+ boundary 785 b+1 786 sensor_count      1 NitrogenGas/PmtSurface_48_0_3//NitrogenGas
+ boundary 786 b+1 787 sensor_count      1 NitrogenGas/PmtSurface_48_1_0//NitrogenGas
+ boundary 787 b+1 788 sensor_count      1 NitrogenGas/PmtSurface_48_1_1//NitrogenGas
+ boundary 788 b+1 789 sensor_count      1 NitrogenGas/PmtSurface_48_1_2//NitrogenGas
+ boundary 789 b+1 790 sensor_count      1 NitrogenGas/PmtSurface_48_1_3//NitrogenGas
+ boundary 790 b+1 791 sensor_count      1 NitrogenGas/PmtSurface_48_2_0//NitrogenGas
+ boundary 791 b+1 792 sensor_count      1 NitrogenGas/PmtSurface_48_2_1//NitrogenGas
+ boundary 792 b+1 793 sensor_count      1 NitrogenGas/PmtSurface_48_2_2//NitrogenGas
+ boundary 793 b+1 794 sensor_count      1 NitrogenGas/PmtSurface_48_2_3//NitrogenGas
+ boundary 794 b+1 795 sensor_count      1 NitrogenGas/PmtSurface_48_3_0//NitrogenGas
+ boundary 795 b+1 796 sensor_count      1 NitrogenGas/PmtSurface_48_3_1//NitrogenGas
+ boundary 796 b+1 797 sensor_count      1 NitrogenGas/PmtSurface_48_3_2//NitrogenGas
+ boundary 797 b+1 798 sensor_count      1 NitrogenGas/PmtSurface_48_3_3//NitrogenGas
+ boundary 798 b+1 799 sensor_count      1 NitrogenGas/PmtSurface_49_0_0//NitrogenGas
+ boundary 799 b+1 800 sensor_count      1 NitrogenGas/PmtSurface_49_0_1//NitrogenGas
+ boundary 800 b+1 801 sensor_count      1 NitrogenGas/PmtSurface_49_0_2//NitrogenGas
+ boundary 801 b+1 802 sensor_count      1 NitrogenGas/PmtSurface_49_0_3//NitrogenGas
+ boundary 802 b+1 803 sensor_count      1 NitrogenGas/PmtSurface_49_1_0//NitrogenGas
+ boundary 803 b+1 804 sensor_count      1 NitrogenGas/PmtSurface_49_1_1//NitrogenGas
+ boundary 804 b+1 805 sensor_count      1 NitrogenGas/PmtSurface_49_1_2//NitrogenGas
+ boundary 805 b+1 806 sensor_count      1 NitrogenGas/PmtSurface_49_1_3//NitrogenGas
+ boundary 806 b+1 807 sensor_count      1 NitrogenGas/PmtSurface_49_2_0//NitrogenGas
+ boundary 807 b+1 808 sensor_count      1 NitrogenGas/PmtSurface_49_2_1//NitrogenGas
+ boundary 808 b+1 809 sensor_count      1 NitrogenGas/PmtSurface_49_2_2//NitrogenGas
+ boundary 809 b+1 810 sensor_count      1 NitrogenGas/PmtSurface_49_2_3//NitrogenGas
+ boundary 810 b+1 811 sensor_count      1 NitrogenGas/PmtSurface_49_3_0//NitrogenGas
+ boundary 811 b+1 812 sensor_count      1 NitrogenGas/PmtSurface_49_3_1//NitrogenGas
+ boundary 812 b+1 813 sensor_count      1 NitrogenGas/PmtSurface_49_3_2//NitrogenGas
+ boundary 813 b+1 814 sensor_count      1 NitrogenGas/PmtSurface_49_3_3//NitrogenGas
+ boundary 814 b+1 815 sensor_count      1 NitrogenGas/PmtSurface_50_0_0//NitrogenGas
+ boundary 815 b+1 816 sensor_count      1 NitrogenGas/PmtSurface_50_0_1//NitrogenGas
+ boundary 816 b+1 817 sensor_count      1 NitrogenGas/PmtSurface_50_0_2//NitrogenGas
+ boundary 817 b+1 818 sensor_count      1 NitrogenGas/PmtSurface_50_0_3//NitrogenGas
+ boundary 818 b+1 819 sensor_count      1 NitrogenGas/PmtSurface_50_1_0//NitrogenGas
+ boundary 819 b+1 820 sensor_count      1 NitrogenGas/PmtSurface_50_1_1//NitrogenGas
+ boundary 820 b+1 821 sensor_count      1 NitrogenGas/PmtSurface_50_1_2//NitrogenGas
+ boundary 821 b+1 822 sensor_count      1 NitrogenGas/PmtSurface_50_1_3//NitrogenGas
+ boundary 822 b+1 823 sensor_count      1 NitrogenGas/PmtSurface_50_2_0//NitrogenGas
+ boundary 823 b+1 824 sensor_count      1 NitrogenGas/PmtSurface_50_2_1//NitrogenGas
+ boundary 824 b+1 825 sensor_count      1 NitrogenGas/PmtSurface_50_2_2//NitrogenGas
+ boundary 825 b+1 826 sensor_count      1 NitrogenGas/PmtSurface_50_2_3//NitrogenGas
+ boundary 826 b+1 827 sensor_count      1 NitrogenGas/PmtSurface_50_3_0//NitrogenGas
+ boundary 827 b+1 828 sensor_count      1 NitrogenGas/PmtSurface_50_3_1//NitrogenGas
+ boundary 828 b+1 829 sensor_count      1 NitrogenGas/PmtSurface_50_3_2//NitrogenGas
+ boundary 829 b+1 830 sensor_count      1 NitrogenGas/PmtSurface_50_3_3//NitrogenGas
+ boundary 830 b+1 831 sensor_count      1 NitrogenGas/PmtSurface_51_0_0//NitrogenGas
+ boundary 831 b+1 832 sensor_count      1 NitrogenGas/PmtSurface_51_0_1//NitrogenGas
+ boundary 832 b+1 833 sensor_count      1 NitrogenGas/PmtSurface_51_0_2//NitrogenGas
+ boundary 833 b+1 834 sensor_count      1 NitrogenGas/PmtSurface_51_0_3//NitrogenGas
+ boundary 834 b+1 835 sensor_count      1 NitrogenGas/PmtSurface_51_1_0//NitrogenGas
+ boundary 835 b+1 836 sensor_count      1 NitrogenGas/PmtSurface_51_1_1//NitrogenGas
+ boundary 836 b+1 837 sensor_count      1 NitrogenGas/PmtSurface_51_1_2//NitrogenGas
+ boundary 837 b+1 838 sensor_count      1 NitrogenGas/PmtSurface_51_1_3//NitrogenGas
+ boundary 838 b+1 839 sensor_count      1 NitrogenGas/PmtSurface_51_2_0//NitrogenGas
+ boundary 839 b+1 840 sensor_count      1 NitrogenGas/PmtSurface_51_2_1//NitrogenGas
+ boundary 840 b+1 841 sensor_count      1 NitrogenGas/PmtSurface_51_2_2//NitrogenGas
+ boundary 841 b+1 842 sensor_count      1 NitrogenGas/PmtSurface_51_2_3//NitrogenGas
+ boundary 842 b+1 843 sensor_count      1 NitrogenGas/PmtSurface_51_3_0//NitrogenGas
+ boundary 843 b+1 844 sensor_count      1 NitrogenGas/PmtSurface_51_3_1//NitrogenGas
+ boundary 844 b+1 845 sensor_count      1 NitrogenGas/PmtSurface_51_3_2//NitrogenGas
+ boundary 845 b+1 846 sensor_count      1 NitrogenGas/PmtSurface_51_3_3//NitrogenGas
+ boundary 846 b+1 847 sensor_count      1 NitrogenGas/PmtSurface_52_0_0//NitrogenGas
+ boundary 847 b+1 848 sensor_count      1 NitrogenGas/PmtSurface_52_0_1//NitrogenGas
+ boundary 848 b+1 849 sensor_count      1 NitrogenGas/PmtSurface_52_0_2//NitrogenGas
+ boundary 849 b+1 850 sensor_count      1 NitrogenGas/PmtSurface_52_0_3//NitrogenGas
+ boundary 850 b+1 851 sensor_count      1 NitrogenGas/PmtSurface_52_1_0//NitrogenGas
+ boundary 851 b+1 852 sensor_count      1 NitrogenGas/PmtSurface_52_1_1//NitrogenGas
+ boundary 852 b+1 853 sensor_count      1 NitrogenGas/PmtSurface_52_1_2//NitrogenGas
+ boundary 853 b+1 854 sensor_count      1 NitrogenGas/PmtSurface_52_1_3//NitrogenGas
+ boundary 854 b+1 855 sensor_count      1 NitrogenGas/PmtSurface_52_2_0//NitrogenGas
+ boundary 855 b+1 856 sensor_count      1 NitrogenGas/PmtSurface_52_2_1//NitrogenGas
+ boundary 856 b+1 857 sensor_count      1 NitrogenGas/PmtSurface_52_2_2//NitrogenGas
+ boundary 857 b+1 858 sensor_count      1 NitrogenGas/PmtSurface_52_2_3//NitrogenGas
+ boundary 858 b+1 859 sensor_count      1 NitrogenGas/PmtSurface_52_3_0//NitrogenGas
+ boundary 859 b+1 860 sensor_count      1 NitrogenGas/PmtSurface_52_3_1//NitrogenGas
+ boundary 860 b+1 861 sensor_count      1 NitrogenGas/PmtSurface_52_3_2//NitrogenGas
+ boundary 861 b+1 862 sensor_count      1 NitrogenGas/PmtSurface_52_3_3//NitrogenGas
+ boundary 862 b+1 863 sensor_count      1 NitrogenGas/PmtSurface_53_0_0//NitrogenGas
+ boundary 863 b+1 864 sensor_count      1 NitrogenGas/PmtSurface_53_0_1//NitrogenGas
+ boundary 864 b+1 865 sensor_count      1 NitrogenGas/PmtSurface_53_0_2//NitrogenGas
+ boundary 865 b+1 866 sensor_count      1 NitrogenGas/PmtSurface_53_0_3//NitrogenGas
+ boundary 866 b+1 867 sensor_count      1 NitrogenGas/PmtSurface_53_1_0//NitrogenGas
+ boundary 867 b+1 868 sensor_count      1 NitrogenGas/PmtSurface_53_1_1//NitrogenGas
+ boundary 868 b+1 869 sensor_count      1 NitrogenGas/PmtSurface_53_1_2//NitrogenGas
+ boundary 869 b+1 870 sensor_count      1 NitrogenGas/PmtSurface_53_1_3//NitrogenGas
+ boundary 870 b+1 871 sensor_count      1 NitrogenGas/PmtSurface_53_2_0//NitrogenGas
+ boundary 871 b+1 872 sensor_count      1 NitrogenGas/PmtSurface_53_2_1//NitrogenGas
+ boundary 872 b+1 873 sensor_count      1 NitrogenGas/PmtSurface_53_2_2//NitrogenGas
+ boundary 873 b+1 874 sensor_count      1 NitrogenGas/PmtSurface_53_2_3//NitrogenGas
+ boundary 874 b+1 875 sensor_count      1 NitrogenGas/PmtSurface_53_3_0//NitrogenGas
+ boundary 875 b+1 876 sensor_count      1 NitrogenGas/PmtSurface_53_3_1//NitrogenGas
+ boundary 876 b+1 877 sensor_count      1 NitrogenGas/PmtSurface_53_3_2//NitrogenGas
+ boundary 877 b+1 878 sensor_count      1 NitrogenGas/PmtSurface_53_3_3//NitrogenGas
+ boundary 878 b+1 879 sensor_count      1 NitrogenGas/PmtSurface_54_0_0//NitrogenGas
+ boundary 879 b+1 880 sensor_count      1 NitrogenGas/PmtSurface_54_0_1//NitrogenGas
+ boundary 880 b+1 881 sensor_count      1 NitrogenGas/PmtSurface_54_0_2//NitrogenGas
+ boundary 881 b+1 882 sensor_count      1 NitrogenGas/PmtSurface_54_0_3//NitrogenGas
+ boundary 882 b+1 883 sensor_count      1 NitrogenGas/PmtSurface_54_1_0//NitrogenGas
+ boundary 883 b+1 884 sensor_count      1 NitrogenGas/PmtSurface_54_1_1//NitrogenGas
+ boundary 884 b+1 885 sensor_count      1 NitrogenGas/PmtSurface_54_1_2//NitrogenGas
+ boundary 885 b+1 886 sensor_count      1 NitrogenGas/PmtSurface_54_1_3//NitrogenGas
+ boundary 886 b+1 887 sensor_count      1 NitrogenGas/PmtSurface_54_2_0//NitrogenGas
+ boundary 887 b+1 888 sensor_count      1 NitrogenGas/PmtSurface_54_2_1//NitrogenGas
+ boundary 888 b+1 889 sensor_count      1 NitrogenGas/PmtSurface_54_2_2//NitrogenGas
+ boundary 889 b+1 890 sensor_count      1 NitrogenGas/PmtSurface_54_2_3//NitrogenGas
+ boundary 890 b+1 891 sensor_count      1 NitrogenGas/PmtSurface_54_3_0//NitrogenGas
+ boundary 891 b+1 892 sensor_count      1 NitrogenGas/PmtSurface_54_3_1//NitrogenGas
+ boundary 892 b+1 893 sensor_count      1 NitrogenGas/PmtSurface_54_3_2//NitrogenGas
+ boundary 893 b+1 894 sensor_count      1 NitrogenGas/PmtSurface_54_3_3//NitrogenGas
+ boundary 894 b+1 895 sensor_count      1 NitrogenGas/PmtSurface_55_0_0//NitrogenGas
+ boundary 895 b+1 896 sensor_count      1 NitrogenGas/PmtSurface_55_0_1//NitrogenGas
+ boundary 896 b+1 897 sensor_count      1 NitrogenGas/PmtSurface_55_0_2//NitrogenGas
+ boundary 897 b+1 898 sensor_count      1 NitrogenGas/PmtSurface_55_0_3//NitrogenGas
+ boundary 898 b+1 899 sensor_count      1 NitrogenGas/PmtSurface_55_1_0//NitrogenGas
+ boundary 899 b+1 900 sensor_count      1 NitrogenGas/PmtSurface_55_1_1//NitrogenGas
+ boundary 900 b+1 901 sensor_count      1 NitrogenGas/PmtSurface_55_1_2//NitrogenGas
+ boundary 901 b+1 902 sensor_count      1 NitrogenGas/PmtSurface_55_1_3//NitrogenGas
+ boundary 902 b+1 903 sensor_count      1 NitrogenGas/PmtSurface_55_2_0//NitrogenGas
+ boundary 903 b+1 904 sensor_count      1 NitrogenGas/PmtSurface_55_2_1//NitrogenGas
+ boundary 904 b+1 905 sensor_count      1 NitrogenGas/PmtSurface_55_2_2//NitrogenGas
+ boundary 905 b+1 906 sensor_count      1 NitrogenGas/PmtSurface_55_2_3//NitrogenGas
+ boundary 906 b+1 907 sensor_count      1 NitrogenGas/PmtSurface_55_3_0//NitrogenGas
+ boundary 907 b+1 908 sensor_count      1 NitrogenGas/PmtSurface_55_3_1//NitrogenGas
+ boundary 908 b+1 909 sensor_count      1 NitrogenGas/PmtSurface_55_3_2//NitrogenGas
+ boundary 909 b+1 910 sensor_count      1 NitrogenGas/PmtSurface_55_3_3//NitrogenGas
+ boundary 910 b+1 911 sensor_count      1 NitrogenGas/PmtSurface_56_0_0//NitrogenGas
+ boundary 911 b+1 912 sensor_count      1 NitrogenGas/PmtSurface_56_0_1//NitrogenGas
+ boundary 912 b+1 913 sensor_count      1 NitrogenGas/PmtSurface_56_0_2//NitrogenGas
+ boundary 913 b+1 914 sensor_count      1 NitrogenGas/PmtSurface_56_0_3//NitrogenGas
+ boundary 914 b+1 915 sensor_count      1 NitrogenGas/PmtSurface_56_1_0//NitrogenGas
+ boundary 915 b+1 916 sensor_count      1 NitrogenGas/PmtSurface_56_1_1//NitrogenGas
+ boundary 916 b+1 917 sensor_count      1 NitrogenGas/PmtSurface_56_1_2//NitrogenGas
+ boundary 917 b+1 918 sensor_count      1 NitrogenGas/PmtSurface_56_1_3//NitrogenGas
+ boundary 918 b+1 919 sensor_count      1 NitrogenGas/PmtSurface_56_2_0//NitrogenGas
+ boundary 919 b+1 920 sensor_count      1 NitrogenGas/PmtSurface_56_2_1//NitrogenGas
+ boundary 920 b+1 921 sensor_count      1 NitrogenGas/PmtSurface_56_2_2//NitrogenGas
+ boundary 921 b+1 922 sensor_count      1 NitrogenGas/PmtSurface_56_2_3//NitrogenGas
+ boundary 922 b+1 923 sensor_count      1 NitrogenGas/PmtSurface_56_3_0//NitrogenGas
+ boundary 923 b+1 924 sensor_count      1 NitrogenGas/PmtSurface_56_3_1//NitrogenGas
+ boundary 924 b+1 925 sensor_count      1 NitrogenGas/PmtSurface_56_3_2//NitrogenGas
+ boundary 925 b+1 926 sensor_count      1 NitrogenGas/PmtSurface_56_3_3//NitrogenGas
+ boundary 926 b+1 927 sensor_count      1 NitrogenGas/PmtSurface_57_0_0//NitrogenGas
+ boundary 927 b+1 928 sensor_count      1 NitrogenGas/PmtSurface_57_0_1//NitrogenGas
+ boundary 928 b+1 929 sensor_count      1 NitrogenGas/PmtSurface_57_0_2//NitrogenGas
+ boundary 929 b+1 930 sensor_count      1 NitrogenGas/PmtSurface_57_0_3//NitrogenGas
+ boundary 930 b+1 931 sensor_count      1 NitrogenGas/PmtSurface_57_1_0//NitrogenGas
+ boundary 931 b+1 932 sensor_count      1 NitrogenGas/PmtSurface_57_1_1//NitrogenGas
+ boundary 932 b+1 933 sensor_count      1 NitrogenGas/PmtSurface_57_1_2//NitrogenGas
+ boundary 933 b+1 934 sensor_count      1 NitrogenGas/PmtSurface_57_1_3//NitrogenGas
+ boundary 934 b+1 935 sensor_count      1 NitrogenGas/PmtSurface_57_2_0//NitrogenGas
+ boundary 935 b+1 936 sensor_count      1 NitrogenGas/PmtSurface_57_2_1//NitrogenGas
+ boundary 936 b+1 937 sensor_count      1 NitrogenGas/PmtSurface_57_2_2//NitrogenGas
+ boundary 937 b+1 938 sensor_count      1 NitrogenGas/PmtSurface_57_2_3//NitrogenGas
+ boundary 938 b+1 939 sensor_count      1 NitrogenGas/PmtSurface_57_3_0//NitrogenGas
+ boundary 939 b+1 940 sensor_count      1 NitrogenGas/PmtSurface_57_3_1//NitrogenGas
+ boundary 940 b+1 941 sensor_count      1 NitrogenGas/PmtSurface_57_3_2//NitrogenGas
+ boundary 941 b+1 942 sensor_count      1 NitrogenGas/PmtSurface_57_3_3//NitrogenGas
+ boundary 942 b+1 943 sensor_count      1 NitrogenGas/PmtSurface_58_0_0//NitrogenGas
+ boundary 943 b+1 944 sensor_count      1 NitrogenGas/PmtSurface_58_0_1//NitrogenGas
+ boundary 944 b+1 945 sensor_count      1 NitrogenGas/PmtSurface_58_0_2//NitrogenGas
+ boundary 945 b+1 946 sensor_count      1 NitrogenGas/PmtSurface_58_0_3//NitrogenGas
+ boundary 946 b+1 947 sensor_count      1 NitrogenGas/PmtSurface_58_1_0//NitrogenGas
+ boundary 947 b+1 948 sensor_count      1 NitrogenGas/PmtSurface_58_1_1//NitrogenGas
+ boundary 948 b+1 949 sensor_count      1 NitrogenGas/PmtSurface_58_1_2//NitrogenGas
+ boundary 949 b+1 950 sensor_count      1 NitrogenGas/PmtSurface_58_1_3//NitrogenGas
+ boundary 950 b+1 951 sensor_count      1 NitrogenGas/PmtSurface_58_2_0//NitrogenGas
+ boundary 951 b+1 952 sensor_count      1 NitrogenGas/PmtSurface_58_2_1//NitrogenGas
+ boundary 952 b+1 953 sensor_count      1 NitrogenGas/PmtSurface_58_2_2//NitrogenGas
+ boundary 953 b+1 954 sensor_count      1 NitrogenGas/PmtSurface_58_2_3//NitrogenGas
+ boundary 954 b+1 955 sensor_count      1 NitrogenGas/PmtSurface_58_3_0//NitrogenGas
+ boundary 955 b+1 956 sensor_count      1 NitrogenGas/PmtSurface_58_3_1//NitrogenGas
+ boundary 956 b+1 957 sensor_count      1 NitrogenGas/PmtSurface_58_3_2//NitrogenGas
+ boundary 957 b+1 958 sensor_count      1 NitrogenGas/PmtSurface_58_3_3//NitrogenGas
+ boundary 958 b+1 959 sensor_count      1 NitrogenGas/PmtSurface_59_0_0//NitrogenGas
+ boundary 959 b+1 960 sensor_count      1 NitrogenGas/PmtSurface_59_0_1//NitrogenGas
+ boundary 960 b+1 961 sensor_count      1 NitrogenGas/PmtSurface_59_0_2//NitrogenGas
+ boundary 961 b+1 962 sensor_count      1 NitrogenGas/PmtSurface_59_0_3//NitrogenGas
+ boundary 962 b+1 963 sensor_count      1 NitrogenGas/PmtSurface_59_1_0//NitrogenGas
+ boundary 963 b+1 964 sensor_count      1 NitrogenGas/PmtSurface_59_1_1//NitrogenGas
+ boundary 964 b+1 965 sensor_count      1 NitrogenGas/PmtSurface_59_1_2//NitrogenGas
+ boundary 965 b+1 966 sensor_count      1 NitrogenGas/PmtSurface_59_1_3//NitrogenGas
+ boundary 966 b+1 967 sensor_count      1 NitrogenGas/PmtSurface_59_2_0//NitrogenGas
+ boundary 967 b+1 968 sensor_count      1 NitrogenGas/PmtSurface_59_2_1//NitrogenGas
+ boundary 968 b+1 969 sensor_count      1 NitrogenGas/PmtSurface_59_2_2//NitrogenGas
+ boundary 969 b+1 970 sensor_count      1 NitrogenGas/PmtSurface_59_2_3//NitrogenGas
+ boundary 970 b+1 971 sensor_count      1 NitrogenGas/PmtSurface_59_3_0//NitrogenGas
+ boundary 971 b+1 972 sensor_count      1 NitrogenGas/PmtSurface_59_3_1//NitrogenGas
+ boundary 972 b+1 973 sensor_count      1 NitrogenGas/PmtSurface_59_3_2//NitrogenGas
+ boundary 973 b+1 974 sensor_count      1 NitrogenGas/PmtSurface_59_3_3//NitrogenGas
+ boundary 974 b+1 975 sensor_count      1 NitrogenGas/PmtSurface_60_0_0//NitrogenGas
+ boundary 975 b+1 976 sensor_count      1 NitrogenGas/PmtSurface_60_0_1//NitrogenGas
+ boundary 976 b+1 977 sensor_count      1 NitrogenGas/PmtSurface_60_0_2//NitrogenGas
+ boundary 977 b+1 978 sensor_count      1 NitrogenGas/PmtSurface_60_0_3//NitrogenGas
+ boundary 978 b+1 979 sensor_count      1 NitrogenGas/PmtSurface_60_1_0//NitrogenGas
+ boundary 979 b+1 980 sensor_count      1 NitrogenGas/PmtSurface_60_1_1//NitrogenGas
+ boundary 980 b+1 981 sensor_count      1 NitrogenGas/PmtSurface_60_1_2//NitrogenGas
+ boundary 981 b+1 982 sensor_count      1 NitrogenGas/PmtSurface_60_1_3//NitrogenGas
+ boundary 982 b+1 983 sensor_count      1 NitrogenGas/PmtSurface_60_2_0//NitrogenGas
+ boundary 983 b+1 984 sensor_count      1 NitrogenGas/PmtSurface_60_2_1//NitrogenGas
+ boundary 984 b+1 985 sensor_count      1 NitrogenGas/PmtSurface_60_2_2//NitrogenGas
+ boundary 985 b+1 986 sensor_count      1 NitrogenGas/PmtSurface_60_2_3//NitrogenGas
+ boundary 986 b+1 987 sensor_count      1 NitrogenGas/PmtSurface_60_3_0//NitrogenGas
+ boundary 987 b+1 988 sensor_count      1 NitrogenGas/PmtSurface_60_3_1//NitrogenGas
+ boundary 988 b+1 989 sensor_count      1 NitrogenGas/PmtSurface_60_3_2//NitrogenGas
+ boundary 989 b+1 990 sensor_count      1 NitrogenGas/PmtSurface_60_3_3//NitrogenGas
+ boundary 990 b+1 991 sensor_count      1 NitrogenGas/PmtSurface_61_0_0//NitrogenGas
+ boundary 991 b+1 992 sensor_count      1 NitrogenGas/PmtSurface_61_0_1//NitrogenGas
+ boundary 992 b+1 993 sensor_count      1 NitrogenGas/PmtSurface_61_0_2//NitrogenGas
+ boundary 993 b+1 994 sensor_count      1 NitrogenGas/PmtSurface_61_0_3//NitrogenGas
+ boundary 994 b+1 995 sensor_count      1 NitrogenGas/PmtSurface_61_1_0//NitrogenGas
+ boundary 995 b+1 996 sensor_count      1 NitrogenGas/PmtSurface_61_1_1//NitrogenGas
+ boundary 996 b+1 997 sensor_count      1 NitrogenGas/PmtSurface_61_1_2//NitrogenGas
+ boundary 997 b+1 998 sensor_count      1 NitrogenGas/PmtSurface_61_1_3//NitrogenGas
+ boundary 998 b+1 999 sensor_count      1 NitrogenGas/PmtSurface_61_2_0//NitrogenGas
+ boundary 999 b+1 1000 sensor_count      1 NitrogenGas/PmtSurface_61_2_1//NitrogenGas
+ boundary 1000 b+1 1001 sensor_count      1 NitrogenGas/PmtSurface_61_2_2//NitrogenGas
+ boundary 1001 b+1 1002 sensor_count      1 NitrogenGas/PmtSurface_61_2_3//NitrogenGas
+ boundary 1002 b+1 1003 sensor_count      1 NitrogenGas/PmtSurface_61_3_0//NitrogenGas
+ boundary 1003 b+1 1004 sensor_count      1 NitrogenGas/PmtSurface_61_3_1//NitrogenGas
+ boundary 1004 b+1 1005 sensor_count      1 NitrogenGas/PmtSurface_61_3_2//NitrogenGas
+ boundary 1005 b+1 1006 sensor_count      1 NitrogenGas/PmtSurface_61_3_3//NitrogenGas
+ boundary 1006 b+1 1007 sensor_count      1 NitrogenGas/PmtSurface_62_0_0//NitrogenGas
+ boundary 1007 b+1 1008 sensor_count      1 NitrogenGas/PmtSurface_62_0_1//NitrogenGas
+ boundary 1008 b+1 1009 sensor_count      1 NitrogenGas/PmtSurface_62_0_2//NitrogenGas
+ boundary 1009 b+1 1010 sensor_count      1 NitrogenGas/PmtSurface_62_0_3//NitrogenGas
+ boundary 1010 b+1 1011 sensor_count      1 NitrogenGas/PmtSurface_62_1_0//NitrogenGas
+ boundary 1011 b+1 1012 sensor_count      1 NitrogenGas/PmtSurface_62_1_1//NitrogenGas
+ boundary 1012 b+1 1013 sensor_count      1 NitrogenGas/PmtSurface_62_1_2//NitrogenGas
+ boundary 1013 b+1 1014 sensor_count      1 NitrogenGas/PmtSurface_62_1_3//NitrogenGas
+ boundary 1014 b+1 1015 sensor_count      1 NitrogenGas/PmtSurface_62_2_0//NitrogenGas
+ boundary 1015 b+1 1016 sensor_count      1 NitrogenGas/PmtSurface_62_2_1//NitrogenGas
+ boundary 1016 b+1 1017 sensor_count      1 NitrogenGas/PmtSurface_62_2_2//NitrogenGas
+ boundary 1017 b+1 1018 sensor_count      1 NitrogenGas/PmtSurface_62_2_3//NitrogenGas
+ boundary 1018 b+1 1019 sensor_count      1 NitrogenGas/PmtSurface_62_3_0//NitrogenGas
+ boundary 1019 b+1 1020 sensor_count      1 NitrogenGas/PmtSurface_62_3_1//NitrogenGas
+ boundary 1020 b+1 1021 sensor_count      1 NitrogenGas/PmtSurface_62_3_2//NitrogenGas
+ boundary 1021 b+1 1022 sensor_count      1 NitrogenGas/PmtSurface_62_3_3//NitrogenGas
+ boundary 1022 b+1 1023 sensor_count      1 NitrogenGas/PmtSurface_63_0_0//NitrogenGas
+ boundary 1023 b+1 1024 sensor_count      1 NitrogenGas/PmtSurface_63_0_1//NitrogenGas
+ boundary 1024 b+1 1025 sensor_count      1 NitrogenGas/PmtSurface_63_0_2//NitrogenGas
+ boundary 1025 b+1 1026 sensor_count      1 NitrogenGas/PmtSurface_63_0_3//NitrogenGas
+ boundary 1026 b+1 1027 sensor_count      1 NitrogenGas/PmtSurface_63_1_0//NitrogenGas
+ boundary 1027 b+1 1028 sensor_count      1 NitrogenGas/PmtSurface_63_1_1//NitrogenGas
+ boundary 1028 b+1 1029 sensor_count      1 NitrogenGas/PmtSurface_63_1_2//NitrogenGas
+ boundary 1029 b+1 1030 sensor_count      1 NitrogenGas/PmtSurface_63_1_3//NitrogenGas
+ boundary 1030 b+1 1031 sensor_count      1 NitrogenGas/PmtSurface_63_2_0//NitrogenGas
+ boundary 1031 b+1 1032 sensor_count      1 NitrogenGas/PmtSurface_63_2_1//NitrogenGas
+ boundary 1032 b+1 1033 sensor_count      1 NitrogenGas/PmtSurface_63_2_2//NitrogenGas
+ boundary 1033 b+1 1034 sensor_count      1 NitrogenGas/PmtSurface_63_2_3//NitrogenGas
+ boundary 1034 b+1 1035 sensor_count      1 NitrogenGas/PmtSurface_63_3_0//NitrogenGas
+ boundary 1035 b+1 1036 sensor_count      1 NitrogenGas/PmtSurface_63_3_1//NitrogenGas
+ boundary 1036 b+1 1037 sensor_count      1 NitrogenGas/PmtSurface_63_3_2//NitrogenGas
+ boundary 1037 b+1 1038 sensor_count      1 NitrogenGas/PmtSurface_63_3_3//NitrogenGas
+ boundary 1038 b+1 1039 sensor_count      1 NitrogenGas/PmtSurface_64_0_0//NitrogenGas
+ boundary 1039 b+1 1040 sensor_count      1 NitrogenGas/PmtSurface_64_0_1//NitrogenGas
+ boundary 1040 b+1 1041 sensor_count      1 NitrogenGas/PmtSurface_64_0_2//NitrogenGas
+ boundary 1041 b+1 1042 sensor_count      1 NitrogenGas/PmtSurface_64_0_3//NitrogenGas
+ boundary 1042 b+1 1043 sensor_count      1 NitrogenGas/PmtSurface_64_1_0//NitrogenGas
+ boundary 1043 b+1 1044 sensor_count      1 NitrogenGas/PmtSurface_64_1_1//NitrogenGas
+ boundary 1044 b+1 1045 sensor_count      1 NitrogenGas/PmtSurface_64_1_2//NitrogenGas
+ boundary 1045 b+1 1046 sensor_count      1 NitrogenGas/PmtSurface_64_1_3//NitrogenGas
+ boundary 1046 b+1 1047 sensor_count      1 NitrogenGas/PmtSurface_64_2_0//NitrogenGas
+ boundary 1047 b+1 1048 sensor_count      1 NitrogenGas/PmtSurface_64_2_1//NitrogenGas
+ boundary 1048 b+1 1049 sensor_count      1 NitrogenGas/PmtSurface_64_2_2//NitrogenGas
+ boundary 1049 b+1 1050 sensor_count      1 NitrogenGas/PmtSurface_64_2_3//NitrogenGas
+ boundary 1050 b+1 1051 sensor_count      1 NitrogenGas/PmtSurface_64_3_0//NitrogenGas
+ boundary 1051 b+1 1052 sensor_count      1 NitrogenGas/PmtSurface_64_3_1//NitrogenGas
+ boundary 1052 b+1 1053 sensor_count      1 NitrogenGas/PmtSurface_64_3_2//NitrogenGas
+ boundary 1053 b+1 1054 sensor_count      1 NitrogenGas/PmtSurface_64_3_3//NitrogenGas
+ boundary 1054 b+1 1055 sensor_count      1 NitrogenGas/PmtSurface_65_0_0//NitrogenGas
+ boundary 1055 b+1 1056 sensor_count      1 NitrogenGas/PmtSurface_65_0_1//NitrogenGas
+ boundary 1056 b+1 1057 sensor_count      1 NitrogenGas/PmtSurface_65_0_2//NitrogenGas
+ boundary 1057 b+1 1058 sensor_count      1 NitrogenGas/PmtSurface_65_0_3//NitrogenGas
+ boundary 1058 b+1 1059 sensor_count      1 NitrogenGas/PmtSurface_65_1_0//NitrogenGas
+ boundary 1059 b+1 1060 sensor_count      1 NitrogenGas/PmtSurface_65_1_1//NitrogenGas
+ boundary 1060 b+1 1061 sensor_count      1 NitrogenGas/PmtSurface_65_1_2//NitrogenGas
+ boundary 1061 b+1 1062 sensor_count      1 NitrogenGas/PmtSurface_65_1_3//NitrogenGas
+ boundary 1062 b+1 1063 sensor_count      1 NitrogenGas/PmtSurface_65_2_0//NitrogenGas
+ boundary 1063 b+1 1064 sensor_count      1 NitrogenGas/PmtSurface_65_2_1//NitrogenGas
+ boundary 1064 b+1 1065 sensor_count      1 NitrogenGas/PmtSurface_65_2_2//NitrogenGas
+ boundary 1065 b+1 1066 sensor_count      1 NitrogenGas/PmtSurface_65_2_3//NitrogenGas
+ boundary 1066 b+1 1067 sensor_count      1 NitrogenGas/PmtSurface_65_3_0//NitrogenGas
+ boundary 1067 b+1 1068 sensor_count      1 NitrogenGas/PmtSurface_65_3_1//NitrogenGas
+ boundary 1068 b+1 1069 sensor_count      1 NitrogenGas/PmtSurface_65_3_2//NitrogenGas
+ boundary 1069 b+1 1070 sensor_count      1 NitrogenGas/PmtSurface_65_3_3//NitrogenGas
+                      sensor_total   1056
+
+2021-10-21 01:14:08.426 INFO  [17407] [G4Opticks::translateGeometry@942] ) GGeo populate
+2021-10-21 01:14:08.426 INFO  [17407] [G4Opticks::translateGeometry@944] ( GGeo::postDirectTranslation 
+2021-10-21 01:14:08.426 INFO  [17407] [GGeo::prepare@630] [
+2021-10-21 01:14:08.427 INFO  [17407] [GGeo::prepareVolumes@1246] [ creating merged meshes from the volume tree 
+2021-10-21 01:14:08.846 INFO  [17407] [GInstancer::findRepeatCandidates@345]  nall 346 repeat_min 400 vertex_min 0 num_repcan 1
+2021-10-21 01:14:08.846 INFO  [17407] [GInstancer::findRepeatCandidates@355]  num_all 346 num_repcan 1 dmax 30
+2021-10-21 01:14:08.846 INFO  [17407] [GInstancer::dumpRepeatCandidates@423]  num_repcan 1 dmax 20
+2021-10-21 01:14:08.866 ERROR [17407] [GGeoLib::makeMergedMesh@324] mm index   0 geocode   T                  numVolumes        339 numFaces        4116 numITransforms           0 numITransforms*numVolumes           0 GParts N GPts Y
+2021-10-21 01:14:08.868 INFO  [17407] [GInstancer::makeMergedMeshAndInstancedBuffers@787]  numRepeats 1 numRidx 2
+2021-10-21 01:14:08.868 ERROR [17407] [GGeoLib::makeMergedMesh@324] mm index   1 geocode   T                  numVolumes          7 numFaces         120 numITransforms           0 numITransforms*numVolumes           0 GParts N GPts Y
+2021-10-21 01:14:08.957 INFO  [17407] [GInstancer::dump@890] GGeo::prepareVolumes
+2021-10-21 01:14:08.957 INFO  [17407] [GInstancer::dumpMeshset@834]  numRepeats 1 numRidx 2 (slot 0 for global non-instanced) 
+2021-10-21 01:14:08.957 INFO  [17407] [GInstancer::dumpCSGSkips@866] 
+2021-10-21 01:14:08.958 INFO  [17407] [GGeo::prepareVolumes@1278] ]
+2021-10-21 01:14:08.987 INFO  [17407] [GGeo::prepare@650] ]
+2021-10-21 01:14:08.988 INFO  [17407] [GGeoLib::dump@385] GGeo::save GGeoLib numMergedMesh 2 ptr 0x286fbb0
+2021-10-21 01:14:08.995 INFO  [17407] [GMeshLib::addAltMeshes@116]  num_indices_with_alt 1
+2021-10-21 01:14:08.995 INFO  [17407] [GMeshLib::addAltMeshes@126]  index with alt 0
+2021-10-21 01:14:08.995 INFO  [17407] [GMeshLib::dump@227] addAltMeshes meshnames 347 meshes 347
+2021-10-21 01:14:08.997 ERROR [17407] [GMeshLib::getMeshSimple@321]  mesh indices do not match  m_meshes index 346 mesh.index 0
+2021-10-21 01:14:09.449 INFO  [17407] [BMeta::dump@199] GGeo::saveCacheMeta
+2021-10-21 01:14:09.507 INFO  [17407] [GGeo::postDirectTranslationDump@605] GGeo::postDirectTranslationDump NOT --dumpsensor numSensorVolumes 1056
+2021-10-21 01:14:09.507 INFO  [17407] [G4Opticks::translateGeometry@946] ) GGeo::postDirectTranslation 
+2021-10-21 01:14:09.508 INFO  [17407] [G4Opticks::setGeometry@639]  GGeo: LIVE TRANSLATED  num_sensor 1056
+2021-10-21 01:14:09.515 INFO  [17407] [GNodeLib::getFirstNodeIndexForGDMLAuxTargetLVName@289]  target_lvname (null) nidxs.size() 0 nidx -1
+2021-10-21 01:14:09.518 ERROR [17407] [OpticksGen::initFromLegacyGensteps@191] SKIP as isNoInputGensteps OR isEmbedded  
+2021-10-21 01:14:09.544 INFO  [17407] [OContext::InitRTX@335]  --rtx 0 setting  OFF
+2021-10-21 01:14:09.643 INFO  [17407] [OContext::CheckDevices@219] 
+Device 0                       Tesla T4 ordinal 0 Compute Support: 7 5 Total Memory: 15843721216
+Device 1                       Tesla T4 ordinal 1 Compute Support: 7 5 Total Memory: 15843721216
+
+2021-10-21 01:14:09.706 INFO  [17407] [CDevice::Dump@245] Visible devices[0:Tesla_T4 1:Tesla_T4]
+2021-10-21 01:14:09.706 INFO  [17407] [CDevice::Dump@249] CDevice index 0 ordinal 0 name Tesla T4 major 7 minor 5 compute_capability 75 multiProcessorCount 40 totalGlobalMem 15843721216
+2021-10-21 01:14:09.706 INFO  [17407] [CDevice::Dump@249] CDevice index 1 ordinal 1 name Tesla T4 major 7 minor 5 compute_capability 75 multiProcessorCount 40 totalGlobalMem 15843721216
+2021-10-21 01:14:09.706 INFO  [17407] [CDevice::Dump@245] All devices[0:Tesla_T4 1:Tesla_T4]
+2021-10-21 01:14:09.706 INFO  [17407] [CDevice::Dump@249] CDevice index 0 ordinal 0 name Tesla T4 major 7 minor 5 compute_capability 75 multiProcessorCount 40 totalGlobalMem 15843721216
+2021-10-21 01:14:09.706 INFO  [17407] [CDevice::Dump@249] CDevice index 1 ordinal 1 name Tesla T4 major 7 minor 5 compute_capability 75 multiProcessorCount 40 totalGlobalMem 15843721216
+2021-10-21 01:14:10.120 INFO  [17407] [OGeo::init@240] OGeo  top Sbvh ggg Sbvh assembly Sbvh instance Sbvh
+2021-10-21 01:14:10.120 INFO  [17407] [GGeoLib::dump@385] OGeo::convert GGeoLib numMergedMesh 2 ptr 0x286fbb0
+2021-10-21 01:14:10.120 INFO  [17407] [OGeo::convert@301] [ nmm 2
+2021-10-21 01:14:10.259 INFO  [17407] [OGeo::convert@314] ] nmm 2
+2021-10-21 01:14:10.284 ERROR [17407] [cuRANDWrapper::setItems@154] CAUTION : are resizing the launch sequence 
+2021-10-21 01:14:11.285 FATAL [17407] [ORng::setSkipAhead@160]  skip as as WITH_SKIPAHEAD not enabled 
+2021-10-21 01:14:11.297 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 151
+2021-10-21 01:14:11.332 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 153
+2021-10-21 01:14:11.398 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 29
+2021-10-21 01:14:11.416 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 200
+2021-10-21 01:14:11.546 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 26
+2021-10-21 01:14:11.566 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 58
+2021-10-21 01:14:11.610 INFO  [17407] [OpticksRun::createEvent@115]  tagoffset 0 skipaheadstep 1000 skipahead 0
+2021-10-21 01:14:11.629 INFO  [17407] [SensorLib::checkSensorCategories@410] [ SensorLib closed Y loaded N sensor_data 1056,4 sensor_num 1056 sensor_angular_efficiency N num_category 0
+2021-10-21 01:14:11.630 INFO  [17407] [SensorLib::dumpCategoryCounts@448] SensorLib::checkSensorCategories
+2021-10-21 01:14:11.630 INFO  [17407] [SensorLib::checkSensorCategories@443] ] SensorLib closed Y loaded N sensor_data 1056,4 sensor_num 1056 sensor_angular_efficiency N num_category 0
+2021-10-21 01:14:11.630 INFO  [17407] [SensorLib::close@381] SensorLib closed Y loaded N sensor_data 1056,4 sensor_num 1056 sensor_angular_efficiency N num_category 0
+2021-10-21 01:14:11.632 FATAL [17407] [OCtx::create_buffer@300] skip upload_buffer as num_bytes zero key:OSensorLib_texid
+2021-10-21 01:14:13.234 INFO  [17407] [OPropagator::prelaunch@200] 0 : (0;0,0) 
+2021-10-21 01:14:13.234 INFO  [17407] [BTimes::dump@183] OPropagator::prelaunch
+2021-10-21 01:14:13.234 FATAL [17407] [OPropagator::launch@271]  skipahead 0
+2021-10-21 01:14:13.235 FATAL [17407] [ORng::setSkipAhead@160]  skip as as WITH_SKIPAHEAD not enabled 
+2021-10-21 01:14:13.243 INFO  [17407] [OPropagator::launch@286] 0 : (0;617,1)  launch time 0.008692
+2021-10-21 01:14:13.245 INFO  [17407] [OEvent::downloadHits@485]  nhit 50 --dbghit N hitmask 0x40 SD SURFACE_DETECT
+2021-10-21 01:14:13.246 FATAL [17407] [G4Opticks::propagateOpticalPhotons@1143]  NOT-m_way_enabled 
+2021-10-21 01:14:13.251 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 53
+2021-10-21 01:14:13.269 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 51
+2021-10-21 01:14:13.298 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 80
+2021-10-21 01:14:13.341 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 73
+2021-10-21 01:14:13.370 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 62
+2021-10-21 01:14:13.390 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 160
+2021-10-21 01:14:13.431 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 43
+2021-10-21 01:14:13.440 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 4
+2021-10-21 01:14:13.441 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 18
+2021-10-21 01:14:13.442 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 51
+2021-10-21 01:14:13.469 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 89
+2021-10-21 01:14:13.529 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 17
+2021-10-21 01:14:13.537 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 2
+2021-10-21 01:14:13.538 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 38
+2021-10-21 01:14:13.542 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 34
+2021-10-21 01:14:13.574 INFO  [17407] [OpticksRun::createEvent@115]  tagoffset 1 skipaheadstep 1000 skipahead 1000
+2021-10-21 01:14:13.576 FATAL [17407] [OPropagator::launch@271]  skipahead 1000
+2021-10-21 01:14:13.576 FATAL [17407] [ORng::setSkipAhead@160]  skip as as WITH_SKIPAHEAD not enabled 
+2021-10-21 01:14:13.580 INFO  [17407] [OPropagator::launch@286] 0 : (0;775,1)  launch time 0.004646
+2021-10-21 01:14:13.581 INFO  [17407] [OEvent::downloadHits@485]  nhit 54 --dbghit N hitmask 0x40 SD SURFACE_DETECT
+2021-10-21 01:14:13.581 FATAL [17407] [G4Opticks::propagateOpticalPhotons@1143]  NOT-m_way_enabled 
+2021-10-21 01:14:13.585 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 15
+2021-10-21 01:14:13.600 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 31
+2021-10-21 01:14:13.621 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 112
+2021-10-21 01:14:13.696 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 269
+2021-10-21 01:14:13.793 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 58
+2021-10-21 01:14:13.806 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 61
+2021-10-21 01:14:13.827 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 1
+2021-10-21 01:14:13.828 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 66
+2021-10-21 01:14:13.865 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 7
+2021-10-21 01:14:13.866 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 28
+2021-10-21 01:14:13.871 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 9
+2021-10-21 01:14:13.872 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 10
+2021-10-21 01:14:13.874 INFO  [17407] [C4PhotonCollector::collectSecondaryPhotons@100]  numberOfSecondaries 9
+2021-10-21 01:14:13.899 INFO  [17407] [OpticksRun::createEvent@115]  tagoffset 2 skipaheadstep 1000 skipahead 2000
+2021-10-21 01:14:13.900 FATAL [17407] [OPropagator::launch@271]  skipahead 2000
+2021-10-21 01:14:13.900 FATAL [17407] [ORng::setSkipAhead@160]  skip as as WITH_SKIPAHEAD not enabled 
+2021-10-21 01:14:13.905 INFO  [17407] [OPropagator::launch@286] 0 : (0;676,1)  launch time 0.004953
+2021-10-21 01:14:13.906 INFO  [17407] [OEvent::downloadHits@485]  nhit 52 --dbghit N hitmask 0x40 SD SURFACE_DETECT
+2021-10-21 01:14:13.906 FATAL [17407] [G4Opticks::propagateOpticalPhotons@1143]  NOT-m_way_enabled 
+2021-10-21 01:14:13.909 INFO  [17407] [G4Opticks::Finalize@283] G4Opticks.desc ok 0x279cbe0 opmgr 0x7d9f320
+Opticks.desc
+             BOpticksKey  : KEYSOURCE
+      spec (OPTICKS_KEY)  : Rich_Simplified.X4PhysicalVolume.WorldPhys.9cb4ff3ca3617e2abf473bc85cfdef58
+                 exename  : Rich_Simplified
+         current_exename  : Rich_Simplified
+                   class  : X4PhysicalVolume
+                 volname  : WorldPhys
+                  digest  : 9cb4ff3ca3617e2abf473bc85cfdef58
+                  idname  : Rich_Simplified_WorldPhys_g4live
+                  idfile  : g4ok.gltf
+                  idgdml  : g4ok.gdml
+                  layout  : 1
+
+IdPath : /hepgpu6-data1/liyu/.opticks/geocache/Rich_Simplified_WorldPhys_g4live/g4ok_gltf/9cb4ff3ca3617e2abf473bc85cfdef58/1
+
+# BOpticksKey::export_ 
+export OPTICKS_KEY=Rich_Simplified.X4PhysicalVolume.WorldPhys.9cb4ff3ca3617e2abf473bc85cfdef58
+
+2021-10-21 01:14:13.909 FATAL [17407] [G4Opticks::dumpSkipGencode@381] OPTICKS_SKIP_GENCODE m_skip_gencode_count 0
