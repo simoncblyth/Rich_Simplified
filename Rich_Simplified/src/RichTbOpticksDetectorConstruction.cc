@@ -86,8 +86,8 @@ G4VPhysicalVolume * RichTbOpticksDetectorConstruction::Construct() {
            RichTbLbPmtQuartz_LV->SetSensitiveDetector( LbPMTSD );
 
 	   //Add border surface
+	   /*
 	   G4OpticalSurface* PmtWrap = new G4OpticalSurface("PmtWrap");
-	   //new G4LogicalBorderSurface("PmtWrap", rTbR1MagShRegion->getRichTbLHCbR1MagShRegionPhysicalVolume(), rTbR1PhDetSupFrame->getRichTbLHCbR1PhDetSupFramePhysicalVolume(), PmtWrap);
 	   new G4LogicalBorderSurface("PmtWrap", rTbR1MagShRegion->getRichTbLHCbR1MagShRegionPhysicalVolume(), rTbR1PhDetSupFrame->getRichTbLHCbR1PhDetSupFramePhysicalVolume(), PmtWrap);
 	   PmtWrap->SetType(dielectric_metal);
 	   PmtWrap->SetFinish(polished);
@@ -100,7 +100,7 @@ G4VPhysicalVolume * RichTbOpticksDetectorConstruction::Construct() {
 	   PmtWrapProperty->AddProperty("REFLECTIVITY", pp, reflectivity, num);
 	   PmtWrapProperty->AddProperty("EFFICIENCY", pp, efficiency, num);
 	   PmtWrap->SetMaterialPropertiesTable(PmtWrapProperty);
-
+	   */
            //begin test
             G4int HCID = G4SDManager::GetSDMpointer()->GetCollectionID (RichTbLHCbR1G4HColname);
             G4cout<< " Now associate sensdet to geometry in Pmt "<< HCID <<  G4endl;

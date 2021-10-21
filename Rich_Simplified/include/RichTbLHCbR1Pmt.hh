@@ -5,6 +5,7 @@
 #include "G4VUserDetectorConstruction.hh"
 #include "G4VPhysicalVolume.hh"
 #include "G4LogicalVolume.hh"
+#include "G4LogicalBorderSurface.hh"
 // local headers
 #include "RichTbMaterial.hh"
 #include "RichTbLHCbR1EC.hh"
@@ -28,6 +29,7 @@ private:
   //  std::vector<std::vector< std::vector<G4LogicalVolume * > > > rTbLbR1PmtLVol;
   G4LogicalVolume * rTbLbR1PmtLVol;
   std::vector<std::vector< std::vector< G4VPhysicalVolume* > > > rTbLbR1PmtPVol;
+  std::vector<std::vector< std::vector< G4OpticalSurface* > > > rPmtSurfaces;
     
 };
 
