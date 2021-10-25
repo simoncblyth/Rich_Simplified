@@ -1,7 +1,6 @@
 // $Id: $
 // Include files
-
-
+#include <fstream>
 
 // local
 #include "RichTbLHCbUpgradeSD.hh"
@@ -77,7 +76,7 @@ void RichTbLHCbUpgradeSD::Initialize(G4HCofThisEvent*  HCE )
 
 G4bool RichTbLHCbUpgradeSD::ProcessHits(G4Step*aStep,G4TouchableHistory*ROhist) {
  
-        //G4cout<<" In  RichTbLHCbUpgradeSD ProceesHits "<<G4endl;
+        G4cout<<" In  RichTbLHCbUpgradeSD ProceesHits "<<G4endl;
 
 	 if(!ROhist) return false;
        
@@ -104,14 +103,12 @@ G4bool RichTbLHCbUpgradeSD::ProcessHits(G4Step*aStep,G4TouchableHistory*ROhist) 
 	// G4cout<<" SD Process Hits Module pmt HitCreateOption  "<<  aModuleNum <<"  "<<   aPmtNumInModule 
 	//	      << "  "<< CurrentHitCreationOption <<   G4endl; 
 
-	if( (CurrentHitCreationOption==0 && 
-             (!(RetrievePmtSDIDBit(aModuleNum,aPmtNumInModule, CurrentPixelNumber)))) ||
-	    (CurrentHitCreationOption==1 )) {
+	if( (CurrentHitCreationOption==0 && (!(RetrievePmtSDIDBit(aModuleNum,aPmtNumInModule, CurrentPixelNumber)))) || (CurrentHitCreationOption==1 ) ) {
 
 		G4ThreeVector CurGlobalPos =aStep->GetPreStepPoint()->GetPosition();
 		G4Navigator* theNavigator =
 			G4TransportationManager::GetTransportationManager()->GetNavigatorForTracking();
-
+		
 		G4ThreeVector CurLocalPos = 
                          theNavigator->GetGlobalToLocalTransform().TransformPoint(CurGlobalPos );
 		G4ThreeVector CurLocalPixelCenter = ROphysVol ->GetTranslation() ;            
@@ -152,7 +149,7 @@ G4bool RichTbLHCbUpgradeSD::ProcessHits(G4Step*aStep,G4TouchableHistory*ROhist) 
 
 
 			G4VUserTrackInformation* aUserTrackinfo=aTrack->GetUserInformation();
-                        // G4cout<<"SD User track info " <<aUserTrackinfo <<G4endl;
+                        G4cout<<"SD User track info " <<aUserTrackinfo <<G4endl;
 
 			if(  aUserTrackinfo )
 			{
@@ -222,8 +219,19 @@ G4bool RichTbLHCbUpgradeSD::ProcessHits(G4Step*aStep,G4TouchableHistory*ROhist) 
 	return true;
 
 }
-void  RichTbLHCbUpgradeSD::EndOfEvent(G4HCofThisEvent* /* HCE  */){
 
+
+void  RichTbLHCbUpgradeSD::EndOfEvent(G4HCofThisEvent* HCE){
+	/*
+        std::ofstream ofile;
+	ofile.open("Geant4_hits.txt");
+	G4int nofHits = RichTbHitCollection->entries();
+	for( G4int i=0; i<nofHits; i++) {
+		RichTbHit* Hit = (*RichTbHitCollection)[i];
+		ofile<< Hit->GetPos()[0] << std::setw(10) << Hit->GetPos()[1] << std::setw(10) << Hit->GetPos()[2] << std::endl;
+	}
+	ofile.close();
+	*/
 }
 void RichTbLHCbUpgradeSD::ResetPmtSDID () {
   RichTbR1PmtSDID.clear();

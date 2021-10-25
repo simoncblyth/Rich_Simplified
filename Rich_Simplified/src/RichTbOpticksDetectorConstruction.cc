@@ -19,6 +19,7 @@
 #include "RichTbLHCbSurface.hh"
 #include "RichTbGraphicsLbR.hh"
 #include "RichTbLHCbUpgradeSD.hh"
+#include "SensitiveDetector.hh"
 
 RichTbOpticksDetectorConstruction::RichTbOpticksDetectorConstruction() { ;}
 
@@ -72,18 +73,20 @@ G4VPhysicalVolume * RichTbOpticksDetectorConstruction::Construct() {
  
            G4SDManager* SDman = G4SDManager::GetSDMpointer();
 
-           RichTbLHCbUpgradeSD * LbPMTSD = new RichTbLHCbUpgradeSD(PMTLHCbSDname);
+           //RichTbLHCbUpgradeSD * LbPMTSD = new RichTbLHCbUpgradeSD(PMTLHCbSDname);
+           SensitiveDetector * PMTSD = new SensitiveDetector(PMTLHCbSDname);
 
            //Readout Geometry
            //rTbR1ROGeometry = new RichTbLHCbROGeometry( ROgeometryLbR1Name, this );
            //rTbR1ROGeometry->BuildROGeometry() ;
 	   //LbPMTSD -> SetROgeometry(rTbR1ROGeometry);
-           SDman ->AddNewDetector(LbPMTSD);
+           //SDman ->AddNewDetector(LbPMTSD);
+           SDman ->AddNewDetector(PMTSD);
 	   
-           //G4LogicalVolume* RichTbLbPmtAnode_LV = rTbR1PmtComponents->getRichTbLbR1PmtAnodeLogicalVolume();
-           //RichTbLbPmtAnode_LV ->SetSensitiveDetector( LbPMTSD );
+           //G4LogicalVolume* RichTbLbPmt_LV = rTbR1Pmt->getRichTbLbR1PmtLogicalVolume();
+           //RichTbLbPmt_LV ->SetSensitiveDetector( LbPMTSD );
            G4LogicalVolume* RichTbLbPmtQuartz_LV = rTbR1PmtComponents->getRichTbLbR1PmtQuartzLogicalVolume();
-           RichTbLbPmtQuartz_LV->SetSensitiveDetector( LbPMTSD );
+           RichTbLbPmtQuartz_LV->SetSensitiveDetector( PMTSD );
 
 	   //Add border surface
 	   /*

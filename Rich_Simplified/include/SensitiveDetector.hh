@@ -14,8 +14,7 @@ struct SensitiveDetector : public G4VSensitiveDetector
     static void DumpHitCollections(G4HCofThisEvent* HCE);
 
     static const char* SDName ;
-    static const char* collectionNameA ;
-    static const char* collectionNameB ;
+    static const char* collectionNameDef ;
 
     SensitiveDetector(const char* name) ;  
 
@@ -23,8 +22,7 @@ struct SensitiveDetector : public G4VSensitiveDetector
     void EndOfEvent(G4HCofThisEvent* HCE);
     G4bool ProcessHits(G4Step* aStep,G4TouchableHistory* ROhist);
 
-    OpHitCollection* hitCollectionA ; 
-    OpHitCollection* hitCollectionB ; 
+    OpHitCollection* hitCollection ; 
 
     unsigned m_hit_count ;
 

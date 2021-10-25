@@ -14,8 +14,7 @@
 
 
 const char* SensitiveDetector::SDName = NULL ; 
-const char* SensitiveDetector::collectionNameA = "OpHitCollectionA" ;
-const char* SensitiveDetector::collectionNameB = "OpHitCollectionB" ;
+const char* SensitiveDetector::collectionNameDef = "OpHitCollection" ;
 
 SensitiveDetector::SensitiveDetector(const char* name) 
     :
@@ -23,8 +22,7 @@ SensitiveDetector::SensitiveDetector(const char* name)
     m_hit_count(0)
 {
     SDName = strdup(name) ; 
-    collectionName.insert(collectionNameA); 
-    collectionName.insert(collectionNameB); 
+    collectionName.insert(collectionNameDef); 
 
     G4SDManager* SDMan = G4SDManager::GetSDMpointer() ;
     SDMan->AddNewDetector(this); 
@@ -93,7 +91,7 @@ G4bool SensitiveDetector::ProcessHits(G4Step* step,G4TouchableHistory* )
     hit->dir = dir ;  
     hit->pol = pol ;  
 
-    OpHitCollection* hc = pos.x() > 0 ? hitCollectionA : hitCollectionB ; 
+    OpHitCollection* hc = hitCollection ; 
     hc->insert(hit); 
 
     return true ; 
@@ -128,27 +126,20 @@ void SensitiveDetector::Initialize(G4HCofThisEvent* HCE)
         << " HCE.Capacity " << HCE->GetCapacity()
         << " SensitiveDetectorName " << SensitiveDetectorName
         << " collectionName[0] " << collectionName[0] 
-        << " collectionName[1] " << collectionName[1] 
         << G4endl  
         ; 
  
-    hitCollectionA = new OpHitCollection(SensitiveDetectorName,collectionName[0]);
-    hitCollectionB = new OpHitCollection(SensitiveDetectorName,collectionName[1]);
+    hitCollection = new OpHitCollection(SensitiveDetectorName,collectionName[0]);
 
     G4SDManager* SDMan = G4SDManager::GetSDMpointerIfExist() ;
     assert( SDMan ) ;  
 
-    int hcid_A = SDMan->GetCollectionID(hitCollectionA);
-    HCE->AddHitsCollection(hcid_A, hitCollectionA ); 
+    int hcid = SDMan->GetCollectionID(hitCollection);
+    HCE->AddHitsCollection(hcid, hitCollection ); 
 
-    int hcid_B = SDMan->GetCollectionID(hitCollectionB);
-    HCE->AddHitsCollection(hcid_B, hitCollectionB ); 
+    G4VHitsCollection* hc = HCE->GetHC(hcid); 
+    assert( hc == hitCollection ); 
 
-    G4VHitsCollection* hcA = HCE->GetHC(hcid_A); 
-    assert( hcA == hitCollectionA ); 
-
-    G4VHitsCollection* hcB = HCE->GetHC(hcid_B); 
-    assert( hcB == hitCollectionB ); 
 }
 
 
@@ -173,12 +164,18 @@ void SensitiveDetector::EndOfEvent(G4HCofThisEvent* HCE)
     G4cout
         << "SensitiveDetector::EndOfEvent"
         << " HCE " << HCE
-        << " hitCollectionA->entries() " << hitCollectionA->entries()
-        << " hitCollectionB->entries() " << hitCollectionB->entries()
-        << " A+B " << hitCollectionA->entries() + hitCollectionB->entries()
+        << " hitCollection->entries() " << hitCollection->entries()
         << " m_hit_count " << m_hit_count 
         << G4endl  
         ; 
+    std::ofstream ofile;
+    ofile.open("Geant4_hits.txt");
+    G4int nofHits = hitCollection->entries();
+    for( G4int i=0; i<nofHits; i++) {
+         OpHit* Hit = (*hitCollection)[i];
+         ofile<< Hit->pos[0] << std::setw(10) << Hit->pos[1] << std::setw(10) << Hit->pos[2] << std::endl;
+         }
+    ofile.close();
 }
 
 /**

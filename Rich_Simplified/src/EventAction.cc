@@ -1,4 +1,5 @@
 #include <string>
+#include <fstream>
 
 #include "G4Event.hh"
 #include "G4HCofThisEvent.hh"
@@ -49,6 +50,8 @@ void EventAction::EndOfEventAction(const G4Event* event)
 
     G4OpticksHit hit ;
     G4OpticksHitExtra* hit_extra = NULL ;
+    std::ofstream ofile;
+    ofile.open("Opticks_hits.txt");
 
     for(unsigned i=0 ; i < num_hits ; i++)
     {   
@@ -67,8 +70,11 @@ void EventAction::EndOfEventAction(const G4Event* event)
             << " " << OpticksFlags::FlagMask(hit.flag_mask, true)
             << std::endl 
             ;
+        ofile << hit.global_position[0] << std::setw(10) << hit.global_position[1] << std::setw(10) <<
+            hit.global_position[2] << std::endl;
     }
 
+    ofile.close();
     g4ok->reset();  // necessary to prevent gensteps keeping to accumulate
 
     G4cout << "\n###] EventAction::EndOfEventAction G4Opticks.propagateOpticalPhotons\n" << G4endl ; 
