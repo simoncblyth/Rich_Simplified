@@ -29,6 +29,9 @@
 #ifdef WITH_OPTICKS
 #include "G4Opticks.hh"
 #include "TrackInfo.hh"
+#include "G4OpticksRecorder.hh"
+#include "CTrackInfo.hh"
+#include "PLOG.hh"
 #endif
 
 
@@ -40,6 +43,32 @@
 #include "G4ThreeVector.hh"
 #include "G4Step.hh"
 #include "G4StepPoint.hh"
+
+
+
+// Ctx::Ctx(unsigned opticks_mode)
+Ctx::Ctx()
+    :
+  //    _opticks_mode(opticks_mode),   
+#ifdef WITH_OPTICKS
+    _recorder(new G4OpticksRecorder)
+#else
+    _recorder(nullptr)
+#endif
+{
+}
+
+// bool Ctx::gpu_propagate() const 
+// {
+//     return _opticks_mode & 1 ; 
+// } 
+// bool Ctx::cpu_propagate() const 
+// {
+//     return _opticks_mode & 2 ; 
+// } 
+
+
+
 
 
 
