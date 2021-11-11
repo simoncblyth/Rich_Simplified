@@ -83,10 +83,16 @@ G4VPhysicalVolume * RichTbOpticksDetectorConstruction::Construct() {
            //SDman ->AddNewDetector(LbPMTSD);
            SDman ->AddNewDetector(PMTSD);
 	   
-           //G4LogicalVolume* RichTbLbPmt_LV = rTbR1Pmt->getRichTbLbR1PmtLogicalVolume();
-           //RichTbLbPmt_LV ->SetSensitiveDetector( LbPMTSD );
+           //G4LogicalVolume* RichTbLbSubMaster_LV = rTbRich1SubMaster->getRichTbLHCbRich1SubMasterLogicalVolume();
+           //RichTbLbSubMaster_LV ->SetSensitiveDetector( PMTSD );
            G4LogicalVolume* RichTbLbPmtQuartz_LV = rTbR1PmtComponents->getRichTbLbR1PmtQuartzLogicalVolume();
            RichTbLbPmtQuartz_LV->SetSensitiveDetector( PMTSD );
+           G4LogicalVolume* RichTbLbSphMirror_LV = rTbR1SphMirror->getRichTbLHCbR1SphMirrorLogicalVolume();
+           RichTbLbSphMirror_LV->SetSensitiveDetector( PMTSD );
+           G4LogicalVolume* RichTbLbFlatMirror_LV = rTbR1FlatMirror->getRichTbLHCbR1FlatMirrorLogicalVolume();
+           RichTbLbFlatMirror_LV->SetSensitiveDetector( PMTSD );
+           G4LogicalVolume* RichTbLbQW_LV = rTbR1QW->getRichTbLHCbR1QWLogicalVolume();
+           RichTbLbQW_LV->SetSensitiveDetector( PMTSD );
 
 	   //Add border surface
 	   /*

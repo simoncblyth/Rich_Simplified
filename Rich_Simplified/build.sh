@@ -34,3 +34,4 @@ make
 [ $? -ne 0 ] && echo $msg make error && cd $sdir 
 make install   
 
+export OPTICKS_EMBEDDED_COMMANDLINE=dev
