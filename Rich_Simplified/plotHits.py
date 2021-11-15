@@ -38,12 +38,14 @@ for r in g4_result:
         g4_count[3]+=1
 
 opticks_hits = open("build/Opticks_hits.txt","r")
-hits_count = 0
+hits = []
 for line in opticks_hits:
-    hits_count+=1
+    hits.append( [float(s) for s in line.strip().split()] )
+hits = np.array(hits)
 
-plt.scatter(result[:,1],result[:,2],s=5,color='red',label='Opticks: '+str(hits_count)+' hits, '+str(result.shape[0])+' intersections')
-plt.scatter(g4_result[:,1],g4_result[:,2],s=5,color='blue',label='Geant4: '+str(g4_count[3])+' hits, '+str(g4_result.shape[0])+' intersections')
+plt.scatter(result[:,1],result[:,2],s=5,color='red',label='Opticks: '+str(result.shape[0])+' intersections')
+plt.scatter(g4_result[:,1],g4_result[:,2],s=5,color='blue',label='Geant4: '+str(g4_result.shape[0])+' hits')
+plt.scatter(hits[:,1],hits[:,2],s=5,color='black',label='Opticks: '+str(hits.shape[0])+' hits')
 plt.legend(loc='best')
 
 plt.text(600,2000,"Opticks: "+str(op_count[0]))
@@ -54,6 +56,7 @@ plt.text(1100,1400,"Opticks: "+str(op_count[2]))
 plt.text(1100,1300,"Geant4: "+str(g4_count[2]))
 plt.text(1600,1800,"Opticks: "+str(op_count[3]))
 plt.text(1600,1700,"Geant4: "+str(g4_count[3]))
+plt.axis([0,1600,900,2300])
 ax = plt.gca()
 ax.invert_xaxis()
 plt.title("Hits collected by Opticks and Geant4")
