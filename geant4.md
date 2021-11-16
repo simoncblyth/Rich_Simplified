@@ -10,9 +10,9 @@
 2. How to install Geant4 by hand
  >  cd ${workdir}/opticks.build_externals/g4_1042  
    wget http://geant4-data.web.cern.ch/geant4-data/releases/geant4.10.04.p02.tar.gz  
-   tar -zxvf geant4.10.04.p02.tar.gz
-   mkdir geant4.10.04.p02.build
-   cd geant4.10.04.p02.build
+   tar -zxvf geant4.10.04.p02.tar.gz  
+   mkdir geant4.10.04.p02.build  
+   cd geant4.10.04.p02.build  
    cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DGEANT4_USE_OPENGL_X11=ON -DGEANT4_USE_SYSTEM_CLHEP=ON -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_GDML=ON -DGEANT4_INSTALL_DATA_TIMEOUT=100000  -DXERCESC_LIBRARY=${workdir}/opticks.build_externals/xercesc/lib/libxerces-c.so -DXERCESC_INCLUDE_DIR=${workdir}/opticks.build_externals/xercesc/include -DCMAKE_INSTALL_PREFIX=${workdir}/opticks.build_externals/g4_1042/ ${workdir}/opticks.build_externals/g4_1042.build/geant4.10.04.p02    
-   make -jN
+   make -jN  
    make install
