@@ -23,7 +23,7 @@ PrimaryGeneratorAction::PrimaryGeneratorAction(Ctx* ctx_)
     fParticleGun->SetParticleDefinition(particle);
     fParticleGun->SetParticleTime(0.0*CLHEP::ns);
     fParticleGun->SetParticlePosition(G4ThreeVector(0.0*CLHEP::cm,0.0*CLHEP::cm,0.0*CLHEP::mm));
-    fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0.,0.2,1.));
+    fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0.,0.1,1.));
     fParticleGun->SetParticleEnergy(4000.*MeV);   // few photons at ~0.7*MeV loads from ~ 0.8*MeV
 }
 

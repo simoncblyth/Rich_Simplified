@@ -10,7 +10,7 @@ class G4OpRayleigh ;
 template <typename T>
 struct PhysicsList : public G4VUserPhysicsList
 {
-    PhysicsList();
+    PhysicsList( int argc, char** argv, const char* argforced);
 
     virtual void ConstructParticle();
     virtual void ConstructProcess();

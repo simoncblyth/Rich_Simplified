@@ -173,7 +173,7 @@ void SensitiveDetector::EndOfEvent(G4HCofThisEvent* HCE)
     G4int nofHits = hitCollection->entries();
     for( G4int i=0; i<nofHits; i++) {
          OpHit* Hit = (*hitCollection)[i];
-         ofile<< Hit->pos[0] << std::setw(10) << Hit->pos[1] << std::setw(10) << Hit->pos[2] << std::endl;
+         ofile<< Hit->pos[0] << std::setw(10) << Hit->pos[1] << std::setw(10) << Hit->pos[2] << std::setw(20) << Hit->dir[0] << std::setw(20) << Hit->dir[1] << std::setw(20) << Hit->dir[2] << std::endl;
          }
     ofile.close();
 }

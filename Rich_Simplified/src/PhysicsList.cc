@@ -13,7 +13,7 @@
 
 
 template <typename T>
-PhysicsList<T>::PhysicsList()
+PhysicsList<T>::PhysicsList( int argc, char** argv, const char* argforced )
     :
     fMaxNumPhotonStep(1000),
     fVerboseLevel(1),

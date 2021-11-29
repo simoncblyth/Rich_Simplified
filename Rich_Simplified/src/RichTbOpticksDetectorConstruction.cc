@@ -21,7 +21,10 @@
 #include "RichTbLHCbUpgradeSD.hh"
 #include "SensitiveDetector.hh"
 
-RichTbOpticksDetectorConstruction::RichTbOpticksDetectorConstruction() { ;}
+RichTbOpticksDetectorConstruction::RichTbOpticksDetectorConstruction( int argc, char** argv, const char* argforced ) : 
+    m_sargs(new SArgs(argc, argv, argforced)),
+    m_noFlatMirror(m_sargs->hasArg("--noflatmirror"))
+{;}
 
 
 RichTbOpticksDetectorConstruction::~RichTbOpticksDetectorConstruction()
@@ -51,7 +54,9 @@ G4VPhysicalVolume * RichTbOpticksDetectorConstruction::Construct() {
            rTbRich1Master     = new RichTbLHCbRich1Master(rTbLHCbExptHall );
            rTbRich1SubMaster  = new RichTbLHCbRich1SubMaster(rTbRich1Master);
            rTbR1SphMirror     = new RichTbLHCbR1SphMirror(rTbRich1SubMaster);
-           rTbR1FlatMirror    = new  RichTbLHCbR1FlatMirror(rTbRich1SubMaster);
+           if( !m_noFlatMirror ) { 
+             rTbR1FlatMirror    = new  RichTbLHCbR1FlatMirror(rTbRich1SubMaster);
+           }
            rTbR1MagShRegion   = new  RichTbLHCbR1MagShRegion(rTbRich1SubMaster);
            rTbR1QW            = new  RichTbLHCbR1QW(rTbR1MagShRegion);
 	   rTbR1PhDetSupFrame = new  RichTbLHCbR1PhDetSupFrame(rTbR1MagShRegion);
@@ -60,7 +65,7 @@ G4VPhysicalVolume * RichTbOpticksDetectorConstruction::Construct() {
            rTbR1Pmt          = new  RichTbLHCbR1Pmt( rTbR1EC);
            rTbR1PmtComponents  = new  RichTbLHCbR1PmtComponents(rTbR1Pmt );     
            rTbR1PmtComponents-> constructR1PmtComp();
-
+           
            // Creation of surfaces
 
 	   rTbR1Surface  = new RichTbLHCbSurface(this);
@@ -85,15 +90,17 @@ G4VPhysicalVolume * RichTbOpticksDetectorConstruction::Construct() {
 	   
            //G4LogicalVolume* RichTbLbSubMaster_LV = rTbRich1SubMaster->getRichTbLHCbRich1SubMasterLogicalVolume();
            //RichTbLbSubMaster_LV ->SetSensitiveDetector( PMTSD );
-           G4LogicalVolume* RichTbLbPmtQuartz_LV = rTbR1PmtComponents->getRichTbLbR1PmtQuartzLogicalVolume();
-           RichTbLbPmtQuartz_LV->SetSensitiveDetector( PMTSD );
            G4LogicalVolume* RichTbLbSphMirror_LV = rTbR1SphMirror->getRichTbLHCbR1SphMirrorLogicalVolume();
            RichTbLbSphMirror_LV->SetSensitiveDetector( PMTSD );
-           G4LogicalVolume* RichTbLbFlatMirror_LV = rTbR1FlatMirror->getRichTbLHCbR1FlatMirrorLogicalVolume();
-           RichTbLbFlatMirror_LV->SetSensitiveDetector( PMTSD );
+           G4LogicalVolume* RichTbLbPmtQuartz_LV = rTbR1PmtComponents->getRichTbLbR1PmtQuartzLogicalVolume();
+           RichTbLbPmtQuartz_LV->SetSensitiveDetector( PMTSD );
+           if( !m_noFlatMirror ) {
+               G4LogicalVolume* RichTbLbFlatMirror_LV = rTbR1FlatMirror->getRichTbLHCbR1FlatMirrorLogicalVolume();
+               RichTbLbFlatMirror_LV->SetSensitiveDetector( PMTSD );
+           }    
            G4LogicalVolume* RichTbLbQW_LV = rTbR1QW->getRichTbLHCbR1QWLogicalVolume();
            RichTbLbQW_LV->SetSensitiveDetector( PMTSD );
-
+           
 	   //Add border surface
 	   /*
 	   G4OpticalSurface* PmtWrap = new G4OpticalSurface("PmtWrap");
@@ -140,4 +147,8 @@ void RichTbOpticksDetectorConstruction::ResetStdVol() {
 
     
 
+}
+
+bool RichTbOpticksDetectorConstruction::isNoFlatMirror() const {
+    return m_noFlatMirror;
 }

@@ -21,7 +21,7 @@ struct PrimaryGeneratorAction;
 
 struct RichTbSimH
 {
-    RichTbSimH();
+    RichTbSimH( int argc, char** argv, const char* argforced );
     ~RichTbSimH();
 
     void init();

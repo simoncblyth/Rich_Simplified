@@ -13,6 +13,7 @@
 #include "Ctx.hh"
 #include "PLOG.hh"
 #include "SSys.hh"
+#include "SArgs.hh"
 
 #include "FTFP_BERT.hh"
 #include "G4EmStandardPhysics_option4.hh"
@@ -25,12 +26,12 @@
 #include "SteppingAction.hh"
 
 
-RichTbSimH::RichTbSimH()
+RichTbSimH::RichTbSimH( int argc, char** argv, const char* argforced )
     :
     ctx(new Ctx),
     rm(new G4RunManager),
-    dc(new RichTbOpticksDetectorConstruction()),
-    pl(new PhysicsList<L4Cerenkov>()),
+    dc(new RichTbOpticksDetectorConstruction( argc, argv, argforced )),
+    pl(new PhysicsList<L4Cerenkov>( argc, argv, argforced )),
     ga(nullptr),
     ra(nullptr),
     ea(nullptr),

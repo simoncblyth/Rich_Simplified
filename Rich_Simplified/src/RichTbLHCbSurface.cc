@@ -37,26 +37,26 @@ void RichTbLHCbSurface::createLHCbBorderSurfaces() {
 
     if(R1SphMirrorBorderSurface) G4cout<<" R1 Sph Mirror surface created "<<G4endl;
 
-  G4LogicalBorderSurface* R1FlatMirrorBorderSurface =
-     new G4LogicalBorderSurface("RichTbR1FlatMirrorSphSurface",
+  if( !curDet->isNoFlatMirror() ){
+    G4LogicalBorderSurface* R1FlatMirrorBorderSurface =
+      new G4LogicalBorderSurface("RichTbR1FlatMirrorSphSurface",
 	   curDet-> getRichTbLHCbRich1SubMaster() -> getRichTbLHCbRich1SubMasterPhysicalVolume(),
            curDet->getRichTbLHCbR1FlatMirror()-> getRichTbLHCbR1FlatMirrorPhysicalVolume(), 
            aSurfaceDef->getRichTbSphMirrorSurface());
 
-   if(R1FlatMirrorBorderSurface) G4cout<<" R1 Flat Mirror surface created "<<G4endl;
+    if(R1FlatMirrorBorderSurface) G4cout<<" R1 Flat Mirror surface created "<<G4endl;
+  }
 
-
-  G4cout << "creating RichTB R1 Submaster surface " << G4endl; 
+    G4cout << "creating RichTB R1 Submaster surface " << G4endl; 
  
-  G4LogicalBorderSurface* R1SubMasterBorderSurface =
-     new G4LogicalBorderSurface("RichTbR1SubMasterSurface",
+    G4LogicalBorderSurface* R1SubMasterBorderSurface =
+      new G4LogicalBorderSurface("RichTbR1SubMasterSurface",
 	   curDet-> getRichTbLHCbRich1SubMaster() -> getRichTbLHCbRich1SubMasterPhysicalVolume(),
            curDet->  getRichTbLHCbRich1Master ()->  getRichTbLHCbRich1MasterPhysicalVolume(), 
            aSurfaceDef-> getRichTbVesselSurface() );
 
 
     if(R1SubMasterBorderSurface) G4cout<<" R1 SubMaster surface created "<<G4endl;
-
-
+  
 
 }

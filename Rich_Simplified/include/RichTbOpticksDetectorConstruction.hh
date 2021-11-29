@@ -26,12 +26,13 @@
 #include "RichTbRunConfig.hh"
 #include "G4SDManager.hh"
 #include "RichTbGraphics.hh"
+#include "SArgs.hh"
 
 class RichTbOpticksDetectorConstruction:public G4VUserDetectorConstruction {
  
  public:
 
-    RichTbOpticksDetectorConstruction();
+    RichTbOpticksDetectorConstruction( int argc, char** argv, const char* argforced );
     virtual ~RichTbOpticksDetectorConstruction();
     G4VPhysicalVolume *Construct() override;
 
@@ -50,8 +51,11 @@ class RichTbOpticksDetectorConstruction:public G4VUserDetectorConstruction {
                      {return rTbR1PmtComponents;}
 
     void ResetStdVol();
+    bool isNoFlatMirror() const;
 
   private:
+    SArgs* m_sargs;
+    bool m_noFlatMirror = 0;
   RichTbLHCbExptHall*  rTbLHCbExptHall;
   RichTbLHCbRich1Master* rTbRich1Master;
   RichTbLHCbRich1SubMaster* rTbRich1SubMaster;
