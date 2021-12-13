@@ -1,6 +1,7 @@
 #pragma once
 
 #include "G4VUserPhysicsList.hh"
+#include "SArgs.hh"
 
 class G4Scintillation ;
 class G4OpBoundaryProcess ;
@@ -18,6 +19,7 @@ struct PhysicsList : public G4VUserPhysicsList
     void ConstructEM();
     void ConstructOp();
 
+    SArgs* m_sargs;
     G4int                fMaxNumPhotonStep ; 
     G4int                fVerboseLevel ;  
     T*                   fCerenkovProcess ; 

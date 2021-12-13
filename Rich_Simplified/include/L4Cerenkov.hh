@@ -68,7 +68,7 @@
 #include "G4MaterialPropertyVector.hh"
 #include "G4MaterialPropertiesTable.hh"
 #include "G4PhysicsOrderedFreeVector.hh"
-
+#include "SArgs.hh"
 // Class Description:
 // Discrete Process -- Generation of Cerenkov Photons.
 // Class inherits publicly from G4VDiscreteProcess.
@@ -87,7 +87,7 @@ public:
 	// Constructors and Destructor
 	////////////////////////////////
 
-	L4Cerenkov(const G4String& processName = "Cerenkov", 
+	L4Cerenkov(SArgs* m_sargs, const G4String& processName = "Cerenkov", 
                             G4ProcessType type = fElectromagnetic);
 	~L4Cerenkov();
 
@@ -213,7 +213,7 @@ protected:
         //  purposes).
 
 private:
-
+	bool lessphotons;
 	G4bool fTrackSecondariesFirst;
     G4double fMaxBetaChange;
     G4int  fMaxPhotons;

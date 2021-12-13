@@ -10,12 +10,13 @@
 #include "G4OpAbsorption.hh"
 #include "G4OpRayleigh.hh"
 #include "G4OpBoundaryProcess.hh"
-
+#include "SArgs.hh"
 
 template <typename T>
 PhysicsList<T>::PhysicsList( int argc, char** argv, const char* argforced )
     :
-    fMaxNumPhotonStep(1000),
+    m_sargs(new SArgs(argc, argv, argforced)),
+    fMaxNumPhotonStep( m_sargs->hasArg("--lessphotons")? 10:1000 ),
     fVerboseLevel(1),
     fCerenkovProcess(NULL),
     fScintillationProcess(NULL),
@@ -148,7 +149,7 @@ void PhysicsList<T>::ConstructEM()
 template <typename T>
 void PhysicsList<T>::ConstructOp()
 {
-    fCerenkovProcess = new T("Cerenkov");
+    fCerenkovProcess = new T(m_sargs, "Cerenkov");
     fCerenkovProcess->SetMaxNumPhotonsPerStep(fMaxNumPhotonStep);
     fCerenkovProcess->SetMaxBetaChangePerStep(10.0);
     fCerenkovProcess->SetTrackSecondariesFirst(true);   

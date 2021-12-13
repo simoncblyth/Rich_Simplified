@@ -82,6 +82,7 @@
 #include "G4MaterialCutsCouple.hh"
 #include "G4ParticleDefinition.hh"
 
+#include "SArgs.hh"
 #include "L4Cerenkov.hh"
 
 /////////////////////////
@@ -108,8 +109,9 @@
         // Constructors
         /////////////////
 
-L4Cerenkov::L4Cerenkov(const G4String& processName, G4ProcessType type)
+L4Cerenkov::L4Cerenkov(SArgs* m_sargs, const G4String& processName, G4ProcessType type)
            : G4VProcess(processName, type) ,
+	    lessphotons(m_sargs->hasArg("--lessphotons")),
             fTrackSecondariesFirst(false),
             fMaxBetaChange(0),
             fMaxPhotons(0)
@@ -460,6 +462,9 @@ L4Cerenkov::PostStepDoIt(const G4Track& aTrack, const G4Step& aStep)
         G4Opticks::Get()->collectSecondaryPhotons(pParticleChange) ; 
 #endif
 
+	if(lessphotons) {
+	    aParticleChange.ProposeTrackStatus(fStopAndKill);
+	}
         return pParticleChange;
 }
 
