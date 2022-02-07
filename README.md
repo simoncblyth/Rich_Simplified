@@ -1,7 +1,9 @@
 # Installation of Opticks
 Some instruction about installation of Opticks on UoM GPU machines  
 Prerequisite: NVIDIA OptiX 6.5+, cmake 3.12+, gcc 5+
-> gcc 5+ is required to support c++14. If you want to build with gcc 4.8.1+ which only supports c++11, please refer to complier.md file.  
+> Opticks v0.1.6 (https://bitbucket.org/simoncblyth/opticks/commits/tag/v0.1.6)
+> source /cvmfs/lhcb.cern.ch/lib/LbEnv
+> source /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/10.1.0/x86_64-centos7/setup.sh 
 1. `cd ${workdir}`  #replace ${workdir} with the path where you want to install Opticks  
    `git clone https://bitbucket.org/simoncblyth/opticks`  
    `git remote -v`  #should list bitbucket.org urls  
@@ -13,10 +15,10 @@ Prerequisite: NVIDIA OptiX 6.5+, cmake 3.12+, gcc 5+
    line 22: `export OPTICKS_PREFIX=${workdir}/opticks.build`  
    line 23: `export OPTICKS_CUDA_PREFIX=/usr/local/cuda`  
    line 24: `export OPTICKS_OPTIX_PREFIX=${workdir}/NVIDIA-OptiX-SDK-6.5.0-linux64`  
-   line 31:	`opticks-prepend-prefix ${workdir}/opticks.build_externals/clhep_2440`  
-   line 32: `opticks-prepend-prefix ${workdir}/opticks.build_externals/xercesc`  
-   line 33: `opticks-prepend-prefix ${workdir}/opticks.build_externals/g4_1042`  
-   line 34: `opticks-prepend-prefix ${workdir}/opticks.build_externals/boost`  
+   line 31:	`opticks-prepend-prefix ${workdir}/opticks.build_externals/clhep_2440` or `opticks-prepend-prefix /cvmfs/sft.cern.ch/lcg/releases/LCG_100/clhep/2.4.4.0/x86_64-centos7-gcc10-opt/`  
+   line 32: `opticks-prepend-prefix ${workdir}/opticks.build_externals/xercesc` or `opticks-prepend-prefix /cvmfs/sft.cern.ch/lcg/releases/LCG_100/XercesC/3.2.3/x86_64-centos7-gcc10-opt/`   
+   line 33: `opticks-prepend-prefix ${workdir}/opticks.build_externals/g4_1042` or `opticks-prepend-prefix /cvmfs/sft.cern.ch/lcg/releases/LCG_100/Geant4/10.07.p01/x86_64-centos7-gcc10-opt/`    
+   line 34: `opticks-prepend-prefix ${workdir}/opticks.build_externals/boost` or `opticks-prepend-prefix /cvmfs/sft.cern.ch/lcg/releases/LCG_100/Boost/1.75.0/x86_64-centos7-gcc10-opt/`    
    > If you want to install Opticks with geant4.10.07.p01, please refer to geant4.md file.  
 4. `echo "source ${workdir}/.opticks_config" >> ~/.bashrc`  
    start a new bash session  
