@@ -1,9 +1,9 @@
 # Installation of Opticks
 Some instruction about installation of Opticks on UoM GPU machines  
 Prerequisite: NVIDIA OptiX 6.5+, cmake 3.12+, gcc 5+
-> Opticks v0.1.6 (https://bitbucket.org/simoncblyth/opticks/commits/tag/v0.1.6)
-> source /cvmfs/lhcb.cern.ch/lib/LbEnv
-> source /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/10.1.0/x86_64-centos7/setup.sh 
+> Opticks v0.1.6 (https://bitbucket.org/simoncblyth/opticks/commits/tag/v0.1.6)  
+> source /cvmfs/lhcb.cern.ch/lib/LbEnv  
+> source /cvmfs/lhcb.cern.ch/lib/lcg/releases/gcc/10.1.0/x86_64-centos7/setup.sh  
 1. `cd ${workdir}`  #replace ${workdir} with the path where you want to install Opticks  
    `git clone https://bitbucket.org/simoncblyth/opticks`  
    `git remote -v`  #should list bitbucket.org urls  
