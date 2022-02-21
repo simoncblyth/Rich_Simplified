@@ -163,7 +163,7 @@ void Ctx::setTrackOptical(const G4Track* track)
     TrackInfo* info=dynamic_cast<TrackInfo*>(track->GetUserInformation()); 
     assert(info) ; 
     _record_id = info->photon_record_id ;  
-    std::cout << "Ctx::setTrackOptical.setAlignIndex " << _record_id << std::endl ;
+    //std::cout << "Ctx::setTrackOptical.setAlignIndex " << _record_id << std::endl ;
     G4Opticks::Get()->setAlignIndex(_record_id);
 #endif
 }
@@ -174,7 +174,7 @@ void Ctx::postTrackOptical(const G4Track* track)
     TrackInfo* info=dynamic_cast<TrackInfo*>(track->GetUserInformation()); 
     assert(info) ; 
     assert( _record_id == info->photon_record_id ) ;  
-    std::cout << "Ctx::postTrackOptical " << _record_id << std::endl ;
+    //std::cout << "Ctx::postTrackOptical " << _record_id << std::endl ;
     G4Opticks::Get()->setAlignIndex(-1);
 #endif
 }

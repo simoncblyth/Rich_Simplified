@@ -40,19 +40,16 @@ void EventAction::EndOfEventAction(const G4Event* event)
     G4Opticks* g4ok = G4Opticks::Get() ;
     G4int eventID = event->GetEventID() ; 
     unsigned num_hits = g4ok->propagateOpticalPhotons(eventID) ;  
-
     G4cout 
            << "EventAction::EndOfEventAction"
            << " eventID " << eventID
            << " num_hits " << num_hits 
            << G4endl 
            ; 
-
     G4OpticksHit hit ;
     G4OpticksHitExtra* hit_extra = NULL ;
     std::ofstream ofile;
     ofile.open("Opticks_hits.txt");
-
     for(unsigned i=0 ; i < num_hits ; i++)
     {   
         g4ok->getHit(i, &hit, hit_extra ); 
@@ -73,13 +70,11 @@ void EventAction::EndOfEventAction(const G4Event* event)
         ofile << hit.global_position[0] << std::setw(10) << hit.global_position[1] << std::setw(10) <<
             hit.global_position[2] << std::endl;
     }
-
     ofile.close();
     g4ok->reset();  // necessary to prevent gensteps keeping to accumulate
 
     G4cout << "\n###] EventAction::EndOfEventAction G4Opticks.propagateOpticalPhotons\n" << G4endl ; 
 #endif
-
     //addDummyHits(HCE);
     G4cout 
          << "EventAction::EndOfEventAction"

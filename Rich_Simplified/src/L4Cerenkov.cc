@@ -119,10 +119,11 @@ L4Cerenkov::L4Cerenkov(SArgs* m_sargs, const G4String& processName, G4ProcessTyp
         SetProcessSubType(fCerenkov);
 
         thePhysicsTable = NULL;
-
+#ifdef L4LOG
 	if (verboseLevel>0) {
            G4cout << GetProcessName() << " is created " << G4endl;
 	}
+#endif
 }
 
 // L4Cerenkov::L4Cerenkov(const L4Cerenkov &right)
@@ -240,8 +241,7 @@ L4Cerenkov::PostStepDoIt(const G4Track& aTrack, const G4Step& aStep)
 	MeanNumberOfPhotons = MeanNumberOfPhotons * step_length;
 
 	G4int NumPhotons = (G4int) G4Poisson(MeanNumberOfPhotons);
-
-#ifdef WITH_OPTICKS
+#ifdef L4LOG
     G4cout 
          << "L4Cerenkov::PostStepDoIt"
          << " t0 " << t0
@@ -252,7 +252,6 @@ L4Cerenkov::PostStepDoIt(const G4Track& aTrack, const G4Step& aStep)
          << G4endl
          ;
 #endif
-
 
 
 	if (NumPhotons <= 0) {
@@ -446,19 +445,20 @@ L4Cerenkov::PostStepDoIt(const G4Track& aTrack, const G4Step& aStep)
 
 
 	}  // CPU photon generation loop 
-
+#ifdef L4LOG
 	if (verboseLevel>0) {
 	   G4cout <<"L4Cerenkov::PostStepDoIt DONE -- NumberOfSecondaries = "
 	          << aParticleChange.GetNumberOfSecondaries() << G4endl;
 	}
-
+#endif
 
 #ifdef WITH_OPTICKS
+#ifdef L4LOG
        G4cout 
            << "L4Cerenkov::PostStepDoIt G4Opticks.collectSecondaryPhotons"
            << G4endl 
            ;
- 
+#endif
         G4Opticks::Get()->collectSecondaryPhotons(pParticleChange) ; 
 #endif
 
@@ -834,7 +834,7 @@ L4Cerenkov::GetAverageNumberOfPhotons(const G4double charge,
                                   GetValue(Pmin, isOutRange);
 		ge = CAImax - CAImin;
 
-#ifdef WITH_DUMP
+#ifdef L4LOG
 		if (verboseLevel>0) {
 			G4cout << "CAImin = " << CAImin << G4endl;
 			G4cout << "ge = " << ge << G4endl;

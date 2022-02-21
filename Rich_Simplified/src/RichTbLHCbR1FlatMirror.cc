@@ -18,8 +18,9 @@
 // Implementation file for class : RichTbLHCbR1FlatMirror
 // SE 22-07-2021
 //--------------------------------------------------------
-RichTbLHCbR1FlatMirror::RichTbLHCbR1FlatMirror(RichTbLHCbRich1SubMaster* rTbLHCbR1SubMaster) {
+RichTbLHCbR1FlatMirror::RichTbLHCbR1FlatMirror(RichTbLHCbRich1SubMaster* rTbLHCbR1SubMaster, bool tinyFlatMirror) {
   mTbLHCbR1SubMaster = rTbLHCbR1SubMaster;
+  m_tinyFlatMirror = tinyFlatMirror;
   constructLbR1FlatMirror();
 }
 
@@ -27,7 +28,8 @@ RichTbLHCbR1FlatMirror::~RichTbLHCbR1FlatMirror() {; }
 
 void RichTbLHCbR1FlatMirror::constructLbR1FlatMirror() {
   RichTbMaterial* aMaterial = RichTbMaterial::getRichTbMaterialInstance();
-
+  
+    
   G4Sphere* RichTbR1FlatFull = new G4Sphere ("RichTbR1FlatFull",RichTbR1FlatMirrInnerRadius,
                                            RichTbR1FlatMirrOuterRadius,RichTbR1FlatMirrStartPhi,
                                            RichTbR1FlatMirrDeltaPhi, RichTbR1FlatMirrStartTheta,

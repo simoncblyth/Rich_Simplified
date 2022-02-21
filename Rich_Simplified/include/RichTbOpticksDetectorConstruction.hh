@@ -52,10 +52,12 @@ class RichTbOpticksDetectorConstruction:public G4VUserDetectorConstruction {
 
     void ResetStdVol();
     bool isNoFlatMirror() const;
+    bool isTinyFlatMirror() const;
 
   private:
     SArgs* m_sargs;
     bool m_noFlatMirror = 0;
+    bool m_tinyFlatMirror = 0;
   RichTbLHCbExptHall*  rTbLHCbExptHall;
   RichTbLHCbRich1Master* rTbRich1Master;
   RichTbLHCbRich1SubMaster* rTbRich1SubMaster;

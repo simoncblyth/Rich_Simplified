@@ -25,7 +25,8 @@ struct RichTbSimH
     ~RichTbSimH();
 
     void init();
-    void beamOn(int num_ev); 
+    double beamOn(int num_ev); 
+    void Finalize();
 
     Ctx*	ctx;
     G4RunManager*	rm;

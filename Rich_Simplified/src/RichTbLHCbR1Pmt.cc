@@ -59,7 +59,7 @@ void RichTbLHCbR1Pmt::constructLbR1Pmt() {
     G4MaterialPropertiesTable* PmtSurfaceProperty = new G4MaterialPropertiesTable();
     PmtSurfaceProperty->AddProperty("REFLECTIVITY", pp, reflectivity, num);
     PmtSurfaceProperty->AddProperty("EFFICIENCY", pp, efficiency, num);
-    std::cout<<"start constructing Pmts"<<std::endl;
+    //std::cout<<"start constructing Pmts"<<std::endl;
     for (int ip =0; ip<RichTbLbNumPmtInEC ; ip++) {
      G4ThreeVector aR1PmtPos(RichLbPmtMasterInECXPos [ip], RichLbPmtMasterInECYPos [ip],
                              RichLbPmtMasterInECZPos);

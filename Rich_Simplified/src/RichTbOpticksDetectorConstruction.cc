@@ -23,7 +23,8 @@
 
 RichTbOpticksDetectorConstruction::RichTbOpticksDetectorConstruction( int argc, char** argv, const char* argforced ) : 
     m_sargs(new SArgs(argc, argv, argforced)),
-    m_noFlatMirror(m_sargs->hasArg("--noflatmirror"))
+    m_noFlatMirror(m_sargs->hasArg("--noflatmirror")),
+    m_tinyFlatMirror(m_sargs->hasArg("--tinyflatmirror"))
 {;}
 
 
@@ -55,7 +56,7 @@ G4VPhysicalVolume * RichTbOpticksDetectorConstruction::Construct() {
            rTbRich1SubMaster  = new RichTbLHCbRich1SubMaster(rTbRich1Master);
            rTbR1SphMirror     = new RichTbLHCbR1SphMirror(rTbRich1SubMaster);
            if( !m_noFlatMirror ) { 
-             rTbR1FlatMirror    = new  RichTbLHCbR1FlatMirror(rTbRich1SubMaster);
+             rTbR1FlatMirror    = new  RichTbLHCbR1FlatMirror(rTbRich1SubMaster, m_tinyFlatMirror);
            }
            rTbR1MagShRegion   = new  RichTbLHCbR1MagShRegion(rTbRich1SubMaster);
            rTbR1QW            = new  RichTbLHCbR1QW(rTbR1MagShRegion);
@@ -151,4 +152,8 @@ void RichTbOpticksDetectorConstruction::ResetStdVol() {
 
 bool RichTbOpticksDetectorConstruction::isNoFlatMirror() const {
     return m_noFlatMirror;
+}
+
+bool RichTbOpticksDetectorConstruction::isTinyFlatMirror() const {
+    return m_tinyFlatMirror;
 }

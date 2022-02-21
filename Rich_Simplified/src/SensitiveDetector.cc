@@ -120,6 +120,7 @@ Invoked at event level, by::
 
 void SensitiveDetector::Initialize(G4HCofThisEvent* HCE)   
 {
+#ifdef SDLOG
     G4cout
         << "SensitiveDetector::Initialize"
         << " HCE " << HCE
@@ -128,7 +129,7 @@ void SensitiveDetector::Initialize(G4HCofThisEvent* HCE)
         << " collectionName[0] " << collectionName[0] 
         << G4endl  
         ; 
- 
+#endif
     hitCollection = new OpHitCollection(SensitiveDetectorName,collectionName[0]);
 
     G4SDManager* SDMan = G4SDManager::GetSDMpointerIfExist() ;
@@ -161,6 +162,7 @@ Invoked at event level by::
 
 void SensitiveDetector::EndOfEvent(G4HCofThisEvent* HCE) 
 {
+#ifdef SDLOG
     G4cout
         << "SensitiveDetector::EndOfEvent"
         << " HCE " << HCE
@@ -168,6 +170,7 @@ void SensitiveDetector::EndOfEvent(G4HCofThisEvent* HCE)
         << " m_hit_count " << m_hit_count 
         << G4endl  
         ; 
+#endif
     std::ofstream ofile;
     ofile.open("Geant4_hits.txt");
     G4int nofHits = hitCollection->entries();
@@ -198,7 +201,7 @@ void SensitiveDetector::DumpHitCollections(G4HCofThisEvent* HCE) // static
         int hcid = tab->GetCollectionID(query);
         OpHitCollection* hc = dynamic_cast<OpHitCollection*>(HCE->GetHC(hcid));
         if( hc == NULL ) continue ;  
-
+#ifdef SDLOG
         G4cout 
             << "SensitiveDetector::DumpHitCollections"
             << " query " << std::setw(20) << query 
@@ -207,6 +210,7 @@ void SensitiveDetector::DumpHitCollections(G4HCofThisEvent* HCE) // static
             << " hc.entries "    << hc->entries()
             << G4endl 
             ; 
+#endif
     }
 }
 
