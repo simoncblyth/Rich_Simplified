@@ -27,7 +27,7 @@ RichTbLHCbR1SphMirror::~RichTbLHCbR1SphMirror() {; }
 void RichTbLHCbR1SphMirror::constructLbR1SphMirror() {
   RichTbMaterial* aMaterial = RichTbMaterial::getRichTbMaterialInstance();
 
-  G4Sphere* RichTbR1SphFullSph = new G4Sphere ("RichTbR1SphFullSph",RichTbR1SphMirrInnerRadius,
+  G4Sphere* RichTbR1SphFullSph = new G4Sphere ("RichTbR1SphFullSphDEV",RichTbR1SphMirrInnerRadius,
 					   RichTbR1SphMirrOuterRadius,RichTbR1SphMirrPhiStart,
                                            RichTbR1SphMirrDeltaPhi, RichTbR1SphMirrThetaStart,
                                            RichTbR1SphMirrDeltaTheta);

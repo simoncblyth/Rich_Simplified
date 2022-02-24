@@ -30,7 +30,7 @@ void RichTbLHCbR1FlatMirror::constructLbR1FlatMirror() {
   RichTbMaterial* aMaterial = RichTbMaterial::getRichTbMaterialInstance();
   
     
-  G4Sphere* RichTbR1FlatFull = new G4Sphere ("RichTbR1FlatFull",RichTbR1FlatMirrInnerRadius,
+  G4Sphere* RichTbR1FlatFull = new G4Sphere ("RichTbR1FlatFullDEV",RichTbR1FlatMirrInnerRadius,
                                            RichTbR1FlatMirrOuterRadius,RichTbR1FlatMirrStartPhi,
                                            RichTbR1FlatMirrDeltaPhi, RichTbR1FlatMirrStartTheta,
                                            RichTbR1FlatMirrDeltaTheta);

@@ -14,7 +14,10 @@ EOU
 
 sdir=$(pwd)
 name=$(basename $sdir)
-bdir=$(pwd)/build 
+#bdir=$(pwd)/build 
+bdir=/tmp/$USER/$name/build 
+
+echo $msg sdir $sdir bdir $bdir 
 
 [ "$1" == "clean" ] && echo $msg removing bdir $bdir && rm -rf $bdir
  

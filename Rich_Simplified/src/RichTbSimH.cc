@@ -21,8 +21,8 @@
 
 #include "FTFP_BERT.hh"
 #include "G4EmStandardPhysics_option4.hh"
-#include "G4OpticalParameters.hh"
-#include "G4OpticalPhysics.hh"
+//#include "G4OpticalParameters.hh"
+//#include "G4OpticalPhysics.hh"
 
 #include "RunAction.hh"
 #include "EventAction.hh"

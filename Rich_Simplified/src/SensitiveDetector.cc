@@ -190,6 +190,13 @@ SensitiveDetector::DumpHitCollections
 void SensitiveDetector::DumpHitCollections(G4HCofThisEvent* HCE) // static
 {
     G4SDManager* SDMan = G4SDManager::GetSDMpointerIfExist() ;
+
+    if(SDMan == nullptr)
+    {
+        G4cout << "SDMan null" << G4endl ; 
+        return ; 
+    }
+
     assert( SDMan ) ;  
 
     G4HCtable* tab = SDMan->GetHCtable();

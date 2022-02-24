@@ -21,6 +21,11 @@
 #include "RichTbLHCbUpgradeSD.hh"
 #include "SensitiveDetector.hh"
 
+#ifdef WITH_OPTICKS
+#include "PLOG.hh"
+#endif
+
+
 RichTbOpticksDetectorConstruction::RichTbOpticksDetectorConstruction( int argc, char** argv, const char* argforced ) : 
     m_sargs(new SArgs(argc, argv, argforced)),
     m_noFlatMirror(m_sargs->hasArg("--noflatmirror")),
@@ -42,6 +47,14 @@ G4VPhysicalVolume * RichTbOpticksDetectorConstruction::Construct() {
         rTbLHCbExptHall    = new RichTbLHCbExptHall();
 
         int aRadiatorConfiguration = aConfig ->getRadiatorConfiguration();
+
+
+        std::cout << "RichTbOpticksDetectorConstruction::Construct aRadiatorConfiguration " << aRadiatorConfiguration  << std::endl; 
+#ifdef WITH_OPTICKS
+        LOG(error) <<  " aRadiatorConfiguration " << aRadiatorConfiguration  ; 
+#endif
+
+
         if( aRadiatorConfiguration >= 40 && aRadiatorConfiguration < 50 ) {
 
 	  // This is for the test beam version of the simplified Rich1 geometry 

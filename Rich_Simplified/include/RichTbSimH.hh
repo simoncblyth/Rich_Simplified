@@ -10,7 +10,7 @@ struct EventAction;
 struct TrackingAction;
 struct SteppingAction;
 
-struct RichTbOpticksDetectorConstruction;
+class RichTbOpticksDetectorConstruction;
 class L4Cerenkov;
 template <typename T> struct PhysicsList;
 //struct RichTbPhysicsList;
