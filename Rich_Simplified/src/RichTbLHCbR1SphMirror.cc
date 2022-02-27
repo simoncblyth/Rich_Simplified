@@ -9,9 +9,15 @@
 #include "G4SubtractionSolid.hh"
 #include "G4Box.hh"
 #include "G4Sphere.hh"
+
+#include "U.hh"
+#include "G4IntersectionSolid.hh"
+#include "G4Orb.hh"
+
 #include "G4PVPlacement.hh"
 #include "RichTbRunConfig.hh"
 #include "RichTbMaterial.hh"
+
 
 #include <iostream>
 
@@ -27,7 +33,7 @@ RichTbLHCbR1SphMirror::~RichTbLHCbR1SphMirror() {; }
 void RichTbLHCbR1SphMirror::constructLbR1SphMirror() {
   RichTbMaterial* aMaterial = RichTbMaterial::getRichTbMaterialInstance();
 
-  G4Sphere* RichTbR1SphFullSph = new G4Sphere ("RichTbR1SphFullSphDEV",RichTbR1SphMirrInnerRadius,
+  G4Sphere* RichTbR1SphFullSph = new G4Sphere ("RichTbR1SphFullSph",RichTbR1SphMirrInnerRadius,
 					   RichTbR1SphMirrOuterRadius,RichTbR1SphMirrPhiStart,
                                            RichTbR1SphMirrDeltaPhi, RichTbR1SphMirrThetaStart,
                                            RichTbR1SphMirrDeltaTheta);
@@ -51,6 +57,59 @@ void RichTbLHCbR1SphMirror::constructLbR1SphMirror() {
   G4SubtractionSolid* RichTbR1RSph = new G4SubtractionSolid("RichTbR1SphRSphBox",RichTbR1LSph,
                                             RichTbR1SphSubBox , RichTbR1SubBoxRTrans);
 
+  G4VSolid* solid = RichTbR1RSph ;  
+
+  //////////// SCB  ////////////////////////////////////////////////////////////////////////
+
+  const char* envkey = "RichTbLHCbR1SphMirror_mode" ; 
+  int mode = U::getenvint(envkey, 0); 
+
+  if( mode == 1 )
+  {
+      const G4double& InnerRadius  = RichTbR1SphMirrInnerRadius ; 
+      const G4double& OuterRadius  = RichTbR1SphMirrOuterRadius ; 
+      const G4double& Thickness    = RichTbR1SphMirrThickness ; 
+      const G4double& SegmentSizeY = RichTbR1SphMirrSegmentSizeY ; 
+      const G4double& SegmentSizeZ = RichTbR1SphMirrSegmentSizeX ;   // the SizeX is misnamed, should be SizeZ 
+
+      const G4double SagittaMax = 80.*CLHEP::mm ;  // see ~/opticks/extg4/X4SolidMaker.cc X4SolidMaker::LHCbRichSphMirr
+      const G4double FullDepthX =  Thickness + SagittaMax ;  
+      const G4double MiddleRadius = (InnerRadius + OuterRadius)/2. ; 
+
+      std::cout 
+          << "RichTbLHCbR1SphMirror::constructLbR1SphMirror"
+          << " mode " << mode 
+          << " InnerRadius " << InnerRadius  
+          << " OuterRadius " << OuterRadius  
+          << " MiddleRadius " << MiddleRadius  
+          << " Thickness " << Thickness 
+          << " FullDepthX " << FullDepthX 
+          << " SegmentSizeY " << SegmentSizeY
+          << " SegmentSizeZ " << SegmentSizeZ
+          << std::endl 
+          ; 
+
+      G4Orb* inner = new G4Orb("inner",InnerRadius); 
+      G4Orb* outer = new G4Orb("outer",OuterRadius); 
+      G4SubtractionSolid* shell = new G4SubtractionSolid("shell", outer, inner ); 
+      G4Box* box = new G4Box("box", FullDepthX/2. , SegmentSizeY/2. , SegmentSizeZ/2. );   
+      G4String rootname = "RichTbR1SphRSphBox" ; 
+      rootname += "_CSG_EXBB" ; 
+      G4VSolid* alt = new G4IntersectionSolid( rootname, shell, box, 0, G4ThreeVector( MiddleRadius, 0., 0. ));    
+
+      solid = alt ; 
+  }
+
+  std::cout 
+      << "RichTbLHCbR1SphMirror::constructLbR1SphMirror"
+      << " envkey " << envkey 
+      << " mode " << mode 
+      << " solid.GetName " << solid->GetName()
+      << std::endl 
+      ; 
+
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
   G4RotationMatrix MirrSphRotationY,MirrSphRotationZ;
   MirrSphRotationY.rotateY(RichTbR1SphMirrRotY);
@@ -58,7 +117,7 @@ void RichTbLHCbR1SphMirror::constructLbR1SphMirror() {
 
   G4ThreeVector MirrSphPos (RichTbR1SphMirrPosX,RichTbR1SphMirrPosY,RichTbR1SphMirrPosZ);
   G4Transform3D MirrSphTransform ( MirrSphRotationY * MirrSphRotationZ, MirrSphPos);
-  rTbR1SphMirrorLVol = new G4LogicalVolume(RichTbR1RSph,aMaterial->getRichTbCarbonFibreMaterial(),
+  rTbR1SphMirrorLVol = new G4LogicalVolume(solid,aMaterial->getRichTbCarbonFibreMaterial(),
                                  RichTbR1SphMirrorLogName,0,0,0);
 
   rTbR1SphMirrorPVol = new G4PVPlacement(MirrSphTransform,RichTbR1SphMirrorPhysName,rTbR1SphMirrorLVol,
